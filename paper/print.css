@@ -1,0 +1,7 @@
+body{font-family:Georgia,serif;max-width:760px;margin:30px auto;font-size:10.5pt;line-height:1.45;color:#111}
+h1{font-size:20pt;margin-bottom:0}h3{font-weight:normal;font-style:italic;margin-top:4px;color:#444}
+h2{font-size:13pt;border-bottom:1px solid #ddd;padding-bottom:3px;margin-top:22px}
+table{border-collapse:collapse;font-size:9pt;margin:10px 0;width:100%}th,td{border-bottom:1px solid #e3e3e3;padding:3px 6px;text-align:left}
+th{background:#f5f5f3}img{max-width:100%;display:block;margin:10px auto}code{font-size:9pt;background:#f4f4f2;padding:0 2px}
+@page{size:A4;margin:16mm}
+h2,h3{break-after:avoid}img{break-inside:avoid}figure{margin:0}figcaption{display:none}

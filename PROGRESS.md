@@ -7,9 +7,9 @@
 4. [x] Frontier model fit (non-EPL) + P1 held-out EPL test
 5. [x] Match DP (minute × goal diff) + policy optimisation → P2 with bootstrap
 6. [x] P3 (habitual style vs market, EPL) and P4 (tempo vs market, 20 seasons)
-7. [ ] Season sim (Brentford vs 2025/26 PL) → P5
-8. [ ] Leicester case study, exploratory
-9. [ ] Paper + figures + artifact page
+7. [x] Season sim (Brentford vs 2025/26 PL) → P5
+8. [x] Leicester case study, exploratory
+9. [x] Paper + figures + artifact page
 
 ## Log
 - 2026-10-11 01:00 started; downloads running.
@@ -22,3 +22,7 @@
   - Channels (post-hoc): set pieces flat (elasticity .41 vs open play 1.09); counters steepest (1.19), so NOT an equaliser.
     Cheap skills: corner xG/corner and throw xG/throw (persistent, unrelated to wealth)
 - NEXT: theory-vs-P4 check; season sim (Brentford 2025/26) incl. P5 risk dial + set-piece playbook value; Leicester case; paper
+- 03:30 DONE: season sim, P5 (not supported), Brentford-vs-City policy, Leicester case, Wyscout 2017/18 replication
+  (set-piece flatness replicates; counter-elasticity claim withdrawn), set-piece market test (null), figures, paper PDF.
+- Possible next steps: licensed tracking data to re-test P1/P2; Transfermarkt squad values for a cleaner wealth axis;
+  more seasons of event data for cheap-skill reliability.
