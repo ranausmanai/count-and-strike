@@ -1,0 +1,24 @@
+# Progress log (resume from here)
+
+## Plan
+1. [x] Pre-registration (commit d94684e)
+2. [x] Data: StatsBomb 2015/16 events (src/fetch_statsbomb.py → data/raw/sb), football-data odds (data/raw/fd)
+3. [x] Event processing → possessions/segments with style features + xG (src/build_segments.py)
+4. [x] Frontier model fit (non-EPL) + P1 held-out EPL test
+5. [x] Match DP (minute × goal diff) + policy optimisation → P2 with bootstrap
+6. [x] P3 (habitual style vs market, EPL) and P4 (tempo vs market, 20 seasons)
+7. [ ] Season sim (Brentford vs 2025/26 PL) → P5
+8. [ ] Leicester case study, exploratory
+9. [ ] Paper + figures + artifact page
+
+## Log
+- 2026-10-11 01:00 started; downloads running.
+- 02:40 Results so far (all in results/*.json):
+  - P1 FAIL (lagged style adds nothing out of sample; contemporaneous 'wins' only through mechanical confounding)
+  - P2 FAIL on the honest cross-fit (0.015 pts/match, CI −0.04..0.08). The literal criterion 'passes' only via the optimiser's curse
+  - P3 null (EPL +0.72, CI −0.44..1.88)
+  - P4 SUPPORTED, modest: −0.0069 pts per habitual shot (p=.008); same sign in all 5 leagues; fades after 2015
+  - Event study (post-hoc): attacking/defensive coaching changes barely move xG (±5%)
+  - Channels (post-hoc): set pieces flat (elasticity .41 vs open play 1.09); counters steepest (1.19), so NOT an equaliser.
+    Cheap skills: corner xG/corner and throw xG/throw (persistent, unrelated to wealth)
+- NEXT: theory-vs-P4 check; season sim (Brentford 2025/26) incl. P5 risk dial + set-piece playbook value; Leicester case; paper

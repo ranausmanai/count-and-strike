@@ -1,0 +1,10 @@
+# Deviations and clarifications to the pre-registration
+
+Every change after commit d94684e is logged here with a timestamp and whether outcome data had been seen.
+
+1. **2026-10-11 01:25 (outcome data not yet seen; only one match inspected to debug the parser).**
+   *P1 clarification.* Style measured in the same segment as xG is mechanically correlated with it: when the opponent attacks, our defensive actions are deep *because* they are attacking. So the primary P1 model uses **lagged style**: the team's style in its previous segment of the same match. It predicts xG in the current segment. The contemporaneous model is reported as a secondary, descriptive fit. Also, `possession share` is a joint outcome of both teams, so it enters the P1 test as registered but is **not** used as a policy control in P2.
+
+2. **2026-10-11 ~02:00 (after P1 result seen).** P1 (lagged) failed: no out-of-sample gain (Δdev −0.6, 95% CI [−3.1, +2.0]). The contemporaneous model "wins" (+7.1%) but is the mechanically confounded fit we warned about. So the style-knob frontier is **not validated**. For P2 we (a) still run the registered analysis with the lagged-GLM frontier and report it, and (b) add a frontier estimated from **discrete coaching decisions** (attacking, neutral and defensive substitutions or formation shifts). Its effect on (λ_for, λ_against) is estimated by an event study against like-for-like substitutions made in the same game state and minute window. (b) was designed *after* seeing P1 and is labelled post-hoc.
+
+3. **2026-10-11 ~02:30 (post-hoc, after P1/P2 nulls).** Added an exploratory **chance-channel analysis** (`src/channels.py`). It covers the quality elasticity of xG by origin (build-up, counter, high regain, corner, free kick, throw-in, penalty), the underdog's share of each channel in mismatches, and a "cheap-skill map" (split-half reliability vs correlation with market rating). It was not pre-registered. It is reported as hypothesis-generating, with per-league replication shown.
