@@ -1,0 +1,1119 @@
+{
+ "n": 19605,
+ "label": "BH_FDR10",
+ "shortlist": [
+  {
+   "test": "F:shots_for",
+   "formula": "y_gd ~ F_shots_for + gap + home",
+   "term": "F_shots_for",
+   "coef": -0.05862776214885142,
+   "se": 0.013721232596047484,
+   "p": 1.9305381298480226e-05,
+   "q_bh": 0.0023166457558176272
+  },
+  {
+   "test": "F:shots_against",
+   "formula": "y_gd ~ F_shots_against + gap + home",
+   "term": "F_shots_against",
+   "coef": 0.04482453508007905,
+   "se": 0.012580436802781092,
+   "p": 0.0003665919536545939,
+   "q_bh": 0.021995517219275635
+  },
+  {
+   "test": "U:yellows x F:fouls_won",
+   "formula": "y_gd ~ U_yellows * F_fouls_won + gap + home",
+   "term": "U_yellows:F_fouls_won",
+   "coef": -0.038088306489291866,
+   "se": 0.011320350154461213,
+   "p": 0.0007665822541063498,
+   "q_bh": 0.03066329016425399
+  }
+ ],
+ "all": [
+  {
+   "test": "F:shots_for",
+   "formula": "y_gd ~ F_shots_for + gap + home",
+   "term": "F_shots_for",
+   "coef": -0.05862776214885142,
+   "se": 0.013721232596047484,
+   "p": 1.9305381298480226e-05,
+   "q_bh": 0.0023166457558176272
+  },
+  {
+   "test": "F:shots_against",
+   "formula": "y_gd ~ F_shots_against + gap + home",
+   "term": "F_shots_against",
+   "coef": 0.04482453508007905,
+   "se": 0.012580436802781092,
+   "p": 0.0003665919536545939,
+   "q_bh": 0.021995517219275635
+  },
+  {
+   "test": "U:yellows x F:fouls_won",
+   "formula": "y_gd ~ U_yellows * F_fouls_won + gap + home",
+   "term": "U_yellows:F_fouls_won",
+   "coef": -0.038088306489291866,
+   "se": 0.011320350154461213,
+   "p": 0.0007665822541063498,
+   "q_bh": 0.03066329016425399
+  },
+  {
+   "test": "F:corners_for",
+   "formula": "y_gd ~ F_corners_for + gap + home",
+   "term": "F_corners_for",
+   "coef": -0.03364560650134323,
+   "se": 0.012122463168427125,
+   "p": 0.00551209546413007,
+   "q_bh": 0.16536286392390212
+  },
+  {
+   "test": "F:corners_against",
+   "formula": "y_gd ~ F_corners_against + gap + home",
+   "term": "F_corners_against",
+   "coef": 0.0315593473972314,
+   "se": 0.011820074509010955,
+   "p": 0.0075856054477389375,
+   "q_bh": 0.18205453074573452
+  },
+  {
+   "test": "U:shots_against",
+   "formula": "y_gd ~ U_shots_against + gap + home",
+   "term": "U_shots_against",
+   "coef": -0.028534521730234418,
+   "se": 0.011640367926785987,
+   "p": 0.014232469076139046,
+   "q_bh": 0.2846493815227809
+  },
+  {
+   "test": "U:corners_against",
+   "formula": "y_gd ~ U_corners_against + gap + home",
+   "term": "U_corners_against",
+   "coef": -0.023104249213835956,
+   "se": 0.01067856919445941,
+   "p": 0.030494364490638515,
+   "q_bh": 0.45536870740622365
+  },
+  {
+   "test": "F:yellows",
+   "formula": "y_gd ~ F_yellows + gap + home",
+   "term": "F_yellows",
+   "coef": 0.024840018042445233,
+   "se": 0.011807776580971673,
+   "p": 0.035404635934368565,
+   "q_bh": 0.45536870740622365
+  },
+  {
+   "test": "U:fouls_won x F:shots_against",
+   "formula": "y_gd ~ U_fouls_won * F_shots_against + gap + home",
+   "term": "U_fouls_won:F_shots_against",
+   "coef": -0.022531358823648488,
+   "se": 0.010790917625874485,
+   "p": 0.03679847986044057,
+   "q_bh": 0.45536870740622365
+  },
+  {
+   "test": "U:fouls_won x F:corners_for",
+   "formula": "y_gd ~ U_fouls_won * F_corners_for + gap + home",
+   "term": "U_fouls_won:F_corners_for",
+   "coef": 0.021240943177189872,
+   "se": 0.010319886164383889,
+   "p": 0.039565792718287945,
+   "q_bh": 0.45536870740622365
+  },
+  {
+   "test": "U:gd_resid_form",
+   "formula": "y_gd ~ U_gd_resid_form + gap + home",
+   "term": "U_gd_resid_form",
+   "coef": -0.02199638959078541,
+   "se": 0.01080329310212655,
+   "p": 0.041742131512237164,
+   "q_bh": 0.45536870740622365
+  },
+  {
+   "test": "F:gd_resid_form",
+   "formula": "y_gd ~ F_gd_resid_form + gap + home",
+   "term": "F_gd_resid_form",
+   "coef": 0.021296501948935787,
+   "se": 0.011436999845182158,
+   "p": 0.06259312977741201,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_won x F:sot_rate_for",
+   "formula": "y_gd ~ U_fouls_won * F_sot_rate_for + gap + home",
+   "term": "U_fouls_won:F_sot_rate_for",
+   "coef": 0.01921941332590486,
+   "se": 0.010360526106822204,
+   "p": 0.06358744171585745,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:gd_resid_form x F:sot_rate_against",
+   "formula": "y_gd ~ U_gd_resid_form * F_sot_rate_against + gap + home",
+   "term": "U_gd_resid_form:F_sot_rate_against",
+   "coef": 0.01941276627187903,
+   "se": 0.010721282209486312,
+   "p": 0.07019105059464749,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:sot_rate_against x F:sot_rate_for",
+   "formula": "y_gd ~ U_sot_rate_against * F_sot_rate_for + gap + home",
+   "term": "U_sot_rate_against:F_sot_rate_for",
+   "coef": -0.015196954894859756,
+   "se": 0.008626622259226748,
+   "p": 0.07813108071948781,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:gd_resid_form x F:sot_rate_for",
+   "formula": "y_gd ~ U_gd_resid_form * F_sot_rate_for + gap + home",
+   "term": "U_gd_resid_form:F_sot_rate_for",
+   "coef": -0.01940341368698281,
+   "se": 0.011102004084679835,
+   "p": 0.08050910481717151,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:sot_rate_against x F:sot_rate_against",
+   "formula": "y_gd ~ U_sot_rate_against * F_sot_rate_against + gap + home",
+   "term": "U_sot_rate_against:F_sot_rate_against",
+   "coef": -0.014519282464896328,
+   "se": 0.00870741703014621,
+   "p": 0.09542267826968111,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_committed",
+   "formula": "y_gd ~ U_fouls_committed + gap + home",
+   "term": "U_fouls_committed",
+   "coef": 0.018834964427458394,
+   "se": 0.011313841005080965,
+   "p": 0.09595827491069601,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:corners_for x F:yellows",
+   "formula": "y_gd ~ U_corners_for * F_yellows + gap + home",
+   "term": "U_corners_for:F_yellows",
+   "coef": 0.018398767584171586,
+   "se": 0.011088285687122265,
+   "p": 0.09705580677783311,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:gd_resid_form x F:gd_resid_form",
+   "formula": "y_gd ~ U_gd_resid_form * F_gd_resid_form + gap + home",
+   "term": "U_gd_resid_form:F_gd_resid_form",
+   "coef": -0.019013337803373487,
+   "se": 0.01205061028421068,
+   "p": 0.11461375889021408,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_won x F:shots_for",
+   "formula": "y_gd ~ U_fouls_won * F_shots_for + gap + home",
+   "term": "U_fouls_won:F_shots_for",
+   "coef": 0.017315856635067912,
+   "se": 0.011027121225017943,
+   "p": 0.11634600530062088,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:yellows x F:gd_resid_form",
+   "formula": "y_gd ~ U_yellows * F_gd_resid_form + gap + home",
+   "term": "U_yellows:F_gd_resid_form",
+   "coef": 0.016570549376788674,
+   "se": 0.01062295483389711,
+   "p": 0.11878791695937474,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_committed x F:fouls_won",
+   "formula": "y_gd ~ U_fouls_committed * F_fouls_won + gap + home",
+   "term": "U_fouls_committed:F_fouls_won",
+   "coef": -0.01635960733539517,
+   "se": 0.010533084368932775,
+   "p": 0.12038396205264147,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_won x F:corners_against",
+   "formula": "y_gd ~ U_fouls_won * F_corners_against + gap + home",
+   "term": "U_fouls_won:F_corners_against",
+   "coef": -0.016827799170319742,
+   "se": 0.010849678827960679,
+   "p": 0.1209028478148714,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "U:fouls_committed x F:corners_for",
+   "formula": "y_gd ~ U_fouls_committed * F_corners_for + gap + home",
+   "term": "U_fouls_committed:F_corners_for",
+   "coef": -0.018011670568055343,
+   "se": 0.011614552778369406,
+   "p": 0.12095329206374819,
+   "q_bh": 0.5805758019059913
+  },
+  {
+   "test": "F:sot_rate_against",
+   "formula": "y_gd ~ F_sot_rate_against + gap + home",
+   "term": "F_sot_rate_against",
+   "coef": 0.016706420110423944,
+   "se": 0.01108117407998465,
+   "p": 0.1316467166623649,
+   "q_bh": 0.6076002307493765
+  },
+  {
+   "test": "U:yellows x F:shots_against",
+   "formula": "y_gd ~ U_yellows * F_shots_against + gap + home",
+   "term": "U_yellows:F_shots_against",
+   "coef": 0.017039556319279947,
+   "se": 0.011842573815079414,
+   "p": 0.1501961616192041,
+   "q_bh": 0.6247750648738832
+  },
+  {
+   "test": "U:yellows x F:corners_against",
+   "formula": "y_gd ~ U_yellows * F_corners_against + gap + home",
+   "term": "U_yellows:F_corners_against",
+   "coef": 0.01640974096956729,
+   "se": 0.011419559012933834,
+   "p": 0.15072210741036857,
+   "q_bh": 0.6247750648738832
+  },
+  {
+   "test": "U:yellows x F:yellows",
+   "formula": "y_gd ~ U_yellows * F_yellows + gap + home",
+   "term": "U_yellows:F_yellows",
+   "coef": -0.015273471035149415,
+   "se": 0.010720029726784248,
+   "p": 0.154226548592296,
+   "q_bh": 0.6247750648738832
+  },
+  {
+   "test": "U:fouls_committed x F:shots_for",
+   "formula": "y_gd ~ U_fouls_committed * F_shots_for + gap + home",
+   "term": "U_fouls_committed:F_shots_for",
+   "coef": -0.016588098114029382,
+   "se": 0.011698320435542517,
+   "p": 0.1561937662184708,
+   "q_bh": 0.6247750648738832
+  },
+  {
+   "test": "U:sot_rate_for",
+   "formula": "y_gd ~ U_sot_rate_for + gap + home",
+   "term": "U_sot_rate_for",
+   "coef": -0.014804738862003943,
+   "se": 0.010811197069017857,
+   "p": 0.17087758028381184,
+   "q_bh": 0.6614616010986264
+  },
+  {
+   "test": "U:corners_for x F:gd_resid_form",
+   "formula": "y_gd ~ U_corners_for * F_gd_resid_form + gap + home",
+   "term": "U_corners_for:F_gd_resid_form",
+   "coef": 0.014640284160388038,
+   "se": 0.01105144204612294,
+   "p": 0.1852574966547721,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:sot_rate_against",
+   "formula": "y_gd ~ U_sot_rate_against + gap + home",
+   "term": "U_sot_rate_against",
+   "coef": 0.013841474602050806,
+   "se": 0.010640396159456096,
+   "p": 0.19331253011597882,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:sot_rate_for x F:sot_rate_against",
+   "formula": "y_gd ~ U_sot_rate_for * F_sot_rate_against + gap + home",
+   "term": "U_sot_rate_for:F_sot_rate_against",
+   "coef": -0.01236360297787731,
+   "se": 0.009542173954660142,
+   "p": 0.19508578966745926,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:shots_for x F:gd_resid_form",
+   "formula": "y_gd ~ U_shots_for * F_gd_resid_form + gap + home",
+   "term": "U_shots_for:F_gd_resid_form",
+   "coef": 0.014757914519939937,
+   "se": 0.011497873901389257,
+   "p": 0.19930498144333575,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "F:fouls_won",
+   "formula": "y_gd ~ F_fouls_won + gap + home",
+   "term": "F_fouls_won",
+   "coef": -0.01336590583344737,
+   "se": 0.010730421078246136,
+   "p": 0.21290808728373722,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:fouls_won x F:fouls_committed",
+   "formula": "y_gd ~ U_fouls_won * F_fouls_committed + gap + home",
+   "term": "U_fouls_won:F_fouls_committed",
+   "coef": -0.013221558795154582,
+   "se": 0.010636309700616,
+   "p": 0.21384615185711153,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:fouls_won x F:yellows",
+   "formula": "y_gd ~ U_fouls_won * F_yellows + gap + home",
+   "term": "U_fouls_won:F_yellows",
+   "coef": -0.013725367504696072,
+   "se": 0.01108753789767245,
+   "p": 0.21574965253123168,
+   "q_bh": 0.6813146922038895
+  },
+  {
+   "test": "U:corners_against x F:sot_rate_for",
+   "formula": "y_gd ~ U_corners_against * F_sot_rate_for + gap + home",
+   "term": "U_corners_against:F_sot_rate_for",
+   "coef": -0.01329394678811369,
+   "se": 0.010917297504559232,
+   "p": 0.22333961218136766,
+   "q_bh": 0.6871988067119005
+  },
+  {
+   "test": "U:corners_against x F:fouls_won",
+   "formula": "y_gd ~ U_corners_against * F_fouls_won + gap + home",
+   "term": "U_corners_against:F_fouls_won",
+   "coef": -0.013171576247785144,
+   "se": 0.011184732972064907,
+   "p": 0.23894060861923683,
+   "q_bh": 0.7033749110772165
+  },
+  {
+   "test": "U:shots_against x F:shots_against",
+   "formula": "y_gd ~ U_shots_against * F_shots_against + gap + home",
+   "term": "U_shots_against:F_shots_against",
+   "coef": -0.013507595140562432,
+   "se": 0.01150377622361339,
+   "p": 0.24031976128471566,
+   "q_bh": 0.7033749110772165
+  },
+  {
+   "test": "U:corners_for",
+   "formula": "y_gd ~ U_corners_for + gap + home",
+   "term": "U_corners_for",
+   "coef": 0.011974988487725139,
+   "se": 0.01086642094911781,
+   "p": 0.2704539660348575,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:shots_against x F:fouls_committed",
+   "formula": "y_gd ~ U_shots_against * F_fouls_committed + gap + home",
+   "term": "U_shots_against:F_fouls_committed",
+   "coef": 0.011473398788135887,
+   "se": 0.01048855889635079,
+   "p": 0.27400033544653013,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:fouls_won x F:fouls_won",
+   "formula": "y_gd ~ U_fouls_won * F_fouls_won + gap + home",
+   "term": "U_fouls_won:F_fouls_won",
+   "coef": 0.011240928394812378,
+   "se": 0.010586097587547732,
+   "p": 0.2883003267956975,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:sot_rate_for x F:fouls_committed",
+   "formula": "y_gd ~ U_sot_rate_for * F_fouls_committed + gap + home",
+   "term": "U_sot_rate_for:F_fouls_committed",
+   "coef": 0.011873476922463244,
+   "se": 0.011258748306061954,
+   "p": 0.2916082648289917,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:fouls_won",
+   "formula": "y_gd ~ U_fouls_won + gap + home",
+   "term": "U_fouls_won",
+   "coef": 0.01115697352283647,
+   "se": 0.010689172121207737,
+   "p": 0.29659457074907025,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:corners_for x F:sot_rate_for",
+   "formula": "y_gd ~ U_corners_for * F_sot_rate_for + gap + home",
+   "term": "U_corners_for:F_sot_rate_for",
+   "coef": 0.011257691595389557,
+   "se": 0.010836465098637442,
+   "p": 0.2988646381579084,
+   "q_bh": 0.7630586506159364
+  },
+  {
+   "test": "U:yellows x F:sot_rate_against",
+   "formula": "y_gd ~ U_yellows * F_sot_rate_against + gap + home",
+   "term": "U_yellows:F_sot_rate_against",
+   "coef": 0.011040834336037987,
+   "se": 0.011014768533213252,
+   "p": 0.3161666438916704,
+   "q_bh": 0.7904166097291759
+  },
+  {
+   "test": "U:corners_for x F:sot_rate_against",
+   "formula": "y_gd ~ U_corners_for * F_sot_rate_against + gap + home",
+   "term": "U_corners_for:F_sot_rate_against",
+   "coef": 0.010770711049020045,
+   "se": 0.011002243214537261,
+   "p": 0.32760176357814286,
+   "q_bh": 0.8022900332525947
+  },
+  {
+   "test": "U:shots_for x F:yellows",
+   "formula": "y_gd ~ U_shots_for * F_yellows + gap + home",
+   "term": "U_shots_for:F_yellows",
+   "coef": 0.01064749167399911,
+   "se": 0.011095467845261038,
+   "p": 0.3372438304690465,
+   "q_bh": 0.8093851931257116
+  },
+  {
+   "test": "U:shots_against x F:corners_against",
+   "formula": "y_gd ~ U_shots_against * F_corners_against + gap + home",
+   "term": "U_shots_against:F_corners_against",
+   "coef": -0.010511491662415237,
+   "se": 0.011470950629363872,
+   "p": 0.359479417676573,
+   "q_bh": 0.8356400576211742
+  },
+  {
+   "test": "U:gd_resid_form x F:fouls_committed",
+   "formula": "y_gd ~ U_gd_resid_form * F_fouls_committed + gap + home",
+   "term": "U_gd_resid_form:F_fouls_committed",
+   "coef": -0.010634138136582278,
+   "se": 0.011866852819003147,
+   "p": 0.370188046915232,
+   "q_bh": 0.8356400576211742
+  },
+  {
+   "test": "U:gd_resid_form x F:corners_against",
+   "formula": "y_gd ~ U_gd_resid_form * F_corners_against + gap + home",
+   "term": "U_gd_resid_form:F_corners_against",
+   "coef": -0.010410943394207329,
+   "se": 0.011751415706431017,
+   "p": 0.3756547134518834,
+   "q_bh": 0.8356400576211742
+  },
+  {
+   "test": "U:shots_against x F:sot_rate_against",
+   "formula": "y_gd ~ U_shots_against * F_sot_rate_against + gap + home",
+   "term": "U_shots_against:F_sot_rate_against",
+   "coef": 0.009803885374146027,
+   "se": 0.01107508434474439,
+   "p": 0.3760380259295284,
+   "q_bh": 0.8356400576211742
+  },
+  {
+   "test": "U:corners_against x F:corners_against",
+   "formula": "y_gd ~ U_corners_against * F_corners_against + gap + home",
+   "term": "U_corners_against:F_corners_against",
+   "coef": -0.009054630150518701,
+   "se": 0.010683474592331127,
+   "p": 0.3966963867451343,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:sot_rate_for x F:gd_resid_form",
+   "formula": "y_gd ~ U_sot_rate_for * F_gd_resid_form + gap + home",
+   "term": "U_sot_rate_for:F_gd_resid_form",
+   "coef": -0.009635922049467272,
+   "se": 0.011655615459158074,
+   "p": 0.40839618950273926,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:yellows x F:sot_rate_for",
+   "formula": "y_gd ~ U_yellows * F_sot_rate_for + gap + home",
+   "term": "U_yellows:F_sot_rate_for",
+   "coef": 0.008810053671536821,
+   "se": 0.010724679157373984,
+   "p": 0.4113758720978269,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:shots_against x F:corners_for",
+   "formula": "y_gd ~ U_shots_against * F_corners_for + gap + home",
+   "term": "U_shots_against:F_corners_for",
+   "coef": 0.009116721695018853,
+   "se": 0.011181190078036073,
+   "p": 0.4148649146089167,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:fouls_won x F:sot_rate_against",
+   "formula": "y_gd ~ U_fouls_won * F_sot_rate_against + gap + home",
+   "term": "U_fouls_won:F_sot_rate_against",
+   "coef": 0.008460389223791076,
+   "se": 0.010414566438151522,
+   "p": 0.4165844286777626,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:sot_rate_for x F:fouls_won",
+   "formula": "y_gd ~ U_sot_rate_for * F_fouls_won + gap + home",
+   "term": "U_sot_rate_for:F_fouls_won",
+   "coef": -0.009071853288325805,
+   "se": 0.011253612241459888,
+   "p": 0.42016897867726277,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:fouls_committed x F:corners_against",
+   "formula": "y_gd ~ U_fouls_committed * F_corners_against + gap + home",
+   "term": "U_fouls_committed:F_corners_against",
+   "coef": 0.008786485720175872,
+   "se": 0.011217702818787275,
+   "p": 0.4334688047969628,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:corners_against x F:shots_for",
+   "formula": "y_gd ~ U_corners_against * F_shots_for + gap + home",
+   "term": "U_corners_against:F_shots_for",
+   "coef": 0.008160548231700235,
+   "se": 0.01115536019906179,
+   "p": 0.4644517880008634,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:yellows x F:shots_for",
+   "formula": "y_gd ~ U_yellows * F_shots_for + gap + home",
+   "term": "U_yellows:F_shots_for",
+   "coef": -0.00840980040003146,
+   "se": 0.011540053954571926,
+   "p": 0.4661553395952148,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:yellows",
+   "formula": "y_gd ~ U_yellows + gap + home",
+   "term": "U_yellows",
+   "coef": 0.007809372171494292,
+   "se": 0.010866300531934485,
+   "p": 0.4723392826964311,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:gd_resid_form x F:shots_against",
+   "formula": "y_gd ~ U_gd_resid_form * F_shots_against + gap + home",
+   "term": "U_gd_resid_form:F_shots_against",
+   "coef": -0.008377189115463353,
+   "se": 0.0116687550659045,
+   "p": 0.47280891516720835,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:shots_for x F:fouls_committed",
+   "formula": "y_gd ~ U_shots_for * F_fouls_committed + gap + home",
+   "term": "U_shots_for:F_fouls_committed",
+   "coef": -0.007736227574091541,
+   "se": 0.01080192844803092,
+   "p": 0.4738743548037194,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:sot_rate_against x F:yellows",
+   "formula": "y_gd ~ U_sot_rate_against * F_yellows + gap + home",
+   "term": "U_sot_rate_against:F_yellows",
+   "coef": 0.00794277463157494,
+   "se": 0.011289270678323946,
+   "p": 0.48170156736056735,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:sot_rate_for x F:shots_against",
+   "formula": "y_gd ~ U_sot_rate_for * F_shots_against + gap + home",
+   "term": "U_sot_rate_for:F_shots_against",
+   "coef": 0.0074994815468124205,
+   "se": 0.010731806094171532,
+   "p": 0.4846714695548878,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:corners_for x F:shots_for",
+   "formula": "y_gd ~ U_corners_for * F_shots_for + gap + home",
+   "term": "U_corners_for:F_shots_for",
+   "coef": 0.007689560033887954,
+   "se": 0.011083102657399643,
+   "p": 0.4878017904866604,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:sot_rate_for x F:sot_rate_for",
+   "formula": "y_gd ~ U_sot_rate_for * F_sot_rate_for + gap + home",
+   "term": "U_sot_rate_for:F_sot_rate_for",
+   "coef": -0.00711465325862984,
+   "se": 0.010262073672706503,
+   "p": 0.48812389655802846,
+   "q_bh": 0.8367838226709059
+  },
+  {
+   "test": "U:shots_for x F:sot_rate_for",
+   "formula": "y_gd ~ U_shots_for * F_sot_rate_for + gap + home",
+   "term": "U_shots_for:F_sot_rate_for",
+   "coef": 0.00763808956790093,
+   "se": 0.01136801380903272,
+   "p": 0.5016517797574265,
+   "q_bh": 0.8467748597489648
+  },
+  {
+   "test": "U:shots_for x F:shots_against",
+   "formula": "y_gd ~ U_shots_for * F_shots_against + gap + home",
+   "term": "U_shots_for:F_shots_against",
+   "coef": 0.007131302609406416,
+   "se": 0.010774739816699134,
+   "p": 0.5080649158493789,
+   "q_bh": 0.8467748597489648
+  },
+  {
+   "test": "U:fouls_won x F:gd_resid_form",
+   "formula": "y_gd ~ U_fouls_won * F_gd_resid_form + gap + home",
+   "term": "U_fouls_won:F_gd_resid_form",
+   "coef": 0.006365888733912356,
+   "se": 0.010510387092029071,
+   "p": 0.5447299542888037,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_for x F:yellows",
+   "formula": "y_gd ~ U_sot_rate_for * F_yellows + gap + home",
+   "term": "U_sot_rate_for:F_yellows",
+   "coef": 0.0065898458746112346,
+   "se": 0.01133389941421235,
+   "p": 0.5609520661993652,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_for x F:shots_for",
+   "formula": "y_gd ~ U_sot_rate_for * F_shots_for + gap + home",
+   "term": "U_sot_rate_for:F_shots_for",
+   "coef": -0.00606679553604499,
+   "se": 0.010699454863636796,
+   "p": 0.5707011879574915,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_against x F:corners_against",
+   "formula": "y_gd ~ U_sot_rate_against * F_corners_against + gap + home",
+   "term": "U_sot_rate_against:F_corners_against",
+   "coef": 0.006254920513354307,
+   "se": 0.01106012186154597,
+   "p": 0.5717078042717751,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_against x F:fouls_committed",
+   "formula": "y_gd ~ U_sot_rate_against * F_fouls_committed + gap + home",
+   "term": "U_sot_rate_against:F_fouls_committed",
+   "coef": 0.006345732641296225,
+   "se": 0.011384621290238886,
+   "p": 0.5772574814742492,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:fouls_committed x F:sot_rate_for",
+   "formula": "y_gd ~ U_fouls_committed * F_sot_rate_for + gap + home",
+   "term": "U_fouls_committed:F_sot_rate_for",
+   "coef": -0.006016244100479497,
+   "se": 0.010869435710824799,
+   "p": 0.5799203604332599,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "F:sot_rate_for",
+   "formula": "y_gd ~ F_sot_rate_for + gap + home",
+   "term": "F_sot_rate_for",
+   "coef": -0.00608033371131937,
+   "se": 0.011752030753889375,
+   "p": 0.6048868775097526,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_for x F:corners_against",
+   "formula": "y_gd ~ U_sot_rate_for * F_corners_against + gap + home",
+   "term": "U_sot_rate_for:F_corners_against",
+   "coef": 0.005329535945539251,
+   "se": 0.011050130415440491,
+   "p": 0.6295891161998397,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:shots_against x F:gd_resid_form",
+   "formula": "y_gd ~ U_shots_against * F_gd_resid_form + gap + home",
+   "term": "U_shots_against:F_gd_resid_form",
+   "coef": -0.00533444978637191,
+   "se": 0.011133784455345465,
+   "p": 0.6318512831078446,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:gd_resid_form x F:shots_for",
+   "formula": "y_gd ~ U_gd_resid_form * F_shots_for + gap + home",
+   "term": "U_gd_resid_form:F_shots_for",
+   "coef": 0.0052474451345067286,
+   "se": 0.0112401958681286,
+   "p": 0.6406097659112139,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:shots_for x F:sot_rate_against",
+   "formula": "y_gd ~ U_shots_for * F_sot_rate_against + gap + home",
+   "term": "U_shots_for:F_sot_rate_against",
+   "coef": -0.005053846047899463,
+   "se": 0.01097993171739158,
+   "p": 0.6453150537577463,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_against x F:shots_for",
+   "formula": "y_gd ~ U_sot_rate_against * F_shots_for + gap + home",
+   "term": "U_sot_rate_against:F_shots_for",
+   "coef": -0.005268845707658685,
+   "se": 0.011477887342645885,
+   "p": 0.6462031707492935,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:corners_for x F:shots_against",
+   "formula": "y_gd ~ U_corners_for * F_shots_against + gap + home",
+   "term": "U_corners_for:F_shots_against",
+   "coef": -0.005049763004068334,
+   "se": 0.01104773679842467,
+   "p": 0.6476094159650038,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:shots_against x F:sot_rate_for",
+   "formula": "y_gd ~ U_shots_against * F_sot_rate_for + gap + home",
+   "term": "U_shots_against:F_sot_rate_for",
+   "coef": -0.00517641868254859,
+   "se": 0.011398164068069806,
+   "p": 0.6497245002509856,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:gd_resid_form x F:fouls_won",
+   "formula": "y_gd ~ U_gd_resid_form * F_fouls_won + gap + home",
+   "term": "U_gd_resid_form:F_fouls_won",
+   "coef": -0.005078439986302383,
+   "se": 0.011242901802346359,
+   "p": 0.6514837569344057,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:sot_rate_against x F:fouls_won",
+   "formula": "y_gd ~ U_sot_rate_against * F_fouls_won + gap + home",
+   "term": "U_sot_rate_against:F_fouls_won",
+   "coef": -0.0048375296975184294,
+   "se": 0.010895954372200534,
+   "p": 0.6570607679173466,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:shots_against x F:yellows",
+   "formula": "y_gd ~ U_shots_against * F_yellows + gap + home",
+   "term": "U_shots_against:F_yellows",
+   "coef": 0.004813634234299487,
+   "se": 0.010980863387879097,
+   "p": 0.6611211822241208,
+   "q_bh": 0.8913993468190392
+  },
+  {
+   "test": "U:fouls_committed x F:sot_rate_against",
+   "formula": "y_gd ~ U_fouls_committed * F_sot_rate_against + gap + home",
+   "term": "U_fouls_committed:F_sot_rate_against",
+   "coef": 0.0048006483069547665,
+   "se": 0.011345688879377817,
+   "p": 0.6722038252838765,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:sot_rate_against x F:shots_against",
+   "formula": "y_gd ~ U_sot_rate_against * F_shots_against + gap + home",
+   "term": "U_sot_rate_against:F_shots_against",
+   "coef": 0.004485471857181618,
+   "se": 0.011021002672364244,
+   "p": 0.6840130683610599,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:shots_for",
+   "formula": "y_gd ~ U_shots_for + gap + home",
+   "term": "U_shots_for",
+   "coef": -0.0043477557194910475,
+   "se": 0.011551505215497216,
+   "p": 0.706634400435718,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:corners_against x F:corners_for",
+   "formula": "y_gd ~ U_corners_against * F_corners_for + gap + home",
+   "term": "U_corners_against:F_corners_for",
+   "coef": 0.004031560321621814,
+   "se": 0.010816538459213298,
+   "p": 0.7093554658356271,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:shots_against x F:fouls_won",
+   "formula": "y_gd ~ U_shots_against * F_fouls_won + gap + home",
+   "term": "U_shots_against:F_fouls_won",
+   "coef": 0.00408641771611852,
+   "se": 0.011046178983546652,
+   "p": 0.7114275836829589,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:corners_against x F:fouls_committed",
+   "formula": "y_gd ~ U_corners_against * F_fouls_committed + gap + home",
+   "term": "U_corners_against:F_fouls_committed",
+   "coef": 0.003930062500511185,
+   "se": 0.010995039910183798,
+   "p": 0.7207627469779428,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:sot_rate_for x F:corners_for",
+   "formula": "y_gd ~ U_sot_rate_for * F_corners_for + gap + home",
+   "term": "U_sot_rate_for:F_corners_for",
+   "coef": 0.004015450610123592,
+   "se": 0.01134266077158839,
+   "p": 0.7233290586502492,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:shots_for x F:corners_against",
+   "formula": "y_gd ~ U_shots_for * F_corners_against + gap + home",
+   "term": "U_shots_for:F_corners_against",
+   "coef": -0.0037187546894256965,
+   "se": 0.010752224918081052,
+   "p": 0.7294486173916093,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:sot_rate_against x F:corners_for",
+   "formula": "y_gd ~ U_sot_rate_against * F_corners_for + gap + home",
+   "term": "U_sot_rate_against:F_corners_for",
+   "coef": 0.0038742468487685967,
+   "se": 0.011220285005584425,
+   "p": 0.7298767229133403,
+   "q_bh": 0.8937265994857228
+  },
+  {
+   "test": "U:corners_for x F:corners_for",
+   "formula": "y_gd ~ U_corners_for * F_corners_for + gap + home",
+   "term": "U_corners_for:F_corners_for",
+   "coef": 0.003579335924153383,
+   "se": 0.010682965691053524,
+   "p": 0.7375867853158946,
+   "q_bh": 0.8940445882616905
+  },
+  {
+   "test": "U:corners_against x F:gd_resid_form",
+   "formula": "y_gd ~ U_corners_against * F_gd_resid_form + gap + home",
+   "term": "U_corners_against:F_gd_resid_form",
+   "coef": -0.003558503428271862,
+   "se": 0.011521036909314617,
+   "p": 0.7574203682049807,
+   "q_bh": 0.9089044418459769
+  },
+  {
+   "test": "U:corners_for x F:fouls_committed",
+   "formula": "y_gd ~ U_corners_for * F_fouls_committed + gap + home",
+   "term": "U_corners_for:F_fouls_committed",
+   "coef": -0.003319543541055956,
+   "se": 0.01111566749235384,
+   "p": 0.7652174465312307,
+   "q_bh": 0.9091692434034424
+  },
+  {
+   "test": "U:shots_for x F:corners_for",
+   "formula": "y_gd ~ U_shots_for * F_corners_for + gap + home",
+   "term": "U_shots_for:F_corners_for",
+   "coef": -0.003056798294372652,
+   "se": 0.010849653510348743,
+   "p": 0.7781416853234769,
+   "q_bh": 0.915460806262914
+  },
+  {
+   "test": "U:fouls_committed x F:shots_against",
+   "formula": "y_gd ~ U_fouls_committed * F_shots_against + gap + home",
+   "term": "U_fouls_committed:F_shots_against",
+   "coef": 0.003064383907263832,
+   "se": 0.01157311541141559,
+   "p": 0.7911753229754969,
+   "q_bh": 0.9217576578355304
+  },
+  {
+   "test": "U:yellows x F:corners_for",
+   "formula": "y_gd ~ U_yellows * F_corners_for + gap + home",
+   "term": "U_yellows:F_corners_for",
+   "coef": -0.002629267348607908,
+   "se": 0.01117550958138421,
+   "p": 0.8139988164158847,
+   "q_bh": 0.9358293210148402
+  },
+  {
+   "test": "U:fouls_committed x F:fouls_committed",
+   "formula": "y_gd ~ U_fouls_committed * F_fouls_committed + gap + home",
+   "term": "U_fouls_committed:F_fouls_committed",
+   "coef": 0.002407904067641413,
+   "se": 0.010513786279011067,
+   "p": 0.8188506558879851,
+   "q_bh": 0.9358293210148402
+  },
+  {
+   "test": "U:corners_against x F:sot_rate_against",
+   "formula": "y_gd ~ U_corners_against * F_sot_rate_against + gap + home",
+   "term": "U_corners_against:F_sot_rate_against",
+   "coef": -0.002277665627203151,
+   "se": 0.010889827225749698,
+   "p": 0.8343269668610938,
+   "q_bh": 0.9386306708899155
+  },
+  {
+   "test": "U:corners_against x F:yellows",
+   "formula": "y_gd ~ U_corners_against * F_yellows + gap + home",
+   "term": "U_corners_against:F_yellows",
+   "coef": -0.0023343349693101256,
+   "se": 0.011342632531049382,
+   "p": 0.836945681543508,
+   "q_bh": 0.9386306708899155
+  },
+  {
+   "test": "U:shots_for x F:shots_for",
+   "formula": "y_gd ~ U_shots_for * F_shots_for + gap + home",
+   "term": "U_shots_for:F_shots_for",
+   "coef": 0.0017246552423694217,
+   "se": 0.011272518059755165,
+   "p": 0.8784010750549761,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:corners_for x F:corners_against",
+   "formula": "y_gd ~ U_corners_for * F_corners_against + gap + home",
+   "term": "U_corners_for:F_corners_against",
+   "coef": -0.00137619082370997,
+   "se": 0.010761566206082675,
+   "p": 0.8982438110129863,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:fouls_committed x F:gd_resid_form",
+   "formula": "y_gd ~ U_fouls_committed * F_gd_resid_form + gap + home",
+   "term": "U_fouls_committed:F_gd_resid_form",
+   "coef": 0.0012806899881938859,
+   "se": 0.011413723777883253,
+   "p": 0.9106599539504554,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:fouls_committed x F:yellows",
+   "formula": "y_gd ~ U_fouls_committed * F_yellows + gap + home",
+   "term": "U_fouls_committed:F_yellows",
+   "coef": 0.0011924955778411551,
+   "se": 0.011582833596132335,
+   "p": 0.9179997174763154,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:shots_against x F:shots_for",
+   "formula": "y_gd ~ U_shots_against * F_shots_for + gap + home",
+   "term": "U_shots_against:F_shots_for",
+   "coef": -0.0010475055794360913,
+   "se": 0.011446701349692128,
+   "p": 0.9270861155302421,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:sot_rate_against x F:gd_resid_form",
+   "formula": "y_gd ~ U_sot_rate_against * F_gd_resid_form + gap + home",
+   "term": "U_sot_rate_against:F_gd_resid_form",
+   "coef": -0.0009712967273251214,
+   "se": 0.0111673915400021,
+   "p": 0.9306904693928382,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "F:fouls_committed",
+   "formula": "y_gd ~ F_fouls_committed + gap + home",
+   "term": "F_fouls_committed",
+   "coef": 0.0009602058768869513,
+   "se": 0.011243435542075048,
+   "p": 0.9319422278137202,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:corners_against x F:shots_against",
+   "formula": "y_gd ~ U_corners_against * F_shots_against + gap + home",
+   "term": "U_corners_against:F_shots_against",
+   "coef": 0.0009237096583184822,
+   "se": 0.011394689555078677,
+   "p": 0.935390319358199,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:corners_for x F:fouls_won",
+   "formula": "y_gd ~ U_corners_for * F_fouls_won + gap + home",
+   "term": "U_corners_for:F_fouls_won",
+   "coef": 0.000854867221063252,
+   "se": 0.011070694779373152,
+   "p": 0.9384493815077298,
+   "q_bh": 0.9708097050079963
+  },
+  {
+   "test": "U:gd_resid_form x F:yellows",
+   "formula": "y_gd ~ U_gd_resid_form * F_yellows + gap + home",
+   "term": "U_gd_resid_form:F_yellows",
+   "coef": 0.0006952870080523989,
+   "se": 0.01079071523440789,
+   "p": 0.9486248011346159,
+   "q_bh": 0.9729485139842214
+  },
+  {
+   "test": "U:gd_resid_form x F:corners_for",
+   "formula": "y_gd ~ U_gd_resid_form * F_corners_for + gap + home",
+   "term": "U_gd_resid_form:F_corners_for",
+   "coef": -0.0004038369537166674,
+   "se": 0.01127616015294688,
+   "p": 0.9714311963735569,
+   "q_bh": 0.9878961319053121
+  },
+  {
+   "test": "U:yellows x F:fouls_committed",
+   "formula": "y_gd ~ U_yellows * F_fouls_committed + gap + home",
+   "term": "U_yellows:F_fouls_committed",
+   "coef": 0.0001881832545679889,
+   "se": 0.010192391477137014,
+   "p": 0.9852694057528053,
+   "q_bh": 0.9935489805910641
+  },
+  {
+   "test": "U:shots_for x F:fouls_won",
+   "formula": "y_gd ~ U_shots_for * F_fouls_won + gap + home",
+   "term": "U_shots_for:F_fouls_won",
+   "coef": 1.7854128586195357e-05,
+   "se": 0.010448996954985528,
+   "p": 0.9986366608512822,
+   "q_bh": 0.9986366608512822
+  }
+ ],
+ "positive_control": {
+  "coef": -0.02651107863812153,
+  "p": 0.008250546245544478
+ }
+}
