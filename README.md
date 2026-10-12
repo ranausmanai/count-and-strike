@@ -1,10 +1,17 @@
 # Project Underdog
 
-**Can tactics make player quality matter less?** An autonomous, pre-registered research run (11 Oct 2026) looking for a tactical policy that lets a weak team (Brentford) consistently outperform stronger squads.
+**Can tactics make player quality matter less?** An autonomous research run (11–12 Oct 2026): six pre-registered rounds, 21 tests, 4 independent data populations looking for a tactical policy that lets a weak team (Brentford) consistently outperform stronger squads.
 
 📄 Paper: [`paper/underdog_paper.pdf`](paper/underdog_paper.pdf) (source [`paper/paper.md`](paper/paper.md)) · 🧾 [`PREREGISTRATION.md`](PREREGISTRATION.md) · [`DEVIATIONS.md`](DEVIATIONS.md)
 
-## Results in one table
+## Confirmed on unseen leagues (round 6)
+
+1. **Set pieces are where quality matters least.** Set-piece xG elasticity to team strength is 0.41 / 0.28 / 0.72 vs open play 1.09 / 0.89 / 1.02 (StatsBomb 15/16, Wyscout 17/18, unseen WSL/NWSL/ISL).
+2. **Break after they commit.** At a fixed regain spot, score and minute, a regain made after the opponent had pushed into your box is worth ×1.37–1.69 the counter xG, in all four populations.
+
+Everything else in rounds 2–5 failed confirmation (box-score style vs market, ML, opponent weak spots, cone density). See Fig 8 in the paper.
+
+## Round 1 results
 
 | | Finding | Status |
 |---|---|---|

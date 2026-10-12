@@ -1,20 +1,29 @@
 # Project Underdog: Can Tactics Make Quality Matter Less?
 
-### A pre-registered search for an underdog's tactical edge: four nulls, one small market effect, and one flat channel
+### Six pre-registered rounds, 21 tests, two confirmed tactical patterns
 
-*Autonomous research run, 11 October 2026. Pre-registration committed before any outcome data were inspected (git `d94684e`). All deviations are logged in `DEVIATIONS.md`.*
+*Autonomous research run, 11–12 October 2026. Every round was pre-registered in git before its data were analysed (`PREREGISTRATION*.md`, commits `d94684e`, `56a3532` and later). Deviations are logged in `DEVIATIONS.md`.*
 
 ---
 
 ## Abstract
 
-We asked whether a weaker football team, such as Brentford against Manchester City, can systematically change the *structure* of a match so that player quality matters less, and what that would be worth in league points and title probability. We framed tactics as moves in a two-dimensional space: match **intensity** (total chances) and the underdog's **share** of chances. We then solved the in-match decision problem exactly by dynamic programming over (minute, goal difference). The empirical inputs were StatsBomb event data for 1,551 big-five league matches (2015/16) and Wyscout event data for 1,826 matches (2017/18), plus closing betting odds for 45,825 matches (2000–2026).
+We asked whether a weaker football team can systematically change the *structure* of a match so that player quality matters less, and what that would be worth to a club like Brentford. Over six pre-registered rounds we tested 21 hypotheses. The data were event data for 3,954 matches across four independent populations (StatsBomb big-five 2015/16, Wyscout big-five 2017/18, and unseen StatsBomb WSL/NWSL/ISL seasons), plus closing odds for 45,825 matches. Every candidate had to survive an out-of-sample, out-of-time or out-of-population test whose direction was fixed in advance.
 
-Five hypotheses were pre-registered. **Four did not survive.** (P1) A team's style in one stretch of a match does not predict its chances in the next stretch beyond strength and score: out-of-sample Δdeviance −0.6, 95% CI [−3.1, +2.0]. (P2) The optimal in-match style policy produced no reliable gain once evaluated honestly. Cross-fitted gain was +0.015 points/match, CI [−0.04, +0.08], against a pre-registered threshold of 0.05. The pre-registered criterion as literally worded *was* met, but only through the optimiser's curse. (P3) Habitual style did not predict results beyond the market. (P5) A "win-hungry" risk dial did not raise title probability, even for a contender. **One survived, modestly.** (P4) Over 36,374 underdog matches, underdogs that habitually play high-shot games underperform the closing market by 0.0069 points per extra shot per match (CI [−0.012, −0.002]). The effect is consistent across all five leagues but fades after 2015, and it does not follow the pattern pure variance theory predicts.
+**Most ideas died.**
+* In-match style knobs and coaching changes did not move chance rates beyond what score and minute already explain.
+* An optimised in-match policy gained nothing once scored on data it was not tuned on.
+* No style trait or style matchup built from box-score data (shots, fouls, corners, cards) beat the betting market after 2017. That includes a machine-learning search over 22 traits.
+* Opponents' channel-specific "weak spots" did not predict anything.
+* A promising defensive-structure trait ("cone density") failed all three confirmation tests.
 
-A post-hoc analysis found the most robust structural fact in the study, and it replicated across a second season and data provider. **Set pieces are the "flattest" source of chances.** Their quality elasticity is 0.41/0.28 against 1.09/0.89 for open play, and direct free kicks are near zero (0.12 in both). In mismatches, underdogs collect 37–38% of set-piece xG but only 30–32% of build-up xG. Set-piece efficiency is the only team skill we found that is both persistent and uncorrelated with team strength, but its persistence is modest (reliability 0.14–0.41).
+**Two tactical patterns survived confirmation on unseen leagues.**
+1. **Set pieces are where quality matters least.** Set-piece xG is far less sensitive to team strength than open-play xG. The elasticity was 0.41 vs 1.09 (StatsBomb), 0.28 vs 0.89 (Wyscout), and 0.72 vs 1.02 on unseen leagues (difference CI [0.11, 0.50]).
+2. **"Break after they commit."** At the same regain spot, score and minute, a regain made after the opponent had pushed into our box yields **1.4–1.7× more counter-attack xG** than one made while they were still in their own half. All four populations agree: ×1.69, ×1.57, ×1.37, ×1.52, every 95% CI above 1.
 
-Applied to Brentford's 2025/26 strength, every evidence-backed lever combined is worth **+1.8 to +4.5 points a season**. That lifts their top-four probability from 3% to 5–9%. Title probability stays at or below 0.15%. The honest answer to the project's question: there is a structure in which quality matters less (dead balls), but no tactic we could identify turns a mid-table squad into a title contender. The one underdog champion in our data, Leicester 2015/16, beat the market by 28 points, and 18 of them sat *above* their own chance quality.
+Round 1 also found a modest, fading market effect: high-tempo underdogs underperform the closing market, by 0.007 points per habitual shot.
+
+What tactics are worth is bounded. For Brentford at 2025/26 strength, every evidence-backed lever together is worth **+1.8 to +4.5 points a season**: top-four odds rise from 3% to 5–9%, and title odds stay at or below 0.15%. The project's answer: there *are* structures in which quality matters less, and repeatable moments when a stronger team is vulnerable. They are worth a few points a season, not a title.
 
 ---
 
@@ -35,6 +44,7 @@ So we pre-registered the hypotheses, kept the 2015/16 Premier League out of mode
 |---|---|---|
 | StatsBomb Open Data | 1,551 matches, 2015/16: full EPL, La Liga, Serie A, Ligue 1, plus 34 Bundesliga. 5.4M events with xG | style, segments, coaching decisions, chance channels |
 | Wyscout public dataset (Pappalardo et al., 2019) | 1,826 matches, 2017/18, big five | out-of-season, out-of-provider replication |
+| StatsBomb Open Data (unseen) | 577 matches: WSL 2018/19–2020/21, NWSL 2023, ISL 2021/22 | confirmation only (rounds 5–6) |
 | football-data.co.uk | 45,825 big-five matches 2000/01–2025/26, closing odds + shots | market strength, P4, 2025/26 season simulation |
 
 **Market strength.** For every match we de-vig the closing 1X2 odds (Pinnacle closing where available) and invert them, together with the over/under 2.5 price when available, into Poisson goal rates (λ_home, λ_away) with a Dixon–Coles correction. This is the strength baseline throughout. It is demanding: anything the market already knows is not an edge.
@@ -177,25 +187,81 @@ So the answer to the brief's question is: **at home, keep the draw until about t
 
 Leicester's market-expected points were 53.1; they finished on 81. Their xG-implied expected points were 63.3. So roughly 10 points came from creating better chances than the market priced, and 18 from finishing, goalkeeping and fortune above their own chance quality. Their style did not shrink the game. They ranked **1st in tempo** (2.96 xG per match, both teams), **1st in counter-attack share** (24% of their xG), 18th in possession, 4th in long-ball share. They also had by far the most penalty xG (10.2). They opened matches up, which is the opposite of the variance prescription. The rare underdog title in our data looks like underpriced talent (Vardy, Mahrez, Kanté) plus a large positive draw from the noise. We found no reusable structural trick in it.
 
-## 8. What this means
+## 8. Part II: five more rounds of searching
 
-1. **"Make quality matter less" has one robust answer: dead balls.** Set pieces are roughly a third as sensitive to team quality as open play. That held in two seasons, two providers and two xG models. Brentford already exploit this, as the brief anticipated. Our contribution is to quantify the ceiling: about 2–3 points a season for reaching the 90th percentile.
-2. **Build-up play is where the gap is widest.** Underdogs keep only 30–32% of build-up xG in mismatches. A weaker team that insists on out-building stronger teams is fighting in the steepest channel.
-3. **The in-game "AI coach" did not survive honest evaluation.** Neither continuous style knobs nor discrete coaching changes showed effects we could distinguish from zero once reverse causation and the optimiser's curse were removed. The tempo policy in §6 is what a coach *could* gain if a reliable ±9% intensity lever existed. With the event data available publicly, we could not show that it does.
-4. **The market already knows most of it.** The only pre-registered effect that survived (P4) is small, concentrated in mild underdogs, inconsistent with pure variance theory, and has faded since 2015.
-5. **For a title, tactics are not the binding constraint.** Every evidence-backed lever together moves Brentford from 0.03% to 0.15%. A title needs roughly +40% attacking quality *and* luck.
+Round 1 left one robust but unoriginal finding: set pieces. The brief asked for more, so the search continued. Each round was registered in git before its data were analysed, with an explicit confirmation step.
 
-## 9. Limitations
+![](../figures/fig8_all_tests.png)
+
+### Round 2: a discovery engine with an out-of-time lock
+
+* **Search.** 120 tests on 2005–2017 (19,605 underdog matches): 10 habitual traits of the underdog, 10 of the favourite, and all 100 underdog × favourite matchups. The outcome was goal difference against the closing market. The P4 tempo effect reappeared as a positive control (p = 0.008), so the pipeline is sound.
+* **Shortlist.** Benjamini–Hochberg at FDR 10% kept three effects: favourite shot volume, favourite shots conceded, and *card-prone underdogs × foul-drawing favourites*.
+* **Confirmation.** On the locked 2017–2026 seasons (15,818 matches) **none confirmed**. All three shrank by 85–95% toward zero.
+* **ML arm.** A LightGBM model on all 22 traits did no better than the market on the holdout (MSE gain −0.0011, CI [−0.0024, +0.0002]).
+
+Conclusion: since 2017 the market prices all box-score style information.
+
+### Round 3: when is a stronger team vulnerable, and do teams have weak spots?
+
+* **Regain data.** Every open-play regain in StatsBomb 2015/16 (110,541) and Wyscout 2017/18 (430,975), scored by the xG of the following 20 seconds.
+* **H3a-1 failed.** Features describing the opponent's preceding possession did not improve held-out prediction once game state was known.
+* **H3a-2 failed as registered,** but the *opposite* direction appeared in all three samples: counter value is higher when the opponent had advanced deeper before losing the ball.
+* **Weak spots: no.** Opponent concession profiles by channel (build-up, counter, set pieces…) were not persistent in Wyscout. A matchup model beat main effects out of sample only because *attackers'* specialisations persist; the defender "weak-spot" term was null in both datasets (+0.07 ± 0.06, −0.03 ± 0.05). Scouting an opponent's channel weakness, at this level of detail, does not predict where they will concede.
+
+### Round 4: defensive structure from shot freeze-frames
+
+Every StatsBomb shot records where all players stood.
+
+* The number of defenders inside the shooter–posts triangle per shot conceded ("cone density") is a highly persistent team trait (reliability 0.75) and unrelated to team rating (r = 0.07). A coachable, unbought trait, apparently.
+* Team-level, it went with conceding fewer goals than the market expected (−1.06 goals/match per extra defender, p = 0.026).
+* Conceding below xG also repeated (reliability 0.39–0.45), but a decomposition shows that is mostly goalkeeping, and partly wealth-linked.
+
+### Round 5: the cone-density candidate dies
+
+Three pre-registered confirmations, all of which **failed**:
+
+* prospective (first-half trait → second-half goals vs market): right sign, p = 0.28;
+* unseen leagues (WSL 2018–21, NWSL 2023, ISL 2021/22; 577 matches): wrong sign;
+* shot level in the unseen leagues: p = 0.10.
+
+The round-4 association was noise or confounding (most plausibly goalkeeper quality). Without the confirmation step it would have been our headline.
+
+### Round 6: the two survivors, confirmed on unseen leagues
+
+The same 577 unseen matches. Team strength was measured as leave-this-match-out xG for and against, since these leagues have no odds.
+
+| Pre-registered test | Result | Verdict |
+|---|---|---|
+| H6-1 Set-piece xG is less strength-elastic than open play | 0.72 vs 1.02; difference 0.30, team-bootstrap CI [0.11, 0.50]; same direction in all 5 competitions | **Confirmed** |
+| H6-2 Underdogs keep a larger share of set-piece xG in mismatches | 29.1% vs 26.8%, CI [−0.9, +5.7] pp | Not confirmed (right sign, n = 330) |
+| H6-3 Counter value rises when the opponent had pushed deep | marginal effect −1.01 (SE 0.38), one-sided p = 0.004 | **Confirmed** |
+
+![](../figures/fig9_vulnerability.png)
+
+**How to read "break after they commit."** Hold the place where you win the ball (here 36 yards from your own goal), the score and the minute fixed. If the opponent had just been inside your box, the possession you start is worth about 1.5× the counter xG it would be worth had they never left their own half. Their players are committed forward and out of position. The effect sits in the 1.4–1.7 range in men's and women's football, two providers and three seasons.
+
+It is an **in-the-moment decision rule**, not a style. Teams that defend deeper do win more of their balls in this window (+4 pp of regains per SD of block depth, p < 10⁻¹²). But they do not create more counter xG per match, because those regains happen nearer their own goal (`results/r6_bait.json`). So the lever is *what you do with the ball* after the opponent has over-committed: release runners and play forward immediately. Sitting deeper to provoke it is not the lever.
+
+## 9. What this means
+
+1. **Two things a weaker team can reliably use.** (a) *Dead balls*: set-piece xG is only about a third to two-thirds as sensitive to team strength as open play, in all four populations. The 90th-percentile set-piece team gains about 2–3 points a season. (b) *The vulnerability window*: when the ball is won just after the opponent has over-committed, the counter is worth about 1.5×. That makes it a trigger for transition, coachable as a rule ("if they were in our box, go").
+2. **What does not work, measured:** steering a match with in-game style changes; out-building stronger teams (build-up is the steepest channel, and underdogs keep 30–32% of its xG); scouting opponents' channel-specific weak spots; risk-seeking for titles. Neither box-score style traits nor style matchups beat the market after 2017.
+3. **Simulators flatter tactics.** In-sample policy gains were about 3× the honest cross-fitted gain, and an apparently strong post-hoc structural trait failed every confirmation. Any AI tactical system that reports in-sample gains is likely overstating them.
+4. **For a title, tactics are not the binding constraint.** Every evidence-backed lever together moves Brentford's title probability from 0.03% to 0.15%. A title-level season needs roughly +40% attacking quality *and* Leicester-style finishing luck. Leicester 2015/16 had 18 points above their own chance quality.
+
+## 10. Limitations
 
 * **Identification.** Every frontier is observational. Lagging, game-state control, like-for-like control groups and cross-fitting reduce but cannot remove confounding. A coach-run controlled trial (milestone 4 in the brief) is the only clean test.
+* **Unseen-league strength.** WSL/NWSL/ISL have no odds, so round 6 uses leave-one-out xG strength. That is noisier, and it makes set-piece flatness harder to find, not easier.
 * **Event data, not tracking.** Pressing structure, defensive line height and off-ball runs are only proxied by on-ball events. The levers we could not measure may be the ones that matter. Licensed tracking data (e.g. 2025/26 Premier League) is the obvious next step and could overturn P1/P2.
 * **Quality measure.** Market odds include the effect of a team's habitual style, so "wealth correlation" uses a rating that is not purely about player quality. Transfermarkt squad values were not accessible to our pipeline.
 * **Single seasons.** Cheap-skill reliabilities come from one season per dataset (81 and 98 team-seasons) and differ between datasets.
 * **Season model.** Brentford's set-piece baseline is assumed median. If they are already above median (likely), the headroom is smaller than shown.
 * **Pre-registration wording.** P2's literal criterion could be met by noise. We flag this rather than claim it.
 
-## 10. Reproducibility
+## 11. Reproducibility
 
-Everything runs from `underdog/src/` in this order: `fetch_statsbomb.py`, `odds.py`, `build_segments.py`, `p4_tempo_market.py`, `p4_robust.py`, `p1_heldout.py`, `tactical_changes.py`, `event_study.py`, `p2_policy.py`, `possessions.py`, `channels.py`, `p3_style_market.py`, `theory_vs_p4.py`, `xg_model.py`, `wyscout_replication.py`, `season_sim.py`, `season_sensitivity.py`, `p5_and_city.py`, `leicester.py`, `setpiece_market.py`, `make_figures.py`. Every number in this paper is in `underdog/results/*.json`. The seed for all bootstraps is 20261011.
+Everything runs from `underdog/src/` in this order: `fetch_statsbomb.py`, `odds.py`, `build_segments.py`, `p4_tempo_market.py`, `p4_robust.py`, `p1_heldout.py`, `tactical_changes.py`, `event_study.py`, `p2_policy.py`, `possessions.py`, `channels.py`, `p3_style_market.py`, `theory_vs_p4.py`, `xg_model.py`, `wyscout_replication.py`, `season_sim.py`, `season_sensitivity.py`, `p5_and_city.py`, `leicester.py`, `setpiece_market.py`, then rounds 2–6: `discovery.py search|confirm|ml`, `r3_regains.py build|test`, `r3_weakspots.py`, `r4_structure.py`, `r4_followup.py`, `r4_value.py`, `r5_confirm.py`, `r6_confirm.py`, `r6_bait.py`, `r6_vuln_all.py`, and finally `make_figures.py`. Every number in this paper is in `underdog/results/*.json`. The seed for all bootstraps is 20261011.
 
 *Data: StatsBomb Open Data (attribution required); Pappalardo et al. (2019), "A public data set of spatio-temporal match events in soccer competitions", Scientific Data 6:236; football-data.co.uk.*

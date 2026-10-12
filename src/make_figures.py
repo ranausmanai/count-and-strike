@@ -150,3 +150,41 @@ ax.set_xlim(0, 92); ax.set_xlabel("Points, Premier League 2015/16")
 ax.set_title("Fig 7. Leicester 2015/16: two thirds of the miracle sat above their chances")
 save(f, "fig7_leicester.png")
 print("figures written")
+
+# ---- Fig 8: every pre-registered hypothesis, all rounds ----
+H = [("R1", "P1 style predicts next-segment xG", "fail"), ("R1", "P2 in-match policy ≥0.05 pts (cross-fit)", "fail"),
+     ("R1", "P3 habitual style beats market", "fail"), ("R1", "P4 high-tempo underdogs lose vs market", "pass"),
+     ("R1", "P5 risk-seeking raises title odds", "fail"),
+     ("R2", "3 box-score traits/matchups (BH-selected)", "fail"), ("R2", "ML on 22 style traits beats market", "fail"),
+     ("R3", "Opp. commitment improves regain model", "fail"), ("R3", "Counter value falls if opp. was deep", "fail"),
+     ("R3", "Top 20% regains carry ≥40% of xG", "pass"), ("R3", "Concession profiles persistent", "fail"),
+     ("R3", "Matchup model beats main effects*", "pass"),
+     ("R4", "Structure predicts goals beyond xG", "fail"), ("R4", "Cone density persistent, not bought", "pass"),
+     ("R4", "Over-performance vs xG repeats", "pass"),
+     ("R5", "Cone density → fewer goals (prospective)", "fail"), ("R5", "… on unseen leagues", "fail"), ("R5", "… shot level, unseen", "fail"),
+     ("R6", "Set pieces flatter than open play (unseen)", "pass"), ("R6", "Underdog keeps more set-piece xG (unseen)", "fail"),
+     ("R6", "Counter value rises if opp. was deep (unseen)", "pass")]
+f, ax = plt.subplots(figsize=(6.6, 6.2))
+for i, (r, lab, v) in enumerate(H[::-1]):
+    col = AQUA if v == "pass" else "#d6d5d0"
+    ax.barh(i, 1, color=col, height=0.72)
+    ax.text(0.02, i, f"{r}  {lab}", va="center", fontsize=7.8, color=INK)
+    ax.text(0.98, i, "✓ held" if v == "pass" else "✗", va="center", ha="right", fontsize=8, color=INK, weight="bold" if v == "pass" else "normal")
+ax.set_xlim(0, 1); ax.set_ylim(-0.6, len(H) - 0.4); ax.axis("off")
+ax.set_title(f"Fig 8. {len(H)} pre-registered tests, six rounds: {sum(v=='pass' for _,_,v in H)} held")
+save(f, "fig8_all_tests.png")
+
+# ---- Fig 9: vulnerability window across 4 populations ----
+V = R("r6_vuln_all.json")
+f, ax = plt.subplots(figsize=(6.2, 2.7))
+names = list(V.keys())
+for i, n in enumerate(names[::-1]):
+    v = V[n]; col = ORANGE if "confirmation" in n else BLUE
+    ax.plot([v["lo"], v["hi"]], [i, i], color=col, lw=2.2, solid_capstyle="round"); ax.plot(v["mult"], i, "o", color=col, ms=8, mec="white", mew=1.5)
+    ax.text(v["hi"] + 0.04, i, f"×{v['mult']:.2f}  (n={v['n']:,})", va="center", fontsize=8, color=INK)
+ax.axvline(1, color=INK, lw=0.8)
+ax.set_yticks(range(len(names))); ax.set_yticklabels(names[::-1], fontsize=8.5); ax.set_xlim(0.9, 2.9); ax.grid(True, axis="x")
+ax.set_xlabel("Counter xG multiplier: opponent had reached our box (15 yds) vs stayed in own half (65 yds)\nsame regain spot (36 yds from own goal), score and minute held fixed")
+ax.set_title("Fig 9. 'Break after they commit': the effect holds in four independent populations")
+save(f, "fig9_vulnerability.png")
+print("figs 8-9 written")
