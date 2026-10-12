@@ -35,3 +35,9 @@
 - R3-A (regains, 110k SB + 431k WY): H3a-1 FAIL (opp-commitment adds nothing beyond game state OOS); H3a-2 FAIL as registered, REVERSE replicates in 3 samples (regain after opponent pushed deep ≈1.7× counter xG); H3a-3 pass (top20% carry 42-66%)
 - R3-B: H3b-1 FAIL (WY profiles unreliable); H3b-2 passes literally (+4.9 [1.5,8.5]; +2.5 [0.2,4.6]) but gain = attacker specialisation; DEFENDER weak-spot term null in both → no exploitable weak spots at channel level
 ## Round 4 — does defensive structure beat xG? (PREREGISTRATION_4.md)
+- R4 (freeze frames): H4-1 null (structure already inside SB xG); H4-2 PASS (cone density per shot rel .75, wealth r .07); H4-3 PASS (GA−xGA rel .45/.34) but mostly goalkeeper, partly wealth-linked
+- R5 (confirm cone density, prereg): H5-1 FAIL (p=.28), H5-2 FAIL (wrong sign, unseen WSL/NWSL/ISL), H5-3 FAIL (p=.10) → round-4 candidate dies
+- R6 (confirm on unseen WSL/NWSL/ISL, 577 matches): H6-1 CONFIRMED set pieces flat (0.72 vs 1.02, diff CI [.11,.50]); H6-2 not confirmed (right sign);
+  H6-3 CONFIRMED vulnerability window (p=.004). Same spec in 4 populations: ×1.69, ×1.57, ×1.37, ×1.52 counter xG when opponent had pushed deep (all CIs > 1)
+- Bait check: deep blocks put more regains in the window but NOT more counter xG/match → in-moment decision rule, not a reason to sit deeper
+- NEXT: paper v2 (all rounds), figs 8-9

@@ -12,10 +12,7 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 PROC = os.path.join(ROOT, "data", "proc")
 
 
-def main():
-    ev = pd.read_parquet(os.path.join(PROC, "events.parquet"),
-                         columns=["match_id", "idx", "period", "t", "type", "team", "poss", "poss_team", "pattern",
-                                  "x", "y", "xg", "outcome", "sub", "league"])
+def build_possessions(ev):
     ev = ev[ev.period <= 2].sort_values(["match_id", "idx"])
     own = ev[ev.team == ev.poss_team]
     first = own.groupby(["match_id", "poss"]).first()
@@ -44,7 +41,14 @@ def main():
     ch[(pat == "From Corner").values & quick] = "corner"
     ch[p.pen.values] = "penalty"
     p["channel"] = ch
-    p = p.reset_index()
+    return p.reset_index()
+
+
+def main():
+    ev = pd.read_parquet(os.path.join(PROC, "events.parquet"),
+                         columns=["match_id", "idx", "period", "t", "type", "team", "poss", "poss_team", "pattern",
+                                  "x", "y", "xg", "outcome", "sub", "league"])
+    p = build_possessions(ev)
     p.to_parquet(os.path.join(PROC, "possessions.parquet"))
     print(p.channel.value_counts())
     print(p.groupby("channel")[["xg", "goals", "n_shots"]].sum())
