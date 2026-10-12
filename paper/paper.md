@@ -11,6 +11,7 @@
 We set out to find a tactic that lets a weaker football team, such as Brentford, beat stronger ones. Over nine rounds we pre-registered and tested 28 hypotheses. The data were event data for 3,954 matches across four independent populations (StatsBomb big-five 2015/16, Wyscout big-five 2017/18, unseen StatsBomb WSL/NWSL/ISL) and closing odds for 45,825 matches.
 
 **Almost every candidate died.** The casualties include:
+
 * in-game style knobs and coaching changes;
 * optimised in-match policies (whose in-sample gains were 3× the honest ones);
 * box-score style traits and style matchups against the betting market, including a machine-learning search;
@@ -21,10 +22,12 @@ We set out to find a tactic that lets a weaker football team, such as Brentford,
 * referee adaptation.
 
 **Two patterns survived everything.**
+
 1. **Set pieces are where quality matters least.** Set-piece xG elasticity to team strength is 0.41/0.28/0.72, against 1.09/0.89/1.02 for open play, in three independent datasets.
 2. **"Break after they commit."** At the same regain spot, score and minute, a regain made right after the opponent had pushed into your box yields 1.4–1.7× the counter xG. This held in all four populations, every 95% CI above 1.
 
 **Round 10 explains the graveyard, and that is our main contribution.** Football tactics live in a **low-power regime**:
+
 * detecting a corner routine 20% better needs 15 seasons of one club's corners;
 * a match-level tactic worth +0.1 points per match (≈4 points a season, which is large) needs 57 club-seasons of results.
 

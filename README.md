@@ -1,8 +1,12 @@
-# Project Underdog
+# Project Underdog — Football's Tactics Problem Is a Power Problem
 
 **Can tactics make player quality matter less?** An autonomous research run (11–12 Oct 2026): six pre-registered rounds, 21 tests, 4 independent data populations looking for a tactical policy that lets a weak team (Brentford) consistently outperform stronger squads.
 
 📄 Paper: [`paper/underdog_paper.pdf`](paper/underdog_paper.pdf) (source [`paper/paper.md`](paper/paper.md)) · 🧾 [`PREREGISTRATION.md`](PREREGISTRATION.md) · [`DEVIATIONS.md`](DEVIATIONS.md)
+
+## Main contribution (round 10)
+
+Tactical effects worth points are an order of magnitude below what any club's history can detect. A +20% corner routine needs 15 club-seasons; a +0.1 pts/match tactic needs 57. That is why 26 of 28 pre-registered tactical hypotheses failed. Validated **surrogate endpoints** fix part of this: 'final third within 10 s of a regain' cuts the sample needed tenfold. With them, a club can run randomised tactical trials (protocol in §10.3 of the paper).
 
 ## Confirmed on unseen leagues (round 6)
 
