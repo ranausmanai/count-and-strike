@@ -26,3 +26,9 @@
   (set-piece flatness replicates; counter-elasticity claim withdrawn), set-piece market test (null), figures, paper PDF.
 - Possible next steps: licensed tracking data to re-test P1/P2; Transfermarkt squad values for a cleaner wealth axis;
   more seasons of event data for cheap-skill reliability.
+
+## Round 2 (2026-10-12) — discovery engine, out-of-time lock (PREREGISTRATION_2.md, commit 56a3532)
+- Discovery 2005-16 (19,605 underdog matches): positive control reproduced; BH shortlist = F:shots_for, F:shots_against, U:yellows×F:fouls_won
+- Holdout 2017-25 (15,818): NONE confirmed (all shrank ~85-95% toward 0). ML arm: holdout gain −0.0011 (CI −0.0024..+0.0002) → null
+- Conclusion: post-2017 market prices all box-score style info. Edges must come from finer-grained (event) information.
+## Round 3 — counter-attack vulnerability windows + opponent weak-spot matchups (PREREGISTRATION_3.md)

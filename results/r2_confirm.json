@@ -1,0 +1,85 @@
+{
+ "n": 15818,
+ "primary": [
+  {
+   "test": "F:shots_for",
+   "outcome": "y_gd",
+   "disc_coef": -0.05862776214885142,
+   "hold_coef": -0.009566836365274532,
+   "hold_se": 0.015150314724770297,
+   "p_one_sided": 0.2638694958464775,
+   "holm_threshold": 0.016666666666666666,
+   "confirmed": false
+  },
+  {
+   "test": "U:yellows x F:fouls_won",
+   "outcome": "y_gd",
+   "disc_coef": -0.038088306489291866,
+   "hold_coef": -0.004636044723421048,
+   "hold_se": 0.013715251491957884,
+   "p_one_sided": 0.36767363460180075,
+   "holm_threshold": 0.025,
+   "confirmed": false
+  },
+  {
+   "test": "F:shots_against",
+   "outcome": "y_gd",
+   "disc_coef": 0.04482453508007905,
+   "hold_coef": 0.002329375722618599,
+   "hold_se": 0.014605564258668888,
+   "p_one_sided": 0.4366431906037341,
+   "holm_threshold": 0.05,
+   "confirmed": false
+  }
+ ],
+ "all": [
+  {
+   "test": "F:shots_for",
+   "outcome": "y_gd",
+   "disc_coef": -0.05862776214885142,
+   "hold_coef": -0.009566836365274532,
+   "hold_se": 0.015150314724770297,
+   "p_one_sided": 0.2638694958464775
+  },
+  {
+   "test": "F:shots_for",
+   "outcome": "y_pts",
+   "disc_coef": -0.05862776214885142,
+   "hold_coef": -0.00191587982260493,
+   "hold_se": 0.010027635547163297,
+   "p_one_sided": 0.4242393016238333
+  },
+  {
+   "test": "F:shots_against",
+   "outcome": "y_gd",
+   "disc_coef": 0.04482453508007905,
+   "hold_coef": 0.002329375722618599,
+   "hold_se": 0.014605564258668888,
+   "p_one_sided": 0.4366431906037341
+  },
+  {
+   "test": "F:shots_against",
+   "outcome": "y_pts",
+   "disc_coef": 0.04482453508007905,
+   "hold_coef": -0.008679623057151302,
+   "hold_se": 0.01030996165503044,
+   "p_one_sided": 0.8000689764526432
+  },
+  {
+   "test": "U:yellows x F:fouls_won",
+   "outcome": "y_gd",
+   "disc_coef": -0.038088306489291866,
+   "hold_coef": -0.004636044723421048,
+   "hold_se": 0.013715251491957884,
+   "p_one_sided": 0.36767363460180075
+  },
+  {
+   "test": "U:yellows x F:fouls_won",
+   "outcome": "y_pts",
+   "disc_coef": -0.038088306489291866,
+   "hold_coef": -0.0027094353075716956,
+   "hold_se": 0.009440360469480238,
+   "p_one_sided": 0.38705405727123804
+  }
+ ]
+}
