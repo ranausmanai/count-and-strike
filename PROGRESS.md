@@ -45,3 +45,7 @@
 - H7-1: trailing-team xG escalation 45-60 → 75+ is only +10-12% (CIs include 0 in SB15 & WY; negative in SB2)
 - H7-2 invalid: late "all-in" multipliers have trailing team conceding LESS (×0.67-0.87) → reflects leader's passivity (pre-registered confound). Gains 0.008-0.025, below threshold in 2/3
 ## Round 8 — dead-ball decision audit (PREREGISTRATION_8.md)
+## Round 8 — dead-ball audit: confirmed on the letter, KILLED by registered selection checks
+- Shortlist: corner→penalty-spot area (×1.41 disc, ×1.18 conf 3/3) and long throw into box (×1.67, ×2.25 conf 3/3)
+- Same-location throws: effect ≈ 0 in all 4 populations (location confound). Corners with team FE: discovery sign flips (−0.33), confirmation mixed → not robust
+## Round 9 — referee natural experiment (PREREGISTRATION_9.md)
