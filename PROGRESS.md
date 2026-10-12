@@ -32,3 +32,6 @@
 - Holdout 2017-25 (15,818): NONE confirmed (all shrank ~85-95% toward 0). ML arm: holdout gain −0.0011 (CI −0.0024..+0.0002) → null
 - Conclusion: post-2017 market prices all box-score style info. Edges must come from finer-grained (event) information.
 ## Round 3 — counter-attack vulnerability windows + opponent weak-spot matchups (PREREGISTRATION_3.md)
+- R3-A (regains, 110k SB + 431k WY): H3a-1 FAIL (opp-commitment adds nothing beyond game state OOS); H3a-2 FAIL as registered, REVERSE replicates in 3 samples (regain after opponent pushed deep ≈1.7× counter xG); H3a-3 pass (top20% carry 42-66%)
+- R3-B: H3b-1 FAIL (WY profiles unreliable); H3b-2 passes literally (+4.9 [1.5,8.5]; +2.5 [0.2,4.6]) but gain = attacker specialisation; DEFENDER weak-spot term null in both → no exploitable weak spots at channel level
+## Round 4 — does defensive structure beat xG? (PREREGISTRATION_4.md)
