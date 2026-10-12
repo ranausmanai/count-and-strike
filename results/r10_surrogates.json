@@ -1,0 +1,53 @@
+{
+ "regain": {
+  "xg_units_r1.2": 22311.53664904251,
+  "ft10": {
+   "rate": 0.20247433437051668,
+   "units_needed_r1_2": 1545.7966694997622,
+   "club_seasons_r1_2": 0.7062302035360755,
+   "xg_ratio_success_vs_fail": 7.581500144326339,
+   "share_of_xg_in_success": 0.6580936115104751,
+   "r_surrogate_odd_vs_xg_even": 0.27441160098332784,
+   "r_xg_odd_vs_xg_even": 0.3137357249491409
+  },
+  "box20": {
+   "rate": 0.11718618993497419,
+   "units_needed_r1_2": 2956.448804619296,
+   "club_seasons_r1_2": 1.3507167418765058,
+   "xg_ratio_success_vs_fail": 49.08979807976302,
+   "share_of_xg_in_success": 0.866955149771358,
+   "r_surrogate_odd_vs_xg_even": 0.2807892449723452,
+   "r_xg_odd_vs_xg_even": 0.3137357249491409
+  },
+  "shot20": {
+   "rate": 0.049440107320526915,
+   "units_needed_r1_2": 7545.321685456087,
+   "club_seasons_r1_2": 3.4472412671126125,
+   "xg_ratio_success_vs_fail": 1558.3824774770394,
+   "share_of_xg_in_success": 0.9878128904774667,
+   "r_surrogate_odd_vs_xg_even": 0.1728259702429819,
+   "r_xg_odd_vs_xg_even": 0.3137357249491409
+  }
+ },
+ "corner": {
+  "xg_units_r1.2": 2722.7823694912217,
+  "first_contact": {
+   "rate": 0.45338817077947513,
+   "units_needed_r1_2": 473.1365731872203,
+   "club_seasons_r1_2": 2.490192490459054,
+   "xg_ratio_success_vs_fail": 1.2200771751428305,
+   "share_of_xg_in_success": 0.5029809266920922,
+   "r_surrogate_odd_vs_xg_even": -0.18834312206712672,
+   "r_xg_odd_vs_xg_even": 0.2886315793285177
+  },
+  "shot20": {
+   "rate": 0.3432562997780389,
+   "units_needed_r1_2": 750.8532724187127,
+   "club_seasons_r1_2": 3.9518593285195402,
+   "xg_ratio_success_vs_fail": 99213438.08526056,
+   "share_of_xg_in_success": 1.0,
+   "r_surrogate_odd_vs_xg_even": 0.20743979791774828,
+   "r_xg_odd_vs_xg_even": 0.2886315793285177
+  }
+ }
+}

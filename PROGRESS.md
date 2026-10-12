@@ -49,3 +49,10 @@
 - Shortlist: corner→penalty-spot area (×1.41 disc, ×1.18 conf 3/3) and long throw into box (×1.67, ×2.25 conf 3/3)
 - Same-location throws: effect ≈ 0 in all 4 populations (location confound). Corners with team FE: discovery sign flips (−0.33), confirmation mixed → not robust
 ## Round 9 — referee natural experiment (PREREGISTRATION_9.md)
+- R9 referees: NULL in discovery and confirmation (H9-1 +0.011/+0.024; H9-2 wrong sign; H9-3 null); assignment unrelated to gap
+## Round 10 — power + surrogate endpoints (the constructive thesis)
+- Power: a +20% corner routine needs 15 club-seasons (0.7 league-season); a +0.1 pts/match tactic needs 57 club-seasons → football tactics live in a low-power regime (explains all observational nulls)
+- Surrogate 'final-third entry ≤10 s' after regains: 20% rate, 66% of regain xG, team-level predictive validity r=.27 (xG itself .31); needs 0.7 club-seasons for +20% (10× fewer than xG)
+- Corners: 'first contact' surrogate INVALID (r=−.19); corners need consortium
+- Window effect visible in surrogate: OR 1.47 [1.36,1.59] SB15; 1.26 [1.08,1.47] unseen → testable by one club within ~1-1.5 seasons
+- NEXT: paper v3 (thesis: tactics problem = power problem; trial protocol)

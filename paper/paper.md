@@ -1,29 +1,36 @@
-# Project Underdog: Can Tactics Make Quality Matter Less?
+# Football's Tactics Problem Is a Power Problem
 
-### Six pre-registered rounds, 21 tests, two confirmed tactical patterns
+### Project Underdog: ten pre-registered rounds, 28 tests, two surviving tactics, and how one club could prove them in a season
 
-*Autonomous research run, 11–12 October 2026. Every round was pre-registered in git before its data were analysed (`PREREGISTRATION*.md`, commits `d94684e`, `56a3532` and later). Deviations are logged in `DEVIATIONS.md`.*
+*Autonomous research run, 11–12 October 2026. Every round was pre-registered in git before its data were analysed (`PREREGISTRATION*.md`). Deviations are logged in `DEVIATIONS.md`.*
 
 ---
 
 ## Abstract
 
-We asked whether a weaker football team can systematically change the *structure* of a match so that player quality matters less, and what that would be worth to a club like Brentford. Over six pre-registered rounds we tested 21 hypotheses. The data were event data for 3,954 matches across four independent populations (StatsBomb big-five 2015/16, Wyscout big-five 2017/18, and unseen StatsBomb WSL/NWSL/ISL seasons), plus closing odds for 45,825 matches. Every candidate had to survive an out-of-sample, out-of-time or out-of-population test whose direction was fixed in advance.
+We set out to find a tactic that lets a weaker football team, such as Brentford, beat stronger ones. Over nine rounds we pre-registered and tested 28 hypotheses. The data were event data for 3,954 matches across four independent populations (StatsBomb big-five 2015/16, Wyscout big-five 2017/18, unseen StatsBomb WSL/NWSL/ISL) and closing odds for 45,825 matches.
 
-**Most ideas died.**
-* In-match style knobs and coaching changes did not move chance rates beyond what score and minute already explain.
-* An optimised in-match policy gained nothing once scored on data it was not tuned on.
-* No style trait or style matchup built from box-score data (shots, fouls, corners, cards) beat the betting market after 2017. That includes a machine-learning search over 22 traits.
-* Opponents' channel-specific "weak spots" did not predict anything.
-* A promising defensive-structure trait ("cone density") failed all three confirmation tests.
+**Almost every candidate died.** The casualties include:
+* in-game style knobs and coaching changes;
+* optimised in-match policies (whose in-sample gains were 3× the honest ones);
+* box-score style traits and style matchups against the betting market, including a machine-learning search;
+* opponent "weak spots";
+* defensive cone density (strong in-sample, p = 0.026; failed all three confirmations);
+* "chase earlier" timing;
+* corner targets and long throws, which passed confirmation on the letter and then dissolved under same-location and within-team controls;
+* referee adaptation.
 
-**Two tactical patterns survived confirmation on unseen leagues.**
-1. **Set pieces are where quality matters least.** Set-piece xG is far less sensitive to team strength than open-play xG. The elasticity was 0.41 vs 1.09 (StatsBomb), 0.28 vs 0.89 (Wyscout), and 0.72 vs 1.02 on unseen leagues (difference CI [0.11, 0.50]).
-2. **"Break after they commit."** At the same regain spot, score and minute, a regain made after the opponent had pushed into our box yields **1.4–1.7× more counter-attack xG** than one made while they were still in their own half. All four populations agree: ×1.69, ×1.57, ×1.37, ×1.52, every 95% CI above 1.
+**Two patterns survived everything.**
+1. **Set pieces are where quality matters least.** Set-piece xG elasticity to team strength is 0.41/0.28/0.72, against 1.09/0.89/1.02 for open play, in three independent datasets.
+2. **"Break after they commit."** At the same regain spot, score and minute, a regain made right after the opponent had pushed into your box yields 1.4–1.7× the counter xG. This held in all four populations, every 95% CI above 1.
 
-Round 1 also found a modest, fading market effect: high-tempo underdogs underperform the closing market, by 0.007 points per habitual shot.
+**Round 10 explains the graveyard, and that is our main contribution.** Football tactics live in a **low-power regime**:
+* detecting a corner routine 20% better needs 15 seasons of one club's corners;
+* a match-level tactic worth +0.1 points per match (≈4 points a season, which is large) needs 57 club-seasons of results.
 
-What tactics are worth is bounded. For Brentford at 2025/26 strength, every evidence-backed lever together is worth **+1.8 to +4.5 points a season**: top-four odds rise from 3% to 5–9%, and title odds stay at or below 0.15%. The project's answer: there *are* structures in which quality matters less, and repeatable moments when a stronger team is vulnerable. They are worth a few points a season, not a title.
+Every club's history, and every observational "insight" mined from it, is drowned in noise and selection. That is why football never had its fourth-down or three-point moment.
+
+**The way out is the clinical-trial playbook: randomise, and measure a validated surrogate endpoint.** For transitions, "reached the final third within 10 seconds of winning the ball" captures 66% of regain xG. It predicts a team's future chance creation almost as well as xG itself (r = 0.27 vs 0.31), and it cuts the sample needed **tenfold**. A 20% better transition rule becomes detectable in **0.7 club-seasons**. The "break after they commit" effect is already visible in that surrogate (odds ratio 1.47 [1.36, 1.59]; unseen leagues 1.26 [1.08, 1.47]). A general transition rule can be tested by one club in under a season. The specific 'break after they commit' rule needs about two seasons for one club, or under one for a three-club consortium. We give the protocol.
 
 ---
 
@@ -243,14 +250,78 @@ The same 577 unseen matches. Team strength was measured as leave-this-match-out 
 
 It is an **in-the-moment decision rule**, not a style. Teams that defend deeper do win more of their balls in this window (+4 pp of regains per SD of block depth, p < 10⁻¹²). But they do not create more counter xG per match, because those regains happen nearer their own goal (`results/r6_bait.json`). So the lever is *what you do with the ball* after the opponent has over-committed: release runners and play forward immediately. Sitting deeper to provoke it is not the lever.
 
-## 9. What this means
+## 9. Part III: three more "football is doing it wrong" hypotheses that died
 
-1. **Two things a weaker team can reliably use.** (a) *Dead balls*: set-piece xG is only about a third to two-thirds as sensitive to team strength as open play, in all four populations. The 90th-percentile set-piece team gains about 2–3 points a season. (b) *The vulnerability window*: when the ball is won just after the opponent has over-committed, the counter is worth about 1.5×. That makes it a trigger for transition, coachable as a rule ("if they were in our box, go").
-2. **What does not work, measured:** steering a match with in-game style changes; out-building stronger teams (build-up is the steepest channel, and underdogs keep 30–32% of its xG); scouting opponents' channel-specific weak spots; risk-seeking for titles. Neither box-score style traits nor style matchups beat the market after 2017.
-3. **Simulators flatter tactics.** In-sample policy gains were about 3× the honest cross-fitted gain, and an apparently strong post-hoc structural trait failed every confirmation. Any AI tactical system that reports in-sample gains is likely overstating them.
-4. **For a title, tactics are not the binding constraint.** Every evidence-backed lever together moves Brentford's title probability from 0.03% to 0.15%. A title-level season needs roughly +40% attacking quality *and* Leicester-style finishing luck. Leicester 2015/16 had 18 points above their own chance quality.
+**Round 7: do teams chase too late?** (football's "pull the goalie" question)
+* Trailing teams barely escalate: own xG rises only +10–12% from 45–60' to 75'+, and the CIs include 0 in all three populations.
+* Late in matches a trailing team also *concedes less* (×0.67–0.87), because the leader stops attacking. Any "go all-in earlier" policy built on late-game rates therefore borrows the opponent's passivity. That is the confound we registered in advance, and it invalidates the timing optimisation.
 
-## 10. Limitations
+**Round 8: the dead-ball decision audit** (338k corners, free kicks and throw-ins).
+* Discovery flagged two "misallocations": corners delivered to the penalty-spot area (×1.41 xG vs near-post) and long throws into the box (×1.67 vs short).
+* Both **confirmed on the letter** in all three held-out populations (×1.18 and ×2.25, p < 0.0001).
+* Both **dissolved** under the selection checks we had registered. Compared at the same throw location, long throws are worth nothing extra (−0.18, +0.27, +0.04, −0.01 log-points). For corners, comparing each team with itself flips the discovery sign.
+* This is the clearest demonstration in the project of how convincing, replicated, *wrong* tactical findings arise.
+
+**Round 9: referees as a natural experiment.** Teams do not choose the referee, so strictness is quasi-random. Over 7,000 EPL matches, referee strictness had no effect on underdog results against the market (discovery +0.011 ± 0.024, confirmation +0.024 ± 0.030), no interaction with underdog fouling, and no effect on total goals.
+
+![](../figures/fig8_all_tests.png)
+
+*† passed the registered confirmation, then failed the registered selection checks.*
+
+## 10. Part IV: why the graveyard, and the way out
+
+### 10.1 The power problem
+
+From the observed outcome variances we computed the number of decisions needed to detect a tactic with 80% power (`results/r10_power.json`).
+
+| A tactic that improves… | by | needs | = seasons of one club | = seasons of a 20-club league |
+|---|---|---|---|---|
+| corners (xG per corner) | 20% | 2,823 corners | 14.9 | 0.74 |
+| attacking free kicks | 20% | 1,817 | 15.9 | 0.80 |
+| attacking throw-ins | 20% | 11,740 | 34.3 | 1.7 |
+| transitions (xG per regain) | 20% | 20,335 regains | 7.4 | 0.37 |
+| the match (points vs market) | +0.1 pts/match | 2,176 matches | 57 | 2.9 |
+
+A tactic worth four points a season, enough to change a mid-table club's year, is undetectable in a decade of its own results. Almost all of the variance in a decision's outcome sits *within* a match (72–98%), so pairing decisions within matches barely helps. This is why observational mining fails: real effects are too small relative to noise, and anything large enough to see is usually selection.
+
+### 10.2 Surrogate endpoints
+
+Medicine's answer to rare outcomes is to measure a frequent outcome that sits on the causal path. For transitions:
+
+| Surrogate after a regain (not already in the final third) | Rate | Share of regain xG | Team-level validity* | Club-seasons for +20% |
+|---|---|---|---|---|
+| xG itself | — | 100% | 0.31 | 7.4 |
+| shot within 20 s | 4.9% | 99% | 0.17 | 3.4 |
+| box entry within 20 s | 11.7% | 87% | 0.28 | 1.4 |
+| **final third within 10 s** | **20.2%** | **66%** | **0.27** | **0.7** |
+
+\*Correlation of the surrogate rate in a team's odd matches with its xG per regain in its even matches.
+
+For corners, "won the first contact" fails as a surrogate (validity −0.19). Corner experiments need multi-club pooling.
+
+![](../figures/fig10_power.png)
+
+The confirmed vulnerability effect is visible in the surrogate. After the opponent had pushed into the box, the odds of reaching the final third within 10 s are 1.47× higher [1.36, 1.59] in StatsBomb 2015/16, and 1.26× [1.08, 1.47] in the unseen leagues (`results/r10_window_surrogate.json`).
+
+### 10.3 A trial a single club could run this season
+
+*The Underdog Transition Trial.*
+* **Intervention:** a "go rule". When the ball is won in our own half within ~5 s of the opponent having been inside our final third, at least two players sprint forward and the first pass must be forward.
+* **Control:** the club's normal transition behaviour.
+* **Randomisation:** by match (or by half, with a pre-match signal), stratified by opponent strength.
+* **Primary endpoint:** final-third entry within 10 s per qualifying regain.
+* **Secondary endpoints:** xG within 20 s, and counter xG conceded within 30 s (the cost side, which history cannot measure).
+
+Sample size, from the data: a club has about 21 qualifying regains per match (won in its own half after the opponent had been in its final third). In these, the 10-second final-third rate is 10.9%. Detecting a relative uplift of +20% / +30% / +50% needs about 3,200 / 1,420 / 510 qualifying regains. That is **4.0 / 1.8 / 0.6 seasons** for one club, or a third of that for a three-club consortium. Historically, the deep-vs-shallow contrast moves the surrogate's odds by +26–47%. An intervention that captures part of that is detectable by a single club in about two seasons, or by a small consortium in under one. A *general* transition rule applied to all regains needs only 0.7 club-seasons for +20% (§10.2).
+
+## 11. What this means
+
+1. **What a weaker team can use today:** dead balls, where quality matters a third to two-thirds as much as in open play, and the vulnerability window ("if they were in our box when we won it, go"). Both were confirmed in four populations. Together with the round-1 levers they are worth a few points a season: Brentford's top-four odds move from 3% to 5–9%, and title odds stay at or below 0.15%.
+2. **What does not work, measured:** steering matches with in-game style changes; out-building better teams; scouting channel weak spots; risk-seeking for titles; chasing earlier; long-throw and corner-target "hacks"; adapting to referees. Neither box-score style nor style matchups beat the market after 2017.
+3. **Why football has not had its data revolution, and how it could:** tactical effects worth points are an order of magnitude below what any club's history can detect. Observational mining therefore produces confident false discoveries. In this project, four candidates passed at least one stage and then died. The fix is not more data mining or bigger AI simulators. It is **randomised tactical trials with validated surrogate endpoints**, which make a single-club, single-season test feasible for transition tactics.
+4. **The sports-changing claim we are prepared to make:** the first club that runs tactics as experiments, not as opinions or as mined history, gains a learning speed no rival can match from data alone. Our trial protocol shows that this is feasible now.
+
+## 12. Limitations
 
 * **Identification.** Every frontier is observational. Lagging, game-state control, like-for-like control groups and cross-fitting reduce but cannot remove confounding. A coach-run controlled trial (milestone 4 in the brief) is the only clean test.
 * **Unseen-league strength.** WSL/NWSL/ISL have no odds, so round 6 uses leave-one-out xG strength. That is noisier, and it makes set-piece flatness harder to find, not easier.
@@ -258,10 +329,11 @@ It is an **in-the-moment decision rule**, not a style. Teams that defend deeper 
 * **Quality measure.** Market odds include the effect of a team's habitual style, so "wealth correlation" uses a rating that is not purely about player quality. Transfermarkt squad values were not accessible to our pipeline.
 * **Single seasons.** Cheap-skill reliabilities come from one season per dataset (81 and 98 team-seasons) and differ between datasets.
 * **Season model.** Brentford's set-piece baseline is assumed median. If they are already above median (likely), the headroom is smaller than shown.
+* **Surrogate validity is observational.** Team-level predictive validity does not guarantee that an intervention moving the surrogate moves goals. The trial must track xG as a secondary endpoint, and pooled trials must validate the surrogate.
 * **Pre-registration wording.** P2's literal criterion could be met by noise. We flag this rather than claim it.
 
-## 11. Reproducibility
+## 13. Reproducibility
 
-Everything runs from `underdog/src/` in this order: `fetch_statsbomb.py`, `odds.py`, `build_segments.py`, `p4_tempo_market.py`, `p4_robust.py`, `p1_heldout.py`, `tactical_changes.py`, `event_study.py`, `p2_policy.py`, `possessions.py`, `channels.py`, `p3_style_market.py`, `theory_vs_p4.py`, `xg_model.py`, `wyscout_replication.py`, `season_sim.py`, `season_sensitivity.py`, `p5_and_city.py`, `leicester.py`, `setpiece_market.py`, then rounds 2–6: `discovery.py search|confirm|ml`, `r3_regains.py build|test`, `r3_weakspots.py`, `r4_structure.py`, `r4_followup.py`, `r4_value.py`, `r5_confirm.py`, `r6_confirm.py`, `r6_bait.py`, `r6_vuln_all.py`, and finally `make_figures.py`. Every number in this paper is in `underdog/results/*.json`. The seed for all bootstraps is 20261011.
+Everything runs from `underdog/src/` in this order: `fetch_statsbomb.py`, `odds.py`, `build_segments.py`, `p4_tempo_market.py`, `p4_robust.py`, `p1_heldout.py`, `tactical_changes.py`, `event_study.py`, `p2_policy.py`, `possessions.py`, `channels.py`, `p3_style_market.py`, `theory_vs_p4.py`, `xg_model.py`, `wyscout_replication.py`, `season_sim.py`, `season_sensitivity.py`, `p5_and_city.py`, `leicester.py`, `setpiece_market.py`, then rounds 2–10: `discovery.py search|confirm|ml`, `r3_regains.py build|test`, `r3_weakspots.py`, `r4_structure.py`, `r4_followup.py`, `r4_value.py`, `r5_confirm.py`, `r6_confirm.py`, `r6_bait.py`, `r6_vuln_all.py`, `r7_segments.py`, `r7_chase.py`, `r8_deadballs.py build|audit`, `r8_robust.py`, `r9_referees.py discovery|confirm`, `r10_power.py`, `r10_surrogates.py`, `r10_window_surrogate.py`, and finally `make_figures.py`. Every number in this paper is in `underdog/results/*.json`. The seed for all bootstraps is 20261011.
 
 *Data: StatsBomb Open Data (attribution required); Pappalardo et al. (2019), "A public data set of spatio-temporal match events in soccer competitions", Scientific Data 6:236; football-data.co.uk.*

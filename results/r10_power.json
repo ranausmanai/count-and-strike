@@ -1,0 +1,71 @@
+{
+ "corner": {
+  "mean": 0.03297580123994315,
+  "sd": 0.08844945223527342,
+  "within_match_var_share": 0.8948977394917382,
+  "per_team_match": 5.0,
+  "units_needed_r1.1": 11293.726132952612,
+  "club_seasons_r1.1": 59.440663857645326,
+  "league_seasons_r1.1": 2.9720331928822663,
+  "units_needed_r1.2": 2823.4315332381593,
+  "club_seasons_r1.2": 14.860165964411365,
+  "league_seasons_r1.2": 0.7430082982205682,
+  "units_needed_r1.5": 451.74904531810535,
+  "club_seasons_r1.5": 2.3776265543058175,
+  "league_seasons_r1.5": 0.11888132771529088
+ },
+ "attacking free kick": {
+  "mean": 0.039429214947368424,
+  "sd": 0.08483034138668409,
+  "within_match_var_share": 0.7220837697371943,
+  "per_team_match": 3.0,
+  "units_needed_r1.1": 7266.141306258548,
+  "club_seasons_r1.1": 63.73808163384691,
+  "league_seasons_r1.1": 3.1869040816923455,
+  "units_needed_r1.2": 1816.5353265646409,
+  "club_seasons_r1.2": 15.934520408461761,
+  "league_seasons_r1.2": 0.796726020423088,
+  "units_needed_r1.5": 290.6456522503424,
+  "club_seasons_r1.5": 2.5495232653538804,
+  "league_seasons_r1.5": 0.12747616326769404
+ },
+ "attacking throw-in": {
+  "mean": 0.008307574226963207,
+  "sd": 0.04543779742450619,
+  "within_match_var_share": 0.929261315170265,
+  "per_team_match": 9.0,
+  "units_needed_r1.1": 46959.53108361126,
+  "club_seasons_r1.1": 137.30857041991598,
+  "league_seasons_r1.1": 6.865428520995798,
+  "units_needed_r1.2": 11739.882770902841,
+  "club_seasons_r1.2": 34.327142604979066,
+  "league_seasons_r1.2": 1.7163571302489533,
+  "units_needed_r1.5": 1878.3812433444532,
+  "club_seasons_r1.5": 5.492342816796647,
+  "league_seasons_r1.5": 0.27461714083983235
+ },
+ "open-play regain": {
+  "mean": 0.0056950383519629826,
+  "sd": 0.0409944898501293,
+  "within_match_var_share": 0.9842086174626126,
+  "per_team_match": 72.0,
+  "units_needed_r1.1": 81338.34595548663,
+  "club_seasons_r1.1": 29.72892761530944,
+  "league_seasons_r1.1": 1.486446380765472,
+  "units_needed_r1.2": 20334.586488871704,
+  "club_seasons_r1.2": 7.432231903827377,
+  "league_seasons_r1.2": 0.3716115951913689,
+  "units_needed_r1.5": 3253.533838219472,
+  "club_seasons_r1.5": 1.1891571046123801,
+  "league_seasons_r1.5": 0.059457855230619
+ },
+ "match-level tactic (points vs market)": {
+  "sd_points_resid": 1.1772377608657052,
+  "matches_needed_0.05pts": 8702.13927157271,
+  "club_seasons_0.05pts": 229.0036650413871,
+  "matches_needed_0.1pts": 2175.5348178931777,
+  "club_seasons_0.1pts": 57.25091626034678,
+  "matches_needed_0.2pts": 543.8837044732944,
+  "club_seasons_0.2pts": 14.312729065086694
+ }
+}

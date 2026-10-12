@@ -163,15 +163,19 @@ H = [("R1", "P1 style predicts next-segment xG", "fail"), ("R1", "P2 in-match po
      ("R4", "Over-performance vs xG repeats", "pass"),
      ("R5", "Cone density → fewer goals (prospective)", "fail"), ("R5", "… on unseen leagues", "fail"), ("R5", "… shot level, unseen", "fail"),
      ("R6", "Set pieces flatter than open play (unseen)", "pass"), ("R6", "Underdog keeps more set-piece xG (unseen)", "fail"),
-     ("R6", "Counter value rises if opp. was deep (unseen)", "pass")]
-f, ax = plt.subplots(figsize=(6.6, 6.2))
+     ("R6", "Counter value rises if opp. was deep (unseen)", "pass"),
+     ("R7", "Trailing teams escalate late", "fail"), ("R7", "Teams chase too late ('pull the goalie')", "fail"),
+     ("R8", "Corners to penalty spot beat near post†", "fail"), ("R8", "Long throws into box beat short†", "fail"),
+     ("R9", "Strict referees hurt underdogs", "fail"), ("R9", "… especially foul-heavy underdogs", "fail"),
+     ("R9", "Referee strictness shifts total goals", "fail")]
+f, ax = plt.subplots(figsize=(6.6, 7.6))
 for i, (r, lab, v) in enumerate(H[::-1]):
     col = AQUA if v == "pass" else "#d6d5d0"
     ax.barh(i, 1, color=col, height=0.72)
     ax.text(0.02, i, f"{r}  {lab}", va="center", fontsize=7.8, color=INK)
     ax.text(0.98, i, "✓ held" if v == "pass" else "✗", va="center", ha="right", fontsize=8, color=INK, weight="bold" if v == "pass" else "normal")
 ax.set_xlim(0, 1); ax.set_ylim(-0.6, len(H) - 0.4); ax.axis("off")
-ax.set_title(f"Fig 8. {len(H)} pre-registered tests, six rounds: {sum(v=='pass' for _,_,v in H)} held")
+ax.set_title(f"Fig 8. {len(H)} pre-registered tests, nine rounds: {sum(v=='pass' for _,_,v in H)} held")
 save(f, "fig8_all_tests.png")
 
 # ---- Fig 9: vulnerability window across 4 populations ----
@@ -188,3 +192,25 @@ ax.set_xlabel("Counter xG multiplier: opponent had reached our box (15 yds) vs s
 ax.set_title("Fig 9. 'Break after they commit': the effect holds in four independent populations")
 save(f, "fig9_vulnerability.png")
 print("figs 8-9 written")
+
+# ---- Fig 10: club-seasons needed to detect a +20% tactical effect ----
+P = R("r10_power.json"); Sg = R("r10_surrogates.json")
+rows = [("Corner routine — xG", P["corner"]["club_seasons_r1.2"], GRAY),
+        ("Corner routine — shot ≤20 s", Sg["corner"]["shot20"]["club_seasons_r1_2"], BLUE),
+        ("Free-kick option — xG", P["attacking free kick"]["club_seasons_r1.2"], GRAY),
+        ("Throw-in option — xG", P["attacking throw-in"]["club_seasons_r1.2"], GRAY),
+        ("Transition rule — xG", P["open-play regain"]["club_seasons_r1.2"], GRAY),
+        ("Transition rule — box entry ≤20 s", Sg["regain"]["box20"]["club_seasons_r1_2"], BLUE),
+        ("Transition rule — final third ≤10 s", Sg["regain"]["ft10"]["club_seasons_r1_2"], AQUA),
+        ("Match-level tactic, +0.1 pts/match — points", P["match-level tactic (points vs market)"]["club_seasons_0.1pts"], GRAY)]
+f, ax = plt.subplots(figsize=(6.6, 3.4))
+y = np.arange(len(rows))[::-1]
+ax.barh(y, [r[1] for r in rows], color=[r[2] for r in rows], height=0.6)
+ax.set_xscale("log"); ax.axvline(1, color=INK, lw=0.8, ls="--"); ax.text(1.05, len(rows) - 0.4, "one season", fontsize=8, color=MUTED)
+for yi, r in zip(y, rows):
+    ax.text(r[1] * 1.08, yi, f"{r[1]:.1f}", va="center", fontsize=8, color=INK)
+ax.set_yticks(y); ax.set_yticklabels([r[0] for r in rows], fontsize=8.5); ax.set_xlim(0.3, 200)
+ax.set_xlabel("Seasons of ONE club's data needed to detect a +20% effect (80% power), log scale")
+ax.set_title("Fig 10. Football's tactics problem is a power problem; fast surrogates fix part of it")
+save(f, "fig10_power.png")
+print("fig10 written")
