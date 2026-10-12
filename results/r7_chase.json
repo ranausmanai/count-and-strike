@@ -1,0 +1,178 @@
+{
+ "SB_1516": {
+  "m_for_trail": [
+   1.0483452710863594,
+   1.1910559521008846,
+   1.1300941507160926,
+   1.1842237512837779,
+   1.2515224520476744
+  ],
+  "m_against_trail": [
+   0.9277575313927964,
+   1.0666645958416603,
+   1.0612212003107244,
+   0.8490584503955858,
+   0.8733454780273242
+  ],
+  "m_for_lead": [
+   0.9277575313927962,
+   1.0666645958416605,
+   1.061221200310724,
+   0.8490584503955879,
+   0.8733454780273233
+  ],
+  "m_against_lead": [
+   1.0483452710863597,
+   1.1910559521008832,
+   1.1300941507160926,
+   1.1842237512837772,
+   1.2515224520476729
+  ],
+  "H7_1": {
+   "log_ratio": 0.10205982336760047,
+   "ci": [
+    -0.06514944479067714,
+    0.2917040107425251
+   ]
+  },
+  "n_fall": 713,
+  "decision_shrink0": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.018319050099967222,
+   "policy_monotone": false
+  },
+  "decision_shrink25": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.007650890657643949,
+   "policy_monotone": false
+  },
+  "decision_shrink50": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.0026513004836850166,
+   "policy_monotone": false
+  }
+ },
+ "WY_1718": {
+  "m_for_trail": [
+   1.0588338721715544,
+   1.0882291672284938,
+   1.1275410570976228,
+   1.1900438692248956,
+   1.261556114330649
+  ],
+  "m_against_trail": [
+   0.9072393456542798,
+   0.8354694355410075,
+   0.9020138631251927,
+   0.9109152338033595,
+   0.6745928960822218
+  ],
+  "m_for_lead": [
+   0.9072393456542797,
+   0.8354694355410075,
+   0.9020138631251925,
+   0.9109152338033596,
+   0.6745928960822205
+  ],
+  "m_against_lead": [
+   1.0588338721715551,
+   1.0882291672284934,
+   1.1275410570976228,
+   1.1900438692248974,
+   1.2615561143306502
+  ],
+  "H7_1": {
+   "log_ratio": 0.11230676432870838,
+   "ci": [
+    -0.05203190930830658,
+    0.2598424784834538
+   ]
+  },
+  "n_fall": 853,
+  "decision_shrink0": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.025399294235450846,
+   "policy_monotone": false
+  },
+  "decision_shrink25": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.01332591621284002,
+   "policy_monotone": false
+  },
+  "decision_shrink50": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 75,
+   "gain_per_trailing_situation": 0.004543855126893272,
+   "policy_monotone": false
+  }
+ },
+ "SB2_unseen": {
+  "m_for_trail": [
+   1.0582149106998198,
+   0.8840817534991341,
+   1.2588711144419729,
+   1.0817639285741023,
+   1.0617372854694478
+  ],
+  "m_against_trail": [
+   0.8872637313876823,
+   0.9569292417531203,
+   1.023080046893313,
+   0.8274905378076043,
+   0.6982862917726228
+  ],
+  "m_for_lead": [
+   0.8872637313876816,
+   0.9569292417531208,
+   1.0230800468933128,
+   0.8274905378076041,
+   0.698286291772621
+  ],
+  "m_against_lead": [
+   1.0582149106998195,
+   0.8840817534991342,
+   1.2588711144419729,
+   1.0817639285741025,
+   1.0617372854694487
+  ],
+  "H7_1": {
+   "log_ratio": -0.17030886337980317,
+   "ci": [
+    -0.4296991444614046,
+    0.10943549909894736
+   ]
+  },
+  "n_fall": 210,
+  "decision_shrink0": {
+   "opt_switch_minute": 0,
+   "observed_switch_minute": 45,
+   "gain_per_trailing_situation": 0.007892773183813536,
+   "policy_monotone": false
+  },
+  "decision_shrink25": {
+   "opt_switch_minute": 30,
+   "observed_switch_minute": 45,
+   "gain_per_trailing_situation": 0.007083560933689321,
+   "policy_monotone": false
+  },
+  "decision_shrink50": {
+   "opt_switch_minute": 30,
+   "observed_switch_minute": 45,
+   "gain_per_trailing_situation": 0.006414586218844644,
+   "policy_monotone": false
+  }
+ },
+ "cross_population_gain": {
+  "SB_1516->WY_1718": 0.025399294235450846,
+  "SB_1516->SB2_unseen": 0.007892773183813536,
+  "WY_1718->SB_1516": 0.018319050099967222,
+  "WY_1718->SB2_unseen": 0.007892773183813536,
+  "SB2_unseen->SB_1516": 0.009168332872783057,
+  "SB2_unseen->WY_1718": 0.014461192166032956
+ }
+}

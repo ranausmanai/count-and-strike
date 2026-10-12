@@ -41,3 +41,7 @@
   H6-3 CONFIRMED vulnerability window (p=.004). Same spec in 4 populations: ×1.69, ×1.57, ×1.37, ×1.52 counter xG when opponent had pushed deep (all CIs > 1)
 - Bait check: deep blocks put more regains in the window but NOT more counter xG/match → in-moment decision rule, not a reason to sit deeper
 - NEXT: paper v2 (all rounds), figs 8-9
+## Round 7 — chase timing (PREREGISTRATION_7.md): FAIL
+- H7-1: trailing-team xG escalation 45-60 → 75+ is only +10-12% (CIs include 0 in SB15 & WY; negative in SB2)
+- H7-2 invalid: late "all-in" multipliers have trailing team conceding LESS (×0.67-0.87) → reflects leader's passivity (pre-registered confound). Gains 0.008-0.025, below threshold in 2/3
+## Round 8 — dead-ball decision audit (PREREGISTRATION_8.md)
