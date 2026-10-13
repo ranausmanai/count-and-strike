@@ -68,7 +68,8 @@ def match_dist(lf, la, c=0.0, kappa=0.0, policy="opt"):
     return dp.outcome_dist(RF, RA, pol)
 
 
-def simulate(n_sims=200_000, sp_for=0.0, sp_against=0.0, c=0.0, kappa=0.0, att_boost=0.0, seed=7, policy="opt", return_all=False):
+def simulate(n_sims=200_000, sp_for=0.0, sp_against=0.0, c=0.0, kappa=0.0, att_boost=0.0, seed=7, policy="opt", return_all=False, team=None):
+    TEAM = team or globals()["TEAM"]
     teams, mu, home, att, dfn, actual = ratings()
     rng = np.random.default_rng(seed)
     n = len(teams); ix = {t: i for i, t in enumerate(teams)}
@@ -96,7 +97,8 @@ def simulate(n_sims=200_000, sp_for=0.0, sp_against=0.0, c=0.0, kappa=0.0, att_b
     rank = (-key).argsort(1).argsort(1) + 1
     b = ix[TEAM]
     res = dict(E_pts=float(pts[:, b].mean()), sd_pts=float(pts[:, b].std()), p_title=float((rank[:, b] == 1).mean()),
-               p_top4=float((rank[:, b] <= 4).mean()), p_top6=float((rank[:, b] <= 6).mean()), mean_rank=float(rank[:, b].mean()))
+               p_top4=float((rank[:, b] <= 4).mean()), p_top6=float((rank[:, b] <= 6).mean()), mean_rank=float(rank[:, b].mean()),
+               p_releg=float((rank[:, b] >= n - 2).mean()))
     if return_all:
         res["all_teams"] = {t: dict(E_pts=float(pts[:, ix[t]].mean()), p_title=float((rank[:, ix[t]] == 1).mean())) for t in teams}
     return res
