@@ -1,36 +1,49 @@
-# Project Underdog — Football's Tactics Problem Is a Power Problem
+# Count & Strike
 
-**Can tactics make player quality matter less?** An autonomous research run (11–12 Oct 2026): six pre-registered rounds, 21 tests, 4 independent data populations looking for a tactical policy that lets a weak team (Brentford) consistently outperform stronger squads.
+**A football playing system built only from tactical advantages that held up on data they had never seen.**
 
-📄 Paper: [`paper/underdog_paper.pdf`](paper/underdog_paper.pdf) (source [`paper/paper.md`](paper/paper.md)) · 🧾 [`PREREGISTRATION.md`](PREREGISTRATION.md) · [`DEVIATIONS.md`](DEVIATIONS.md)
+![Count & Strike rule card](figures/count_and_strike_card.png)
 
-## Main contribution (round 10)
+> Don't try to pass your way through a settled defence. Count the defenders: if they're not set, strike now. If they're set and you're near goal, strike through them.
 
-Tactical effects worth points are an order of magnitude below what any club's history can detect. A +20% corner routine needs 15 club-seasons; a +0.1 pts/match tactic needs 57. That is why 26 of 28 pre-registered tactical hypotheses failed. Validated **surrogate endpoints** fix part of this: 'final third within 10 s of a regain' cuts the sample needed tenfold. With them, a club can run randomised tactical trials (protocol in §10.3 of the paper).
+## The five rules
 
-## Confirmed on unseen leagues (round 6)
+| Rule | When | Do | Evidence |
+|---|---|---|---|
+| **Count** | You win the ball | ≤3 opponents behind it: attack now. 8+: keep it | each extra defender back −11–19% counter value; confirmed in 3 populations, plus 4 event-data populations |
+| **Strike through** | Near the box against a set defence | Shoot rather than pass sideways or back | +0.04 to +0.11 xG per decision; holds with the shooting lane held equal, and 60 s later |
+| **Run into space** | Free in the final third, few defenders | Carry forward, don't dribble | +0.03–0.04 xG |
+| **Press the exposed** | They receive near your box, unmarked, few of you goal-side | Press within 2 s | +0.008 xG |
+| **Dead balls** | Set pieces | Treat them as a main weapon | quality matters 1/3–2/3 as much as in open play, in 4 populations |
 
-1. **Set pieces are where quality matters least.** Set-piece xG elasticity to team strength is 0.41 / 0.28 / 0.72 vs open play 1.09 / 0.89 / 1.02 (StatsBomb 15/16, Wyscout 17/18, unseen WSL/NWSL/ISL).
-2. **Break after they commit.** At a fixed regain spot, score and minute, a regain made after the opponent had pushed into your box is worth ×1.37–1.69 the counter xG, in all four populations.
+Worth roughly **+4 points a season** for any club (simulated 2025/26 Premier League).
 
-Everything else in rounds 2–5 failed confirmation (box-score style vs market, ML, opponent weak spots, cone density). See Fig 8 in the paper.
+## How it was found
 
-## Round 1 results
+* **Search:** 3.6 million on-ball decisions (StatsBomb event + 360 data, Wyscout), split into ~3,400 situations, ~8,700 candidate rules.
+* **Filter:** false-discovery control on the discovery data (men's international tournaments). Then confirmation required in **both** unseen populations (men's club, women's).
+* **Stress tests:** same space, same shooting lane, longer horizon, team-quality controls.
+* **Pre-registration:** 16 rounds, each written to git before its analysis ran (`PREREGISTRATION*.md`). Every deviation is in `DEVIATIONS.md`, and the full research log is in `PROGRESS.md`.
 
-| | Finding | Status |
-|---|---|---|
-| P1 | In-match style does not predict next-segment xG beyond strength and score | pre-registered, **not supported** |
-| P2 | Optimal in-match style policy: +0.015 pts/match when cross-fitted (in-sample looks 3× better) | pre-registered, **not supported** |
-| P3 | Habitual style vs market (EPL) | pre-registered, **null** |
-| P4 | High-tempo underdogs underperform the closing market (−0.0069 pts/shot, p=.008, 36k matches); fading since 2015 | pre-registered, **supported (modest)** |
-| P5 | "Win-hungry" risk-seeking does not raise title odds | pre-registered, **not supported** |
-| — | Coaching changes (6,789 subs/formation shifts) barely move xG | post-hoc |
-| — | **Set pieces are ~⅓ as quality-sensitive as open play**; replicated on Wyscout 2017/18 | post-hoc, replicated |
-| — | Set-piece efficiency is the only persistent, non-wealth skill, but modest and already priced | post-hoc |
-| — | Brentford 2025/26: full playbook +1.8 to +4.5 pts/season; top-4 3% → 5–9%; title ≤ 0.15% | simulation |
-| — | Leicester 2015/16: +28 pts vs market, 18 of them above their own xG | case study |
+Most ideas died, including chasing earlier, long throws, corner targets, opponent weak spots, passing tempo, referee adaptation, and simulator-optimised policies. That is documented too.
 
-## Reproduce
-Python 3.12 + numpy/pandas/scipy/statsmodels/scikit-learn/matplotlib/pyarrow. Run the scripts in `src/` in the order listed in §10 of the paper. Raw data (~1 GB) is downloaded by `src/fetch_statsbomb.py`, the football-data loop in `PROGRESS.md`, and the Wyscout figshare files; it is git-ignored.
+## Locked predictions
 
-Data: StatsBomb Open Data · Pappalardo et al. 2019 (Wyscout) · football-data.co.uk.
+[`PREDICTIONS.md`](PREDICTIONS.md) holds six numeric predictions, committed **14 October 2026**, for the next StatsBomb 360 release. Anyone can test them:
+
+```bash
+python3 src/test_predictions.py <competition_id> <season_id>
+```
+
+## Papers
+
+* [`paper/count_and_strike.pdf`](paper/count_and_strike.pdf): the system (5 pages)
+* [`paper/underdog_paper.pdf`](paper/underdog_paper.pdf): full technical report (rounds 1–10)
+
+## Match planner
+
+`python3 src/matchplan.py "<us>" "<home>" "<away>" <div> <oddsH> <oddsD> <oddsA>` writes a one-page plan for a fixture. A web version is in `site/count-and-strike.html`.
+
+## Data
+
+StatsBomb Open Data (including 360), used under the StatsBomb public data user agreement, with attribution. Pappalardo et al. (2019) Wyscout public dataset. football-data.co.uk. Raw data is downloaded by the scripts in `src/` and is not committed.

@@ -1,0 +1,233 @@
+<title>Count &amp; Strike</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a coach's tactics board — chalk-on-felt hero, then a paper notebook of rules, evidence and a working planner. */
+:root{
+  --paper:#f6f5f0; --ink:#17201b; --muted:#5b6660; --line:#d9dbd2;
+  --felt:#1e4a38; --felt-ink:#eef3ee; --chalk:#cfe0d4;
+  --magnet-red:#c8452c; --magnet-blue:#2a5fa8; --card:#ffffff;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#121714; --ink:#e7ece8; --muted:#9aa69f; --line:#2b3530; --felt:#183d2e; --felt-ink:#eef3ee; --chalk:#b9d3c2;
+  --magnet-red:#e0664c; --magnet-blue:#6d9be0; --card:#19201c; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#121714; --ink:#e7ece8; --muted:#9aa69f; --line:#2b3530; --felt:#183d2e; --felt-ink:#eef3ee; --chalk:#b9d3c2;
+  --magnet-red:#e0664c; --magnet-blue:#6d9be0; --card:#19201c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(28px,4vw,38px);font-weight:800;text-transform:uppercase;margin-bottom:6px}
+h3{font-size:22px;font-weight:600}
+p{margin:0;max-width:65ch}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:44px;border-top:1px solid var(--line)}
+/* hero: tactics board */
+.board{background:var(--felt);color:var(--felt-ink);padding-block:44px 40px;position:relative;overflow:hidden}
+.board::before{content:"";position:absolute;inset:18px;border:2px solid color-mix(in srgb,var(--chalk) 45%,transparent);border-radius:6px;pointer-events:none}
+.board::after{content:"";position:absolute;right:-90px;top:50%;width:260px;height:260px;transform:translateY(-50%);border:2px solid color-mix(in srgb,var(--chalk) 30%,transparent);border-radius:50%;pointer-events:none}
+.board .wrap{position:relative;z-index:1;display:grid;gap:18px}
+.board h1{font-size:clamp(54px,11vw,112px);font-weight:800;line-height:.9;text-transform:uppercase}
+.board h1 span{color:var(--chalk)}
+.thesis{font-size:clamp(19px,2.4vw,24px);max-width:36ch;line-height:1.35}
+.board .meta{font-family:var(--mono);font-size:13px;color:var(--chalk);display:flex;flex-wrap:wrap;gap:8px 22px}
+/* rules */
+.rules{display:grid;gap:14px;margin-top:22px}
+.rule{display:grid;grid-template-columns:auto 1fr auto;gap:6px 18px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.mag{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:20px;color:#fff;background:var(--magnet-red);box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
+.rule:nth-child(even) .mag{background:var(--magnet-blue)}
+.rule h3{text-transform:uppercase}
+.rule .when{color:var(--muted)}
+.rule .do{font-weight:600}
+.rule .gain{font-family:var(--mono);font-size:13px;color:var(--muted);text-align:right;white-space:nowrap}
+.rule>div{min-width:0}
+@media (max-width:640px){.rule{grid-template-columns:auto 1fr}.rule .gain{grid-column:2;text-align:left}}
+/* evidence */
+.funnel{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
+.step{border-left:3px solid var(--felt);padding:6px 0 6px 12px}
+.step b{display:block;font-family:var(--display);font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
+.step span{font-size:14px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:22px}
+.cols>div{min-width:0}
+@media (max-width:720px){.cols{grid-template-columns:1fr}}
+ul.plain{margin:10px 0 0;padding-left:18px}
+ul.plain li{margin-bottom:6px}
+.dead li{color:var(--muted);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--magnet-red) 70%,transparent)}
+.tablewrap{overflow-x:auto;margin-top:16px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.hash{font-family:var(--mono);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+/* planner */
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px;align-items:end}
+label{display:grid;gap:4px;font-size:13px;color:var(--muted)}
+input,select{font:inherit;font-size:15px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);width:100%}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--magnet-blue);outline-offset:2px}
+button{font:inherit;font-weight:600;padding:10px 16px;border-radius:8px;border:0;background:var(--felt);color:var(--felt-ink);cursor:pointer}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:22px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.kpi small{display:block;color:var(--muted);font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.kpi b{font-family:var(--display);font-size:30px;font-weight:800;font-variant-numeric:tabular-nums}
+.grid{border-collapse:separate;border-spacing:4px;min-width:560px}
+.grid th{text-align:center;padding:4px}
+.grid td{text-align:center;padding:8px 2px;border:0;border-radius:6px;font-family:var(--mono);font-size:12px;font-weight:500;color:#fff}
+.LOW{background:var(--magnet-blue)} .HIGH{background:var(--magnet-red)} .NORMAL{background:var(--muted)}
+.advice{display:grid;gap:8px;margin-top:16px}
+.note{font-size:14px;color:var(--muted)}
+footer{padding-block:34px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.rule{transition:transform .15s}.rule:hover{transform:translateY(-2px)}}
+</style>
+
+<header class="board">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--chalk)">Project Underdog · open research</div>
+    <h1>Count <span>&amp;</span><br>Strike</h1>
+    <p class="thesis">Don't try to pass your way through a settled defence. Count the defenders: if they're not set, strike now. If they're set and you're near goal, strike through them.</p>
+    <div class="meta"><span>3.6M decisions tested</span><span>4 independent datasets</span><span>men's &amp; women's football</span><span>≈ +4 points a season</span></div>
+  </div>
+</header>
+
+<main>
+<section class="wrap" id="rules">
+  <div class="eyebrow">The system</div>
+  <h2>Five rules that survived</h2>
+  <p>Each rule was found on one set of matches, then held up again in football it had never seen: men's club football and women's football, judged with the same space around the player.</p>
+  <div class="rules">
+    <div class="rule"><div class="mag">C</div><div><h3>Count</h3><p class="when">You win the ball. Count the opponents behind it.</p><p class="do">3 or fewer back: attack now, two runners, first pass forward. 8 or more back: keep it.</p></div><div class="gain">each defender back<br>−11 to −19% value</div></div>
+    <div class="rule"><div class="mag">S</div><div><h3>Strike through</h3><p class="when">Near the box against a set defence, even under pressure.</p><p class="do">Shoot. Don't pass sideways or back. Waiting doesn't produce a better chance later.</p></div><div class="gain">+0.04 to +0.11 xG<br>per decision</div></div>
+    <div class="rule"><div class="mag">R</div><div><h3>Run into space</h3><p class="when">Free in the final third, few defenders ahead.</p><p class="do">Carry it forward. Don't take on a man or turn back.</p></div><div class="gain">+0.03 to +0.04 xG</div></div>
+    <div class="rule"><div class="mag">P</div><div><h3>Press the exposed</h3><p class="when">They receive near your box, unmarked, and few of you are behind the ball.</p><p class="do">Press within two seconds instead of holding shape.</p></div><div class="gain">+0.008 xG<br>about once a match</div></div>
+    <div class="rule"><div class="mag">D</div><div><h3>Dead balls</h3><p class="when">Set pieces depend on team quality far less than open play.</p><p class="do">Train corners and wide free kicks as your main weapon.</p></div><div class="gain">weaker teams lose<br>least ground here</div></div>
+  </div>
+</section>
+
+<section class="wrap" id="planner">
+  <div class="eyebrow">Use it for a real match</div>
+  <h2>Match planner</h2>
+  <p>Enter a fixture and the bookmaker odds. The planner turns the odds into expected goals, solves the best tempo for every score and minute, and adds the rule card.</p>
+  <form id="f">
+    <label for="us">Your team<input id="us" value="Lincoln"></label>
+    <label for="opp">Opponent<input id="opp" value="West Ham"></label>
+    <label for="venue">Venue<select id="venue"><option value="home">We are at home</option><option value="away">We are away</option></select></label>
+    <label for="oh">Home win odds<input id="oh" type="number" step="0.01" min="1.01" value="4.60"></label>
+    <label for="od">Draw odds<input id="od" type="number" step="0.01" min="1.01" value="3.98"></label>
+    <label for="oa">Away win odds<input id="oa" type="number" step="0.01" min="1.01" value="1.68"></label>
+    <button type="submit">Build plan</button>
+  </form>
+  <p class="note" style="margin-top:8px">Example loaded: Lincoln v West Ham, Championship, 14 October 2026.</p>
+  <div id="out"></div>
+</section>
+
+<section class="wrap" id="evidence">
+  <div class="eyebrow">How it was found</div>
+  <h2>Most ideas died</h2>
+  <div class="funnel">
+    <div class="step"><b>3.6M</b><span>decisions: every pass, carry, dribble and shot</span></div>
+    <div class="step"><b>~8,700</b><span>candidate rules searched automatically</span></div>
+    <div class="step"><b>22</b><span>passed a false-discovery filter on the first dataset</span></div>
+    <div class="step"><b>12</b><span>held in both unseen populations</span></div>
+  </div>
+  <div class="cols">
+    <div>
+      <h3>Why most patterns fail</h3>
+      <p style="margin-top:8px">Most patterns describe good <em>moments</em>, not good <em>choices</em>. Players go forward when there's space, so "going forward works" is mostly a description of space. We judged each choice against the same situation: defenders ahead, nearest opponent, teammates ahead and the shooting lane.</p>
+      <p style="margin-top:10px">Football is also extremely noisy. A tactic worth four points a season would take a single club about 57 seasons of results to prove. That's why the work uses millions of decisions instead of match results.</p>
+    </div>
+    <div>
+      <h3>Tested and rejected</h3>
+      <ul class="plain dead">
+        <li>Chase earlier when losing</li>
+        <li>Long throws into the box</li>
+        <li>Aim corners at the penalty spot</li>
+        <li>Find the opponent's weak spot</li>
+        <li>Fast passing tempo (it was just good teams)</li>
+        <li>Adapt to strict referees</li>
+        <li>AI-optimised in-game style switching</li>
+        <li>Simulator "chess engine" policies (overstate value 3–4×)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="predictions">
+  <div class="eyebrow">Proof without a club</div>
+  <h2>Locked predictions</h2>
+  <p>These numbers were committed publicly on 14 October 2026 (commit <span class="hash">5993959</span>), before the data that will test them exists. They will be checked on the next StatsBomb release with 360 data, for example the 2026 World Cup. The system counts as supported if at least 5 of 6 hold. The result will be published whatever it is.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>ID</th><th>Rule</th><th>Predicted on new data</th><th>Current estimate</th></tr></thead>
+    <tbody>
+      <tr><td class="num">C1</td><td>Each extra opponent behind the ball at a regain lowers counter value</td><td class="num">×0.75 to ×0.97 per defender</td><td class="num">×0.81–0.89</td></tr>
+      <tr><td class="num">S1</td><td>In the box, central, ≤3 ahead, pressed: shooting beats a sideways pass</td><td class="num">+0.04 to +0.20 xG</td><td class="num">+0.112</td></tr>
+      <tr><td class="num">S2</td><td>Edge of the box, central, 4–6 ahead, pressed: shooting beats a sideways pass</td><td class="num">+0.015 to +0.08</td><td class="num">+0.047</td></tr>
+      <tr><td class="num">S3</td><td>Edge of the box, packed defence (7+), pressed: shooting beats a sideways pass</td><td class="num">+0.01 to +0.07</td><td class="num">+0.039</td></tr>
+      <tr><td class="num">S4</td><td>25–40 yds, central, packed, pressed: shooting beats a sideways pass</td><td class="num">0 to +0.035</td><td class="num">+0.015</td></tr>
+      <tr><td class="num">R1</td><td>Attacking third, wide, free, ≤3 ahead: carrying forward beats dribbling</td><td class="num">+0.005 to +0.07</td><td class="num">+0.029</td></tr>
+    </tbody>
+  </table></div>
+</section>
+</main>
+
+<footer><div class="wrap">Project Underdog. Data: StatsBomb Open Data (including 360 frames), Wyscout public dataset (Pappalardo et al., 2019), football-data.co.uk. xG = expected goals. Values are from observational data and are strong evidence, not final proof.</div></footer>
+
+<script>
+(function(){
+  const K=95,GM=8,G=2*GM+1,RHO=-0.06;
+  function pois(l,k){let p=Math.exp(-l);for(let i=1;i<=k;i++)p*=l/i;return p;}
+  function probs(lh,la){let H=0,D=0,A=0,tot=0;const M=[];
+    for(let i=0;i<=10;i++){M[i]=[];for(let j=0;j<=10;j++){let p=pois(lh,i)*pois(la,j);
+      if(i===0&&j===0)p*=1-lh*la*RHO;else if(i===0&&j===1)p*=1+lh*RHO;else if(i===1&&j===0)p*=1+la*RHO;else if(i===1&&j===1)p*=1-RHO;
+      M[i][j]=p;tot+=p;}}
+    for(let i=0;i<=10;i++)for(let j=0;j<=10;j++){const p=M[i][j]/tot;if(i>j)H+=p;else if(i===j)D+=p;else A+=p;}
+    return [H,D,A];}
+  function fit(pH,pD,pA){let best=[1.4,1.1],be=1e9;
+    for(let lh=0.2;lh<=4;lh+=0.04)for(let la=0.2;la<=4;la+=0.04){const [h,d,a]=probs(lh,la);const e=(h-pH)**2+(d-pD)**2+(a-pA)**2;if(e<be){be=e;best=[lh,la];}}
+    let [bh,ba]=best;for(let lh=bh-0.05;lh<=bh+0.05;lh+=0.005)for(let la=ba-0.05;la<=ba+0.05;la+=0.005){if(lh<=0||la<=0)continue;const [h,d,a]=probs(lh,la);const e=(h-pH)**2+(d-pD)**2+(a-pA)**2;if(e<be){be=e;best=[lh,la];}}
+    return best;}
+  function dp(lf,la,c){const m=[1-c,1,1+c];let V=new Array(G);for(let i=0;i<G;i++){const g=i-GM;V[i]=g>0?3:g===0?1:0;}
+    const pol=[];
+    for(let k=K-1;k>=0;k--){const NV=new Array(G);pol[k]=new Array(G);
+      for(let i=0;i<G;i++){const up=V[Math.min(i+1,G-1)],dn=V[Math.max(i-1,0)];let bq=-1,ba=1;
+        for(let a=0;a<3;a++){const f=lf/K*m[a],g=la/K*m[a];const q=f*up+g*dn+(1-f-g)*V[i];if(q>bq+1e-12){bq=q;ba=a;}}
+        NV[i]=bq;pol[k][i]=ba;}V=NV;}
+    return {V0:V[GM],pol};}
+  function evalFixed(lf,la){let V=new Array(G);for(let i=0;i<G;i++){const g=i-GM;V[i]=g>0?3:g===0?1:0;}
+    for(let k=K-1;k>=0;k--){const NV=new Array(G);for(let i=0;i<G;i++){const up=V[Math.min(i+1,G-1)],dn=V[Math.max(i-1,0)];const f=lf/K,g=la/K;NV[i]=f*up+g*dn+(1-f-g)*V[i];}V=NV;}return V[GM];}
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function build(e){if(e)e.preventDefault();
+    const us=document.getElementById('us').value||'Your team',opp=document.getElementById('opp').value||'Opponent';
+    const home=document.getElementById('venue').value==='home';
+    const oh=+document.getElementById('oh').value,od=+document.getElementById('od').value,oa=+document.getElementById('oa').value;
+    const out=document.getElementById('out');
+    if(!(oh>1&&od>1&&oa>1)){out.innerHTML='<p class="note" style="margin-top:14px">Enter all three odds as decimal numbers above 1.00, for example 2.50.</p>';return;}
+    const inv=[1/oh,1/od,1/oa],s=inv[0]+inv[1]+inv[2];const pH=inv[0]/s,pD=inv[1]/s,pA=inv[2]/s;
+    const [lh,la]=fit(pH,pD,pA);const lf=home?lh:la,lo=home?la:lh;const pw=home?pH:pA,pl=home?pA:pH;
+    const r=dp(lf,lo,0.09);const gain=r.V0-evalFixed(lf,lo);
+    const mins=[0,15,30,45,60,70,75,80,85,89],names=['LOW','NORMAL','HIGH'];
+    let sw=null;for(let k=0;k<K;k++){if(r.pol[k][GM]===2){sw=k;break;}}
+    const rel=lf/1.35,s0=0.29,sp=s0*rel**0.47/(s0*rel**0.47+(1-s0)*rel**1.0);const relo=lo/1.35,spo=s0*relo**0.47/(s0*relo**0.47+(1-s0)*relo**1.0);
+    let rows='';for(const g of [2,1,0,-1,-2]){rows+=`<tr><th>${g>0?'+':''}${g}</th>`+mins.map(m=>`<td class="${names[r.pol[m][g+GM]]}">${names[r.pol[m][g+GM]]}</td>`).join('')+'</tr>';}
+    const share=lf/(lf+lo);
+    out.innerHTML=`
+      <div class="kpis">
+        <div class="kpi"><small>Win</small><b>${Math.round(pw*100)}%</b></div>
+        <div class="kpi"><small>Draw</small><b>${Math.round(pD*100)}%</b></div>
+        <div class="kpi"><small>Loss</small><b>${Math.round(pl*100)}%</b></div>
+        <div class="kpi"><small>Expected goals</small><b>${lf.toFixed(2)}–${lo.toFixed(2)}</b></div>
+        <div class="kpi"><small>Your share of chances</small><b>${Math.round(share*100)}%</b></div>
+      </div>
+      <h3 style="margin-top:26px">${esc(us)}: tempo by score and minute</h3>
+      <p class="note" style="margin-top:4px">LOW: slow the game and protect the scoreline. HIGH: open it up and commit numbers. Rows show your goal difference, columns the minute. This part is a model; it assumes your team can shift tempo by about 9%.</p>
+      <div class="tablewrap"><table class="grid"><tr><th></th>${mins.map(m=>`<th>${m}′</th>`).join('')}</tr>${rows}</table></div>
+      <div class="advice">
+        <p><b>If level:</b> ${sw===null?'stay LOW to the end. The draw is worth protecting.':(sw===0?'go HIGH from the start. You are the stronger side.':`play LOW until the ${sw}th minute, then go HIGH.`)} <b>If behind:</b> go HIGH. <b>If ahead:</b> stay LOW. Expected value of the plan over playing it straight: +${gain.toFixed(3)} points.</p>
+        <p><b>Set pieces:</b> about ${Math.round(sp*100)}% of your chances should come from dead balls, against ${Math.round(spo*100)}% for ${esc(opp)}. ${sp>spo?'Dead balls are where you close the gap. Rehearse two or three corner routines.':'You are the stronger side in open play, so defend set pieces with extra care.'}</p>
+        <p><b>In the moment:</b> use the five rules above. Count at every regain, shoot near the box rather than recycling, run into space, and press the exposed receiver near your box.</p>
+      </div>`;}
+  document.getElementById('f').addEventListener('submit',build);
+  build();
+})();
+</script>
