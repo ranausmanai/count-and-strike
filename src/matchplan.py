@@ -106,6 +106,17 @@ ol li{{margin-bottom:6px}}</style></head><body>
 <h2>2. The two confirmed rules <span class="tag c">CONFIRMED</span></h2>
 <ol><li><b>Set pieces are your best channel.</b> At this strength gap, about <b>{P['sp_share_us']*100:.0f}%</b> of your expected chances should come from set pieces, compared with {P['sp_share_opp']*100:.0f}% for {P['opp']}. Quality matters least on dead balls (confirmed in 4 populations). Rehearse 2–3 corner and wide-free-kick routines, and attack every second ball.</li>
 <li><b>Break after they commit.</b> When you win the ball within seconds of them having been in your box, go forward immediately: two runners, and the first pass forward. Those counters are worth about <b>{WINDOW_MULT}×</b> a normal regain (confirmed in 4 populations). When you win it while they are still in shape, keep it.</li></ol>
+
+<h2>2b. Real-time rule card (what to do in the moment) <span class="tag c">CONFIRMED</span></h2>
+<p class="note">Mined from 730k decisions using what the player could see (360 frames), confirmed in men's club and women's football. The comparison holds the number of defenders in the shooting lane fixed.</p>
+<table style="border-spacing:0 4px"><tr><th style="text-align:left">When you see…</th><th style="text-align:left">Do</th><th>Gain per decision</th></tr>
+<tr><td>Ball in the box, central, ≤3 defenders between you and goal, even if pressed</td><td><b>Shoot</b>, don't lay it back</td><td>+0.10 xG</td></tr>
+<tr><td>Edge of the box, central, packed defence (7+ behind the ball)</td><td><b>Shoot</b>, don't recycle or turn</td><td>+0.03–0.05 xG</td></tr>
+<tr><td>25–40 yds, central, packed defence, you are pressed, 4+ teammates ahead</td><td><b>Shoot</b> (teams recycle here 7× more than they shoot)</td><td>+0.013 xG</td></tr>
+<tr><td>Attacking third, central, free (no one within 7 yds), ≤3 defenders back</td><td><b>Carry it forward into the space</b>; don't dribble or dither</td><td>+0.04 xG</td></tr>
+<tr><td>Midfield, central, pressed, packed defence ahead</td><td><b>Short pass forward</b>, not backwards</td><td>+0.006 xG</td></tr>
+<tr><td><b>The counter trigger:</b> you just won the ball, so count the opponents behind it</td><td><b>≤3 back: GO.</b> 8+ back: keep it</td><td>each extra defender back costs 11–19% of the counter's value</td></tr>
+</table>
 {opp_block}
 <h2>4. What the plan deliberately does not include</h2>
 <p class="note">No formation trick, pressing switch or substitution timing. In our tests, in-game style changes and coaching changes did not measurably move chance rates, and "chase earlier" did not survive. These rules are worth a few points over a season, not a guaranteed result in one match. One match is mostly noise.</p>

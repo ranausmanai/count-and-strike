@@ -1,0 +1,236 @@
+[
+ {
+  "cell": "51000",
+  "rule": "shot vs recycle",
+  "orig_pooled_shot_minus_other": 0.11595470765840492,
+  "discovery": {
+   "lane_adjusted": 0.11383220627212451,
+   "se": 0.01778557179632533,
+   "p_one": 7.75585068901027e-11,
+   "mean_lane_shot": 0.14772727272727273,
+   "mean_lane_other": 0.11392405063291139
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.12825314551058134,
+   "se": 0.015356639999156407,
+   "p_one": 3.366048459997163e-17,
+   "mean_lane_shot": 0.13295880149812733,
+   "mean_lane_other": 0.14383561643835616
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.10223407871892916,
+   "se": 0.019064042446776085,
+   "p_one": 4.100143595285032e-08,
+   "mean_lane_shot": 0.22476190476190477,
+   "mean_lane_other": 0.15789473684210525
+  }
+ },
+ {
+  "cell": "51000",
+  "rule": "shot vs carry_other",
+  "orig_pooled_shot_minus_other": 0.10581333560398641,
+  "discovery": {
+   "lane_adjusted": 0.0935901833524973,
+   "se": 0.0174023875650173,
+   "p_one": 3.765718963380023e-08,
+   "mean_lane_shot": 0.14772727272727273,
+   "mean_lane_other": 0.19318181818181818
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.07370654124244848,
+   "se": 0.025181569834523906,
+   "p_one": 0.001711225539021159,
+   "mean_lane_shot": 0.13295880149812733,
+   "mean_lane_other": 0.15294117647058825
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.12573794749640418,
+   "se": 0.0191930990795626,
+   "p_one": 2.8537114549828847e-11,
+   "mean_lane_shot": 0.22476190476190477,
+   "mean_lane_other": 0.24050632911392406
+  }
+ },
+ {
+  "cell": "41202",
+  "rule": "shot vs recycle",
+  "orig_pooled_shot_minus_other": 0.03777471473896129,
+  "discovery": {
+   "lane_adjusted": 0.040776257923246274,
+   "se": 0.009662974691237303,
+   "p_one": 1.2223503121802984e-05,
+   "mean_lane_shot": 1.3181818181818181,
+   "mean_lane_other": 1.019047619047619
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.030518260825674274,
+   "se": 0.00712604466039601,
+   "p_one": 9.234577134563503e-06,
+   "mean_lane_shot": 1.3113207547169812,
+   "mean_lane_other": 1.2115384615384615
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.04736160717712537,
+   "se": 0.007240463721345367,
+   "p_one": 3.050552005509537e-11,
+   "mean_lane_shot": 1.98159509202454,
+   "mean_lane_other": 1.5119047619047619
+  }
+ },
+ {
+  "cell": "51100",
+  "rule": "shot vs recycle",
+  "orig_pooled_shot_minus_other": 0.09946095728466187,
+  "discovery": {
+   "lane_adjusted": 0.06619015934857986,
+   "se": 0.016372161384527656,
+   "p_one": 2.6402931318096687e-05,
+   "mean_lane_shot": 0.5952380952380952,
+   "mean_lane_other": 0.53125
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.07987365590019348,
+   "se": 0.016467637737999443,
+   "p_one": 6.162474865919955e-07,
+   "mean_lane_shot": 0.4594594594594595,
+   "mean_lane_other": 0.8333333333333334
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.09553954307158091,
+   "se": 0.028886363870276762,
+   "p_one": 0.00047078605357067936,
+   "mean_lane_shot": 0.64,
+   "mean_lane_other": 0.68
+  }
+ },
+ {
+  "cell": "41212",
+  "rule": "shot vs recycle",
+  "orig_pooled_shot_minus_other": 0.043687449194353925,
+  "discovery": {
+   "lane_adjusted": 0.05678203366621896,
+   "se": 0.006916210698722114,
+   "p_one": 1.1060172886901049e-16,
+   "mean_lane_shot": 1.829268292682927,
+   "mean_lane_other": 0.96875
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.05153805753728372,
+   "se": 0.007780072310653525,
+   "p_one": 1.7436917819531222e-11,
+   "mean_lane_shot": 1.4536082474226804,
+   "mean_lane_other": 1.2580645161290323
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.03605392633333333,
+   "se": 0.014279456042518037,
+   "p_one": 0.0057868746977686875,
+   "mean_lane_shot": 2.35,
+   "mean_lane_other": 1.3333333333333333
+  }
+ },
+ {
+  "cell": "41111",
+  "rule": "shot vs carry_other",
+  "orig_pooled_shot_minus_other": 0.050747254085437274,
+  "discovery": {
+   "lane_adjusted": 0.03687807280806606,
+   "se": 0.011756234623591957,
+   "p_one": 0.0008537365201806694,
+   "mean_lane_shot": 0.627906976744186,
+   "mean_lane_other": 0.5288461538461539
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.0489151479631482,
+   "se": 0.013872826628131694,
+   "p_one": 0.00021096867533530207,
+   "mean_lane_shot": 0.7040816326530612,
+   "mean_lane_other": 0.5784313725490197
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.04704887071921686,
+   "se": 0.011060057483441401,
+   "p_one": 1.0501868963277026e-05,
+   "mean_lane_shot": 0.8214285714285714,
+   "mean_lane_other": 0.7209302325581395
+  }
+ },
+ {
+  "cell": "41212",
+  "rule": "shot vs short_fwd",
+  "orig_pooled_shot_minus_other": 0.04512938928649277,
+  "discovery": {
+   "lane_adjusted": 0.045420694808938886,
+   "se": 0.006364080856245341,
+   "p_one": 4.768131387805801e-13,
+   "mean_lane_shot": 1.829268292682927,
+   "mean_lane_other": 1.088235294117647
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.04502382502138992,
+   "se": 0.010312658196896241,
+   "p_one": 6.330607784707593e-06,
+   "mean_lane_shot": 1.4536082474226804,
+   "mean_lane_other": 0.9583333333333334
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.0348239704375688,
+   "se": 0.016159832708006378,
+   "p_one": 0.01558205281822284,
+   "mean_lane_shot": 2.35,
+   "mean_lane_other": 2.3846153846153846
+  }
+ },
+ {
+  "cell": "31202",
+  "rule": "shot vs recycle",
+  "orig_pooled_shot_minus_other": 0.012524702050877861,
+  "discovery": {
+   "lane_adjusted": 0.017536902798118262,
+   "se": 0.0030292192733179994,
+   "p_one": 3.5351039636871516e-09,
+   "mean_lane_shot": 1.1157894736842104,
+   "mean_lane_other": 0.8503787878787878
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.015183720744489428,
+   "se": 0.0027215067376790123,
+   "p_one": 1.2084162854593153e-08,
+   "mean_lane_shot": 1.0476190476190477,
+   "mean_lane_other": 0.7877947295423023
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.014253649397421159,
+   "se": 0.0029743330772639054,
+   "p_one": 8.24741948488245e-07,
+   "mean_lane_shot": 1.1029411764705883,
+   "mean_lane_other": 0.8944281524926686
+  }
+ },
+ {
+  "cell": "41202",
+  "rule": "shot vs carry_other",
+  "orig_pooled_shot_minus_other": 0.025079477069042296,
+  "discovery": {
+   "lane_adjusted": 0.05233101900272679,
+   "se": 0.006510276679834801,
+   "p_one": 4.557741683602439e-16,
+   "mean_lane_shot": 1.3181818181818181,
+   "mean_lane_other": 1.1136363636363635
+  },
+  "confirm_club": {
+   "lane_adjusted": 0.024033418571493038,
+   "se": 0.010433780576147696,
+   "p_one": 0.01062750478373753,
+   "mean_lane_shot": 1.3113207547169812,
+   "mean_lane_other": 1.144927536231884
+  },
+  "confirm_women": {
+   "lane_adjusted": 0.03223355452138901,
+   "se": 0.00886991284558687,
+   "p_one": 0.00013951266473596433,
+   "mean_lane_shot": 1.98159509202454,
+   "mean_lane_other": 1.6229508196721312
+  }
+ }
+]

@@ -1,0 +1,23 @@
+{
+ "31202": {
+  "label": "long range, packed, pressed",
+  "recycles_per_team_match": 1.904191616766467,
+  "shots_per_team_match": 0.27065868263473053,
+  "gain_per_switch": 0.014262716714370237,
+  "season_xg_if_half_of_recycles_become_shots": 0.5160199663965567
+ },
+ "41202": {
+  "label": "edge of box, packed, pressed",
+  "recycles_per_team_match": 0.3508982035928144,
+  "shots_per_team_match": 0.4802395209580838,
+  "gain_per_switch": 0.037529385183236445,
+  "season_xg_if_half_of_recycles_become_shots": 0.2502108830120686
+ },
+ "41212": {
+  "label": "edge of box, packed, 3-7yd space",
+  "recycles_per_team_match": 0.09341317365269461,
+  "shots_per_team_match": 0.38323353293413176,
+  "gain_per_switch": 0.0507707514729968,
+  "season_xg_if_half_of_recycles_become_shots": 0.09011048345267215
+ }
+}

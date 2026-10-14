@@ -1,0 +1,205 @@
+{
+ "H13_1": {
+  "zone_only": {
+   "carry_fwd": 0.006778959308587874,
+   "short_fwd": 0.004020734515715221,
+   "long_fwd": 0.0046734925127337665
+  },
+  "zone_x_space": {
+   "carry_fwd": 0.005574733277653639,
+   "short_fwd": 0.0037628859230411545,
+   "long_fwd": 0.004292905491256829
+  },
+  "confirm_club": {
+   "zone_only": {
+    "carry_fwd": 0.009721164797268811,
+    "short_fwd": 0.004957517879998025,
+    "long_fwd": 0.007917374949563863
+   },
+   "zone_x_space": {
+    "carry_fwd": 0.0069826495315679655,
+    "short_fwd": 0.004609455834351193,
+    "long_fwd": 0.007190419840303668
+   }
+  },
+  "confirm_women": {
+   "zone_only": {
+    "carry_fwd": 0.008455476018498137,
+    "short_fwd": 0.004209229478047941,
+    "long_fwd": 0.0066980544100001226
+   },
+   "zone_x_space": {
+    "carry_fwd": 0.005974383108090546,
+    "short_fwd": 0.003837212552203099,
+    "long_fwd": 0.00581579936414634
+   }
+  }
+ },
+ "n_rules": 771,
+ "n_nominal": 85,
+ "n_bh": 24,
+ "H13_3": {
+  "confirm_club_nominal": {
+   "n": 77,
+   "sign_agreement": 0.8311688311688312,
+   "corr": 0.8288353754260792
+  },
+  "confirm_club_strong": {
+   "n": 16,
+   "sign_agreement": 0.9375,
+   "corr": 0.7940453300334077
+  },
+  "confirm_women_nominal": {
+   "n": 75,
+   "sign_agreement": 0.8533333333333334,
+   "corr": 0.8039678284396454
+  },
+  "confirm_women_strong": {
+   "n": 16,
+   "sign_agreement": 1.0,
+   "corr": 0.8578033728949046
+  }
+ },
+ "H13_2": [
+  {
+   "cell": "51000",
+   "action": "recycle",
+   "ref": "shot",
+   "disc": -0.11821196240348718,
+   "pooled": -0.11595470765840492,
+   "p1": 5.8418897601823486e-21,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "51000",
+   "action": "carry_other",
+   "ref": "shot",
+   "disc": -0.08269434792126623,
+   "pooled": -0.10581333560398641,
+   "p1": 1.5697551474030974e-12,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "41202",
+   "action": "recycle",
+   "ref": "shot",
+   "disc": -0.03656187665865801,
+   "pooled": -0.03777471473896129,
+   "p1": 2.687904208647144e-11,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "30020",
+   "action": "dribble",
+   "ref": "carry_fwd",
+   "disc": -0.020457047632227433,
+   "pooled": -0.043368059231943104,
+   "p1": 5.821201133288726e-11,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "51100",
+   "action": "recycle",
+   "ref": "shot",
+   "disc": -0.07996342060267857,
+   "pooled": -0.09946095728466187,
+   "p1": 2.069499420035074e-10,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "30020",
+   "action": "carry_other",
+   "ref": "carry_fwd",
+   "disc": -0.014917592159886214,
+   "pooled": -0.03916294136112524,
+   "p1": 1.927411165596681e-09,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "41212",
+   "action": "recycle",
+   "ref": "shot",
+   "disc": -0.05719237179369919,
+   "pooled": -0.043687449194353925,
+   "p1": 3.5744898459069545e-09,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "41111",
+   "action": "shot",
+   "ref": "carry_other",
+   "disc": 0.0413378186891771,
+   "pooled": 0.050747254085437274,
+   "p1": 2.624452257503309e-07,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "41212",
+   "action": "short_fwd",
+   "ref": "shot",
+   "disc": -0.0435116602422286,
+   "pooled": -0.04512938928649277,
+   "p1": 1.9326784557831506e-06,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "31202",
+   "action": "shot",
+   "ref": "recycle",
+   "disc": 0.01799151681721292,
+   "pooled": 0.012524702050877861,
+   "p1": 3.842815741288804e-06,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "41202",
+   "action": "carry_other",
+   "ref": "shot",
+   "disc": -0.05191027750757576,
+   "pooled": -0.025079477069042296,
+   "p1": 0.0044830045948400146,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "12222",
+   "action": "dribble",
+   "ref": "carry_other",
+   "disc": -0.006462630154624121,
+   "pooled": -0.004736231229882202,
+   "p1": 0.010340821246700792,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "21202",
+   "action": "short_fwd",
+   "ref": "recycle",
+   "disc": 0.009810670453166113,
+   "pooled": 0.00634978445070095,
+   "p1": 0.02005915358342764,
+   "same": true,
+   "confirmed": true
+  },
+  {
+   "cell": "31111",
+   "action": "shot",
+   "ref": "carry_other",
+   "disc": 0.012741363792128969,
+   "pooled": 0.00503146845389271,
+   "p1": 0.1809836552832959,
+   "same": true,
+   "confirmed": false
+  }
+ ]
+}

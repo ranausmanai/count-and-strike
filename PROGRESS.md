@@ -62,3 +62,11 @@
 - But the combined policy implies +21 goals/season (impossible) → patterns describe good MOMENTS (selection), mostly "go forward > recycle"
 ## Round 12 — habit (ITT, cross-fitted, team+cell FE) test of mined rules: 28/28 NULL (BH 0). Choices-as-habits don't move outcomes
 - Next frontier: StatsBomb 360 freeze frames (every event) to condition on visible space → separate choice from situation
+## Round 14B — habits → moments: tempo (passes/min) passed registered confirmation (+0.12 disc, +0.17 conf, p=.004), then DIED with market-rating control (−0.03, p=.17; corr with rating .57) → quality proxy. Directness → more fast attacks but no net xG. Press height: strong in confirmation only (not shortlisted)
+## Round 13 — 360 Tactic Miner (418 matches, ~730k decisions; disc = men's intl, confirm = men's club + women's)
+- Space conditioning shrinks the forward premium only 20-30%
+- 771 rules → 24 BH → 14 testable → 13 CONFIRMED in both confirmation populations; shot rules survive a lane-blocker control (shots taken with MORE blockers)
+- Contrarian: central 25-40 yds vs packed+pressed → shoot > recycle (+0.013-0.018, p<1e-6 ×3); teams recycle 7× more than they shoot
+- Rule-set value ≈ 4.1 xG/season at 50% adoption
+## Round 14A — counter trigger CONFIRMED ×3: each extra opponent behind the ball at the regain −11-19% counter xG (middle third: ≤3 back 0.0144 vs 8+ 0.0072)
+- Match-plan generator now includes the real-time rule card
