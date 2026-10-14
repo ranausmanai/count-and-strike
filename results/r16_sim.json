@@ -1,0 +1,5200 @@
+{
+ "naive_gain_per_possession": 0.07603051344623828,
+ "cells_changed": 195,
+ "confirm_club": {
+  "gain_per_possession": 0.04438681985627588,
+  "ci": [
+   0.025294134857567558,
+   0.07089364118211153
+  ],
+  "possessions_per_team_match": 56.976190476190474,
+  "xg_per_team_match": 2.528991902763528,
+  "xg_per_season": 96.10169230501405,
+  "baseline_value_per_possession": 0.015052217485396053
+ },
+ "confirm_women": {
+  "gain_per_possession": 0.044547245574177385,
+  "ci": [
+   0.03115580802992515,
+   0.05723563581383363
+  ],
+  "possessions_per_team_match": 62.66,
+  "xg_per_team_match": 2.791330407677955,
+  "xg_per_season": 106.07055549176228,
+  "baseline_value_per_possession": 0.013282182674951591
+ },
+ "plays": [
+  {
+   "cell": "00000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 63,
+   "confirm_club": {
+    "adv": 0.0037108131401962143,
+    "immediate": 0.0,
+    "downstream": 0.0037108131401962143,
+    "ci": [
+     0.00217338122753318,
+     0.005819447465793489
+    ],
+    "n": 47
+   },
+   "confirm_women": {
+    "adv": 0.0016362190874246296,
+    "immediate": 0.0,
+    "downstream": 0.0016362190874246296,
+    "ci": [
+     0.0003937964259595238,
+     0.0031819324182517225
+    ],
+    "n": 76
+   },
+   "confirmed": true,
+   "situation": "own third/left, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "00001",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 107,
+   "confirm_club": {
+    "adv": 0.0012330136085834803,
+    "immediate": 0.0,
+    "downstream": 0.0012330136085834803,
+    "ci": [
+     -0.0014476524972515778,
+     0.004839740399609147
+    ],
+    "n": 62
+   },
+   "confirm_women": {
+    "adv": 0.0013543064510690736,
+    "immediate": 0.0,
+    "downstream": 0.0013543064510690736,
+    "ci": [
+     -6.820172583985092e-05,
+     0.003505598772258496
+    ],
+    "n": 109
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "00002",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 31,
+   "confirm_club": {
+    "adv": 0.0008862107410283126,
+    "immediate": 0.0,
+    "downstream": 0.0008862107410283126,
+    "ci": [
+     3.382906345408665e-05,
+     0.0018983497904902936
+    ],
+    "n": 29
+   },
+   "confirm_women": {
+    "adv": 0.0013427769660935875,
+    "immediate": 0.0,
+    "downstream": 0.0013427769660935875,
+    "ci": [
+     -0.0012325788529944839,
+     0.0040116118457873195
+    ],
+    "n": 30
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "00010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 62,
+   "confirm_club": {
+    "adv": 0.001981817559119481,
+    "immediate": 0.0,
+    "downstream": 0.001981817559119481,
+    "ci": [
+     0.0006785091066542777,
+     0.0035914723734512322
+    ],
+    "n": 18
+   },
+   "confirm_women": {
+    "adv": 0.0019060070031565518,
+    "immediate": 0.0,
+    "downstream": 0.0019060070031565518,
+    "ci": [
+     0.00012853992234315871,
+     0.0034191243151293835
+    ],
+    "n": 43
+   },
+   "confirmed": true,
+   "situation": "own third/left, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "00011",
+   "play": "short_fwd_air",
+   "instead_of": "carry_other",
+   "disc_n": 37,
+   "confirm_club": {
+    "adv": -0.0012704555513505609,
+    "immediate": 0.0,
+    "downstream": -0.0012704555513505609,
+    "ci": [
+     -0.004575378101254995,
+     0.001859159567345824
+    ],
+    "n": 22
+   },
+   "confirm_women": {
+    "adv": -0.00033176306248142206,
+    "immediate": 0.0,
+    "downstream": -0.00033176306248142206,
+    "ci": [
+     -0.0023661567712700534,
+     0.002319467027190624
+    ],
+    "n": 45
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "00012",
+   "play": "carry_other",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 58,
+   "confirm_club": {
+    "adv": -0.0029698233733489975,
+    "immediate": 0.0,
+    "downstream": -0.0029698233733489975,
+    "ci": [
+     -0.004994545184437897,
+     -0.0009269872027559389
+    ],
+    "n": 45
+   },
+   "confirm_women": {
+    "adv": -0.0009935323096589106,
+    "immediate": 0.0,
+    "downstream": -0.0009935323096589106,
+    "ci": [
+     -0.00291630227928129,
+     0.000902787887317991
+    ],
+    "n": 59
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "00111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 187,
+   "confirm_club": {
+    "adv": 0.0023415840115594954,
+    "immediate": 0.0,
+    "downstream": 0.0023415840115594954,
+    "ci": [
+     0.0009632847461449597,
+     0.0037204685694756413
+    ],
+    "n": 102
+   },
+   "confirm_women": {
+    "adv": 0.003265601672376229,
+    "immediate": 0.0,
+    "downstream": 0.003265601672376229,
+    "ci": [
+     0.00247952195034081,
+     0.00412913804314877
+    ],
+    "n": 152
+   },
+   "confirmed": true,
+   "situation": "own third/left, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "00121",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 86,
+   "confirm_club": {
+    "adv": 0.0014680983623799803,
+    "immediate": 0.0,
+    "downstream": 0.0014680983623799803,
+    "ci": [
+     0.00021618057104898867,
+     0.002806924989535389
+    ],
+    "n": 26
+   },
+   "confirm_women": {
+    "adv": 0.0012818883724497188,
+    "immediate": 0.0,
+    "downstream": 0.0012818883724497188,
+    "ci": [
+     0.0008893145182528944,
+     0.0018404170141124393
+    ],
+    "n": 99
+   },
+   "confirmed": true,
+   "situation": "own third/left, 4\u20136 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "00122",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 206,
+   "confirm_club": {
+    "adv": 0.001021321907675496,
+    "immediate": 0.0,
+    "downstream": 0.001021321907675496,
+    "ci": [
+     0.0005845663219464764,
+     0.0014144533166360253
+    ],
+    "n": 97
+   },
+   "confirm_women": {
+    "adv": 0.001292211455744238,
+    "immediate": 0.0,
+    "downstream": 0.001292211455744238,
+    "ci": [
+     0.0009519672720688486,
+     0.0015803156025034502
+    ],
+    "n": 161
+   },
+   "confirmed": true,
+   "situation": "own third/left, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "00212",
+   "play": "back_pass",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 270,
+   "confirm_club": {
+    "adv": -0.00020650593270394278,
+    "immediate": 0.0,
+    "downstream": -0.00020650593270394278,
+    "ci": [
+     -0.00158191657951247,
+     0.0007435460023656943
+    ],
+    "n": 356
+   },
+   "confirm_women": {
+    "adv": 0.002096034549087151,
+    "immediate": 0.0,
+    "downstream": 0.002096034549087151,
+    "ci": [
+     -0.00021139268080967448,
+     0.004163746453306097
+    ],
+    "n": 34
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "00222",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 165,
+   "confirm_club": {
+    "adv": 0.0006477139142552768,
+    "immediate": 0.0,
+    "downstream": 0.0006477139142552768,
+    "ci": [
+     0.00019279017660682988,
+     0.0010264861447533786
+    ],
+    "n": 188
+   },
+   "confirm_women": {
+    "adv": 0.0005914444048999807,
+    "immediate": 0.0,
+    "downstream": 0.0005914444048999807,
+    "ci": [
+     -0.00017498143606170898,
+     0.0014811842047884479
+    ],
+    "n": 19
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 51,
+   "confirm_club": {
+    "adv": 0.0008102363161917765,
+    "immediate": 0.0,
+    "downstream": 0.0008102363161917765,
+    "ci": [
+     0.00024601396229750416,
+     0.001492113971741608
+    ],
+    "n": 36
+   },
+   "confirm_women": {
+    "adv": 0.0012065911354236887,
+    "immediate": 0.0,
+    "downstream": 0.0012065911354236887,
+    "ci": [
+     0.0006482041131250881,
+     0.0018886679677257692
+    ],
+    "n": 43
+   },
+   "confirmed": true,
+   "situation": "own third/central, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "01001",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 77,
+   "confirm_club": {
+    "adv": -0.0006897426691366108,
+    "immediate": 0.0,
+    "downstream": -0.0006897426691366108,
+    "ci": [
+     -0.001921309485983702,
+     0.0009264950897461355
+    ],
+    "n": 72
+   },
+   "confirm_women": {
+    "adv": -5.435885056927518e-05,
+    "immediate": 0.0,
+    "downstream": -5.435885056927518e-05,
+    "ci": [
+     -0.0028248015667721228,
+     0.0022480169016925564
+    ],
+    "n": 56
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 57,
+   "confirm_club": {
+    "adv": 0.000146965539730844,
+    "immediate": 0.0,
+    "downstream": 0.000146965539730844,
+    "ci": [
+     -0.0038650517748204786,
+     0.00237396709821249
+    ],
+    "n": 25
+   },
+   "confirm_women": {
+    "adv": 0.0009555485776722846,
+    "immediate": 0.0,
+    "downstream": 0.0009555485776722846,
+    "ci": [
+     -0.001321794715452168,
+     0.002733231814621822
+    ],
+    "n": 45
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 80,
+   "confirm_club": {
+    "adv": -0.00029958122357895065,
+    "immediate": 0.0,
+    "downstream": -0.00029958122357895065,
+    "ci": [
+     -0.0010359727614610702,
+     9.855503470636947e-05
+    ],
+    "n": 48
+   },
+   "confirm_women": {
+    "adv": 0.00028308716937947356,
+    "immediate": 0.0,
+    "downstream": 0.00028308716937947356,
+    "ci": [
+     -0.0004513486471932334,
+     0.0010555424277293507
+    ],
+    "n": 57
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01012",
+   "play": "lateral",
+   "instead_of": "long_fwd",
+   "disc_n": 52,
+   "confirm_club": {
+    "adv": -0.0002771651619091105,
+    "immediate": 0.0,
+    "downstream": -0.0002771651619091105,
+    "ci": [
+     -0.0040721686709217905,
+     0.004126422546878162
+    ],
+    "n": 29
+   },
+   "confirm_women": {
+    "adv": 0.003260718892634398,
+    "immediate": 0.0,
+    "downstream": 0.003260718892634398,
+    "ci": [
+     0.0016722478488953242,
+     0.005440587668768851
+    ],
+    "n": 41
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01020",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 148,
+   "confirm_club": {
+    "adv": 0.0044735244176197595,
+    "immediate": 0.0,
+    "downstream": 0.0044735244176197595,
+    "ci": [
+     0.0022331785627029044,
+     0.009553937807281502
+    ],
+    "n": 53
+   },
+   "confirm_women": {
+    "adv": 0.0016324041260033836,
+    "immediate": 0.0,
+    "downstream": 0.0016324041260033836,
+    "ci": [
+     0.00044695339095279996,
+     0.002632132191879132
+    ],
+    "n": 92
+   },
+   "confirmed": true,
+   "situation": "own third/central, \u22643 ahead, free, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "01021",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 333,
+   "confirm_club": {
+    "adv": 0.0026487318864685267,
+    "immediate": 0.0,
+    "downstream": 0.0026487318864685267,
+    "ci": [
+     0.001632559022536673,
+     0.0037100890748788685
+    ],
+    "n": 102
+   },
+   "confirm_women": {
+    "adv": 0.0013704777055890882,
+    "immediate": 0.0,
+    "downstream": 0.0013704777055890882,
+    "ci": [
+     0.0009941419907273275,
+     0.0017006912209564643
+    ],
+    "n": 327
+   },
+   "confirmed": true,
+   "situation": "own third/central, \u22643 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "01022",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 223,
+   "confirm_club": {
+    "adv": 0.0024191600240004735,
+    "immediate": 0.0,
+    "downstream": 0.0024191600240004735,
+    "ci": [
+     0.0015201629800785151,
+     0.0035333827727571966
+    ],
+    "n": 84
+   },
+   "confirm_women": {
+    "adv": 0.0017157740021801456,
+    "immediate": 0.0,
+    "downstream": 0.0017157740021801456,
+    "ci": [
+     0.0010032671895336249,
+     0.0022028834346152254
+    ],
+    "n": 219
+   },
+   "confirmed": true,
+   "situation": "own third/central, \u22643 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "01101",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 98,
+   "confirm_club": {
+    "adv": 0.0003243386402939346,
+    "immediate": 0.0,
+    "downstream": 0.0003243386402939346,
+    "ci": [
+     -9.973799831353562e-05,
+     0.0008093559892327712
+    ],
+    "n": 110
+   },
+   "confirm_women": {
+    "adv": 0.002301733099522324,
+    "immediate": 0.0,
+    "downstream": 0.002301733099522324,
+    "ci": [
+     0.0009441375116489195,
+     0.003994286086276804
+    ],
+    "n": 82
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 120,
+   "confirm_club": {
+    "adv": 0.0003979461083388654,
+    "immediate": 0.0,
+    "downstream": 0.0003979461083388654,
+    "ci": [
+     -9.117971030402861e-05,
+     0.0010051112539340456
+    ],
+    "n": 85
+   },
+   "confirm_women": {
+    "adv": 0.0015327714793732343,
+    "immediate": 0.0,
+    "downstream": 0.0015327714793732343,
+    "ci": [
+     0.000810162658828839,
+     0.0022452141815617562
+    ],
+    "n": 97
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01112",
+   "play": "back_pass",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 249,
+   "confirm_club": {
+    "adv": -0.0006915158448075331,
+    "immediate": 0.0,
+    "downstream": -0.0006915158448075331,
+    "ci": [
+     -0.0012811418222866868,
+     9.151853313567285e-06
+    ],
+    "n": 176
+   },
+   "confirm_women": {
+    "adv": -0.0003288585524050987,
+    "immediate": 0.0,
+    "downstream": -0.0003288585524050987,
+    "ci": [
+     -0.0009385359774586416,
+     0.00014757714608181524
+    ],
+    "n": 135
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01121",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 152,
+   "confirm_club": {
+    "adv": 0.0037464391170511854,
+    "immediate": 0.0,
+    "downstream": 0.0037464391170511854,
+    "ci": [
+     0.002102479076622915,
+     0.004971608008531884
+    ],
+    "n": 82
+   },
+   "confirm_women": {
+    "adv": 0.0013539672359059885,
+    "immediate": 0.0,
+    "downstream": 0.0013539672359059885,
+    "ci": [
+     0.0008283533405862364,
+     0.001951255753879689
+    ],
+    "n": 154
+   },
+   "confirmed": true,
+   "situation": "own third/central, 4\u20136 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "01122",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 73,
+   "confirm_club": {
+    "adv": -0.0012369776722238792,
+    "immediate": 0.0,
+    "downstream": -0.0012369776722238792,
+    "ci": [
+     -0.0034990463795455755,
+     0.0001522102055257979
+    ],
+    "n": 34
+   },
+   "confirm_women": {
+    "adv": -0.00010447725108832066,
+    "immediate": 0.0,
+    "downstream": -0.00010447725108832066,
+    "ci": [
+     -0.000358125333848263,
+     0.0002325847630255487
+    ],
+    "n": 59
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01212",
+   "play": "back_pass",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 187,
+   "confirm_club": {
+    "adv": -0.001212267635156014,
+    "immediate": 0.0,
+    "downstream": -0.001212267635156014,
+    "ci": [
+     -0.0016127491540258172,
+     -0.0005153183177601801
+    ],
+    "n": 234
+   },
+   "confirm_women": {
+    "adv": -0.0006117751133230178,
+    "immediate": 0.0,
+    "downstream": -0.0006117751133230178,
+    "ci": [
+     -0.0038255989247874874,
+     0.0017608204484313994
+    ],
+    "n": 25
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "01222",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 924,
+   "confirm_club": {
+    "adv": 0.00171656130657683,
+    "immediate": 0.0,
+    "downstream": 0.00171656130657683,
+    "ci": [
+     0.0013685949782821128,
+     0.0020504465223150684
+    ],
+    "n": 1130
+   },
+   "confirm_women": {
+    "adv": 0.002403884969877931,
+    "immediate": 0.0,
+    "downstream": 0.002403884969877931,
+    "ci": [
+     0.0018162033126939655,
+     0.0031969861322491775
+    ],
+    "n": 98
+   },
+   "confirmed": true,
+   "situation": "own third/central, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "02000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 47,
+   "confirm_club": {
+    "adv": 0.0017140804525945545,
+    "immediate": 0.0,
+    "downstream": 0.0017140804525945545,
+    "ci": [
+     -0.0001250344305974862,
+     0.0027148536342416337
+    ],
+    "n": 29
+   },
+   "confirm_women": {
+    "adv": 0.0022241835605500233,
+    "immediate": 0.0,
+    "downstream": 0.0022241835605500233,
+    "ci": [
+     0.0006562977916555478,
+     0.003830057179825368
+    ],
+    "n": 66
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02001",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 82,
+   "confirm_club": {
+    "adv": 0.00031867658277862955,
+    "immediate": 0.0,
+    "downstream": 0.00031867658277862955,
+    "ci": [
+     -0.0013996904842628246,
+     0.0018393194058180767
+    ],
+    "n": 46
+   },
+   "confirm_women": {
+    "adv": 0.0020323493853433134,
+    "immediate": 0.0,
+    "downstream": 0.0020323493853433134,
+    "ci": [
+     0.0012615845565162622,
+     0.0028475479493583916
+    ],
+    "n": 107
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02002",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 32,
+   "confirm_club": {
+    "adv": 0.0011027835554026592,
+    "immediate": 0.0,
+    "downstream": 0.0011027835554026592,
+    "ci": [
+     -0.000172528689510636,
+     0.0024186216705586023
+    ],
+    "n": 20
+   },
+   "confirm_women": {
+    "adv": 0.002056403526020406,
+    "immediate": 0.0,
+    "downstream": 0.002056403526020406,
+    "ci": [
+     0.0014144848747501251,
+     0.002944385317504741
+    ],
+    "n": 31
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 52,
+   "confirm_club": {
+    "adv": 0.004955649656686253,
+    "immediate": 0.0,
+    "downstream": 0.004955649656686253,
+    "ci": [
+     0.002563699828709386,
+     0.007543593563483669
+    ],
+    "n": 46
+   },
+   "confirm_women": {
+    "adv": 0.0036761035906463057,
+    "immediate": 0.0,
+    "downstream": 0.0036761035906463057,
+    "ci": [
+     0.0020527104277403155,
+     0.0056869811347433205
+    ],
+    "n": 41
+   },
+   "confirmed": true,
+   "situation": "own third/right, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "02011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 103,
+   "confirm_club": {
+    "adv": -0.0005641343644969127,
+    "immediate": 0.0,
+    "downstream": -0.0005641343644969127,
+    "ci": [
+     -0.0027483220479009277,
+     0.0009923732692116126
+    ],
+    "n": 47
+   },
+   "confirm_women": {
+    "adv": 0.002344394221880986,
+    "immediate": 0.0,
+    "downstream": 0.002344394221880986,
+    "ci": [
+     0.0010497717198095892,
+     0.003361754089409743
+    ],
+    "n": 65
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02012",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 50,
+   "confirm_club": {
+    "adv": 0.0016644396929172186,
+    "immediate": 0.0,
+    "downstream": 0.0016644396929172186,
+    "ci": [
+     0.0002911363629436747,
+     0.003198281659233641
+    ],
+    "n": 11
+   },
+   "confirm_women": {
+    "adv": 0.0014517968388642818,
+    "immediate": 0.0,
+    "downstream": 0.0014517968388642818,
+    "ci": [
+     0.0005293104291923575,
+     0.0021226675960672723
+    ],
+    "n": 30
+   },
+   "confirmed": true,
+   "situation": "own third/right, \u22643 ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "02021",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 68,
+   "confirm_club": {
+    "adv": 0.0008421552794106273,
+    "immediate": 0.0,
+    "downstream": 0.0008421552794106273,
+    "ci": [
+     -2.3484790482747884e-05,
+     0.0014859834329457738
+    ],
+    "n": 13
+   },
+   "confirm_women": {
+    "adv": 0.0012715637993838992,
+    "immediate": 0.0,
+    "downstream": 0.0012715637993838992,
+    "ci": [
+     0.0008618167350356461,
+     0.001777256583407618
+    ],
+    "n": 91
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02102",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 222,
+   "confirm_club": {
+    "adv": 0.0025955879534934646,
+    "immediate": 0.0,
+    "downstream": 0.0025955879534934646,
+    "ci": [
+     0.0011707411678128807,
+     0.003867716554408301
+    ],
+    "n": 232
+   },
+   "confirm_women": {
+    "adv": 0.0036768541300403793,
+    "immediate": 0.0,
+    "downstream": 0.0036768541300403793,
+    "ci": [
+     0.002019218509328363,
+     0.0053769064363410665
+    ],
+    "n": 152
+   },
+   "confirmed": true,
+   "situation": "own third/right, 4\u20136 ahead, pressed, 4+ mates ahead"
+  },
+  {
+   "cell": "02111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 166,
+   "confirm_club": {
+    "adv": 0.0021134411362311234,
+    "immediate": 0.0,
+    "downstream": 0.0021134411362311234,
+    "ci": [
+     0.00145178064203538,
+     0.002705937778874058
+    ],
+    "n": 76
+   },
+   "confirm_women": {
+    "adv": 0.0019123470553569278,
+    "immediate": 0.0,
+    "downstream": 0.0019123470553569278,
+    "ci": [
+     0.0014656411824421442,
+     0.0025560942248647597
+    ],
+    "n": 113
+   },
+   "confirmed": true,
+   "situation": "own third/right, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "02121",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 66,
+   "confirm_club": {
+    "adv": 0.0014110450545862128,
+    "immediate": 0.0,
+    "downstream": 0.0014110450545862128,
+    "ci": [
+     0.0004575450933003934,
+     0.002575331239438899
+    ],
+    "n": 22
+   },
+   "confirm_women": {
+    "adv": 0.0008348388957747314,
+    "immediate": 0.0,
+    "downstream": 0.0008348388957747314,
+    "ci": [
+     0.00047099486453556187,
+     0.0012822335174257347
+    ],
+    "n": 108
+   },
+   "confirmed": true,
+   "situation": "own third/right, 4\u20136 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "02122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 497,
+   "confirm_club": {
+    "adv": 0.0025594481534697844,
+    "immediate": 0.0,
+    "downstream": 0.0025594481534697844,
+    "ci": [
+     0.0018307116294688076,
+     0.00299636292878102
+    ],
+    "n": 277
+   },
+   "confirm_women": {
+    "adv": 0.002159383445803553,
+    "immediate": 0.0,
+    "downstream": 0.002159383445803553,
+    "ci": [
+     0.001702052989941547,
+     0.0026681148989147222
+    ],
+    "n": 320
+   },
+   "confirmed": true,
+   "situation": "own third/right, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "02212",
+   "play": "back_pass",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 290,
+   "confirm_club": {
+    "adv": -0.00023718238400050225,
+    "immediate": 0.0,
+    "downstream": -0.00023718238400050225,
+    "ci": [
+     -0.0006096780779245894,
+     0.00029071702607216696
+    ],
+    "n": 350
+   },
+   "confirm_women": {
+    "adv": 0.0001729040163007461,
+    "immediate": 0.0,
+    "downstream": 0.0001729040163007461,
+    "ci": [
+     -0.001271940523608879,
+     0.0014432672767618723
+    ],
+    "n": 35
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "02222",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 247,
+   "confirm_club": {
+    "adv": 0.0012546583008919664,
+    "immediate": 0.0,
+    "downstream": 0.0012546583008919664,
+    "ci": [
+     0.0007381802961430269,
+     0.0017702492710051714
+    ],
+    "n": 261
+   },
+   "confirm_women": {
+    "adv": 0.0013842274831836893,
+    "immediate": 0.0,
+    "downstream": 0.0013842274831836893,
+    "ci": [
+     0.0007321984730160645,
+     0.0023113964001759235
+    ],
+    "n": 39
+   },
+   "confirmed": true,
+   "situation": "own third/right, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "10000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 85,
+   "confirm_club": {
+    "adv": 0.0017131899398501512,
+    "immediate": 0.0,
+    "downstream": 0.0017131899398501512,
+    "ci": [
+     -0.001717484749766622,
+     0.0038439872909790756
+    ],
+    "n": 49
+   },
+   "confirm_women": {
+    "adv": 0.00201458077026527,
+    "immediate": 0.0,
+    "downstream": 0.00201458077026527,
+    "ci": [
+     0.0008275399156377307,
+     0.0035398414062607323
+    ],
+    "n": 108
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10001",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 85,
+   "confirm_club": {
+    "adv": 0.0008204537791130706,
+    "immediate": 0.0,
+    "downstream": 0.0008204537791130706,
+    "ci": [
+     -0.0027760466805013782,
+     0.0043144951689686704
+    ],
+    "n": 47
+   },
+   "confirm_women": {
+    "adv": 0.00037445877492358216,
+    "immediate": 0.0,
+    "downstream": 0.00037445877492358216,
+    "ci": [
+     -0.0010410043633182055,
+     0.001664326192491902
+    ],
+    "n": 104
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 52,
+   "confirm_club": {
+    "adv": 0.00022013205577151897,
+    "immediate": 0.0,
+    "downstream": 0.00022013205577151897,
+    "ci": [
+     -0.0028587523431066854,
+     0.0028533128642627154
+    ],
+    "n": 30
+   },
+   "confirm_women": {
+    "adv": 0.0005956079567455783,
+    "immediate": 0.0,
+    "downstream": 0.0005956079567455783,
+    "ci": [
+     -0.001084210301173063,
+     0.002225490039403889
+    ],
+    "n": 40
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 68,
+   "confirm_club": {
+    "adv": -0.0018024129550492634,
+    "immediate": 0.0,
+    "downstream": -0.0018024129550492634,
+    "ci": [
+     -0.004848293714596663,
+     0.0011081260238636492
+    ],
+    "n": 30
+   },
+   "confirm_women": {
+    "adv": 0.00046987692839345254,
+    "immediate": 0.0,
+    "downstream": 0.00046987692839345254,
+    "ci": [
+     -0.00044683463852744843,
+     0.001386117521233939
+    ],
+    "n": 72
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10020",
+   "play": "carry_other",
+   "instead_of": "carry_fwd",
+   "disc_n": 74,
+   "confirm_club": {
+    "adv": -0.008452859751112854,
+    "immediate": 0.0,
+    "downstream": -0.008452859751112854,
+    "ci": [
+     -0.01181828762735302,
+     -0.005013260741288702
+    ],
+    "n": 30
+   },
+   "confirm_women": {
+    "adv": -0.006055233588705368,
+    "immediate": 0.0,
+    "downstream": -0.006055233588705368,
+    "ci": [
+     -0.009305135923727429,
+     -0.004005072418954012
+    ],
+    "n": 79
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10021",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 46,
+   "confirm_club": {
+    "adv": 0.002002722842338659,
+    "immediate": 0.0,
+    "downstream": 0.002002722842338659,
+    "ci": [
+     -0.00044511022522178423,
+     0.004844330246991749
+    ],
+    "n": 11
+   },
+   "confirm_women": {
+    "adv": 0.002473465972578708,
+    "immediate": 0.0,
+    "downstream": 0.002473465972578708,
+    "ci": [
+     0.0010033053430626086,
+     0.004162995705825204
+    ],
+    "n": 29
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10100",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 42,
+   "confirm_club": {
+    "adv": 0.0003973149353854073,
+    "immediate": 0.0,
+    "downstream": 0.0003973149353854073,
+    "ci": [
+     -0.003101813687145965,
+     0.005227430757896129
+    ],
+    "n": 42
+   },
+   "confirm_women": {
+    "adv": 0.0018193465932063533,
+    "immediate": 0.0,
+    "downstream": 0.0018193465932063533,
+    "ci": [
+     9.422059450435155e-05,
+     0.003622305581782831
+    ],
+    "n": 48
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 38,
+   "confirm_club": {
+    "adv": 0.0004891568798228284,
+    "immediate": 0.0,
+    "downstream": 0.0004891568798228284,
+    "ci": [
+     -0.0015655362518871368,
+     0.002905832638438136
+    ],
+    "n": 28
+   },
+   "confirm_women": {
+    "adv": 0.0006596109057636036,
+    "immediate": 0.0,
+    "downstream": 0.0006596109057636036,
+    "ci": [
+     -0.0004750916556066568,
+     0.0019307691263815727
+    ],
+    "n": 32
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 264,
+   "confirm_club": {
+    "adv": 0.0014369874811760355,
+    "immediate": 0.0,
+    "downstream": 0.0014369874811760355,
+    "ci": [
+     0.0006442351382366896,
+     0.0024021272022249967
+    ],
+    "n": 119
+   },
+   "confirm_women": {
+    "adv": 0.0009853775218527285,
+    "immediate": 0.0,
+    "downstream": 0.0009853775218527285,
+    "ci": [
+     0.00040721195831239275,
+     0.001630349370458153
+    ],
+    "n": 214
+   },
+   "confirmed": true,
+   "situation": "own half/left, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "10112",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 306,
+   "confirm_club": {
+    "adv": -0.0004996236614638119,
+    "immediate": 0.0,
+    "downstream": -0.0004996236614638119,
+    "ci": [
+     -0.0016357231561818526,
+     0.0005657733188389111
+    ],
+    "n": 143
+   },
+   "confirm_women": {
+    "adv": -0.0005072868613391086,
+    "immediate": 0.0,
+    "downstream": -0.0005072868613391086,
+    "ci": [
+     -0.0012154215341420229,
+     3.3977185500461824e-05
+    ],
+    "n": 200
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10120",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 30,
+   "confirm_club": {
+    "adv": 0.0063135313325423225,
+    "immediate": 0.0,
+    "downstream": 0.0063135313325423225,
+    "ci": [
+     0.0027553443376917186,
+     0.009574377834594456
+    ],
+    "n": 21
+   },
+   "confirm_women": {
+    "adv": 0.003338967389140881,
+    "immediate": 0.0,
+    "downstream": 0.003338967389140881,
+    "ci": [
+     0.00011986802135724187,
+     0.006352941562024965
+    ],
+    "n": 16
+   },
+   "confirmed": true,
+   "situation": "own half/left, 4\u20136 ahead, free, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "10121",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 71,
+   "confirm_club": {
+    "adv": 0.003096639212305909,
+    "immediate": 0.0,
+    "downstream": 0.003096639212305909,
+    "ci": [
+     0.001172582163454033,
+     0.004492409127461976
+    ],
+    "n": 26
+   },
+   "confirm_women": {
+    "adv": 0.0019259759619744566,
+    "immediate": 0.0,
+    "downstream": 0.0019259759619744566,
+    "ci": [
+     0.001184837385987115,
+     0.0030372515847004104
+    ],
+    "n": 49
+   },
+   "confirmed": true,
+   "situation": "own half/left, 4\u20136 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "10122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 322,
+   "confirm_club": {
+    "adv": 0.004374978605474377,
+    "immediate": 0.0,
+    "downstream": 0.004374978605474377,
+    "ci": [
+     0.0035522283286057573,
+     0.005262862677343862
+    ],
+    "n": 134
+   },
+   "confirm_women": {
+    "adv": 0.002041709919221271,
+    "immediate": 0.0,
+    "downstream": 0.002041709919221271,
+    "ci": [
+     0.0013639234626887677,
+     0.002502189860541967
+    ],
+    "n": 270
+   },
+   "confirmed": true,
+   "situation": "own half/left, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "10201",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 30,
+   "confirm_club": {
+    "adv": -0.0028431271835434677,
+    "immediate": 0.0,
+    "downstream": -0.0028431271835434677,
+    "ci": [
+     -0.004640716301945812,
+     -0.0007493953515623998
+    ],
+    "n": 55
+   },
+   "confirm_women": {
+    "adv": -0.0007710280034414962,
+    "immediate": 0.0,
+    "downstream": -0.0007710280034414962,
+    "ci": [
+     -0.0056309052566204205,
+     0.002777959823767818
+    ],
+    "n": 25
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10211",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 40,
+   "confirm_club": {
+    "adv": 0.0002627498333022636,
+    "immediate": 0.0,
+    "downstream": 0.0002627498333022636,
+    "ci": [
+     -0.0014305313833457834,
+     0.00213951921858506
+    ],
+    "n": 42
+   },
+   "confirm_women": {
+    "adv": -0.0009195239825696162,
+    "immediate": 0.0,
+    "downstream": -0.0009195239825696162,
+    "ci": [
+     -0.005762566417743995,
+     0.0023897462041155048
+    ],
+    "n": 14
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10212",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 452,
+   "confirm_club": {
+    "adv": 0.0018818655677109598,
+    "immediate": 0.0,
+    "downstream": 0.0018818655677109598,
+    "ci": [
+     0.0013691704017918986,
+     0.0021843586830429225
+    ],
+    "n": 621
+   },
+   "confirm_women": {
+    "adv": 0.000760020132645315,
+    "immediate": 0.0,
+    "downstream": 0.000760020132645315,
+    "ci": [
+     -0.00017510880844135357,
+     0.0015171237219581623
+    ],
+    "n": 132
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10221",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 45,
+   "confirm_club": {
+    "adv": 0.004787218196068404,
+    "immediate": 0.0,
+    "downstream": 0.004787218196068404,
+    "ci": [
+     0.0032829948176205464,
+     0.006437843696198946
+    ],
+    "n": 43
+   },
+   "confirm_women": {
+    "adv": 0.00199101190245189,
+    "immediate": 0.0,
+    "downstream": 0.00199101190245189,
+    "ci": [
+     -0.0003510914657328839,
+     0.004531500803403141
+    ],
+    "n": 18
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "10222",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 860,
+   "confirm_club": {
+    "adv": 0.0026715983437589075,
+    "immediate": 0.0,
+    "downstream": 0.0026715983437589075,
+    "ci": [
+     0.0022659911940842883,
+     0.003019778688787878
+    ],
+    "n": 892
+   },
+   "confirm_women": {
+    "adv": 0.0028293168107926796,
+    "immediate": 0.0,
+    "downstream": 0.0028293168107926796,
+    "ci": [
+     0.0018925575992281571,
+     0.003709392045816495
+    ],
+    "n": 253
+   },
+   "confirmed": true,
+   "situation": "own half/left, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "11000",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 32,
+   "confirm_club": {
+    "adv": 0.011624646924708139,
+    "immediate": 0.0,
+    "downstream": 0.011624646924708139,
+    "ci": [
+     0.005679253950331586,
+     0.01805484549651499
+    ],
+    "n": 18
+   },
+   "confirm_women": {
+    "adv": 0.004256495703114698,
+    "immediate": 0.0,
+    "downstream": 0.004256495703114698,
+    "ci": [
+     -0.0002832887760429027,
+     0.007482698305542552
+    ],
+    "n": 19
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11001",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 47,
+   "confirm_club": {
+    "adv": 0.000962235364149298,
+    "immediate": 0.0,
+    "downstream": 0.000962235364149298,
+    "ci": [
+     -0.00123198023514546,
+     0.0032483672446670035
+    ],
+    "n": 27
+   },
+   "confirm_women": {
+    "adv": 0.0003059696654246751,
+    "immediate": 0.0,
+    "downstream": 0.0003059696654246751,
+    "ci": [
+     -0.00118514350881865,
+     0.002015421963232944
+    ],
+    "n": 53
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 58,
+   "confirm_club": {
+    "adv": 0.010549439718975349,
+    "immediate": 0.0,
+    "downstream": 0.010549439718975349,
+    "ci": [
+     0.0072548996756234205,
+     0.016208631007030194
+    ],
+    "n": 45
+   },
+   "confirm_women": {
+    "adv": 0.007363945246458724,
+    "immediate": 0.0,
+    "downstream": 0.007363945246458724,
+    "ci": [
+     0.003371036296439675,
+     0.011288474512949242
+    ],
+    "n": 51
+   },
+   "confirmed": true,
+   "situation": "own half/central, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "11011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 64,
+   "confirm_club": {
+    "adv": -9.397609899700586e-05,
+    "immediate": 0.0,
+    "downstream": -9.397609899700586e-05,
+    "ci": [
+     -0.0030935579999072805,
+     0.003193048544766297
+    ],
+    "n": 14
+   },
+   "confirm_women": {
+    "adv": -0.0015767996811160336,
+    "immediate": 0.0,
+    "downstream": -0.0015767996811160336,
+    "ci": [
+     -0.0035363936839153008,
+     7.869927559880296e-05
+    ],
+    "n": 40
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11020",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 51,
+   "confirm_club": {
+    "adv": 0.009710799838318886,
+    "immediate": 0.0,
+    "downstream": 0.009710799838318886,
+    "ci": [
+     0.004103212120600029,
+     0.016065301195032602
+    ],
+    "n": 40
+   },
+   "confirm_women": {
+    "adv": 0.004825137955190019,
+    "immediate": 0.0,
+    "downstream": 0.004825137955190019,
+    "ci": [
+     0.0010405965929299861,
+     0.010175846151472382
+    ],
+    "n": 31
+   },
+   "confirmed": true,
+   "situation": "own half/central, \u22643 ahead, free, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "11021",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 80,
+   "confirm_club": {
+    "adv": 0.006548225554637851,
+    "immediate": 0.0,
+    "downstream": 0.006548225554637851,
+    "ci": [
+     0.0024654620972166816,
+     0.010202423151356102
+    ],
+    "n": 39
+   },
+   "confirm_women": {
+    "adv": 0.0017489225491520762,
+    "immediate": 0.0,
+    "downstream": 0.0017489225491520762,
+    "ci": [
+     0.0008295268658685807,
+     0.002896674498023813
+    ],
+    "n": 72
+   },
+   "confirmed": true,
+   "situation": "own half/central, \u22643 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "11100",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 48,
+   "confirm_club": {
+    "adv": 0.002552545247564016,
+    "immediate": 0.0,
+    "downstream": 0.002552545247564016,
+    "ci": [
+     -0.0006212922054358288,
+     0.004983769899181287
+    ],
+    "n": 31
+   },
+   "confirm_women": {
+    "adv": -0.0013395717466714897,
+    "immediate": 0.0,
+    "downstream": -0.0013395717466714897,
+    "ci": [
+     -0.0024366065039152784,
+     0.00023552155785842488
+    ],
+    "n": 28
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11101",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 151,
+   "confirm_club": {
+    "adv": 0.0003014257074648811,
+    "immediate": 0.0,
+    "downstream": 0.0003014257074648811,
+    "ci": [
+     -0.0010032030375610789,
+     0.002025976079043101
+    ],
+    "n": 122
+   },
+   "confirm_women": {
+    "adv": -0.0005159043520427788,
+    "immediate": 0.0,
+    "downstream": -0.0005159043520427788,
+    "ci": [
+     -0.0017890451920470046,
+     0.0007165018513765972
+    ],
+    "n": 149
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 187,
+   "confirm_club": {
+    "adv": -0.00011772028440898766,
+    "immediate": 0.0,
+    "downstream": -0.00011772028440898766,
+    "ci": [
+     -0.0012884917169425586,
+     0.0007374305132920277
+    ],
+    "n": 87
+   },
+   "confirm_women": {
+    "adv": 0.00017876617925631152,
+    "immediate": 0.0,
+    "downstream": 0.00017876617925631152,
+    "ci": [
+     -0.0005543791623132122,
+     0.0009082574586667915
+    ],
+    "n": 117
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11121",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 140,
+   "confirm_club": {
+    "adv": 0.005548601667682149,
+    "immediate": 0.0,
+    "downstream": 0.005548601667682149,
+    "ci": [
+     0.004077040396313938,
+     0.006974397818537987
+    ],
+    "n": 93
+   },
+   "confirm_women": {
+    "adv": 0.0023326215004402916,
+    "immediate": 0.0,
+    "downstream": 0.0023326215004402916,
+    "ci": [
+     0.0011910121351456956,
+     0.0032061766438723975
+    ],
+    "n": 92
+   },
+   "confirmed": true,
+   "situation": "own half/central, 4\u20136 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "11122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 475,
+   "confirm_club": {
+    "adv": 0.0022533259580957733,
+    "immediate": 0.0,
+    "downstream": 0.0022533259580957733,
+    "ci": [
+     0.0013561449110485115,
+     0.0027787646606175385
+    ],
+    "n": 108
+   },
+   "confirm_women": {
+    "adv": 0.0023702934931047435,
+    "immediate": 0.0,
+    "downstream": 0.0023702934931047435,
+    "ci": [
+     0.0018653238153694188,
+     0.00285446726030908
+    ],
+    "n": 385
+   },
+   "confirmed": true,
+   "situation": "own half/central, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "11212",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 554,
+   "confirm_club": {
+    "adv": -0.0022392285824932457,
+    "immediate": 0.0,
+    "downstream": -0.0022392285824932457,
+    "ci": [
+     -0.002572668206745308,
+     -0.001829321198835157
+    ],
+    "n": 556
+   },
+   "confirm_women": {
+    "adv": -0.001731176392062066,
+    "immediate": 0.0,
+    "downstream": -0.001731176392062066,
+    "ci": [
+     -0.002486133838564878,
+     -0.0010217884554248025
+    ],
+    "n": 147
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "11222",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 1225,
+   "confirm_club": {
+    "adv": 0.0021230618114370416,
+    "immediate": 0.0,
+    "downstream": 0.0021230618114370416,
+    "ci": [
+     0.001789179547151711,
+     0.002361293565928665
+    ],
+    "n": 1129
+   },
+   "confirm_women": {
+    "adv": 0.002852521200671537,
+    "immediate": 0.0,
+    "downstream": 0.002852521200671537,
+    "ci": [
+     0.0022604332170911685,
+     0.0033860661220427796
+    ],
+    "n": 361
+   },
+   "confirmed": true,
+   "situation": "own half/central, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "12000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 61,
+   "confirm_club": {
+    "adv": 0.0027953507823548947,
+    "immediate": 0.0,
+    "downstream": 0.0027953507823548947,
+    "ci": [
+     0.0005536607058785198,
+     0.005840785397804195
+    ],
+    "n": 34
+   },
+   "confirm_women": {
+    "adv": 0.0011624148958379451,
+    "immediate": 0.0,
+    "downstream": 0.0011624148958379451,
+    "ci": [
+     -5.9762131528738525e-05,
+     0.002397842888372733
+    ],
+    "n": 73
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12001",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 86,
+   "confirm_club": {
+    "adv": 0.00030382699340305436,
+    "immediate": 0.0,
+    "downstream": 0.00030382699340305436,
+    "ci": [
+     -0.0021635096045902317,
+     0.0028769509583712197
+    ],
+    "n": 36
+   },
+   "confirm_women": {
+    "adv": 0.0008182231977293458,
+    "immediate": 0.0,
+    "downstream": 0.0008182231977293458,
+    "ci": [
+     -0.0006614243361788974,
+     0.0022573388797352593
+    ],
+    "n": 84
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 59,
+   "confirm_club": {
+    "adv": 0.0009137374656330178,
+    "immediate": 0.0,
+    "downstream": 0.0009137374656330178,
+    "ci": [
+     -0.0014872960275259888,
+     0.002651257739577122
+    ],
+    "n": 19
+   },
+   "confirm_women": {
+    "adv": -0.0005520880652952814,
+    "immediate": 0.0,
+    "downstream": -0.0005520880652952814,
+    "ci": [
+     -0.00279069049604186,
+     0.00152962325421852
+    ],
+    "n": 37
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 72,
+   "confirm_club": {
+    "adv": -0.005708441155074346,
+    "immediate": 0.0,
+    "downstream": -0.005708441155074346,
+    "ci": [
+     -0.017547221042671562,
+     0.0013477746659040248
+    ],
+    "n": 22
+   },
+   "confirm_women": {
+    "adv": 0.00027943147596602626,
+    "immediate": 0.0,
+    "downstream": 0.00027943147596602626,
+    "ci": [
+     -0.0008297396665910468,
+     0.0011648246861993526
+    ],
+    "n": 59
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12100",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 43,
+   "confirm_club": {
+    "adv": -0.0029222420180530532,
+    "immediate": 0.0,
+    "downstream": -0.0029222420180530532,
+    "ci": [
+     -0.008231847197262894,
+     0.001991875907969844
+    ],
+    "n": 31
+   },
+   "confirm_women": {
+    "adv": 0.00024621370220405826,
+    "immediate": 0.0,
+    "downstream": 0.00024621370220405826,
+    "ci": [
+     -0.0026992084249757376,
+     0.003388250582272103
+    ],
+    "n": 39
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 34,
+   "confirm_club": {
+    "adv": 0.0030558206730557196,
+    "immediate": 0.0,
+    "downstream": 0.0030558206730557196,
+    "ci": [
+     0.0008605850571739842,
+     0.005876739878254421
+    ],
+    "n": 10
+   },
+   "confirm_women": {
+    "adv": 0.0014084625719569394,
+    "immediate": 0.0,
+    "downstream": 0.0014084625719569394,
+    "ci": [
+     0.0002235696733542575,
+     0.0034836262463666928
+    ],
+    "n": 35
+   },
+   "confirmed": true,
+   "situation": "own half/right, 4\u20136 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "12111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 255,
+   "confirm_club": {
+    "adv": -0.0001170571125317689,
+    "immediate": 0.0,
+    "downstream": -0.0001170571125317689,
+    "ci": [
+     -0.002320550529038892,
+     0.0014317882513571823
+    ],
+    "n": 118
+   },
+   "confirm_women": {
+    "adv": 0.000984261011711971,
+    "immediate": 0.0,
+    "downstream": 0.000984261011711971,
+    "ci": [
+     0.00028687445912234345,
+     0.0017403490192307639
+    ],
+    "n": 177
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12121",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 85,
+   "confirm_club": {
+    "adv": -0.0033824621312120683,
+    "immediate": 0.0,
+    "downstream": -0.0033824621312120683,
+    "ci": [
+     -0.007711501776043645,
+     0.00041102759761488375
+    ],
+    "n": 14
+   },
+   "confirm_women": {
+    "adv": -0.0007914611262745475,
+    "immediate": 0.0,
+    "downstream": -0.0007914611262745475,
+    "ci": [
+     -0.0014297669079119408,
+     -0.00012139164332731208
+    ],
+    "n": 76
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12122",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 227,
+   "confirm_club": {
+    "adv": 0.0013003206531702338,
+    "immediate": 0.0,
+    "downstream": 0.0013003206531702338,
+    "ci": [
+     0.000299957347602852,
+     0.0020092609855034724
+    ],
+    "n": 63
+   },
+   "confirm_women": {
+    "adv": 0.0010655267867737284,
+    "immediate": 0.0,
+    "downstream": 0.0010655267867737284,
+    "ci": [
+     0.0006623885250857637,
+     0.001456020101378912
+    ],
+    "n": 177
+   },
+   "confirmed": true,
+   "situation": "own half/right, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "12201",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 31,
+   "confirm_club": {
+    "adv": -0.0008432402738025938,
+    "immediate": 0.0,
+    "downstream": -0.0008432402738025938,
+    "ci": [
+     -0.002277591109660759,
+     0.000992675208528786
+    ],
+    "n": 51
+   },
+   "confirm_women": {
+    "adv": -0.00011343147836063213,
+    "immediate": 0.0,
+    "downstream": -0.00011343147836063213,
+    "ci": [
+     -0.004337165811009984,
+     0.0040593534995354485
+    ],
+    "n": 38
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "12222",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 535,
+   "confirm_club": {
+    "adv": 0.0012165225527844686,
+    "immediate": 0.0,
+    "downstream": 0.0012165225527844686,
+    "ci": [
+     0.0009197806857564234,
+     0.0014824649940657995
+    ],
+    "n": 511
+   },
+   "confirm_women": {
+    "adv": 0.0007990552653896355,
+    "immediate": 0.0,
+    "downstream": 0.0007990552653896355,
+    "ci": [
+     0.00026551019897693074,
+     0.0013971058148695551
+    ],
+    "n": 153
+   },
+   "confirmed": true,
+   "situation": "own half/right, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "20000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 57,
+   "confirm_club": {
+    "adv": 0.001678343062160647,
+    "immediate": 0.0,
+    "downstream": 0.001678343062160647,
+    "ci": [
+     -0.0009224042544302523,
+     0.004908171030306378
+    ],
+    "n": 34
+   },
+   "confirm_women": {
+    "adv": 0.0038046900005177815,
+    "immediate": 0.0,
+    "downstream": 0.0038046900005177815,
+    "ci": [
+     0.001527127676131807,
+     0.005483359224310671
+    ],
+    "n": 45
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20001",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 42,
+   "confirm_club": {
+    "adv": -0.00033416899004715117,
+    "immediate": 0.0,
+    "downstream": -0.00033416899004715117,
+    "ci": [
+     -0.0042275093749228835,
+     0.0029993971929954794
+    ],
+    "n": 21
+   },
+   "confirm_women": {
+    "adv": 0.00021436688945885782,
+    "immediate": 0.0,
+    "downstream": 0.00021436688945885782,
+    "ci": [
+     -0.0013830110693650512,
+     0.00208629331496407
+    ],
+    "n": 45
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 90,
+   "confirm_club": {
+    "adv": 0.01299450873266372,
+    "immediate": 0.0,
+    "downstream": 0.01299450873266372,
+    "ci": [
+     0.006355228665301051,
+     0.01874926299349901
+    ],
+    "n": 74
+   },
+   "confirm_women": {
+    "adv": 0.01039293986209145,
+    "immediate": 0.0,
+    "downstream": 0.01039293986209145,
+    "ci": [
+     0.007096355332014636,
+     0.01423229680662373
+    ],
+    "n": 67
+   },
+   "confirmed": true,
+   "situation": "middle third/left, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "20011",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 36,
+   "confirm_club": {
+    "adv": 0.005691331293841922,
+    "immediate": 0.0,
+    "downstream": 0.005691331293841922,
+    "ci": [
+     0.0010300552148228995,
+     0.0096430563833932
+    ],
+    "n": 28
+   },
+   "confirm_women": {
+    "adv": 0.00188141212377127,
+    "immediate": 0.0,
+    "downstream": 0.00188141212377127,
+    "ci": [
+     -0.00448558156349774,
+     0.005049027420578341
+    ],
+    "n": 41
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20100",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 64,
+   "confirm_club": {
+    "adv": 0.00034767273420211776,
+    "immediate": 0.0,
+    "downstream": 0.00034767273420211776,
+    "ci": [
+     -0.0020685341631270955,
+     0.0023559586483420285
+    ],
+    "n": 64
+   },
+   "confirm_women": {
+    "adv": 0.0018549636637921578,
+    "immediate": 0.0,
+    "downstream": 0.0018549636637921578,
+    "ci": [
+     0.000134157015465171,
+     0.0034190330873192826
+    ],
+    "n": 62
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20101",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 347,
+   "confirm_club": {
+    "adv": 0.0009050560818267377,
+    "immediate": 0.0,
+    "downstream": 0.0009050560818267377,
+    "ci": [
+     -0.00039582698695127575,
+     0.002103517609154515
+    ],
+    "n": 282
+   },
+   "confirm_women": {
+    "adv": 0.001330671233495331,
+    "immediate": 0.0,
+    "downstream": 0.001330671233495331,
+    "ci": [
+     0.0004639703089265335,
+     0.002214318327424774
+    ],
+    "n": 364
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20102",
+   "play": "carry_fwd",
+   "instead_of": "back_pass",
+   "disc_n": 34,
+   "confirm_club": {
+    "adv": 0.005144062491810306,
+    "immediate": 0.0,
+    "downstream": 0.005144062491810306,
+    "ci": [
+     0.0023915598784002142,
+     0.007495879354268946
+    ],
+    "n": 30
+   },
+   "confirm_women": {
+    "adv": 0.0063366486057720335,
+    "immediate": 0.0,
+    "downstream": 0.0063366486057720335,
+    "ci": [
+     0.0026152463332893613,
+     0.009567035354878484
+    ],
+    "n": 37
+   },
+   "confirmed": true,
+   "situation": "middle third/left, 4\u20136 ahead, pressed, 4+ mates ahead"
+  },
+  {
+   "cell": "20110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 52,
+   "confirm_club": {
+    "adv": 0.0004780880425582848,
+    "immediate": 0.0,
+    "downstream": 0.0004780880425582848,
+    "ci": [
+     -0.0009636967655307938,
+     0.0023153557518897283
+    ],
+    "n": 50
+   },
+   "confirm_women": {
+    "adv": -0.0001606587853629389,
+    "immediate": 0.0,
+    "downstream": -0.0001606587853629389,
+    "ci": [
+     -0.0017122773574979972,
+     0.0018124337766430149
+    ],
+    "n": 34
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 324,
+   "confirm_club": {
+    "adv": 0.0009177805874884433,
+    "immediate": 0.0,
+    "downstream": 0.0009177805874884433,
+    "ci": [
+     0.00023558499271860556,
+     0.0016485040694179094
+    ],
+    "n": 209
+   },
+   "confirm_women": {
+    "adv": -0.0005704312209148486,
+    "immediate": 0.0,
+    "downstream": -0.0005704312209148486,
+    "ci": [
+     -0.001346957092113855,
+     0.0002580769482154856
+    ],
+    "n": 178
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20112",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 142,
+   "confirm_club": {
+    "adv": 0.0009240988569691987,
+    "immediate": 0.0,
+    "downstream": 0.0009240988569691987,
+    "ci": [
+     -0.0010024224039053501,
+     0.002952236653741378
+    ],
+    "n": 92
+   },
+   "confirm_women": {
+    "adv": 0.0015813660613242016,
+    "immediate": 0.0,
+    "downstream": 0.0015813660613242016,
+    "ci": [
+     0.00047335762564138363,
+     0.0029190342345567504
+    ],
+    "n": 114
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20120",
+   "play": "carry_other",
+   "instead_of": "carry_fwd",
+   "disc_n": 43,
+   "confirm_club": {
+    "adv": -0.004380609570847009,
+    "immediate": 0.0,
+    "downstream": -0.004380609570847009,
+    "ci": [
+     -0.00615841719081398,
+     -0.0019895792480554134
+    ],
+    "n": 36
+   },
+   "confirm_women": {
+    "adv": -0.006411078547293617,
+    "immediate": 0.0,
+    "downstream": -0.006411078547293617,
+    "ci": [
+     -0.010075884661855595,
+     -0.0019126587347415198
+    ],
+    "n": 32
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20121",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 56,
+   "confirm_club": {
+    "adv": 0.0011312679561053668,
+    "immediate": 0.0,
+    "downstream": 0.0011312679561053668,
+    "ci": [
+     0.00014759238063910535,
+     0.002439210924807348
+    ],
+    "n": 36
+   },
+   "confirm_women": {
+    "adv": 0.0004496314728480895,
+    "immediate": 0.0,
+    "downstream": 0.0004496314728480895,
+    "ci": [
+     -0.00038961523784764387,
+     0.001294152732696968
+    ],
+    "n": 25
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 191,
+   "confirm_club": {
+    "adv": 0.003449270143136854,
+    "immediate": 0.0,
+    "downstream": 0.003449270143136854,
+    "ci": [
+     0.0025220753678053655,
+     0.0046416926523514075
+    ],
+    "n": 97
+   },
+   "confirm_women": {
+    "adv": 0.0028665104966716023,
+    "immediate": 0.0,
+    "downstream": 0.0028665104966716023,
+    "ci": [
+     0.0019640979259556743,
+     0.0037864092104953387
+    ],
+    "n": 125
+   },
+   "confirmed": true,
+   "situation": "middle third/left, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "20212",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 790,
+   "confirm_club": {
+    "adv": 0.0020432920909698622,
+    "immediate": 0.0,
+    "downstream": 0.0020432920909698622,
+    "ci": [
+     0.001655566402166934,
+     0.002397722092020534
+    ],
+    "n": 897
+   },
+   "confirm_women": {
+    "adv": 0.0023412589101820275,
+    "immediate": 0.0,
+    "downstream": 0.0023412589101820275,
+    "ci": [
+     0.001803877293919999,
+     0.002771956820054612
+    ],
+    "n": 245
+   },
+   "confirmed": true,
+   "situation": "middle third/left, 7+ ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "20221",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 91,
+   "confirm_club": {
+    "adv": 0.003014791022267878,
+    "immediate": 0.0,
+    "downstream": 0.003014791022267878,
+    "ci": [
+     0.00040780053216389335,
+     0.005347512713003164
+    ],
+    "n": 63
+   },
+   "confirm_women": {
+    "adv": 0.0016875565553124382,
+    "immediate": 0.0,
+    "downstream": 0.0016875565553124382,
+    "ci": [
+     -0.002015119542875159,
+     0.004823469922535078
+    ],
+    "n": 22
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "20222",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 701,
+   "confirm_club": {
+    "adv": 0.0026813317291074154,
+    "immediate": 0.0,
+    "downstream": 0.0026813317291074154,
+    "ci": [
+     0.002208968878697001,
+     0.003174927596738427
+    ],
+    "n": 597
+   },
+   "confirm_women": {
+    "adv": 0.003028821045852479,
+    "immediate": 0.0,
+    "downstream": 0.003028821045852479,
+    "ci": [
+     0.002152794667041864,
+     0.004681668242228936
+    ],
+    "n": 242
+   },
+   "confirmed": true,
+   "situation": "middle third/left, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "21000",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 43,
+   "confirm_club": {
+    "adv": 0.001226869721982127,
+    "immediate": 0.0,
+    "downstream": 0.001226869721982127,
+    "ci": [
+     -0.0020926975626374563,
+     0.004991168087651834
+    ],
+    "n": 48
+   },
+   "confirm_women": {
+    "adv": 0.0014645454209393366,
+    "immediate": 0.0,
+    "downstream": 0.0014645454209393366,
+    "ci": [
+     -0.0013955145411191057,
+     0.003541668427790006
+    ],
+    "n": 41
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21010",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 36,
+   "confirm_club": {
+    "adv": -0.00017016898768041494,
+    "immediate": 0.0,
+    "downstream": -0.00017016898768041494,
+    "ci": [
+     -0.003132461664552685,
+     0.004163038873603929
+    ],
+    "n": 21
+   },
+   "confirm_women": {
+    "adv": 0.00102659128113833,
+    "immediate": 0.0,
+    "downstream": 0.00102659128113833,
+    "ci": [
+     -0.0019483546495493952,
+     0.004890975002927264
+    ],
+    "n": 12
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21100",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 56,
+   "confirm_club": {
+    "adv": 0.001734028838758372,
+    "immediate": 0.0,
+    "downstream": 0.001734028838758372,
+    "ci": [
+     -0.002269551628413391,
+     0.005579781860287712
+    ],
+    "n": 41
+   },
+   "confirm_women": {
+    "adv": 0.003309274951939351,
+    "immediate": 0.0,
+    "downstream": 0.003309274951939351,
+    "ci": [
+     0.0003078755746721058,
+     0.007052252844745731
+    ],
+    "n": 46
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21101",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 175,
+   "confirm_club": {
+    "adv": 0.002097966261225062,
+    "immediate": 0.0,
+    "downstream": 0.002097966261225062,
+    "ci": [
+     0.0007205235091560013,
+     0.00355459794854804
+    ],
+    "n": 108
+   },
+   "confirm_women": {
+    "adv": -0.0013040667628884256,
+    "immediate": 0.0,
+    "downstream": -0.0013040667628884256,
+    "ci": [
+     -0.0032078855906851893,
+     0.00020978018581650862
+    ],
+    "n": 172
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 146,
+   "confirm_club": {
+    "adv": -0.0010173677441381278,
+    "immediate": 0.0,
+    "downstream": -0.0010173677441381278,
+    "ci": [
+     -0.0032426156152790004,
+     0.0009718952188226522
+    ],
+    "n": 70
+   },
+   "confirm_women": {
+    "adv": -0.0018938540947006158,
+    "immediate": 0.0,
+    "downstream": -0.0018938540947006158,
+    "ci": [
+     -0.0037944248897364106,
+     -0.0002109321428724539
+    ],
+    "n": 75
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21112",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 41,
+   "confirm_club": {
+    "adv": 0.004998693688874702,
+    "immediate": 0.0,
+    "downstream": 0.004998693688874702,
+    "ci": [
+     0.00239886043945765,
+     0.007380732692050822
+    ],
+    "n": 49
+   },
+   "confirm_women": {
+    "adv": 0.003984900884364153,
+    "immediate": 0.0,
+    "downstream": 0.003984900884364153,
+    "ci": [
+     0.0013061118196331508,
+     0.006875456795714604
+    ],
+    "n": 28
+   },
+   "confirmed": true,
+   "situation": "middle third/central, 4\u20136 ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "21122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 107,
+   "confirm_club": {
+    "adv": 0.004116134017836087,
+    "immediate": 0.0,
+    "downstream": 0.004116134017836087,
+    "ci": [
+     0.0024141602099449493,
+     0.005804440981260156
+    ],
+    "n": 54
+   },
+   "confirm_women": {
+    "adv": 0.002708334307238224,
+    "immediate": 0.0,
+    "downstream": 0.002708334307238224,
+    "ci": [
+     0.0015512547188081267,
+     0.0038055892720455418
+    ],
+    "n": 76
+   },
+   "confirmed": true,
+   "situation": "middle third/central, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "21202",
+   "play": "short_fwd_ground",
+   "instead_of": "back_pass",
+   "disc_n": 317,
+   "confirm_club": {
+    "adv": 0.0033042899449908514,
+    "immediate": 0.0,
+    "downstream": 0.0033042899449908514,
+    "ci": [
+     0.0025630986292608845,
+     0.004068288139916462
+    ],
+    "n": 523
+   },
+   "confirm_women": {
+    "adv": 0.004590685128506793,
+    "immediate": 0.0,
+    "downstream": 0.004590685128506793,
+    "ci": [
+     0.0033953369385234414,
+     0.005780050452721418
+    ],
+    "n": 178
+   },
+   "confirmed": true,
+   "situation": "middle third/central, 7+ ahead, pressed, 4+ mates ahead"
+  },
+  {
+   "cell": "21211",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 53,
+   "confirm_club": {
+    "adv": 0.0025990430618842465,
+    "immediate": 0.0,
+    "downstream": 0.0025990430618842465,
+    "ci": [
+     0.0018250983437862864,
+     0.0033747569557328917
+    ],
+    "n": 80
+   },
+   "confirm_women": {
+    "adv": 0.0022579579148827404,
+    "immediate": 0.0,
+    "downstream": 0.0022579579148827404,
+    "ci": [
+     -0.00017279724579728507,
+     0.0037887120117800523
+    ],
+    "n": 33
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "21212",
+   "play": "short_fwd_ground",
+   "instead_of": "lateral",
+   "disc_n": 897,
+   "confirm_club": {
+    "adv": 0.00215778934067647,
+    "immediate": 0.0,
+    "downstream": 0.00215778934067647,
+    "ci": [
+     0.001712683003912985,
+     0.002680367875542661
+    ],
+    "n": 1173
+   },
+   "confirm_women": {
+    "adv": 0.0031493343314471095,
+    "immediate": 0.0,
+    "downstream": 0.0031493343314471095,
+    "ci": [
+     0.0018095421694147506,
+     0.004931489177503246
+    ],
+    "n": 331
+   },
+   "confirmed": true,
+   "situation": "middle third/central, 7+ ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "21222",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 940,
+   "confirm_club": {
+    "adv": 0.0014187820620693396,
+    "immediate": 0.0,
+    "downstream": 0.0014187820620693396,
+    "ci": [
+     0.0010806372851721894,
+     0.001929240991670309
+    ],
+    "n": 994
+   },
+   "confirm_women": {
+    "adv": 0.001331079421126754,
+    "immediate": 0.0,
+    "downstream": 0.001331079421126754,
+    "ci": [
+     0.00046680075727975596,
+     0.0023702122467165955
+    ],
+    "n": 265
+   },
+   "confirmed": true,
+   "situation": "middle third/central, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "22000",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 61,
+   "confirm_club": {
+    "adv": 0.0047405927055000074,
+    "immediate": 0.0,
+    "downstream": 0.0047405927055000074,
+    "ci": [
+     0.0007431799611396827,
+     0.008343354303170339
+    ],
+    "n": 32
+   },
+   "confirm_women": {
+    "adv": 0.0008730731102505971,
+    "immediate": 0.0,
+    "downstream": 0.0008730731102505971,
+    "ci": [
+     -0.001076569583222935,
+     0.0024800187520000057
+    ],
+    "n": 50
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 85,
+   "confirm_club": {
+    "adv": 0.008685341247421437,
+    "immediate": 0.0,
+    "downstream": 0.008685341247421437,
+    "ci": [
+     0.003766005241036603,
+     0.013193708190345049
+    ],
+    "n": 56
+   },
+   "confirm_women": {
+    "adv": 0.01269024522406463,
+    "immediate": 0.0,
+    "downstream": 0.01269024522406463,
+    "ci": [
+     0.008289438708641829,
+     0.016569736414733187
+    ],
+    "n": 70
+   },
+   "confirmed": true,
+   "situation": "middle third/right, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "22011",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 32,
+   "confirm_club": {
+    "adv": 0.0005236946178532511,
+    "immediate": 0.0,
+    "downstream": 0.0005236946178532511,
+    "ci": [
+     -0.002605327564617261,
+     0.0028765992682198934
+    ],
+    "n": 17
+   },
+   "confirm_women": {
+    "adv": 0.00017840633235710265,
+    "immediate": 0.0,
+    "downstream": 0.00017840633235710265,
+    "ci": [
+     -0.0012903104000295778,
+     0.001816208695853512
+    ],
+    "n": 26
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22021",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 43,
+   "confirm_club": {
+    "adv": 0.005971297452187382,
+    "immediate": 0.0,
+    "downstream": 0.005971297452187382,
+    "ci": [
+     0.0016257429462550814,
+     0.010845305539899677
+    ],
+    "n": 27
+   },
+   "confirm_women": {
+    "adv": 0.0077542697228892305,
+    "immediate": 0.0,
+    "downstream": 0.0077542697228892305,
+    "ci": [
+     0.005055121875667165,
+     0.010503534115758592
+    ],
+    "n": 36
+   },
+   "confirmed": true,
+   "situation": "middle third/right, \u22643 ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "22100",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 51,
+   "confirm_club": {
+    "adv": 0.00020828851830271763,
+    "immediate": 0.0,
+    "downstream": 0.00020828851830271763,
+    "ci": [
+     -0.002879927320031042,
+     0.0024809947663352876
+    ],
+    "n": 56
+   },
+   "confirm_women": {
+    "adv": 0.0005469688248026898,
+    "immediate": 0.0,
+    "downstream": 0.0005469688248026898,
+    "ci": [
+     -0.0019392703093952099,
+     0.0029024974208037005
+    ],
+    "n": 57
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22110",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 54,
+   "confirm_club": {
+    "adv": 0.0033830311902021647,
+    "immediate": 0.0,
+    "downstream": 0.0033830311902021647,
+    "ci": [
+     -0.0008549765061789179,
+     0.008508955846439703
+    ],
+    "n": 39
+   },
+   "confirm_women": {
+    "adv": 0.0013683629365504827,
+    "immediate": 0.0,
+    "downstream": 0.0013683629365504827,
+    "ci": [
+     -0.0010858473901036688,
+     0.004196173675377615
+    ],
+    "n": 28
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 290,
+   "confirm_club": {
+    "adv": 0.0007798808316431035,
+    "immediate": 0.0,
+    "downstream": 0.0007798808316431035,
+    "ci": [
+     0.00019071344758827196,
+     0.0015666287550061102
+    ],
+    "n": 223
+   },
+   "confirm_women": {
+    "adv": -4.9645971727078214e-05,
+    "immediate": 0.0,
+    "downstream": -4.9645971727078214e-05,
+    "ci": [
+     -0.000775398433323582,
+     0.0006235436504165682
+    ],
+    "n": 169
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22112",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 171,
+   "confirm_club": {
+    "adv": -0.0006130288911192112,
+    "immediate": 0.0,
+    "downstream": -0.0006130288911192112,
+    "ci": [
+     -0.001775919196812624,
+     0.00029733390849344057
+    ],
+    "n": 83
+   },
+   "confirm_women": {
+    "adv": -0.0005466040280831252,
+    "immediate": 0.0,
+    "downstream": -0.0005466040280831252,
+    "ci": [
+     -0.0010902109249694115,
+     0.0002623910947221693
+    ],
+    "n": 119
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22120",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 35,
+   "confirm_club": {
+    "adv": 0.003511645571663724,
+    "immediate": 0.0,
+    "downstream": 0.003511645571663724,
+    "ci": [
+     7.465041506792214e-05,
+     0.00630509562419996
+    ],
+    "n": 48
+   },
+   "confirm_women": {
+    "adv": 0.005947257727519549,
+    "immediate": 0.0,
+    "downstream": 0.005947257727519549,
+    "ci": [
+     0.0009492583350362883,
+     0.010760422487629241
+    ],
+    "n": 19
+   },
+   "confirmed": true,
+   "situation": "middle third/right, 4\u20136 ahead, free, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "22121",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 66,
+   "confirm_club": {
+    "adv": 0.006706795964783425,
+    "immediate": 0.0,
+    "downstream": 0.006706795964783425,
+    "ci": [
+     0.004051680955389684,
+     0.009944602660117059
+    ],
+    "n": 37
+   },
+   "confirm_women": {
+    "adv": 0.002666016477322451,
+    "immediate": 0.0,
+    "downstream": 0.002666016477322451,
+    "ci": [
+     -0.0011855919147752956,
+     0.005862571287555804
+    ],
+    "n": 34
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22122",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 121,
+   "confirm_club": {
+    "adv": 0.004273338747920578,
+    "immediate": 0.0,
+    "downstream": 0.004273338747920578,
+    "ci": [
+     0.002643052683313848,
+     0.006465443770722937
+    ],
+    "n": 60
+   },
+   "confirm_women": {
+    "adv": 0.0034789685904655157,
+    "immediate": 0.0,
+    "downstream": 0.0034789685904655157,
+    "ci": [
+     0.0019383852439941122,
+     0.004774378843183842
+    ],
+    "n": 81
+   },
+   "confirmed": true,
+   "situation": "middle third/right, 4\u20136 ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "22211",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 88,
+   "confirm_club": {
+    "adv": 0.0006903919183356803,
+    "immediate": 0.0,
+    "downstream": 0.0006903919183356803,
+    "ci": [
+     -0.00040539950329846033,
+     0.0019724374474142797
+    ],
+    "n": 105
+   },
+   "confirm_women": {
+    "adv": 0.0007554234482207104,
+    "immediate": 0.0,
+    "downstream": 0.0007554234482207104,
+    "ci": [
+     -0.0015732251226981619,
+     0.0024472851371730125
+    ],
+    "n": 44
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "22212",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 711,
+   "confirm_club": {
+    "adv": 0.0020770818663194066,
+    "immediate": 0.0,
+    "downstream": 0.0020770818663194066,
+    "ci": [
+     0.0017219601183927537,
+     0.0024110655596918185
+    ],
+    "n": 836
+   },
+   "confirm_women": {
+    "adv": 0.001813406102213675,
+    "immediate": 0.0,
+    "downstream": 0.001813406102213675,
+    "ci": [
+     0.0011206152850499987,
+     0.0023542978628538066
+    ],
+    "n": 282
+   },
+   "confirmed": true,
+   "situation": "middle third/right, 7+ ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "22221",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 64,
+   "confirm_club": {
+    "adv": 0.0032959050838021788,
+    "immediate": 0.0,
+    "downstream": 0.0032959050838021788,
+    "ci": [
+     0.002240428711679845,
+     0.00482220805633354
+    ],
+    "n": 76
+   },
+   "confirm_women": {
+    "adv": 0.0048779859798717545,
+    "immediate": 0.0,
+    "downstream": 0.0048779859798717545,
+    "ci": [
+     0.0027469983319663737,
+     0.0066385223944328475
+    ],
+    "n": 29
+   },
+   "confirmed": true,
+   "situation": "middle third/right, 7+ ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "22222",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 804,
+   "confirm_club": {
+    "adv": 0.0025304542404020122,
+    "immediate": 0.0,
+    "downstream": 0.0025304542404020122,
+    "ci": [
+     0.0019668928421320625,
+     0.003050696830352515
+    ],
+    "n": 785
+   },
+   "confirm_women": {
+    "adv": 0.00283921255542704,
+    "immediate": 0.0,
+    "downstream": 0.00283921255542704,
+    "ci": [
+     0.0017001470991442568,
+     0.00369457371752072
+    ],
+    "n": 280
+   },
+   "confirmed": true,
+   "situation": "middle third/right, 7+ ahead, free, 4+ mates ahead"
+  },
+  {
+   "cell": "30000",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 67,
+   "confirm_club": {
+    "adv": 0.016054388401884334,
+    "immediate": 0.0,
+    "downstream": 0.016054388401884334,
+    "ci": [
+     0.00729074206508525,
+     0.024014036158059863
+    ],
+    "n": 68
+   },
+   "confirm_women": {
+    "adv": 0.008809734051467455,
+    "immediate": 0.0,
+    "downstream": 0.008809734051467455,
+    "ci": [
+     0.002757367700625993,
+     0.014742653384469184
+    ],
+    "n": 81
+   },
+   "confirmed": true,
+   "situation": "attacking third/left, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "30010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 137,
+   "confirm_club": {
+    "adv": 0.01014379584353814,
+    "immediate": 0.0,
+    "downstream": 0.01014379584353814,
+    "ci": [
+     0.004704342859344888,
+     0.01688204996330883
+    ],
+    "n": 118
+   },
+   "confirm_women": {
+    "adv": 0.01094162734212871,
+    "immediate": 0.0,
+    "downstream": 0.01094162734212871,
+    "ci": [
+     0.00820073101447041,
+     0.01379281423638953
+    ],
+    "n": 121
+   },
+   "confirmed": true,
+   "situation": "attacking third/left, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "30100",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 68,
+   "confirm_club": {
+    "adv": 0.00026613628786069723,
+    "immediate": 0.0,
+    "downstream": 0.00026613628786069723,
+    "ci": [
+     -0.0025358037957955697,
+     0.002904797912067638
+    ],
+    "n": 90
+   },
+   "confirm_women": {
+    "adv": 4.410019847901972e-05,
+    "immediate": 0.0,
+    "downstream": 4.410019847901972e-05,
+    "ci": [
+     -0.00258958385945243,
+     0.0026211900825781663
+    ],
+    "n": 58
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30101",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 255,
+   "confirm_club": {
+    "adv": -0.00013239959966425754,
+    "immediate": 0.0,
+    "downstream": -0.00013239959966425754,
+    "ci": [
+     -0.0022460897741734347,
+     0.0019400488949412654
+    ],
+    "n": 217
+   },
+   "confirm_women": {
+    "adv": -0.0018074351807711372,
+    "immediate": 0.0,
+    "downstream": -0.0018074351807711372,
+    "ci": [
+     -0.0030442111586827967,
+     -0.0008333067189799542
+    ],
+    "n": 248
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30102",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 86,
+   "confirm_club": {
+    "adv": -0.003023968971477487,
+    "immediate": 0.0,
+    "downstream": -0.003023968971477487,
+    "ci": [
+     -0.005720615363880712,
+     -0.0005901754613753009
+    ],
+    "n": 62
+   },
+   "confirm_women": {
+    "adv": -0.0034401158054053298,
+    "immediate": 0.0,
+    "downstream": -0.0034401158054053298,
+    "ci": [
+     -0.004780357972179672,
+     -0.0013688495646302856
+    ],
+    "n": 61
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 72,
+   "confirm_club": {
+    "adv": -0.002144196709028757,
+    "immediate": 0.0,
+    "downstream": -0.002144196709028757,
+    "ci": [
+     -0.0038040529873845964,
+     -0.0005208770266421186
+    ],
+    "n": 87
+   },
+   "confirm_women": {
+    "adv": -0.0010392892681488665,
+    "immediate": 0.0,
+    "downstream": -0.0010392892681488665,
+    "ci": [
+     -0.003197142332708651,
+     0.0002856677282829819
+    ],
+    "n": 29
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 277,
+   "confirm_club": {
+    "adv": -0.0019912728099023558,
+    "immediate": 0.0,
+    "downstream": -0.0019912728099023558,
+    "ci": [
+     -0.003197388499928099,
+     -0.0008934731561184772
+    ],
+    "n": 261
+   },
+   "confirm_women": {
+    "adv": -0.0009354996666290499,
+    "immediate": 0.0,
+    "downstream": -0.0009354996666290499,
+    "ci": [
+     -0.0019453559720403228,
+     -0.0001408652077908319
+    ],
+    "n": 119
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30112",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 110,
+   "confirm_club": {
+    "adv": 0.009441333733026629,
+    "immediate": 0.0,
+    "downstream": 0.009441333733026629,
+    "ci": [
+     0.00439661651462577,
+     0.013910922927299247
+    ],
+    "n": 95
+   },
+   "confirm_women": {
+    "adv": 0.00808555667792003,
+    "immediate": 0.0,
+    "downstream": 0.00808555667792003,
+    "ci": [
+     0.00396386555668361,
+     0.01305801948800148
+    ],
+    "n": 84
+   },
+   "confirmed": true,
+   "situation": "attacking third/left, 4\u20136 ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "30211",
+   "play": "short_fwd_ground",
+   "instead_of": "back_pass",
+   "disc_n": 88,
+   "confirm_club": {
+    "adv": 0.007036378275280267,
+    "immediate": 0.0,
+    "downstream": 0.007036378275280267,
+    "ci": [
+     0.0043371440162425084,
+     0.009783113722658537
+    ],
+    "n": 84
+   },
+   "confirm_women": {
+    "adv": 0.008184646542985303,
+    "immediate": 0.0,
+    "downstream": 0.008184646542985303,
+    "ci": [
+     0.004284145784043492,
+     0.012486770865555271
+    ],
+    "n": 37
+   },
+   "confirmed": true,
+   "situation": "attacking third/left, 7+ ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "30212",
+   "play": "lateral",
+   "instead_of": "short_fwd_ground",
+   "disc_n": 478,
+   "confirm_club": {
+    "adv": -0.004526132863459632,
+    "immediate": 0.0,
+    "downstream": -0.004526132863459632,
+    "ci": [
+     -0.0060781257222747385,
+     -0.0035817711689315403
+    ],
+    "n": 532
+   },
+   "confirm_women": {
+    "adv": -0.0042022288042751176,
+    "immediate": 0.0,
+    "downstream": -0.0042022288042751176,
+    "ci": [
+     -0.00619847089613982,
+     -0.0022915867588344276
+    ],
+    "n": 170
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "30222",
+   "play": "cross_high",
+   "instead_of": "carry_other",
+   "disc_n": 33,
+   "confirm_club": {
+    "adv": 0.0015416533107064714,
+    "immediate": 0.0,
+    "downstream": 0.0015416533107064714,
+    "ci": [
+     -0.012924875251785626,
+     0.02127528867346614
+    ],
+    "n": 17
+   },
+   "confirm_women": {
+    "adv": 0.015370790521921394,
+    "immediate": 0.0,
+    "downstream": 0.015370790521921394,
+    "ci": [
+     -0.001083559913359301,
+     0.029812207659199834
+    ],
+    "n": 22
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31000",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 39,
+   "confirm_club": {
+    "adv": 0.0456873318967667,
+    "immediate": 0.0,
+    "downstream": 0.0456873318967667,
+    "ci": [
+     0.029147237669158763,
+     0.06234843274136632
+    ],
+    "n": 39
+   },
+   "confirm_women": {
+    "adv": 0.03138880635071749,
+    "immediate": 0.0,
+    "downstream": 0.03138880635071749,
+    "ci": [
+     0.020547060250282443,
+     0.04672461904008847
+    ],
+    "n": 40
+   },
+   "confirmed": true,
+   "situation": "attacking third/central, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "31010",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 36,
+   "confirm_club": {
+    "adv": 0.038521489824574214,
+    "immediate": 0.0,
+    "downstream": 0.038521489824574214,
+    "ci": [
+     0.0263782687283828,
+     0.05727171381646061
+    ],
+    "n": 52
+   },
+   "confirm_women": {
+    "adv": 0.025222735257755282,
+    "immediate": 0.0,
+    "downstream": 0.025222735257755282,
+    "ci": [
+     0.016366216943046154,
+     0.03749349198664747
+    ],
+    "n": 38
+   },
+   "confirmed": true,
+   "situation": "attacking third/central, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "31100",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 30,
+   "confirm_club": {
+    "adv": 0.0007964705360634788,
+    "immediate": 0.0,
+    "downstream": 0.0007964705360634788,
+    "ci": [
+     -0.003768813518695876,
+     0.005814873303037106
+    ],
+    "n": 23
+   },
+   "confirm_women": {
+    "adv": -0.0002549457493789681,
+    "immediate": 0.0,
+    "downstream": -0.0002549457493789681,
+    "ci": [
+     -0.004802631194495228,
+     0.004135651935172925
+    ],
+    "n": 24
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31101",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 151,
+   "confirm_club": {
+    "adv": 0.012274052363490898,
+    "immediate": 0.0,
+    "downstream": 0.012274052363490898,
+    "ci": [
+     0.007141401108747447,
+     0.017046525945719686
+    ],
+    "n": 207
+   },
+   "confirm_women": {
+    "adv": 0.006558833720538972,
+    "immediate": 0.0,
+    "downstream": 0.006558833720538972,
+    "ci": [
+     0.002248881601645115,
+     0.01072790332826009
+    ],
+    "n": 142
+   },
+   "confirmed": true,
+   "situation": "attacking third/central, 4\u20136 ahead, pressed, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "31111",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 105,
+   "confirm_club": {
+    "adv": 0.010981181025475385,
+    "immediate": 0.0,
+    "downstream": 0.010981181025475385,
+    "ci": [
+     0.004441505325173367,
+     0.01632165643738684
+    ],
+    "n": 122
+   },
+   "confirm_women": {
+    "adv": 0.008382172543380719,
+    "immediate": 0.0,
+    "downstream": 0.008382172543380719,
+    "ci": [
+     0.001927804317882117,
+     0.018052841286615464
+    ],
+    "n": 68
+   },
+   "confirmed": true,
+   "situation": "attacking third/central, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "31112",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 70,
+   "confirm_club": {
+    "adv": 0.011179808437680953,
+    "immediate": 0.0,
+    "downstream": 0.011179808437680953,
+    "ci": [
+     0.002775297728183097,
+     0.018985555863918608
+    ],
+    "n": 66
+   },
+   "confirm_women": {
+    "adv": 0.005662542783568803,
+    "immediate": 0.0,
+    "downstream": 0.005662542783568803,
+    "ci": [
+     -0.0012720822920163344,
+     0.013589065179996137
+    ],
+    "n": 28
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31201",
+   "play": "short_fwd_ground",
+   "instead_of": "lateral",
+   "disc_n": 38,
+   "confirm_club": {
+    "adv": 0.00824150033739315,
+    "immediate": 0.0,
+    "downstream": 0.00824150033739315,
+    "ci": [
+     0.0033970448570684562,
+     0.012753741343977195
+    ],
+    "n": 46
+   },
+   "confirm_women": {
+    "adv": 0.0052087614242788335,
+    "immediate": 0.0,
+    "downstream": 0.0052087614242788335,
+    "ci": [
+     -0.00024469958749324646,
+     0.010566899507112168
+    ],
+    "n": 33
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31202",
+   "play": "short_fwd_ground",
+   "instead_of": "lateral",
+   "disc_n": 225,
+   "confirm_club": {
+    "adv": 0.0049130477020572876,
+    "immediate": 0.0,
+    "downstream": 0.0049130477020572876,
+    "ci": [
+     0.0025163208825928827,
+     0.007673902471070568
+    ],
+    "n": 347
+   },
+   "confirm_women": {
+    "adv": 0.007345540588039726,
+    "immediate": 0.0,
+    "downstream": 0.007345540588039726,
+    "ci": [
+     0.0038056031189388313,
+     0.01198927799727653
+    ],
+    "n": 153
+   },
+   "confirmed": true,
+   "situation": "attacking third/central, 7+ ahead, pressed, 4+ mates ahead"
+  },
+  {
+   "cell": "31211",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 35,
+   "confirm_club": {
+    "adv": 0.019145891692125504,
+    "immediate": 0.0,
+    "downstream": 0.019145891692125504,
+    "ci": [
+     0.004586526215864261,
+     0.03903586518785364
+    ],
+    "n": 21
+   },
+   "confirm_women": {
+    "adv": 0.0008050981112962194,
+    "immediate": 0.0,
+    "downstream": 0.0008050981112962194,
+    "ci": [
+     -0.004916441730363345,
+     0.007582531406910332
+    ],
+    "n": 12
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31212",
+   "play": "short_fwd_air",
+   "instead_of": "carry_other",
+   "disc_n": 99,
+   "confirm_club": {
+    "adv": 0.009732542898684905,
+    "immediate": 0.0,
+    "downstream": 0.009732542898684905,
+    "ci": [
+     0.00268635938213561,
+     0.017996420622829502
+    ],
+    "n": 112
+   },
+   "confirm_women": {
+    "adv": 0.004136519644612157,
+    "immediate": 0.0,
+    "downstream": 0.004136519644612157,
+    "ci": [
+     -0.0033321952369681543,
+     0.014332544656292067
+    ],
+    "n": 59
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "31222",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 44,
+   "confirm_club": {
+    "adv": -0.001383641090070567,
+    "immediate": 0.0,
+    "downstream": -0.001383641090070567,
+    "ci": [
+     -0.0027349676929258357,
+     -0.0003717775605939552
+    ],
+    "n": 66
+   },
+   "confirm_women": {
+    "adv": -0.0014159373333006257,
+    "immediate": 0.0,
+    "downstream": -0.0014159373333006257,
+    "ci": [
+     -0.0030962897094824536,
+     0.0003321832782547427
+    ],
+    "n": 12
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32000",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 75,
+   "confirm_club": {
+    "adv": 0.02088716955214684,
+    "immediate": 0.0,
+    "downstream": 0.02088716955214684,
+    "ci": [
+     0.015013905476355775,
+     0.031099215731059983
+    ],
+    "n": 64
+   },
+   "confirm_women": {
+    "adv": 0.014661708759330906,
+    "immediate": 0.0,
+    "downstream": 0.014661708759330906,
+    "ci": [
+     0.009348893458154803,
+     0.020274251188591042
+    ],
+    "n": 101
+   },
+   "confirmed": true,
+   "situation": "attacking third/right, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "32010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 37,
+   "confirm_club": {
+    "adv": -0.0019692364296678457,
+    "immediate": 0.0,
+    "downstream": -0.0019692364296678457,
+    "ci": [
+     -0.00783946080372691,
+     0.0034375784969416564
+    ],
+    "n": 19
+   },
+   "confirm_women": {
+    "adv": 0.0004912202419632833,
+    "immediate": 0.0,
+    "downstream": 0.0004912202419632833,
+    "ci": [
+     -0.0019568024539654174,
+     0.00344717032791308
+    ],
+    "n": 10
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32100",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 55,
+   "confirm_club": {
+    "adv": -0.0007129696762580122,
+    "immediate": 0.0,
+    "downstream": -0.0007129696762580122,
+    "ci": [
+     -0.0022563849777250127,
+     0.0004319652486386706
+    ],
+    "n": 74
+   },
+   "confirm_women": {
+    "adv": 0.0009305893405792132,
+    "immediate": 0.0,
+    "downstream": 0.0009305893405792132,
+    "ci": [
+     -0.0016528041643947469,
+     0.0035397537692619815
+    ],
+    "n": 52
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32101",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 220,
+   "confirm_club": {
+    "adv": -0.00010214801410358618,
+    "immediate": 0.0,
+    "downstream": -0.00010214801410358618,
+    "ci": [
+     -0.0024740722923978753,
+     0.00137050822419329
+    ],
+    "n": 221
+   },
+   "confirm_women": {
+    "adv": -0.00029031616322251416,
+    "immediate": 0.0,
+    "downstream": -0.00029031616322251416,
+    "ci": [
+     -0.002308347730463654,
+     0.0012373643746874873
+    ],
+    "n": 182
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32102",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 71,
+   "confirm_club": {
+    "adv": -6.764033851450191e-05,
+    "immediate": 0.0,
+    "downstream": -6.764033851450191e-05,
+    "ci": [
+     -0.0033357323061057355,
+     0.00370525886347171
+    ],
+    "n": 60
+   },
+   "confirm_women": {
+    "adv": -0.002958722602864554,
+    "immediate": 0.0,
+    "downstream": -0.002958722602864554,
+    "ci": [
+     -0.00547528016538453,
+     -0.0012651385898324564
+    ],
+    "n": 45
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 79,
+   "confirm_club": {
+    "adv": -0.0021119343862819433,
+    "immediate": 0.0,
+    "downstream": -0.0021119343862819433,
+    "ci": [
+     -0.0034990255466910538,
+     -0.00025689543355522713
+    ],
+    "n": 79
+   },
+   "confirm_women": {
+    "adv": -0.0041745368940363445,
+    "immediate": 0.0,
+    "downstream": -0.0041745368940363445,
+    "ci": [
+     -0.010610480527020313,
+     0.0006301404887123999
+    ],
+    "n": 17
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32111",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 245,
+   "confirm_club": {
+    "adv": 0.0080544569655909,
+    "immediate": 0.0,
+    "downstream": 0.0080544569655909,
+    "ci": [
+     0.005152581903658425,
+     0.01050189580705213
+    ],
+    "n": 203
+   },
+   "confirm_women": {
+    "adv": 0.0050463719616945305,
+    "immediate": 0.0,
+    "downstream": 0.0050463719616945305,
+    "ci": [
+     0.0021169752973589475,
+     0.007491852508409938
+    ],
+    "n": 164
+   },
+   "confirmed": true,
+   "situation": "attacking third/right, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "32112",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 112,
+   "confirm_club": {
+    "adv": 0.006206798418592386,
+    "immediate": 0.0,
+    "downstream": 0.006206798418592386,
+    "ci": [
+     0.003743485622974619,
+     0.009795554076459784
+    ],
+    "n": 94
+   },
+   "confirm_women": {
+    "adv": 0.006069113966121496,
+    "immediate": 0.0,
+    "downstream": 0.006069113966121496,
+    "ci": [
+     0.0035778152008954095,
+     0.0077011596055398075
+    ],
+    "n": 92
+   },
+   "confirmed": true,
+   "situation": "attacking third/right, 4\u20136 ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "32121",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 31,
+   "confirm_club": {
+    "adv": 0.012966376842718709,
+    "immediate": 0.0,
+    "downstream": 0.012966376842718709,
+    "ci": [
+     0.0018346455750930413,
+     0.024834634488766695
+    ],
+    "n": 26
+   },
+   "confirm_women": {
+    "adv": 0.0013725692924024674,
+    "immediate": 0.0,
+    "downstream": 0.0013725692924024674,
+    "ci": [
+     -0.004493059339658003,
+     0.0059860215574430616
+    ],
+    "n": 19
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32122",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 60,
+   "confirm_club": {
+    "adv": 0.0017777725594296384,
+    "immediate": 0.0,
+    "downstream": 0.0017777725594296384,
+    "ci": [
+     -0.0022549919335447944,
+     0.0038455530552554025
+    ],
+    "n": 38
+   },
+   "confirm_women": {
+    "adv": 0.0021508508175413082,
+    "immediate": 0.0,
+    "downstream": 0.0021508508175413082,
+    "ci": [
+     -9.405473052213174e-05,
+     0.004383726937464392
+    ],
+    "n": 33
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32201",
+   "play": "lateral",
+   "instead_of": "back_pass",
+   "disc_n": 83,
+   "confirm_club": {
+    "adv": 0.0007418795917435023,
+    "immediate": 0.0,
+    "downstream": 0.0007418795917435023,
+    "ci": [
+     -0.0008676947139797937,
+     0.002395373777905988
+    ],
+    "n": 102
+   },
+   "confirm_women": {
+    "adv": 0.0017761407644273017,
+    "immediate": 0.0,
+    "downstream": 0.0017761407644273017,
+    "ci": [
+     -0.0001343193653839586,
+     0.0036541492207413915
+    ],
+    "n": 74
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32212",
+   "play": "lateral",
+   "instead_of": "carry_other",
+   "disc_n": 465,
+   "confirm_club": {
+    "adv": 0.0012261902997085447,
+    "immediate": 0.0,
+    "downstream": 0.0012261902997085447,
+    "ci": [
+     0.0002837301848451029,
+     0.0019138312383988997
+    ],
+    "n": 462
+   },
+   "confirm_women": {
+    "adv": 0.00010648874452546392,
+    "immediate": 0.0,
+    "downstream": 0.00010648874452546392,
+    "ci": [
+     -0.0011517021952913906,
+     0.0013889584962342208
+    ],
+    "n": 155
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "32221",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 35,
+   "confirm_club": {
+    "adv": 0.0029896097786177474,
+    "immediate": 0.0,
+    "downstream": 0.0029896097786177474,
+    "ci": [
+     0.0008296420946533811,
+     0.006111589843129551
+    ],
+    "n": 38
+   },
+   "confirm_women": {
+    "adv": 0.007068819091824132,
+    "immediate": 0.0,
+    "downstream": 0.007068819091824132,
+    "ci": [
+     0.002456484778947353,
+     0.012244265746096359
+    ],
+    "n": 10
+   },
+   "confirmed": true,
+   "situation": "attacking third/right, 7+ ahead, free, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "32222",
+   "play": "cross_high",
+   "instead_of": "carry_other",
+   "disc_n": 49,
+   "confirm_club": {
+    "adv": 0.03536104032307506,
+    "immediate": 0.0,
+    "downstream": 0.03536104032307506,
+    "ci": [
+     0.013340700550853705,
+     0.06499385480909475
+    ],
+    "n": 19
+   },
+   "confirm_women": {
+    "adv": 0.0064630635219350314,
+    "immediate": 0.0,
+    "downstream": 0.0064630635219350314,
+    "ci": [
+     -0.002497891269092432,
+     0.017367415528408234
+    ],
+    "n": 33
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40000",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 77,
+   "confirm_club": {
+    "adv": 0.01441816538302082,
+    "immediate": 0.0,
+    "downstream": 0.01441816538302082,
+    "ci": [
+     0.00132698183351385,
+     0.02873307335124854
+    ],
+    "n": 86
+   },
+   "confirm_women": {
+    "adv": 0.011428251454927783,
+    "immediate": 0.0,
+    "downstream": 0.011428251454927783,
+    "ci": [
+     0.0017003492795226644,
+     0.02047454248846689
+    ],
+    "n": 99
+   },
+   "confirmed": true,
+   "situation": "edge of box/left, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "40010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 31,
+   "confirm_club": {
+    "adv": -0.011374127243708742,
+    "immediate": 0.0,
+    "downstream": -0.011374127243708742,
+    "ci": [
+     -0.015908686551792395,
+     -0.006442737092942408
+    ],
+    "n": 50
+   },
+   "confirm_women": {
+    "adv": -0.005527880398431571,
+    "immediate": 0.0,
+    "downstream": -0.005527880398431571,
+    "ci": [
+     -0.009806553805140547,
+     -0.0019713405257175904
+    ],
+    "n": 17
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40020",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 106,
+   "confirm_club": {
+    "adv": 0.006613215853303385,
+    "immediate": 0.0,
+    "downstream": 0.006613215853303385,
+    "ci": [
+     -0.0015686272859597495,
+     0.017066184656131758
+    ],
+    "n": 84
+   },
+   "confirm_women": {
+    "adv": 0.015130284957791701,
+    "immediate": 0.0,
+    "downstream": 0.015130284957791701,
+    "ci": [
+     0.0028164455005734146,
+     0.031147169087218773
+    ],
+    "n": 63
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40100",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 74,
+   "confirm_club": {
+    "adv": -0.005256424967584099,
+    "immediate": 0.0,
+    "downstream": -0.005256424967584099,
+    "ci": [
+     -0.012584350416927416,
+     0.001945697520023015
+    ],
+    "n": 90
+   },
+   "confirm_women": {
+    "adv": -0.003912047199558285,
+    "immediate": 0.0,
+    "downstream": -0.003912047199558285,
+    "ci": [
+     -0.008552107559098222,
+     0.00017397301701106566
+    ],
+    "n": 57
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40102",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 35,
+   "confirm_club": {
+    "adv": -0.004962546937115311,
+    "immediate": 0.0,
+    "downstream": -0.004962546937115311,
+    "ci": [
+     -0.012642418407726466,
+     0.0024803857440380433
+    ],
+    "n": 34
+   },
+   "confirm_women": {
+    "adv": -0.005294830495099132,
+    "immediate": 0.0,
+    "downstream": -0.005294830495099132,
+    "ci": [
+     -0.011805032743354562,
+     0.0021791970454164114
+    ],
+    "n": 12
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 60,
+   "confirm_club": {
+    "adv": -0.0033802951647871025,
+    "immediate": 0.0,
+    "downstream": -0.0033802951647871025,
+    "ci": [
+     -0.005973232420793422,
+     -0.0009416413113103161
+    ],
+    "n": 85
+   },
+   "confirm_women": {
+    "adv": -0.0029501337875755783,
+    "immediate": 0.0,
+    "downstream": -0.0029501337875755783,
+    "ci": [
+     -0.0056589819193592645,
+     -0.0001832917141519143
+    ],
+    "n": 23
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40111",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 171,
+   "confirm_club": {
+    "adv": -0.0042381964089823095,
+    "immediate": 0.0,
+    "downstream": -0.0042381964089823095,
+    "ci": [
+     -0.006155938354408023,
+     -0.0025109460377294797
+    ],
+    "n": 141
+   },
+   "confirm_women": {
+    "adv": -0.004007435104560243,
+    "immediate": 0.0,
+    "downstream": -0.004007435104560243,
+    "ci": [
+     -0.006809487424964753,
+     -0.0019375270437452085
+    ],
+    "n": 51
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40202",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 83,
+   "confirm_club": {
+    "adv": -0.008014262935423094,
+    "immediate": 0.0,
+    "downstream": -0.008014262935423094,
+    "ci": [
+     -0.010897393913110964,
+     -0.0035866619751245775
+    ],
+    "n": 71
+   },
+   "confirm_women": {
+    "adv": -0.0033251381199254255,
+    "immediate": 0.0,
+    "downstream": -0.0033251381199254255,
+    "ci": [
+     -0.007124890040800138,
+     0.0006768641770451672
+    ],
+    "n": 47
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "40212",
+   "play": "cross_high",
+   "instead_of": "carry_other",
+   "disc_n": 73,
+   "confirm_club": {
+    "adv": 0.019218724975352423,
+    "immediate": 0.0,
+    "downstream": 0.019218724975352423,
+    "ci": [
+     0.0029230496967798244,
+     0.034920009348861344
+    ],
+    "n": 47
+   },
+   "confirm_women": {
+    "adv": 0.022652700560270887,
+    "immediate": 0.0,
+    "downstream": 0.022652700560270887,
+    "ci": [
+     -0.0011807062858358735,
+     0.04617956867009583
+    ],
+    "n": 31
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "41000",
+   "play": "shot",
+   "instead_of": "carry_other",
+   "disc_n": 175,
+   "confirm_club": {
+    "adv": 0.0936602599428171,
+    "immediate": 0.14452412556020947,
+    "downstream": -0.05086386561739237,
+    "ci": [
+     0.08387044584468663,
+     0.11009188520582082
+    ],
+    "n": 191
+   },
+   "confirm_women": {
+    "adv": 0.07084516950437098,
+    "immediate": 0.11169577783333334,
+    "downstream": -0.04085060832896237,
+    "ci": [
+     0.05777115100617107,
+     0.08137927513630702
+    ],
+    "n": 174
+   },
+   "confirmed": true,
+   "situation": "edge of box/central, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "41010",
+   "play": "shot",
+   "instead_of": "carry_other",
+   "disc_n": 38,
+   "confirm_club": {
+    "adv": 0.12853493696225698,
+    "immediate": 0.2100162163396226,
+    "downstream": -0.08148127937736563,
+    "ci": [
+     0.09952729414239242,
+     0.17728424175233576
+    ],
+    "n": 53
+   },
+   "confirm_women": {
+    "adv": 0.11125861744867561,
+    "immediate": 0.17368594455555555,
+    "downstream": -0.06242732710687994,
+    "ci": [
+     0.04554183707983448,
+     0.17521403925016604
+    ],
+    "n": 18
+   },
+   "confirmed": true,
+   "situation": "edge of box/central, \u22643 ahead, 3\u20137 yds, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "41111",
+   "play": "shot",
+   "instead_of": "carry_other",
+   "disc_n": 86,
+   "confirm_club": {
+    "adv": 0.052498851311303864,
+    "immediate": 0.08963495737755103,
+    "downstream": -0.03713610606624717,
+    "ci": [
+     0.041828607391290414,
+     0.06703869835167423
+    ],
+    "n": 98
+   },
+   "confirm_women": {
+    "adv": 0.04110363802503095,
+    "immediate": 0.07545716882142857,
+    "downstream": -0.03435353079639762,
+    "ci": [
+     0.03130711951639279,
+     0.0547730001029778
+    ],
+    "n": 56
+   },
+   "confirmed": true,
+   "situation": "edge of box/central, 4\u20136 ahead, 3\u20137 yds, 2\u20133 mates ahead"
+  },
+  {
+   "cell": "41112",
+   "play": "shot",
+   "instead_of": "carry_other",
+   "disc_n": 31,
+   "confirm_club": {
+    "adv": 0.03372771264913539,
+    "immediate": 0.07518606126190477,
+    "downstream": -0.04145834861276938,
+    "ci": [
+     0.019556913629529937,
+     0.04650878249691354
+    ],
+    "n": 42
+   },
+   "confirm_women": {
+    "adv": 0.021856176918119925,
+    "immediate": 0.065277317,
+    "downstream": -0.043421140081880076,
+    "ci": [
+     0.005221553785087624,
+     0.03971568802435308
+    ],
+    "n": 16
+   },
+   "confirmed": true,
+   "situation": "edge of box/central, 4\u20136 ahead, 3\u20137 yds, 4+ mates ahead"
+  },
+  {
+   "cell": "41202",
+   "play": "lateral",
+   "instead_of": "shot",
+   "disc_n": 64,
+   "confirm_club": {
+    "adv": -0.029754990744451225,
+    "immediate": -0.04760992436792453,
+    "downstream": 0.017854933623473304,
+    "ci": [
+     -0.0350780052988947,
+     -0.01571093257261046
+    ],
+    "n": 64
+   },
+   "confirm_women": {
+    "adv": -0.027964616035227437,
+    "immediate": -0.047961687208588955,
+    "downstream": 0.019997071173361518,
+    "ci": [
+     -0.0342414660819526,
+     -0.021493698726878414
+    ],
+    "n": 58
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "41212",
+   "play": "carry_other",
+   "instead_of": "shot",
+   "disc_n": 88,
+   "confirm_club": {
+    "adv": -0.026645776439667784,
+    "immediate": -0.05107189718556703,
+    "downstream": 0.024426120745899248,
+    "ci": [
+     -0.03730684817967106,
+     -0.016920400203694796
+    ],
+    "n": 73
+   },
+   "confirm_women": {
+    "adv": -0.02501677170727383,
+    "immediate": -0.04628983005999999,
+    "downstream": 0.021273058352726158,
+    "ci": [
+     -0.036815915499553625,
+     -0.017537104543700163
+    ],
+    "n": 68
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42000",
+   "play": "cross_low",
+   "instead_of": "carry_other",
+   "disc_n": 34,
+   "confirm_club": {
+    "adv": 0.002585528230269689,
+    "immediate": 0.0,
+    "downstream": 0.002585528230269689,
+    "ci": [
+     -0.011307069428309993,
+     0.016232401590090963
+    ],
+    "n": 38
+   },
+   "confirm_women": {
+    "adv": 0.022213657016466656,
+    "immediate": 0.0,
+    "downstream": 0.022213657016466656,
+    "ci": [
+     0.002814256272448873,
+     0.042076629732278936
+    ],
+    "n": 30
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42010",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 42,
+   "confirm_club": {
+    "adv": -0.005237177706677403,
+    "immediate": 0.0,
+    "downstream": -0.005237177706677403,
+    "ci": [
+     -0.00969003616041529,
+     -0.0005110828221766122
+    ],
+    "n": 58
+   },
+   "confirm_women": {
+    "adv": -0.005864420855184488,
+    "immediate": 0.0,
+    "downstream": -0.005864420855184488,
+    "ci": [
+     -0.010317347116701113,
+     -0.0022771477866889594
+    ],
+    "n": 31
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42020",
+   "play": "carry_fwd",
+   "instead_of": "carry_other",
+   "disc_n": 88,
+   "confirm_club": {
+    "adv": 0.006526180979466861,
+    "immediate": 0.0,
+    "downstream": 0.006526180979466861,
+    "ci": [
+     -0.0018331729997672702,
+     0.015868124029118115
+    ],
+    "n": 77
+   },
+   "confirm_women": {
+    "adv": -0.0008365178750360663,
+    "immediate": 0.0,
+    "downstream": -0.0008365178750360663,
+    "ci": [
+     -0.010594094714447255,
+     0.008347686936153965
+    ],
+    "n": 60
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42100",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 58,
+   "confirm_club": {
+    "adv": -0.0007294093598019073,
+    "immediate": 0.0,
+    "downstream": -0.0007294093598019073,
+    "ci": [
+     -0.004038693731105897,
+     0.0029860511866784804
+    ],
+    "n": 70
+   },
+   "confirm_women": {
+    "adv": -0.004156713449876753,
+    "immediate": 0.0,
+    "downstream": -0.004156713449876753,
+    "ci": [
+     -0.009464970603371689,
+     -0.0003144905793345895
+    ],
+    "n": 58
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42101",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 178,
+   "confirm_club": {
+    "adv": -0.005332499626208773,
+    "immediate": 0.0,
+    "downstream": -0.005332499626208773,
+    "ci": [
+     -0.009730590400557158,
+     -0.00035113607244109196
+    ],
+    "n": 194
+   },
+   "confirm_women": {
+    "adv": -0.004576272060111099,
+    "immediate": 0.0,
+    "downstream": -0.004576272060111099,
+    "ci": [
+     -0.007517074307351283,
+     -0.0025788823708381586
+    ],
+    "n": 107
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42110",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 55,
+   "confirm_club": {
+    "adv": -0.005473592544703837,
+    "immediate": 0.0,
+    "downstream": -0.005473592544703837,
+    "ci": [
+     -0.012333070470836458,
+     -0.001195980105897075
+    ],
+    "n": 105
+   },
+   "confirm_women": {
+    "adv": -0.003915458406923849,
+    "immediate": 0.0,
+    "downstream": -0.003915458406923849,
+    "ci": [
+     -0.006680146709894714,
+     -0.00023802637197428196
+    ],
+    "n": 19
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42111",
+   "play": "short_fwd_ground",
+   "instead_of": "carry_other",
+   "disc_n": 64,
+   "confirm_club": {
+    "adv": 0.008612291019674496,
+    "immediate": 0.0,
+    "downstream": 0.008612291019674496,
+    "ci": [
+     -0.001052295582232356,
+     0.02051240546339946
+    ],
+    "n": 41
+   },
+   "confirm_women": {
+    "adv": 0.0030686498426880787,
+    "immediate": 0.0,
+    "downstream": 0.0030686498426880787,
+    "ci": [
+     -0.0028111495135368634,
+     0.011123453580788614
+    ],
+    "n": 43
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42201",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 47,
+   "confirm_club": {
+    "adv": -0.00071534206853089,
+    "immediate": 0.0,
+    "downstream": -0.00071534206853089,
+    "ci": [
+     -0.005758008805196964,
+     0.006119253325775091
+    ],
+    "n": 46
+   },
+   "confirm_women": {
+    "adv": 0.0018422124441214195,
+    "immediate": 0.0,
+    "downstream": 0.0018422124441214195,
+    "ci": [
+     -0.0021146792647654565,
+     0.0063910887867679594
+    ],
+    "n": 41
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42202",
+   "play": "back_pass",
+   "instead_of": "lateral",
+   "disc_n": 80,
+   "confirm_club": {
+    "adv": -0.00046937784297726784,
+    "immediate": 0.0,
+    "downstream": -0.00046937784297726784,
+    "ci": [
+     -0.0044710999074600785,
+     0.0034905031507251453
+    ],
+    "n": 75
+   },
+   "confirm_women": {
+    "adv": -0.007209461599775129,
+    "immediate": 0.0,
+    "downstream": -0.007209461599775129,
+    "ci": [
+     -0.013304183487814937,
+     -0.0025500464097106814
+    ],
+    "n": 60
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42211",
+   "play": "back_pass",
+   "instead_of": "carry_other",
+   "disc_n": 68,
+   "confirm_club": {
+    "adv": -0.003104424040438071,
+    "immediate": 0.0,
+    "downstream": -0.003104424040438071,
+    "ci": [
+     -0.007685396796957853,
+     -0.00013939811952982687
+    ],
+    "n": 62
+   },
+   "confirm_women": {
+    "adv": -0.006079460262851059,
+    "immediate": 0.0,
+    "downstream": -0.006079460262851059,
+    "ci": [
+     -0.011629214460809565,
+     -0.00024090288624074142
+    ],
+    "n": 14
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "42212",
+   "play": "cross_high",
+   "instead_of": "carry_other",
+   "disc_n": 74,
+   "confirm_club": {
+    "adv": 0.00768401293699977,
+    "immediate": 0.0,
+    "downstream": 0.00768401293699977,
+    "ci": [
+     -0.007196328442382008,
+     0.02170718684941429
+    ],
+    "n": 47
+   },
+   "confirm_women": {
+    "adv": 0.019561019143380928,
+    "immediate": 0.0,
+    "downstream": 0.019561019143380928,
+    "ci": [
+     0.003822711532744529,
+     0.033311698983971585
+    ],
+    "n": 66
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "50000",
+   "play": "cutback",
+   "instead_of": "carry_other",
+   "disc_n": 82,
+   "confirm_club": {
+    "adv": 0.010989781193534658,
+    "immediate": 0.0,
+    "downstream": 0.010989781193534658,
+    "ci": [
+     0.0012371207233135386,
+     0.022217744458953116
+    ],
+    "n": 75
+   },
+   "confirm_women": {
+    "adv": 0.009198108042921885,
+    "immediate": 0.0,
+    "downstream": 0.009198108042921885,
+    "ci": [
+     -0.0012093024293284163,
+     0.026779089492728624
+    ],
+    "n": 60
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "50010",
+   "play": "cross_low",
+   "instead_of": "carry_other",
+   "disc_n": 103,
+   "confirm_club": {
+    "adv": 0.00158719509044334,
+    "immediate": 0.0,
+    "downstream": 0.00158719509044334,
+    "ci": [
+     -0.006700873275740527,
+     0.014178612651027732
+    ],
+    "n": 115
+   },
+   "confirm_women": {
+    "adv": 0.007992047898366939,
+    "immediate": 0.0,
+    "downstream": 0.007992047898366939,
+    "ci": [
+     -0.009733867119908415,
+     0.02254571741798054
+    ],
+    "n": 51
+   },
+   "confirmed": false
+  },
+  {
+   "cell": "52000",
+   "play": "cutback",
+   "instead_of": "carry_other",
+   "disc_n": 72,
+   "confirm_club": {
+    "adv": 0.014222518752577192,
+    "immediate": 0.0,
+    "downstream": 0.014222518752577192,
+    "ci": [
+     0.0006397611676259992,
+     0.03603904700242016
+    ],
+    "n": 61
+   },
+   "confirm_women": {
+    "adv": 0.02683254195264544,
+    "immediate": 0.0,
+    "downstream": 0.02683254195264544,
+    "ci": [
+     0.01318565917812188,
+     0.038025607794661145
+    ],
+    "n": 79
+   },
+   "confirmed": true,
+   "situation": "in the box/right, \u22643 ahead, pressed, 0\u20131 mates ahead"
+  },
+  {
+   "cell": "52010",
+   "play": "cutback",
+   "instead_of": "carry_other",
+   "disc_n": 57,
+   "confirm_club": {
+    "adv": -0.001566294332628733,
+    "immediate": 0.0,
+    "downstream": -0.001566294332628733,
+    "ci": [
+     -0.015802559069438813,
+     0.021883331011409657
+    ],
+    "n": 42
+   },
+   "confirm_women": {
+    "adv": 0.02418357402633898,
+    "immediate": 0.0,
+    "downstream": 0.02418357402633898,
+    "ci": [
+     -0.0009319903688039669,
+     0.052320341131413366
+    ],
+    "n": 33
+   },
+   "confirmed": false
+  }
+ ],
+ "n_confirmed_plays": 68
+}

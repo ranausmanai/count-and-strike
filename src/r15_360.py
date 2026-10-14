@@ -128,7 +128,8 @@ def one(m):
             else:
                 act = "lateral"
         lane = sum(in_tri(o, (x, y), (120, 36), (120, 44)) for o in opp)
-        att.append(dict(base, team=e["team"]["name"], action=act, opp_goalside=sum(o[0] > x for o in opp),
+        att.append(dict(base, team=e["team"]["name"], action=act, idx=e["index"],
+                        sxg=(e["shot"].get("statsbomb_xg", 0.0) if typ == "Shot" else 0.0), opp_goalside=sum(o[0] > x for o in opp),
                         nearest_opp=min(d_opp) if d_opp else 30.0, mates_ahead=sum(mm[0] > x for mm in mates), lane=lane))
     A = windows(att, S); P = windows(prs, S)
     return A, P

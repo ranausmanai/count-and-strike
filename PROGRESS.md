@@ -73,3 +73,8 @@
 ## Round 15 — full advantage search: attack 997 rules → 11 confirmed (new pass types: none); pressing 102 → 1 confirmed (press exposed receiver near our box)
 - Patience test: shot rules hold at 45/60 s (7/8 fully; long-range weakens)
 - SYSTEM: "Count & Strike" (paper/count_and_strike.pdf) — Count at regain, Strike through set blocks, Run into space, Press exposed receiver, Dead balls
+## Round 16 — possession simulator ("chess engine"), constrained policy iteration on 360 MDP
+- H16-1 technically passes (cross-fitted gain +0.044/+0.061 per possession, CIs > 0) but the implied +90-130 xG/season is IMPOSSIBLE → structural selection bias (same in every population, so cross-fitting can't remove it); simulator overstates ~3-4×
+- 68 plays (35 with adjustment carries removed) "confirmed" in both populations: all point the same way (forward/cross/shoot instead of back/lateral) — consistent with Strike Through, but R12 showed forward HABITS don't help → treat as moment-descriptions
+- New candidate plays (unproven): high cross from left edge vs set defence instead of back pass (+0.03); dribble in the box when pressed instead of lateral (+0.02)
+- Lesson: simulation/EPV "tactics engines" on event data overclaim; direction yes, magnitude no
