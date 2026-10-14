@@ -85,6 +85,17 @@ Following the confirmed in-game rules half the time is worth about **+3.6 to 4 x
 * **Not causal proof.** These are observational comparisons. They are made as fair as public data allows (same situation, same space, same shooting lane, three populations), but players' choices still reflect things we cannot see. The final proof is a trial. Football's statistics make that feasible only with fast measures: one club, one or two seasons (protocol in the technical report).
 * **Not secret for long.** If everyone adopts it, the edge goes to whoever adopts it first and best.
 
+## What simulation adds, and where it misleads
+
+We built a possession simulator, a "chess engine" for football. It learns from 730k decisions how each choice changes the next situation (keep the ball, lose it, shoot), then searches for better choices using only moves teams actually make. Its advice was checked on models learned separately from men's club and women's football.
+
+* **Direction: confirmed.** In both populations, every improvement it found is the same kind: near goal, shoot, carry forward or cross instead of passing back or sideways. That is Count & Strike's "strike through" principle. Two new candidate plays came from it: **cross high from the edge of the box instead of passing back against a set defence** (+0.03 xG), and **dribble rather than pass sideways when pressed in the box** (+0.02). Both are unproven.
+* **Size: not credible.** Taken literally, the simulator's full policy is worth ~100 xG a season, an impossible 3–4× overstatement. The reason is that it only "sees" forward options in moments when they existed. Cross-checking on other leagues cannot remove this, because the bias is the same everywhere. **Simulation-based "AI tactics engines" built on match data overclaim**, and this one did too.
+
+## Locked predictions
+
+We cannot run a club trial. So we locked six numeric predictions in public (`PREDICTIONS.md`, git commit `5993959`, 14 October 2026) for the **next StatsBomb release with 360 data** (e.g. World Cup 2026), which was never used to build the rules. Count & Strike counts as supported if ≥5 of 6 hold. A dry run shows one 51-match tournament has enough data for the test. Anyone can run it with `python3 src/test_predictions.py <competition> <season>`.
+
 ## Use it tomorrow
 
 `src/matchplan.py` turns any fixture plus its odds into a one-page plan. The plan gives win/draw/loss chances, the score-and-minute tempo grid, the set-piece emphasis for this opponent, the opponent's persistent habits, and the **Count & Strike rule card** for the dressing room.

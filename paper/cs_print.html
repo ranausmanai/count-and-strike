@@ -256,6 +256,39 @@ report).</li>
 <li><strong>Not secret for long.</strong> If everyone adopts it, the
 edge goes to whoever adopts it first and best.</li>
 </ul>
+<h2 id="what-simulation-adds-and-where-it-misleads">What simulation
+adds, and where it misleads</h2>
+<p>We built a possession simulator, a “chess engine” for football. It
+learns from 730k decisions how each choice changes the next situation
+(keep the ball, lose it, shoot), then searches for better choices using
+only moves teams actually make. Its advice was checked on models learned
+separately from men’s club and women’s football.</p>
+<ul>
+<li><strong>Direction: confirmed.</strong> In both populations, every
+improvement it found is the same kind: near goal, shoot, carry forward
+or cross instead of passing back or sideways. That is Count &amp;
+Strike’s “strike through” principle. Two new candidate plays came from
+it: <strong>cross high from the edge of the box instead of passing back
+against a set defence</strong> (+0.03 xG), and <strong>dribble rather
+than pass sideways when pressed in the box</strong> (+0.02). Both are
+unproven.</li>
+<li><strong>Size: not credible.</strong> Taken literally, the
+simulator’s full policy is worth ~100 xG a season, an impossible 3–4×
+overstatement. The reason is that it only “sees” forward options in
+moments when they existed. Cross-checking on other leagues cannot remove
+this, because the bias is the same everywhere. <strong>Simulation-based
+“AI tactics engines” built on match data overclaim</strong>, and this
+one did too.</li>
+</ul>
+<h2 id="locked-predictions">Locked predictions</h2>
+<p>We cannot run a club trial. So we locked six numeric predictions in
+public (<code>PREDICTIONS.md</code>, git commit <code>5993959</code>, 14
+October 2026) for the <strong>next StatsBomb release with 360
+data</strong> (e.g. World Cup 2026), which was never used to build the
+rules. Count &amp; Strike counts as supported if ≥5 of 6 hold. A dry run
+shows one 51-match tournament has enough data for the test. Anyone can
+run it with
+<code>python3 src/test_predictions.py &lt;competition&gt; &lt;season&gt;</code>.</p>
 <h2 id="use-it-tomorrow">Use it tomorrow</h2>
 <p><code>src/matchplan.py</code> turns any fixture plus its odds into a
 one-page plan. The plan gives win/draw/loss chances, the
