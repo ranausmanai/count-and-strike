@@ -94,7 +94,7 @@ We built a possession simulator, a "chess engine" for football. It learns from 7
 
 ## Locked predictions
 
-We cannot run a club trial. So we locked six numeric predictions in public (`PREDICTIONS.md`, git commit `5993959`, 14 October 2026) for the **next StatsBomb release with 360 data** (e.g. World Cup 2026), which was never used to build the rules. Count & Strike counts as supported if ≥5 of 6 hold. A dry run shows one 51-match tournament has enough data for the test. Anyone can run it with `python3 src/test_predictions.py <competition> <season>`.
+We cannot run a club trial. So we locked six numeric predictions in public (`PREDICTIONS.md`, git commit `dc37f05`, 14 October 2026) for the **next StatsBomb release with 360 data** (e.g. World Cup 2026), which was never used to build the rules. Count & Strike counts as supported if ≥5 of 6 hold. A dry run shows one 51-match tournament has enough data for the test. Anyone can run it with `python3 src/test_predictions.py <competition> <season>`.
 
 ## Use it tomorrow
 

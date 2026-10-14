@@ -1,0 +1,5 @@
+data/raw/
+data/proc/*.parquet
+__pycache__/
+*.pyc
+.DS_Store
