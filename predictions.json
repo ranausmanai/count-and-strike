@@ -1,0 +1,23 @@
+{
+  "locked_on": "2026-10-14",
+  "author": "Project Underdog",
+  "applies_to": "Any StatsBomb open-data competition with 360 frames released AFTER the lock date (e.g. FIFA World Cup 2026). Not used in building the rules.",
+  "outcome": "net xG = own non-penalty xG minus opponent xG in the 20 s after the decision",
+  "success_criterion": "Count & Strike is supported if at least 5 of 6 predictions hold (correct sign with one-sided p < 0.05 AND estimate inside the predicted range).",
+  "predictions": [
+    {"id": "C1", "type": "count", "rule": "COUNT: each extra opponent behind the ball at a regain lowers counter xG", "range": [0.75, 0.97],
+     "baseline": "per-defender multiplier 0.81 / 0.89 / 0.88 in three populations"},
+    {"id": "S1", "type": "pair", "cell": "51000", "better": "shot", "worse": "lateral", "rule": "STRIKE: in the box, central, <=3 ahead, pressed -> shoot beats lateral pass", "range": [0.04, 0.20],
+     "baseline": "+0.112 (se 0.013)"},
+    {"id": "S2", "type": "pair", "cell": "41101", "better": "shot", "worse": "lateral", "rule": "STRIKE: edge of box, central, 4-6 ahead, pressed -> shoot beats lateral pass", "range": [0.015, 0.08],
+     "baseline": "+0.047 (se 0.004)"},
+    {"id": "S3", "type": "pair", "cell": "41202", "better": "shot", "worse": "lateral", "rule": "STRIKE: edge of box, central, packed (7+), pressed -> shoot beats lateral pass", "range": [0.01, 0.07],
+     "baseline": "+0.039 (se 0.006)"},
+    {"id": "S4", "type": "pair", "cell": "31202", "better": "shot", "worse": "lateral", "rule": "STRIKE (weak): 25-40 yds, central, packed, pressed -> shoot beats lateral pass", "range": [0.0, 0.035],
+     "baseline": "+0.015 (se 0.002); teams choose the shot only 20% of the time"},
+    {"id": "R1", "type": "pair", "cell": "30020", "better": "carry_fwd", "worse": "dribble", "rule": "RUN: attacking third (wide left), free, <=3 ahead -> carry forward beats dribble", "range": [0.005, 0.07],
+     "baseline": "+0.029 (se 0.004)"}
+  ],
+  "cell_code": "5 digits: x-zone (0 own third .. 5 in box), y-zone (0 left,1 central,2 right), opponents ahead (0 <=3,1 4-6,2 7+), nearest opponent (0 <3yd,1 3-7,2 >7), teammates ahead (0 0-1,1 2-3,2 4+)",
+  "how_to_test": "python3 src/test_predictions.py <competition_id> <season_id>"
+}

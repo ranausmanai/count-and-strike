@@ -1,0 +1,52 @@
+{
+ "51000:shot_vs_lateral": {
+  "pooled": 0.1117,
+  "se": 0.0128,
+  "per_pop": [
+   0.1032,
+   0.131,
+   0.0921
+  ],
+  "share_choosing_better": 0.858
+ },
+ "41101:shot_vs_lateral": {
+  "pooled": 0.0473,
+  "se": 0.0044,
+  "per_pop": [
+   0.0467,
+   0.0519,
+   0.0449
+  ],
+  "share_choosing_better": 0.589
+ },
+ "41202:shot_vs_lateral": {
+  "pooled": 0.0385,
+  "se": 0.0058,
+  "per_pop": [
+   0.0436,
+   0.0289,
+   0.0427
+  ],
+  "share_choosing_better": 0.683
+ },
+ "31202:shot_vs_lateral": {
+  "pooled": 0.0151,
+  "se": 0.0022,
+  "per_pop": [
+   0.0194,
+   0.0106,
+   0.0125
+  ],
+  "share_choosing_better": 0.203
+ },
+ "30020:carry_fwd_vs_dribble": {
+  "pooled": 0.0288,
+  "se": 0.0041,
+  "per_pop": [
+   0.0205,
+   0.0438,
+   0.0427
+  ],
+  "share_choosing_better": 0.556
+ }
+}
