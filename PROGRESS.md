@@ -56,3 +56,9 @@
 - Corners: 'first contact' surrogate INVALID (r=−.19); corners need consortium
 - Window effect visible in surrogate: OR 1.47 [1.36,1.59] SB15; 1.26 [1.08,1.47] unseen → testable by one club within ~1-1.5 seasons
 - NEXT: paper v3 (thesis: tactics problem = power problem; trial protocol)
+## Round 11 — Tactic Miner (2.9M decisions, 2,916 situations, 6,847 rules)
+- 749 nominal hits vs ~342 by chance; 0 pass BH 5% individually
+- Aggregate replication (post-hoc, DEVIATIONS #4): strong hits replicate in sign 90% (EPL) / 97% (unseen), r=.85 → REAL, stable patterns
+- But the combined policy implies +21 goals/season (impossible) → patterns describe good MOMENTS (selection), mostly "go forward > recycle"
+## Round 12 — habit (ITT, cross-fitted, team+cell FE) test of mined rules: 28/28 NULL (BH 0). Choices-as-habits don't move outcomes
+- Next frontier: StatsBomb 360 freeze frames (every event) to condition on visible space → separate choice from situation

@@ -1,0 +1,1045 @@
+{
+ "all": [
+  {
+   "action": "carry_fwd",
+   "zone": "all",
+   "d_beta": -5.1622865434321735e-05,
+   "d_se": 8.5111538127807e-05,
+   "d_p": 0.544161586511855,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.00038028418598583003,
+   "EPL_se": 0.00017153468453560055,
+   "unseen_beta": 9.987000019956942e-05,
+   "unseen_se": 0.00015007070511360363
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "own_half",
+   "d_beta": -6.087830366805715e-05,
+   "d_se": 8.888034522369952e-05,
+   "d_p": 0.49337752338226615,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.00021845411563160206,
+   "EPL_se": 0.00016704510045512482,
+   "unseen_beta": -8.157097475249768e-05,
+   "unseen_se": 0.00018235594237621527
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "middle",
+   "d_beta": -4.794726638365536e-05,
+   "d_se": 0.00014562075017319825,
+   "d_p": 0.7419582505664948,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.0004671627291041077,
+   "EPL_se": 0.000202114950713538,
+   "unseen_beta": 0.0003867399956120134,
+   "unseen_se": 0.00041801168693829225
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "final_third",
+   "d_beta": -0.00037147507495502517,
+   "d_se": 0.000823064130201194,
+   "d_p": 0.6517503768002344,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.0010849336011126958,
+   "EPL_se": 0.001658487856968088,
+   "unseen_beta": 0.0014198499624210794,
+   "unseen_se": 0.0018865089352520696
+  },
+  {
+   "action": "short_fwd",
+   "zone": "all",
+   "d_beta": 6.712094398070008e-05,
+   "d_se": 7.178926907823256e-05,
+   "d_p": 0.3498028192823147,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.0002544890350684451,
+   "EPL_se": 0.0001459220595937833,
+   "unseen_beta": -6.273491661187836e-05,
+   "unseen_se": 0.0001458181820833921
+  },
+  {
+   "action": "short_fwd",
+   "zone": "own_half",
+   "d_beta": 8.13779446094009e-05,
+   "d_se": 9.882542328653796e-05,
+   "d_p": 0.41025127784343196,
+   "q": 0.9999995058561203,
+   "EPL_beta": 6.8520924068558e-05,
+   "EPL_se": 0.00012250851656237432,
+   "unseen_beta": -5.505531058270351e-05,
+   "unseen_se": 0.0001672750251603732
+  },
+  {
+   "action": "short_fwd",
+   "zone": "middle",
+   "d_beta": 9.254884867348518e-05,
+   "d_se": 0.000149724189060225,
+   "d_p": 0.5364903715487244,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.0005380529451347673,
+   "EPL_se": 0.00025951785750411287,
+   "unseen_beta": -8.610744867973262e-05,
+   "unseen_se": 0.00030165502963557986
+  },
+  {
+   "action": "short_fwd",
+   "zone": "final_third",
+   "d_beta": -0.0008557811212317973,
+   "d_se": 0.000889937051650178,
+   "d_p": 0.3362406039467096,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.0004174260425904005,
+   "EPL_se": 0.0010066925414479002,
+   "unseen_beta": -0.0010509386721208268,
+   "unseen_se": 0.0028775242734207416
+  },
+  {
+   "action": "long_fwd",
+   "zone": "all",
+   "d_beta": 1.2424669165853659e-05,
+   "d_se": 9.465585542034417e-05,
+   "d_p": 0.8955684501190859,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.00012270742955984476,
+   "EPL_se": 0.00015857554925519676,
+   "unseen_beta": -0.0002929270186860251,
+   "unseen_se": 0.00015816895632658794
+  },
+  {
+   "action": "long_fwd",
+   "zone": "own_half",
+   "d_beta": -1.4461771453338891e-05,
+   "d_se": 0.00010772670211385773,
+   "d_p": 0.8932088406717534,
+   "q": 0.9999995058561203,
+   "EPL_beta": -8.034439583932e-05,
+   "EPL_se": 0.00018950152267089047,
+   "unseen_beta": -0.00012292211889068647,
+   "unseen_se": 0.00015772457380816568
+  },
+  {
+   "action": "long_fwd",
+   "zone": "middle",
+   "d_beta": -6.368880493922366e-05,
+   "d_se": 0.00019092476293903368,
+   "d_p": 0.7386960279933616,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.0004506728453312221,
+   "EPL_se": 0.00022924993589684735,
+   "unseen_beta": -0.0004997603566076206,
+   "unseen_se": 0.00031752403961584475
+  },
+  {
+   "action": "long_fwd",
+   "zone": "final_third",
+   "d_beta": 0.0007610563386970892,
+   "d_se": 0.0010278438271788667,
+   "d_p": 0.45903325865245403,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.001866540543793114,
+   "EPL_se": 0.0010769478224380658,
+   "unseen_beta": NaN,
+   "unseen_se": NaN
+  },
+  {
+   "action": "cross",
+   "zone": "all",
+   "d_beta": 0.0009738419914681235,
+   "d_se": 0.0004994762704949456,
+   "d_p": 0.05120875689751671,
+   "q": 0.9352321262240603,
+   "EPL_beta": -0.0010055422009396973,
+   "EPL_se": 0.00104713393841379,
+   "unseen_beta": -0.0006351887111531019,
+   "unseen_se": 0.001229872352949717
+  },
+  {
+   "action": "cross",
+   "zone": "middle",
+   "d_beta": 0.0010867030319065174,
+   "d_se": 0.0005982029607858658,
+   "d_p": 0.06927645379437483,
+   "q": 0.9352321262240603,
+   "EPL_beta": NaN,
+   "EPL_se": NaN,
+   "unseen_beta": NaN,
+   "unseen_se": NaN
+  },
+  {
+   "action": "cross",
+   "zone": "final_third",
+   "d_beta": 0.000930131194870798,
+   "d_se": 0.0010302979320656463,
+   "d_p": 0.3666432718066621,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.002270661660210809,
+   "EPL_se": 0.0016048157794521895,
+   "unseen_beta": -0.0022237606536508925,
+   "unseen_se": 0.0023737295870763513
+  },
+  {
+   "action": "shot",
+   "zone": "all",
+   "d_beta": -9.143570374345696e-05,
+   "d_se": 0.0001658479569957897,
+   "d_p": 0.581412644135634,
+   "q": 0.9999995058561203,
+   "EPL_beta": -9.364370355227067e-05,
+   "EPL_se": 0.0004807041849034833,
+   "unseen_beta": -0.0006035944257830523,
+   "unseen_se": 0.000753684988848989
+  },
+  {
+   "action": "shot",
+   "zone": "own_half",
+   "d_beta": 1.1599599921539247e-10,
+   "d_se": 0.00018729649541360114,
+   "d_p": 0.9999995058561203,
+   "q": 0.9999995058561203,
+   "EPL_beta": NaN,
+   "EPL_se": NaN,
+   "unseen_beta": NaN,
+   "unseen_se": NaN
+  },
+  {
+   "action": "shot",
+   "zone": "middle",
+   "d_beta": 6.223245048928357e-05,
+   "d_se": 0.0002110074512367545,
+   "d_p": 0.7680472711441353,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.00017448803272195678,
+   "EPL_se": 0.0006724554676656131,
+   "unseen_beta": -7.756026355006949e-05,
+   "unseen_se": 0.0008344887983271045
+  },
+  {
+   "action": "shot",
+   "zone": "final_third",
+   "d_beta": -0.001021640977660726,
+   "d_se": 0.0007524609255424187,
+   "d_p": 0.17454844351999665,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.001012327504989898,
+   "EPL_se": 0.0011504911356788516,
+   "unseen_beta": -0.003253421101232556,
+   "unseen_se": 0.0026537255012746915
+  },
+  {
+   "action": "dribble",
+   "zone": "all",
+   "d_beta": 7.710533893259579e-05,
+   "d_se": 0.00019172839614814077,
+   "d_p": 0.6875668648168476,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.00032150549470243817,
+   "EPL_se": 0.0003230390163551762,
+   "unseen_beta": 0.0006030896403558444,
+   "unseen_se": 0.0005190276974930143
+  },
+  {
+   "action": "dribble",
+   "zone": "own_half",
+   "d_beta": 0.0002480508295667131,
+   "d_se": 0.00028202092348706125,
+   "d_p": 0.3791044299775528,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.00023927742764464743,
+   "EPL_se": 0.00048389601210800084,
+   "unseen_beta": 0.0010456704615835893,
+   "unseen_se": 0.0006443438381741551
+  },
+  {
+   "action": "dribble",
+   "zone": "middle",
+   "d_beta": -7.656664426193015e-05,
+   "d_se": 0.0003218354066455629,
+   "d_p": 0.8119538330625214,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.0007360205395291178,
+   "EPL_se": 0.0007289118510701946,
+   "unseen_beta": -5.885078666401616e-05,
+   "unseen_se": 0.000813404044387399
+  },
+  {
+   "action": "dribble",
+   "zone": "final_third",
+   "d_beta": 0.0002680220810239649,
+   "d_se": 0.0022150378436021478,
+   "d_p": 0.903690140535179,
+   "q": 0.9999995058561203,
+   "EPL_beta": NaN,
+   "EPL_se": NaN,
+   "unseen_beta": NaN,
+   "unseen_se": NaN
+  },
+  {
+   "action": "recycle",
+   "zone": "all",
+   "d_beta": -4.131507357354837e-07,
+   "d_se": 7.903050755785351e-05,
+   "d_p": 0.9958288880835774,
+   "q": 0.9999995058561203,
+   "EPL_beta": 3.247281970243761e-05,
+   "EPL_se": 0.00013230734772563026,
+   "unseen_beta": 0.0001902531760116962,
+   "unseen_se": 0.00013445233790133982
+  },
+  {
+   "action": "recycle",
+   "zone": "own_half",
+   "d_beta": -9.777292787700717e-06,
+   "d_se": 0.00011016921579636704,
+   "d_p": 0.9292822189756005,
+   "q": 0.9999995058561203,
+   "EPL_beta": -0.0002220791018449262,
+   "EPL_se": 0.00011945335837428542,
+   "unseen_beta": 7.238949032574144e-05,
+   "unseen_se": 0.0001697724639844139
+  },
+  {
+   "action": "recycle",
+   "zone": "middle",
+   "d_beta": 5.666624208808804e-05,
+   "d_se": 0.00014100113817288294,
+   "d_p": 0.6877686641636285,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.0002993651711447625,
+   "EPL_se": 0.00024453571379663854,
+   "unseen_beta": 0.00015350649659766637,
+   "unseen_se": 0.0003551512691171153
+  },
+  {
+   "action": "recycle",
+   "zone": "final_third",
+   "d_beta": 0.0003801248358295948,
+   "d_se": 0.0008048461207228167,
+   "d_p": 0.6367162057303726,
+   "q": 0.9999995058561203,
+   "EPL_beta": 0.002678935163490681,
+   "EPL_se": 0.0018846590727872507,
+   "unseen_beta": 0.004507072578544213,
+   "unseen_se": 0.002539096179475387
+  }
+ ],
+ "details": [
+  {
+   "action": "carry_fwd",
+   "zone": "all",
+   "discovery": {
+    "beta": -5.1622865434321735e-05,
+    "se": 8.5111538127807e-05,
+    "n_rows": 25482,
+    "n_teams": 62,
+    "mean_sd_prop": 0.07001014261938047,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": -0.00038028418598583003,
+    "se": 0.00017153468453560055,
+    "n_rows": 9076,
+    "n_teams": 20,
+    "mean_sd_prop": 0.06783687503352528,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": 9.987000019956942e-05,
+    "se": 0.00015007070511360363,
+    "n_rows": 9538,
+    "n_teams": 60,
+    "mean_sd_prop": 0.06932767126182858,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "own_half",
+   "discovery": {
+    "beta": -6.087830366805715e-05,
+    "se": 8.888034522369952e-05,
+    "n_rows": 14060,
+    "n_teams": 62,
+    "mean_sd_prop": 0.07140247325546063,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": {
+    "beta": -0.00021845411563160206,
+    "se": 0.00016704510045512482,
+    "n_rows": 4732,
+    "n_teams": 20,
+    "mean_sd_prop": 0.07118936904348937,
+    "decisions_per_team_match": 316.87631578947367
+   },
+   "confirm_unseen": {
+    "beta": -8.157097475249768e-05,
+    "se": 0.00018235594237621527,
+    "n_rows": 6432,
+    "n_teams": 60,
+    "mean_sd_prop": 0.07168468028951445,
+    "decisions_per_team_match": 352.7395833333333
+   }
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "middle",
+   "discovery": {
+    "beta": -4.794726638365536e-05,
+    "se": 0.00014562075017319825,
+    "n_rows": 10464,
+    "n_teams": 61,
+    "mean_sd_prop": 0.06867610563158977,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": -0.0004671627291041077,
+    "se": 0.000202114950713538,
+    "n_rows": 3908,
+    "n_teams": 20,
+    "mean_sd_prop": 0.06477524065911375,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": 0.0003867399956120134,
+    "se": 0.00041801168693829225,
+    "n_rows": 2776,
+    "n_teams": 58,
+    "mean_sd_prop": 0.06437864360045094,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "carry_fwd",
+   "zone": "final_third",
+   "discovery": {
+    "beta": -0.00037147507495502517,
+    "se": 0.000823064130201194,
+    "n_rows": 958,
+    "n_teams": 58,
+    "mean_sd_prop": 0.0643325100233299,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": -0.0010849336011126958,
+    "se": 0.001658487856968088,
+    "n_rows": 436,
+    "n_teams": 18,
+    "mean_sd_prop": 0.05959578058689902,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": {
+    "beta": 0.0014198499624210794,
+    "se": 0.0018865089352520696,
+    "n_rows": 330,
+    "n_teams": 25,
+    "mean_sd_prop": 0.06564398994625155,
+    "decisions_per_team_match": 75.83159722222223
+   }
+  },
+  {
+   "action": "short_fwd",
+   "zone": "all",
+   "discovery": {
+    "beta": 6.712094398070008e-05,
+    "se": 7.178926907823256e-05,
+    "n_rows": 25450,
+    "n_teams": 62,
+    "mean_sd_prop": 0.08938611614390381,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": 0.0002544890350684451,
+    "se": 0.0001459220595937833,
+    "n_rows": 9084,
+    "n_teams": 20,
+    "mean_sd_prop": 0.08645420522899205,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": -6.273491661187836e-05,
+    "se": 0.0001458181820833921,
+    "n_rows": 9530,
+    "n_teams": 60,
+    "mean_sd_prop": 0.09057277595104628,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "short_fwd",
+   "zone": "own_half",
+   "discovery": {
+    "beta": 8.13779446094009e-05,
+    "se": 9.882542328653796e-05,
+    "n_rows": 14060,
+    "n_teams": 62,
+    "mean_sd_prop": 0.09031024478096582,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": {
+    "beta": 6.8520924068558e-05,
+    "se": 0.00012250851656237432,
+    "n_rows": 4738,
+    "n_teams": 20,
+    "mean_sd_prop": 0.0894653849805715,
+    "decisions_per_team_match": 316.87631578947367
+   },
+   "confirm_unseen": {
+    "beta": -5.505531058270351e-05,
+    "se": 0.0001672750251603732,
+    "n_rows": 6424,
+    "n_teams": 60,
+    "mean_sd_prop": 0.09048843604714563,
+    "decisions_per_team_match": 352.7395833333333
+   }
+  },
+  {
+   "action": "short_fwd",
+   "zone": "middle",
+   "discovery": {
+    "beta": 9.254884867348518e-05,
+    "se": 0.000149724189060225,
+    "n_rows": 10480,
+    "n_teams": 61,
+    "mean_sd_prop": 0.09101135706043349,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": 0.0005380529451347673,
+    "se": 0.00025951785750411287,
+    "n_rows": 3910,
+    "n_teams": 20,
+    "mean_sd_prop": 0.08594610870096356,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": -8.610744867973262e-05,
+    "se": 0.00030165502963557986,
+    "n_rows": 2808,
+    "n_teams": 58,
+    "mean_sd_prop": 0.09430967957782448,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "short_fwd",
+   "zone": "final_third",
+   "discovery": {
+    "beta": -0.0008557811212317973,
+    "se": 0.000889937051650178,
+    "n_rows": 910,
+    "n_teams": 58,
+    "mean_sd_prop": 0.05898114299835652,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": 0.0004174260425904005,
+    "se": 0.0010066925414479002,
+    "n_rows": 436,
+    "n_teams": 18,
+    "mean_sd_prop": 0.0604239937903019,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": {
+    "beta": -0.0010509386721208268,
+    "se": 0.0028775242734207416,
+    "n_rows": 298,
+    "n_teams": 25,
+    "mean_sd_prop": 0.06160517322554573,
+    "decisions_per_team_match": 75.83159722222223
+   }
+  },
+  {
+   "action": "long_fwd",
+   "zone": "all",
+   "discovery": {
+    "beta": 1.2424669165853659e-05,
+    "se": 9.465585542034417e-05,
+    "n_rows": 24846,
+    "n_teams": 62,
+    "mean_sd_prop": 0.0573236106410874,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": -0.00012270742955984476,
+    "se": 0.00015857554925519676,
+    "n_rows": 8626,
+    "n_teams": 20,
+    "mean_sd_prop": 0.055252966909762426,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": -0.0002929270186860251,
+    "se": 0.00015816895632658794,
+    "n_rows": 9198,
+    "n_teams": 60,
+    "mean_sd_prop": 0.06348355288758814,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "long_fwd",
+   "zone": "own_half",
+   "discovery": {
+    "beta": -1.4461771453338891e-05,
+    "se": 0.00010772670211385773,
+    "n_rows": 14004,
+    "n_teams": 62,
+    "mean_sd_prop": 0.06604049820264322,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": {
+    "beta": -8.034439583932e-05,
+    "se": 0.00018950152267089047,
+    "n_rows": 4678,
+    "n_teams": 20,
+    "mean_sd_prop": 0.06636678701730626,
+    "decisions_per_team_match": 316.87631578947367
+   },
+   "confirm_unseen": {
+    "beta": -0.00012292211889068647,
+    "se": 0.00015772457380816568,
+    "n_rows": 6394,
+    "n_teams": 60,
+    "mean_sd_prop": 0.0710974213808276,
+    "decisions_per_team_match": 352.7395833333333
+   }
+  },
+  {
+   "action": "long_fwd",
+   "zone": "middle",
+   "discovery": {
+    "beta": -6.368880493922366e-05,
+    "se": 0.00019092476293903368,
+    "n_rows": 10232,
+    "n_teams": 61,
+    "mean_sd_prop": 0.04964701993207187,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": -0.0004506728453312221,
+    "se": 0.00022924993589684735,
+    "n_rows": 3736,
+    "n_teams": 20,
+    "mean_sd_prop": 0.04711088233309313,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": -0.0004997603566076206,
+    "se": 0.00031752403961584475,
+    "n_rows": 2670,
+    "n_teams": 58,
+    "mean_sd_prop": 0.05220624794717472,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "long_fwd",
+   "zone": "final_third",
+   "discovery": {
+    "beta": 0.0007610563386970892,
+    "se": 0.0010278438271788667,
+    "n_rows": 610,
+    "n_teams": 57,
+    "mean_sd_prop": 0.01461306615291655,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": 0.001866540543793114,
+    "se": 0.0010769478224380658,
+    "n_rows": 212,
+    "n_teams": 18,
+    "mean_sd_prop": 0.011251951570194913,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": null
+  },
+  {
+   "action": "cross",
+   "zone": "all",
+   "discovery": {
+    "beta": 0.0009738419914681235,
+    "se": 0.0004994762704949456,
+    "n_rows": 1488,
+    "n_teams": 61,
+    "mean_sd_prop": 0.0032342343321768276,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": -0.0010055422009396973,
+    "se": 0.00104713393841379,
+    "n_rows": 546,
+    "n_teams": 20,
+    "mean_sd_prop": 0.004054625609170421,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": -0.0006351887111531019,
+    "se": 0.001229872352949717,
+    "n_rows": 384,
+    "n_teams": 31,
+    "mean_sd_prop": 0.002610058710941578,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "cross",
+   "zone": "own_half",
+   "discovery": null,
+   "confirm_EPL": null,
+   "confirm_unseen": null
+  },
+  {
+   "action": "cross",
+   "zone": "middle",
+   "discovery": {
+    "beta": 0.0010867030319065174,
+    "se": 0.0005982029607858658,
+    "n_rows": 636,
+    "n_teams": 61,
+    "mean_sd_prop": 0.00045491184191159573,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": null,
+   "confirm_unseen": null
+  },
+  {
+   "action": "cross",
+   "zone": "final_third",
+   "discovery": {
+    "beta": 0.000930131194870798,
+    "se": 0.0010302979320656463,
+    "n_rows": 852,
+    "n_teams": 58,
+    "mean_sd_prop": 0.07878585767767526,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": -0.002270661660210809,
+    "se": 0.0016048157794521895,
+    "n_rows": 406,
+    "n_teams": 18,
+    "mean_sd_prop": 0.07632066355531765,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": {
+    "beta": -0.0022237606536508925,
+    "se": 0.0023737295870763513,
+    "n_rows": 274,
+    "n_teams": 25,
+    "mean_sd_prop": 0.06818799511535122,
+    "decisions_per_team_match": 75.83159722222223
+   }
+  },
+  {
+   "action": "shot",
+   "zone": "all",
+   "discovery": {
+    "beta": -9.143570374345696e-05,
+    "se": 0.0001658479569957897,
+    "n_rows": 6312,
+    "n_teams": 62,
+    "mean_sd_prop": 0.00588691148982338,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": -9.364370355227067e-05,
+    "se": 0.0004807041849034833,
+    "n_rows": 1706,
+    "n_teams": 20,
+    "mean_sd_prop": 0.006153530433984966,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": -0.0006035944257830523,
+    "se": 0.000753684988848989,
+    "n_rows": 1110,
+    "n_teams": 43,
+    "mean_sd_prop": 0.0038815373006804705,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "shot",
+   "zone": "own_half",
+   "discovery": {
+    "beta": 1.1599599921539247e-10,
+    "se": 0.00018729649541360114,
+    "n_rows": 642,
+    "n_teams": 62,
+    "mean_sd_prop": 0.00017662501461173657,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": null,
+   "confirm_unseen": null
+  },
+  {
+   "action": "shot",
+   "zone": "middle",
+   "discovery": {
+    "beta": 6.223245048928357e-05,
+    "se": 0.0002110074512367545,
+    "n_rows": 4726,
+    "n_teams": 61,
+    "mean_sd_prop": 0.009167496233168313,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": -0.00017448803272195678,
+    "se": 0.0006724554676656131,
+    "n_rows": 1212,
+    "n_teams": 20,
+    "mean_sd_prop": 0.008651783376626707,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": -7.756026355006949e-05,
+    "se": 0.0008344887983271045,
+    "n_rows": 828,
+    "n_teams": 43,
+    "mean_sd_prop": 0.007280744295217766,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "shot",
+   "zone": "final_third",
+   "discovery": {
+    "beta": -0.001021640977660726,
+    "se": 0.0007524609255424187,
+    "n_rows": 944,
+    "n_teams": 58,
+    "mean_sd_prop": 0.052413290031763315,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": -0.001012327504989898,
+    "se": 0.0011504911356788516,
+    "n_rows": 424,
+    "n_teams": 18,
+    "mean_sd_prop": 0.046902082871606576,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": {
+    "beta": -0.003253421101232556,
+    "se": 0.0026537255012746915,
+    "n_rows": 282,
+    "n_teams": 25,
+    "mean_sd_prop": 0.04878355248191513,
+    "decisions_per_team_match": 75.83159722222223
+   }
+  },
+  {
+   "action": "dribble",
+   "zone": "all",
+   "discovery": {
+    "beta": 7.710533893259579e-05,
+    "se": 0.00019172839614814077,
+    "n_rows": 5184,
+    "n_teams": 61,
+    "mean_sd_prop": 0.01172129765740272,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": -0.00032150549470243817,
+    "se": 0.0003230390163551762,
+    "n_rows": 1566,
+    "n_teams": 20,
+    "mean_sd_prop": 0.010165937080506992,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": 0.0006030896403558444,
+    "se": 0.0005190276974930143,
+    "n_rows": 1522,
+    "n_teams": 55,
+    "mean_sd_prop": 0.009216414455210927,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "dribble",
+   "zone": "own_half",
+   "discovery": {
+    "beta": 0.0002480508295667131,
+    "se": 0.00028202092348706125,
+    "n_rows": 2314,
+    "n_teams": 61,
+    "mean_sd_prop": 0.008352509896113755,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": {
+    "beta": 0.00023927742764464743,
+    "se": 0.00048389601210800084,
+    "n_rows": 662,
+    "n_teams": 20,
+    "mean_sd_prop": 0.007599291161232746,
+    "decisions_per_team_match": 316.87631578947367
+   },
+   "confirm_unseen": {
+    "beta": 0.0010456704615835893,
+    "se": 0.0006443438381741551,
+    "n_rows": 850,
+    "n_teams": 48,
+    "mean_sd_prop": 0.007456466434018228,
+    "decisions_per_team_match": 352.7395833333333
+   }
+  },
+  {
+   "action": "dribble",
+   "zone": "middle",
+   "discovery": {
+    "beta": -7.656664426193015e-05,
+    "se": 0.0003218354066455629,
+    "n_rows": 2658,
+    "n_teams": 61,
+    "mean_sd_prop": 0.01566166837048036,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": -0.0007360205395291178,
+    "se": 0.0007289118510701946,
+    "n_rows": 830,
+    "n_teams": 20,
+    "mean_sd_prop": 0.013149372542302865,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": -5.885078666401616e-05,
+    "se": 0.000813404044387399,
+    "n_rows": 600,
+    "n_teams": 45,
+    "mean_sd_prop": 0.012383909029276474,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "dribble",
+   "zone": "final_third",
+   "discovery": {
+    "beta": 0.0002680220810239649,
+    "se": 0.0022150378436021478,
+    "n_rows": 212,
+    "n_teams": 26,
+    "mean_sd_prop": 0.017898034056571224,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": null,
+   "confirm_unseen": null
+  },
+  {
+   "action": "recycle",
+   "zone": "all",
+   "discovery": {
+    "beta": -4.131507357354837e-07,
+    "se": 7.903050755785351e-05,
+    "n_rows": 25526,
+    "n_teams": 62,
+    "mean_sd_prop": 0.09690707383779633,
+    "decisions_per_team_match": 698.8522630230572
+   },
+   "confirm_EPL": {
+    "beta": 3.247281970243761e-05,
+    "se": 0.00013230734772563026,
+    "n_rows": 9128,
+    "n_teams": 20,
+    "mean_sd_prop": 0.09442107999990638,
+    "decisions_per_team_match": 697.5078947368421
+   },
+   "confirm_unseen": {
+    "beta": 0.0001902531760116962,
+    "se": 0.00013445233790133982,
+    "n_rows": 9580,
+    "n_teams": 60,
+    "mean_sd_prop": 0.09865033374487966,
+    "decisions_per_team_match": 644.8654513888889
+   }
+  },
+  {
+   "action": "recycle",
+   "zone": "own_half",
+   "discovery": {
+    "beta": -9.777292787700717e-06,
+    "se": 0.00011016921579636704,
+    "n_rows": 14064,
+    "n_teams": 62,
+    "mean_sd_prop": 0.09267026781935891,
+    "decisions_per_team_match": 345.36976942783946
+   },
+   "confirm_EPL": {
+    "beta": -0.0002220791018449262,
+    "se": 0.00011945335837428542,
+    "n_rows": 4736,
+    "n_teams": 20,
+    "mean_sd_prop": 0.08997289239664502,
+    "decisions_per_team_match": 316.87631578947367
+   },
+   "confirm_unseen": {
+    "beta": 7.238949032574144e-05,
+    "se": 0.0001697724639844139,
+    "n_rows": 6430,
+    "n_teams": 60,
+    "mean_sd_prop": 0.09697305907736922,
+    "decisions_per_team_match": 352.7395833333333
+   }
+  },
+  {
+   "action": "recycle",
+   "zone": "middle",
+   "discovery": {
+    "beta": 5.666624208808804e-05,
+    "se": 0.00014100113817288294,
+    "n_rows": 10476,
+    "n_teams": 61,
+    "mean_sd_prop": 0.10148630995721743,
+    "decisions_per_team_match": 278.8727583262169
+   },
+   "confirm_EPL": {
+    "beta": 0.0002993651711447625,
+    "se": 0.00024453571379663854,
+    "n_rows": 3920,
+    "n_teams": 20,
+    "mean_sd_prop": 0.09886504383960236,
+    "decisions_per_team_match": 294.6592105263158
+   },
+   "confirm_unseen": {
+    "beta": 0.00015350649659766637,
+    "se": 0.0003551512691171153,
+    "n_rows": 2810,
+    "n_teams": 58,
+    "mean_sd_prop": 0.10148580227201012,
+    "decisions_per_team_match": 216.29427083333334
+   }
+  },
+  {
+   "action": "recycle",
+   "zone": "final_third",
+   "discovery": {
+    "beta": 0.0003801248358295948,
+    "se": 0.0008048461207228167,
+    "n_rows": 986,
+    "n_teams": 58,
+    "mean_sd_prop": 0.10866899821803866,
+    "decisions_per_team_match": 74.60973526900085
+   },
+   "confirm_EPL": {
+    "beta": 0.002678935163490681,
+    "se": 0.0018846590727872507,
+    "n_rows": 472,
+    "n_teams": 18,
+    "mean_sd_prop": 0.10218396015960472,
+    "decisions_per_team_match": 85.97236842105264
+   },
+   "confirm_unseen": {
+    "beta": 0.004507072578544213,
+    "se": 0.002539096179475387,
+    "n_rows": 340,
+    "n_teams": 26,
+    "mean_sd_prop": 0.10688192069200596,
+    "decisions_per_team_match": 75.83159722222223
+   }
+  }
+ ],
+ "confirmation": []
+}
