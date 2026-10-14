@@ -1,0 +1,76 @@
+{
+ "confirm_EPL": {
+  "nominal_hits_p<.05": {
+   "n": 694,
+   "sign_agreement": 0.7622478386167147,
+   "ci": [
+    0.7305475504322767,
+    0.7939481268011528
+   ],
+   "corr": 0.7470872441935271,
+   "shrinkage_slope": 0.7166953473831925
+  },
+  "strong_hits_p<.001": {
+   "n": 97,
+   "sign_agreement": 0.8969072164948454,
+   "ci": [
+    0.8350515463917526,
+    0.9484536082474226
+   ],
+   "corr": 0.8474671786536143,
+   "shrinkage_slope": 0.845848387985999
+  },
+  "all_rules": {
+   "n": 6272,
+   "sign_agreement": 0.5883290816326531,
+   "ci": [
+    0.5754145408163265,
+    0.5998126594387755
+   ],
+   "corr": 0.4745374205294805,
+   "shrinkage_slope": 0.5983792588493112
+  },
+  "combined_policy": {
+   "decisions_changed_per_team_match": 67.30131578947369,
+   "net_xg_gain_per_team_match": 0.5662860741400234,
+   "net_xg_gain_per_season": 21.518870817320888
+  }
+ },
+ "confirm_unseen": {
+  "nominal_hits_p<.05": {
+   "n": 728,
+   "sign_agreement": 0.8159340659340659,
+   "ci": [
+    0.7870879120879121,
+    0.8434065934065934
+   ],
+   "corr": 0.7808809464677839,
+   "shrinkage_slope": 0.760023678834819
+  },
+  "strong_hits_p<.001": {
+   "n": 101,
+   "sign_agreement": 0.9702970297029703,
+   "ci": [
+    0.9306930693069307,
+    1.0
+   ],
+   "corr": 0.849612519033204,
+   "shrinkage_slope": 0.8350279247903604
+  },
+  "all_rules": {
+   "n": 6601,
+   "sign_agreement": 0.6076352067868505,
+   "ci": [
+    0.5964247841236177,
+    0.6189971216482352
+   ],
+   "corr": 0.5114070869288464,
+   "shrinkage_slope": 0.6290729362750703
+  },
+  "combined_policy": {
+   "decisions_changed_per_team_match": 52.111111111111114,
+   "net_xg_gain_per_team_match": 0.5692835206814759,
+   "net_xg_gain_per_season": 21.632773785896084
+  }
+ }
+}
