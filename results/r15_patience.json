@@ -1,0 +1,146 @@
+[
+ {
+  "rule": "in the box, central; \u22643 opponents ahead; pressed (<3 yds); 0\u20131 teammates ahead -> SHOT not lateral",
+  "W20": {
+   "adv": 0.1117,
+   "se": 0.0128,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.1075,
+   "se": 0.013,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.1096,
+   "se": 0.0141,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "in the box, central; \u22643 opponents ahead; pressed (<3 yds); 0\u20131 teammates ahead -> SHOT not carry_other",
+  "W20": {
+   "adv": 0.0981,
+   "se": 0.0124,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0929,
+   "se": 0.013,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0912,
+   "se": 0.013,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "edge of box, central; 4\u20136 opponents ahead; pressed (<3 yds); 2\u20133 teammates ahead -> SHOT not lateral",
+  "W20": {
+   "adv": 0.0473,
+   "se": 0.0044,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.047,
+   "se": 0.0052,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0493,
+   "se": 0.0055,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "edge of box, central; 4\u20136 opponents ahead; loosely marked (3\u20137); 2\u20133 teammates ahead -> SHOT not carry_other",
+  "W20": {
+   "adv": 0.0471,
+   "se": 0.0079,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0544,
+   "se": 0.0097,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0524,
+   "se": 0.0105,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "attacking third, central; 7+ opponents ahead; pressed (<3 yds); 4+ teammates ahead -> SHOT not lateral",
+  "W20": {
+   "adv": 0.0151,
+   "se": 0.0022,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0114,
+   "se": 0.0039,
+   "all_positive": false
+  },
+  "W60": {
+   "adv": 0.0102,
+   "se": 0.0041,
+   "all_positive": false
+  }
+ },
+ {
+  "rule": "edge of box, central; 4\u20136 opponents ahead; pressed (<3 yds); 2\u20133 teammates ahead -> SHOT not back_pass",
+  "W20": {
+   "adv": 0.0573,
+   "se": 0.0044,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0546,
+   "se": 0.0067,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0508,
+   "se": 0.009,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "edge of box, central; 7+ opponents ahead; pressed (<3 yds); 4+ teammates ahead -> SHOT not lateral",
+  "W20": {
+   "adv": 0.0385,
+   "se": 0.0058,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0347,
+   "se": 0.0083,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0325,
+   "se": 0.0086,
+   "all_positive": true
+  }
+ },
+ {
+  "rule": "edge of box, central; 7+ opponents ahead; pressed (<3 yds); 4+ teammates ahead -> SHOT not carry_other",
+  "W20": {
+   "adv": 0.0418,
+   "se": 0.0059,
+   "all_positive": true
+  },
+  "W45": {
+   "adv": 0.0431,
+   "se": 0.0072,
+   "all_positive": true
+  },
+  "W60": {
+   "adv": 0.0406,
+   "se": 0.0075,
+   "all_positive": true
+  }
+ }
+]

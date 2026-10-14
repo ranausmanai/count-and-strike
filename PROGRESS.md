@@ -70,3 +70,6 @@
 - Rule-set value ≈ 4.1 xG/season at 50% adoption
 ## Round 14A — counter trigger CONFIRMED ×3: each extra opponent behind the ball at the regain −11-19% counter xG (middle third: ≤3 back 0.0144 vs 8+ 0.0072)
 - Match-plan generator now includes the real-time rule card
+## Round 15 — full advantage search: attack 997 rules → 11 confirmed (new pass types: none); pressing 102 → 1 confirmed (press exposed receiver near our box)
+- Patience test: shot rules hold at 45/60 s (7/8 fully; long-range weakens)
+- SYSTEM: "Count & Strike" (paper/count_and_strike.pdf) — Count at regain, Strike through set blocks, Run into space, Press exposed receiver, Dead balls

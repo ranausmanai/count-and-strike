@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Count &amp; Strike</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="print.css" />
+</head>
+<body>
+<h1 id="count-strike">Count &amp; Strike</h1>
+<h3
+id="a-football-playing-system-built-only-from-advantages-that-survived-out-of-sample-tests">A
+football playing system built only from advantages that survived
+out-of-sample tests</h3>
+<p><em>Project Underdog, October 2026. Code, data pipeline, 15
+pre-registrations and every result: <code>underdog/</code> (branch
+<code>project-underdog</code>). Full technical report:
+<code>underdog_paper.pdf</code>.</em></p>
+<hr />
+<h2 id="the-idea-in-one-paragraph">The idea in one paragraph</h2>
+<p>Football’s great systems (Total Football, <em>gegenpressing</em>,
+<em>juego de posición</em>) were invented by coaches and then proven on
+the pitch. We went the other way. We let a search engine compare
+<strong>every on-ball choice in 3.6 million decisions</strong>, then
+kept only advantages that reappeared in football the search had never
+seen: different competitions, men’s and women’s, two data providers.
+<strong>Thousands of patterns were found. Most were illusions</strong>:
+they described good <em>moments</em>, not good <em>choices</em>. What
+survived is small, specific and consistent, and it adds up to one
+principle:</p>
+<blockquote>
+<p><strong>Don’t try to pass your way through a settled defence. Count
+the defenders: if they are not set, strike now; if they are set and you
+are near goal, strike through them.</strong></p>
+</blockquote>
+<h2 id="how-the-rules-were-found-and-filtered">How the rules were found
+(and filtered)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Step</th>
+<th>What</th>
+<th>Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Every pass, carry, dribble and shot, with what happened in the next
+20 s (our xG − their xG)</td>
+<td>2.9M decisions (event data) + 0.73M with “what the player saw” (360
+frames)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Split into situations: zone, defenders ahead, nearest opponent,
+teammates ahead, score, minute</td>
+<td>~3,400 situations</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Compare every option against the usual option in each situation</td>
+<td>~8,700 candidate rules</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Keep rules that pass a false-discovery filter in the
+<strong>discovery</strong> data (men’s international tournaments)</td>
+<td>22</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Keep only rules that hold, with the same sign, in
+<strong>both</strong> unseen populations (men’s club football; women’s
+football)</td>
+<td><strong>12</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stress tests on the shooting rules: same shooting lane, 60-second
+horizon</td>
+<td>7 of 8 hold fully, 1 weakens</td>
+</tr>
+</tbody>
+</table>
+<p>What died along the way is listed in the technical report, and it is
+most of football analytics’ folklore. Examples: “teams should chase
+earlier”, “long throws are undervalued”, “aim corners at the penalty
+spot”, “fast-passing teams create more” (that one was just good teams),
+“find the opponent’s weak spot”, and “AI-optimised in-game style
+switching”.</p>
+<h2 id="the-system-five-principles">The system: five principles</h2>
+<h3 id="count-when-you-win-the-ball-count-the-opponents-behind-it">1.
+COUNT: when you win the ball, count the opponents behind it</h3>
+<p><img src="../figures/cs_fig_count.png" /></p>
+<p>Each extra opponent behind the ball at the moment you win it cuts
+your counter-attack’s value by <strong>11–19%</strong>. This was
+confirmed separately in all three 360 populations (p &lt; 0.05 in each).
+In the middle third, a regain with ≤3 opponents back is worth
+<strong>2×</strong> one with 8+ back. Event data from four further
+populations show the same thing from the other side: when the opponent
+had just pushed into your box, your counter is worth
+<strong>1.4–1.7×</strong>.</p>
+<p><strong>Rule:</strong> ≤3 behind the ball → <strong>go now</strong>
+(two runners, first pass forward). 8+ behind → <strong>keep
+it</strong>.</p>
+<h3 id="strike-through-near-the-box-shoot-rather-than-recycle">2. STRIKE
+THROUGH: near the box, shoot rather than recycle</h3>
+<p><img src="../figures/cs_fig_strike.png" /></p>
+<p>When the defence <em>is</em> set, recycling the ball rarely breaks
+it. In the situations below, shooting beat the alternative in all three
+populations. That held with the number of defenders in the shooting lane
+held equal, and players had actually shot <em>into more crowded
+lanes</em> than they passed into. It also still held 60 seconds later,
+so patience does not pay off later.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Shoot instead of</th>
+<th>Advantage per decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In the box, central, ≤3 ahead, even when pressed</td>
+<td>laying it off / turning away</td>
+<td><strong>+0.09 to +0.11 xG</strong></td>
+</tr>
+<tr>
+<td>Edge of the box, central, 4–6 ahead</td>
+<td>lateral / back pass / turning</td>
+<td><strong>+0.05</strong></td>
+</tr>
+<tr>
+<td>Edge of the box, central, packed (7+ ahead), pressed</td>
+<td>lateral / turning</td>
+<td><strong>+0.03 to +0.04</strong></td>
+</tr>
+<tr>
+<td>25–40 yds, central, packed, pressed</td>
+<td>lateral pass</td>
+<td>+0.010 to +0.015 <em>(weaker: positive overall, not in every
+population at 60 s)</em></td>
+</tr>
+</tbody>
+</table>
+<p>Teams currently recycle in these spots <strong>far more often than
+they shoot</strong>, about 7 to 1 from long range. This runs against a
+decade of “stop taking low-xG shots” analytics. A shot is low value, but
+the pass back in front of a settled block is worth even less.</p>
+<h3 id="run-into-space">3. RUN INTO SPACE</h3>
+<p>Attacking third, no one within 7 yards, ≤3 defenders ahead:
+<strong>carry the ball forward</strong> instead of dribbling at a man or
+turning back (<strong>+0.04 xG</strong> per decision, confirmed ×3).</p>
+<h3 id="press-the-exposed-receiver">4. PRESS THE EXPOSED RECEIVER</h3>
+<p>When an opponent receives near your box, unmarked, with medium
+support and only ≤5 of your players goal-side: <strong>press within 2
+seconds rather than hold shape</strong> (+0.008 net xG per decision,
+about once a match; confirmed in both unseen populations). This is the
+only pressing rule out of 102 tested that survived. Blanket pressing
+rules did not.</p>
+<h3 id="dead-balls-are-the-equaliser">5. DEAD BALLS ARE THE
+EQUALISER</h3>
+<p>Set-piece chances depend on team quality only a third to two-thirds
+as much as open-play chances do. That held in four populations
+(StatsBomb 2015/16, Wyscout 2017/18, unseen women’s/ISL leagues). It is
+the one channel where a cheaper squad loses the least ground.</p>
+<p><em>(Plus one model-based layer, not data-confirmed: score/minute
+tempo management. Protect a level score as the weaker team and open up
+late; the exact switching minute depends on the opponent.)</em></p>
+<h2 id="what-it-is-worth">What it is worth</h2>
+<p>Following the confirmed in-game rules half the time is worth about
+<strong>+3.6 to 4 xG a season</strong>. Together with set-piece
+excellence and match management, the simulator puts the whole system at
+<strong>about +4 points a season</strong>, for any club:</p>
+<table>
+<thead>
+<tr>
+<th>Club (2025/26 strength)</th>
+<th>Without → with Count &amp; Strike</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Man City</td>
+<td>title 38% → <strong>54%</strong></td>
+</tr>
+<tr>
+<td>Chelsea</td>
+<td>top four 45% → <strong>64%</strong></td>
+</tr>
+<tr>
+<td>Newcastle</td>
+<td>top four 21% → <strong>37%</strong></td>
+</tr>
+<tr>
+<td>Leeds</td>
+<td>relegation 13% → <strong>6%</strong></td>
+</tr>
+<tr>
+<td>Sunderland</td>
+<td>relegation 40% → <strong>23%</strong></td>
+</tr>
+<tr>
+<td>Wolves</td>
+<td>relegation 75% → 58%</td>
+</tr>
+</tbody>
+</table>
+<p><em>(The 4 points includes one assumption we label in the report: the
+“break” rule’s in-game uplift.)</em></p>
+<h2 id="what-it-is-not">What it is not</h2>
+<ul>
+<li><strong>Not a miracle.</strong> No rule we found turns a mid-table
+squad into a champion. The value is a few points: enough to survive,
+qualify or win a close title race.</li>
+<li><strong>Not causal proof.</strong> These are observational
+comparisons. They are made as fair as public data allows (same
+situation, same space, same shooting lane, three populations), but
+players’ choices still reflect things we cannot see. The final proof is
+a trial. Football’s statistics make that feasible only with fast
+measures: one club, one or two seasons (protocol in the technical
+report).</li>
+<li><strong>Not secret for long.</strong> If everyone adopts it, the
+edge goes to whoever adopts it first and best.</li>
+</ul>
+<h2 id="use-it-tomorrow">Use it tomorrow</h2>
+<p><code>src/matchplan.py</code> turns any fixture plus its odds into a
+one-page plan. The plan gives win/draw/loss chances, the
+score-and-minute tempo grid, the set-piece emphasis for this opponent,
+the opponent’s persistent habits, and the <strong>Count &amp; Strike
+rule card</strong> for the dressing room.</p>
+<hr />
+<p><em>Data: StatsBomb Open Data incl. 360 (with thanks); Pappalardo et
+al. (2019) Wyscout public dataset; football-data.co.uk. Everything
+pre-registered in git before analysis; deviations logged.</em></p>
+</body>
+</html>
