@@ -78,3 +78,14 @@
 - 68 plays (35 with adjustment carries removed) "confirmed" in both populations: all point the same way (forward/cross/shoot instead of back/lateral) — consistent with Strike Through, but R12 showed forward HABITS don't help → treat as moment-descriptions
 - New candidate plays (unproven): high cross from left edge vs set defence instead of back pass (+0.03); dribble in the box when pressed instead of lateral (+0.02)
 - Lesson: simulation/EPV "tactics engines" on event data overclaim; direction yes, magnitude no
+## Round 17 — opponent weaknesses × own strengths (14 routes, 3 populations, ~4,000 matches): ALL FAIL
+- H17-1 defensive route profiles reliable ≥0.3: SB15 2/14, women 5/14 (few teams), WY 0/14 → FAIL (attack profiles reliable up to .5-.7)
+- H17-2 defender-weakness terms OOS: −1.4 [−3.0,.2], +2.4 [−1.5,6.2], −0.7 [−1.5,.03] → FAIL
+- H17-3 exploiting opponent weak routes: −0.046 (SB15, sig. NEGATIVE), −0.026, −0.012 xG/SD → FAIL
+- Exploratory: leaning into own strong routes ≈ 0 (+.003, −.009, +.018) → no consistent gain
+- Conclusion: data-driven "find the opponent's weak spot" game plans don't work at route level; weakness profiles are mostly noise. Player-level/tracking weaknesses untested (needs tracking data → ASI)
+## Round 18 — think like a coach
+- 18A OVERLOAD: CONFIRMED. Passing into a lane where we outnumber them (players ahead of ball, 360) vs the crowded lane, same cell: +0.0014/+0.0024/+0.0010 net xG; dose-response +0.0006-0.0007 per player (p<.001 ×3); with lane-change matched +0.0010-0.0013 (p<.001 ×3); gain from own chances (not risk); completion 94% vs 84%. Players pass into crowded lane 66% vs overload 23% when both exist.
+- H18-2 switch-to-overload: right sign, underpowered (not confirmed)
+- 18B formation matchups: NULL (OOS gain negative in all 3; back3 vs 2 strikers null)
+- Locked prediction addendum O1/O2 (PREDICTIONS.md)

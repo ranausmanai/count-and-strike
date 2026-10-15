@@ -1,0 +1,72 @@
+{
+ "H18_1_overload_vs_underload": {
+  "per_pop": {
+   "discovery": {
+    "diff": 0.0014408524110318941,
+    "se": 0.0005730341633937148,
+    "cells": 81
+   },
+   "confirm_club": {
+    "diff": 0.002426321039388559,
+    "se": 0.000786424657128321,
+    "cells": 75
+   },
+   "confirm_women": {
+    "diff": 0.0010240702362050047,
+    "se": 0.0007890584636645449,
+    "cells": 71
+   }
+  },
+  "disc_p_one": 0.005961303884740321,
+  "pooled_confirm": 0.001727539837465106,
+  "pooled_se": 0.000557015064110721,
+  "confirm_p_one": 0.0009629618133526089,
+  "confirmed": true
+ },
+ "H18_2_switch_to_overload_vs_stay_in_underload": {
+  "per_pop": {
+   "discovery": {
+    "diff": 0.0005280269821971767,
+    "se": 0.0011730397004974863,
+    "cells": 28
+   },
+   "confirm_club": {
+    "diff": 0.0018241602393824106,
+    "se": 0.0023205324266421267,
+    "cells": 20
+   },
+   "confirm_women": {
+    "diff": 0.0018141118236845656,
+    "se": 0.002484682102299875,
+    "cells": 13
+   }
+  },
+  "disc_p_one": 0.3263063180997998,
+  "pooled_confirm": 0.001819478892727819,
+  "pooled_se": 0.0016959280995062825,
+  "confirm_p_one": 0.1416688897723138,
+  "confirmed": false
+ },
+ "H18_3_dose_response": {
+  "discovery": {
+   "per_player": 0.0005989595623913336,
+   "se": 0.00015165840514228595,
+   "p_one": 3.917382077353421e-05
+  },
+  "confirm_club": {
+   "per_player": 0.0007003592852353711,
+   "se": 0.0001788302765616223,
+   "p_one": 4.4952634296916246e-05
+  },
+  "confirm_women": {
+   "per_player": 0.0007385174985022238,
+   "se": 0.0002129119320152442,
+   "p_one": 0.000261537811284697
+  }
+ },
+ "usage_when_choice_exists": {
+  "share_into_overload": 0.23194713795554464,
+  "share_into_underload": 0.6553963337048185,
+  "n": 113957
+ }
+}

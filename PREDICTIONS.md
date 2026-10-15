@@ -18,3 +18,10 @@ python3 src/test_predictions.py <competition_id> <season_id>
 | R1 | **Run:** attacking third, wide, free, ≤3 ahead → carrying forward beats dribbling | **+0.005 to +0.07** (now +0.029) |
 
 **Count & Strike is supported if at least 5 of 6 hold.** "Holds" means the right sign with one-sided p < 0.05 *and* an estimate inside the predicted range. We will publish the result whatever it is.
+
+## Addendum, locked 15 October 2026: the overload rule
+
+| ID | Rule | Predicted on new data |
+|---|---|---|
+| O1 | **Overload:** a pass's value rises with how many more players we have than them, ahead of the ball, in its target lane (same situation and lane change) | **+0.0003 to +0.0025** net xG per extra player (now +0.0010 to +0.0013) |
+| O2 | **Overload (behaviour):** when both an overloaded and a crowded lane exist, players choose the overloaded one less than 40% of the time | **< 40%** (now 23%) |
