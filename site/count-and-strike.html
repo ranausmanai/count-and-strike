@@ -94,12 +94,15 @@ footer{padding-block:34px;border-top:1px solid var(--line);font-size:14px;color:
 <main>
 <section class="wrap" id="rules">
   <div class="eyebrow">The system</div>
-  <h2>Five rules that survived</h2>
+  <h2>Eight rules that survived</h2>
   <p>Each rule was found on one set of matches, then held up again in football it had never seen: men's club football and women's football, judged with the same space around the player.</p>
   <div class="rules">
     <div class="rule"><div class="mag">C</div><div><h3>Count</h3><p class="when">You win the ball. Count the opponents behind it.</p><p class="do">3 or fewer back: attack now, two runners, first pass forward. 8 or more back: keep it.</p></div><div class="gain">each defender back<br>−11 to −19% value</div></div>
     <div class="rule"><div class="mag">S</div><div><h3>Strike through</h3><p class="when">Near the box against a set defence, even under pressure.</p><p class="do">Shoot. Don't pass sideways or back. Waiting doesn't produce a better chance later.</p></div><div class="gain">+0.04 to +0.11 xG<br>per decision</div></div>
+    <div class="rule"><div class="mag">O</div><div><h3>Play into the overload</h3><p class="when">Count ours against theirs in each lane ahead of the ball.</p><p class="do">Pass into the lane where you outnumber them, not the crowded one.</p></div><div class="gain">94% vs 84% completed<br>players pick it only 23%</div></div>
+    <div class="rule"><div class="mag">B</div><div><h3>Win the second ball</h3><p class="when">Going long, from a goal kick or open play.</p><p class="do">Aim where you outnumber them around the landing spot.</p></div><div class="gain">+5 pts ball retention<br>per extra player</div></div>
     <div class="rule"><div class="mag">R</div><div><h3>Run into space</h3><p class="when">Free in the final third, few defenders ahead.</p><p class="do">Carry it forward. Don't take on a man or turn back.</p></div><div class="gain">+0.03 to +0.04 xG</div></div>
+    <div class="rule"><div class="mag">T</div><div><h3>Third-man release</h3><p class="when">You receive around the box and a teammate is already beyond you.</p><p class="do">Release it first time to that runner.</p></div><div class="gain">+0.10 to +0.14 xG<br>wide box areas</div></div>
     <div class="rule"><div class="mag">P</div><div><h3>Press the exposed</h3><p class="when">They receive near your box, unmarked, and few of you are behind the ball.</p><p class="do">Press within two seconds instead of holding shape.</p></div><div class="gain">+0.008 xG<br>about once a match</div></div>
     <div class="rule"><div class="mag">D</div><div><h3>Dead balls</h3><p class="when">Set pieces depend on team quality far less than open play.</p><p class="do">Train corners and wide free kicks as your main weapon.</p></div><div class="gain">weaker teams lose<br>least ground here</div></div>
   </div>
@@ -127,7 +130,7 @@ footer{padding-block:34px;border-top:1px solid var(--line);font-size:14px;color:
   <h2>Most ideas died</h2>
   <div class="funnel">
     <div class="step"><b>3.6M</b><span>decisions: every pass, carry, dribble and shot</span></div>
-    <div class="step"><b>~8,700</b><span>candidate rules searched automatically</span></div>
+    <div class="step"><b>~9,000</b><span>ideas and candidate rules tested automatically</span></div>
     <div class="step"><b>22</b><span>passed a false-discovery filter on the first dataset</span></div>
     <div class="step"><b>12</b><span>held in both unseen populations</span></div>
   </div>
@@ -148,6 +151,14 @@ footer{padding-block:34px;border-top:1px solid var(--line);font-size:14px;color:
         <li>Adapt to strict referees</li>
         <li>AI-optimised in-game style switching</li>
         <li>Simulator "chess engine" policies (overstate value 3–4×)</li>
+        <li>"You're most vulnerable right after scoring"</li>
+        <li>Only cross with bodies in the box</li>
+        <li>Take free kicks and throws quickly</li>
+        <li>Press on the trigger (back pass, touchline, bad touch)</li>
+        <li>Commit more runners on the counter</li>
+        <li>Overload the six-yard box at corners</li>
+        <li>Sub early when losing</li>
+        <li>Pick your formation for the matchup</li>
       </ul>
     </div>
   </div>
@@ -225,7 +236,7 @@ footer{padding-block:34px;border-top:1px solid var(--line);font-size:14px;color:
       <div class="advice">
         <p><b>If level:</b> ${sw===null?'stay LOW to the end. The draw is worth protecting.':(sw===0?'go HIGH from the start. You are the stronger side.':`play LOW until the ${sw}th minute, then go HIGH.`)} <b>If behind:</b> go HIGH. <b>If ahead:</b> stay LOW. Expected value of the plan over playing it straight: +${gain.toFixed(3)} points.</p>
         <p><b>Set pieces:</b> about ${Math.round(sp*100)}% of your chances should come from dead balls, against ${Math.round(spo*100)}% for ${esc(opp)}. ${sp>spo?'Dead balls are where you close the gap. Rehearse two or three corner routines.':'You are the stronger side in open play, so defend set pieces with extra care.'}</p>
-        <p><b>In the moment:</b> use the five rules above. Count at every regain, shoot near the box rather than recycling, run into space, and press the exposed receiver near your box.</p>
+        <p><b>In the moment:</b> use the eight rules above. Count at every regain, shoot near the box rather than recycling, pass and go long into your overloads, run into space, release the third man, and press the exposed receiver near your box.</p>
       </div>`;}
   document.getElementById('f').addEventListener('submit',build);
   build();

@@ -115,6 +115,10 @@ ol li{{margin-bottom:6px}}</style></head><body>
 <tr><td>25–40 yds, central, packed defence, you are pressed, 4+ teammates ahead</td><td><b>Shoot</b> (teams recycle here 7× more than they shoot)</td><td>+0.013 xG</td></tr>
 <tr><td>Attacking third, central, free (no one within 7 yds), ≤3 defenders back</td><td><b>Carry it forward into the space</b>; don't dribble or dither</td><td>+0.04 xG</td></tr>
 <tr><td>Midfield, central, pressed, packed defence ahead</td><td><b>Short pass forward</b>, not backwards</td><td>+0.006 xG</td></tr>
+<tr><td>Pass ahead: one lane has more of us than them, another is crowded</td><td><b>Play into the overload</b> (players choose it only 23% of the time)</td><td>94% vs 84% completion</td></tr>
+<tr><td>Going long (goal kick or open play)</td><td><b>Aim where we outnumber them</b> at the landing spot</td><td>+5 pts chance of keeping the ball per extra player</td></tr>
+<tr><td>Receiving around the box, a teammate already beyond you</td><td><b>Release first time</b> to the runner</td><td>+0.10–0.14 xG (weaker evidence)</td></tr>
+<tr><td>They receive unmarked near our box, ≤5 of us goal-side</td><td><b>Press within 2 s</b></td><td>+0.008 xG</td></tr>
 <tr><td><b>The counter trigger:</b> you just won the ball, so count the opponents behind it</td><td><b>≤3 back: GO.</b> 8+ back: keep it</td><td>each extra defender back costs 11–19% of the counter's value</td></tr>
 </table>
 {opp_block}

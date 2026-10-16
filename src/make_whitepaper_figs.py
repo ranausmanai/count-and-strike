@@ -141,7 +141,7 @@ ax.legend(frameon=False, fontsize=9, loc="upper right", ncol=2)
 save(fig, "rule_deadballs.png")
 
 # 6. VALUE — club outcomes before/after
-J = json.load(open(os.path.join(ROOT, "results", "clubs_playbook.json")))
+J = json.load(open(os.path.join(ROOT, "results", "clubs_playbook_v2.json")))
 rows = [("Man City", "p_title", "Title"), ("Chelsea", "p_top4", "Top 4"), ("Newcastle", "p_top4", "Top 4"), ("Brighton", "p_top4", "Top 4"),
         ("Leeds", "p_releg", "Relegation"), ("Sunderland", "p_releg", "Relegation"), ("Wolves", "p_releg", "Relegation")]
 fig, ax = plt.subplots(figsize=(7.2, 3.6))
@@ -157,3 +157,56 @@ for s in ("top", "right", "left"):
     ax.spines[s].set_visible(False)
 save(fig, "value_clubs.png")
 print("figures in", OUT)
+
+
+# ---------- v2 additions: overload, second ball, third-man ----------
+def lane_lines(ax, x0=60):
+    for yl in (26.7, 53.3):
+        ax.plot([x0, 120], [yl, yl], color=LINE, lw=0.8, ls=(0, (4, 4)), alpha=0.55, zorder=1)
+
+# 6. OVERLOAD
+fig, ax = plt.subplots(figsize=(6.4, 4.6)); half_pitch(ax, x0=60); lane_lines(ax)
+player(ax, 70, 58, "us", ball=True)
+for x, y in ((84, 62), (90, 72), (96, 66)):
+    player(ax, x, y, "us")
+for x, y in ((86, 56), (92, 60), (98, 52), (94, 46), (100, 58)):
+    player(ax, x, y, "them")
+for x, y in ((86, 14), (98, 20)):
+    player(ax, x, y, "us")
+player(ax, 92, 24, "them")
+arrow(ax, (72, 56), (95, 18), color=AMBER, lw=2.6)
+arrow(ax, (72, 59.5), (83, 61.5), color=LINE, ls=":", lw=1.6)
+ax.text(108, 8, "+1", color=AMBER, fontsize=14, weight="bold", ha="center")
+ax.text(108, 70, "−2", color=LINE, fontsize=14, weight="bold", ha="center")
+ax.text(62, 3, "PLAY INTO THE OVERLOAD", color=AMBER, fontsize=9, weight="bold", ha="left")
+save(fig, "rule_overload.png")
+
+# 7. SECOND BALL
+fig, ax = plt.subplots(figsize=(6.4, 4.6)); full_pitch(ax)
+player(ax, 30, 40, "us", ball=True)
+ax.add_patch(Circle((86, 22), 13, fc=AMBER, alpha=0.16, ec=AMBER, lw=1.2, zorder=2))
+ax.add_patch(Circle((86, 60), 13, fc="white", alpha=0.08, ec=LINE, lw=1.0, ls="--", zorder=2))
+for x, y in ((80, 18), (90, 26), (84, 30)):
+    player(ax, x, y, "us")
+player(ax, 92, 16, "them")
+for x, y in ((82, 58), (90, 64), (88, 54)):
+    player(ax, x, y, "them")
+player(ax, 84, 66, "us")
+arrow(ax, (32, 38), (85, 23), color=AMBER, lw=2.6, rad=-0.15)
+arrow(ax, (32, 42), (85, 58), color=LINE, ls=":", lw=1.6, rad=0.15)
+ax.text(86, 3, "3 v 1: aim here", color=AMBER, fontsize=10, weight="bold", ha="center")
+ax.text(86, 76.5, "1 v 3", color=LINE, fontsize=9, ha="center")
+save(fig, "rule_secondball.png")
+
+# 8. THIRD MAN
+fig, ax = plt.subplots(figsize=(6.4, 4.6)); half_pitch(ax, x0=60)
+player(ax, 74, 30, "us", label="A")
+player(ax, 88, 34, "us", label="B", ball=True)
+player(ax, 98, 52, "us", label="C")
+for x, y in ((92, 32), (100, 40), (104, 30), (96, 22)):
+    player(ax, x, y, "them")
+arrow(ax, (76, 31), (86, 34), color=LINE, lw=1.8)
+arrow(ax, (90, 36), (97, 50), color=AMBER, lw=2.6)
+ax.text(90, 70, "B releases first time to C,\nwho is already beyond A", color=AMBER, fontsize=8, weight="bold", ha="center")
+save(fig, "rule_thirdman.png")
+print("v2 figures written")
