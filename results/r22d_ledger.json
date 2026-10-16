@@ -1,0 +1,40 @@
+{
+ "overload": {
+  "by_tier": {
+   "fav": {
+    "overload": 0.23330544569516276,
+    "crowded": 0.6566397931244295,
+    "n": 52592.0
+   },
+   "mid": {
+    "overload": 0.23144176839326955,
+    "crowded": 0.6539096007918179,
+    "n": 36372.0
+   },
+   "under": {
+    "overload": 0.22904820766378245,
+    "crowded": 0.6557890399670375,
+    "n": 24270.0
+   }
+  },
+  "situations_per_team_match": 136.756038647343,
+  "crowded_per_team_match": 89.65458937198068
+ },
+ "second_ball": {
+  "by_tier": {
+   "fav": {
+    "outnumbered": 0.179671868747499,
+    "n": 2499.0
+   },
+   "mid": {
+    "outnumbered": 0.22663913267940114,
+    "n": 1937.0
+   },
+   "under": {
+    "outnumbered": 0.2895010395010395,
+    "n": 1924.0
+   }
+  },
+  "outnumbered_per_team_match": 1.7686658506731947
+ }
+}

@@ -14,3 +14,9 @@ Every change after commit d94684e is logged here with a timestamp and whether ou
 5. **2026-10-14, round 16 (before results):** match-bootstrap resamples reduced from 200 to 100 for the policy-gain CI, and to 60 for the per-play CIs, for compute time. No other change.
 
 6. **2026-10-15, round 19 (after the family searches).** The registered 2⁶ × 4 × 9 season sweep was replaced by a per-rule ranking (each rule alone at 50% adoption, plus all rules together, for 9 clubs). Every rule's value is positive and additive, and we have no cost data, so the full sweep can only show "more adoption = more points". It has no informative sweet spot.
+
+7. **2026-10-16, round 22 (post-hoc, after 22A showed Strike fails the stress battery).** The same battery is applied to every other confirmed rule (Run, Overload, Count-go, Press the exposed, Second ball):
+   - a cross-fitted AIPW effect using each dataset's available features;
+   - the 20 s pre-decision placebo.
+   
+   This was not pre-registered for those rules and is labelled post-hoc. The pass rule is the registered S2/S4 rule.

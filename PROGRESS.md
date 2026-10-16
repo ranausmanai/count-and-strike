@@ -118,3 +118,27 @@
 - corners360: NOT CONFIRMED (box numbers / 6-yd overload no effect; low power)
 - keeper: NOT CONFIRMED (quick release +.002 positive in all 3, fails Holm)
 ## Confirmed rule set now: Count, Strike through (all roles), Run into space, Press the exposed, Dead balls, Play into the overload, Second-ball overload (+ third-man release, asterisk)
+## Round 22: outside review ("most rules are obvious; is Strike causal?"), so we tried to kill our own rules
+- **22A Strike stress (pre-registered): FAILS.**
+  - Keeper-bin cells still +.07–.09.
+  - Rich-feature AIPW: ATE +.028; for the shots a coach would ADD (ATU) +.009 at 20 s and +.003 (n.s.) at 60 s.
+  - Low-propensity situations ≈ 0 (+.000/+.000/+.005).
+  - PLACEBO FAILS: the 20 s *before* a shot is already +.025 net xG better. Shots come in scrambles and good spells (selection).
+  - Oster δ 0.7–0.9; team-habit ITT null.
+  - The big shoot-vs-recycle numbers are mostly "players shoot when it's good".
+- **22B underdog-specific rules: NONE.**
+  - B2 interaction search: 345 attack + 24 press tests, BH 0.
+  - B1 found only shoot-variants.
+  - B3: rules work about equally for underdogs and favourites (overload slightly larger for underdogs, +.0025 vs +.0008, n.s.).
+- **22C stress battery on every rule (post-hoc, DEVIATIONS #7):**
+  - Overload: AIPW +.0025 disc / +.0058 pooled. The placebo is significant but tiny (+.0003, about 5% of the effect). Survives on magnitude; flagged.
+  - Second ball: retention +20–26 pts SURVIVES, but net xG ≈ 0.
+  - Run: disc +.019, pooled +.004 n.s. → FAILS.
+  - Count-go (≤3 back): underpowered → FAILS.
+  - Press the exposed: ≈ 0 → FAILS.
+  - The Count *situation* gradient (counters worth less with more defenders back) remains a descriptive fact, not a proven choice.
+- **22D ledger:**
+  - When both exist, ALL tiers pass into the crowded lane 66% vs the overload 23% (about 90 times per team-match).
+  - Underdogs aim long balls where outnumbered 29% vs favourites 18%.
+- **Season value of the survivors** (Overload + Dead balls + match management): ≈ +5.5 pts (was +8). See results/clubs_playbook_v3.json.
+- **New headline:** "The overload gap". Players know overloads but don't use them; that is the one decision rule that survives every test. The selection lesson (Strike) is the big methodological finding.
