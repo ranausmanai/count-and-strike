@@ -108,6 +108,29 @@
           "baseline": "23%"
         }
       ]
+    },
+    {
+      "locked_on": "2026-10-16",
+      "predictions": [
+        {
+          "id": "SB1",
+          "rule": "SECOND BALL: probability the passing team holds the ball 5 s after a long ball (>=35 yds, landing visible) rises per +1 local player balance within 15 yds of the landing point",
+          "range": [
+            0.015,
+            0.1
+          ],
+          "baseline": "+0.023 to +0.070 per player"
+        },
+        {
+          "id": "ST2",
+          "rule": "STRIKE (all roles): near the box (x>=96, central) shooting beats recycling for defenders and CM/DM as well as forwards",
+          "range": [
+            0.03,
+            0.15
+          ],
+          "baseline": "+0.074 to +0.113 by role"
+        }
+      ]
     }
   ]
 }

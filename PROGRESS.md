@@ -89,3 +89,32 @@
 - H18-2 switch-to-overload: right sign, underpowered (not confirmed)
 - 18B formation matchups: NULL (OOS gain negative in all 3; back3 vs 2 strikers null)
 - Locked prediction addendum O1/O2 (PREDICTIONS.md)
+## Round 19 — sweet-spot search (~290 testable cells + count/overload sweeps): nothing new confirmed
+- Tempo (first-time vs controlled): 201 cells, BH 0. Pressing traps: 86 cells, BH 0. Count sweep: 'go fast' positive in own half/middle third up to ~6 back (descriptive), no single threshold confirmed ×3. Overload sweep: aggregate confirmed (R18), slices underpowered
+- Rule value (simulated, 50% adoption, 2025/26 PL): Strike ≈1.4-2.0 pts, Overload ≈1.4-2.1, Dead balls ≈1.5-1.8, Match mgmt (model) ≈1.4-2.1, Run ≈0.3, Count (assumed) ≈0.2, Press ≈0.1; ALL ≈ 6.9-8.3 pts/season
+## Agent-based simulator (src/sim/): 22-player numba engine, calibrated (≈1.2 goals, 13 shots, 49 tackles per team; completion 67% too low)
+- Underdog (5-15% worse skills) baseline 0.51 pts/match. 2,000 tactics × 150 matches (300k) + top-40 × 2,000 fresh + top-10 × 5 opponent styles
+- Best tactics ~2.8 pts/match (≈95% wins) → simulator exploits. Even the default underdog tactic gets 2.9 pts vs a 'possession' strong side → sim's tactic space dominated by artefacts
+- Partial dependence (R² .89): defensive compactness ~25 m, attacking width ~40 m, no extra pressers, shoot more
+## Round 20 — real-data bridge (full-width 360 frames): sim claims FAIL except 'shoot more' (already confirmed)
+- Attacking width 32-48 vs >48: +.0027/+.0024/−.0008 → not confirmed
+- Narrow defending ≤32 m: −.008/−.009/−.001 → OPPOSITE of sim
+- Pressing: inconsistent sign
+- Lesson: agent sims find exploits of their own physics; only "shoot more" transferred (and was already known from data)
+## Round 21 — disorganised moments (4 populations, ~4,400 matches, 160k restarts, 11.7k goals)
+- Quick restarts (<6 s vs >15 s, same type/zone): positive in 4/4 (+.0018 sig, +.0014, +.0004, +.0003) but pooled others n.s. → NOT confirmed (consistent direction, small)
+- 'Most vulnerable right after scoring': O/E conceding in 5 min after scoring = 0.77/0.79/0.59/0.79 (all CIs < 1). ≈ the ~1 min kickoff/celebration dead time → NO extra vulnerability: myth busted. Same for 'strike back after conceding'
+- Goal kicks short vs long by opponent press: no consistent interaction
+## Agent wave 1 (2026-10-16, 6 parallel agents; summaries in results/agents/)
+- shooter: CONFIRMED shoot>recycle near box for EVERY role (FW +.113, AM/W +.079, CM/DM +.074, DEF +.078 pooled); CM/DM 20-30 yds +.023; finishing skill doesn't modulate
+- combos: third-man release CONFIRMED (+.01 xG avg, +.10-.14 wide in box) — caveat: label includes completion/progress; one-two/lay-off/switch not robust
+- cross: MIXED — cross>carry from wide (+.011 pooled) but no dose-response with box bodies (myth: 'only cross with bodies in box')
+- restarts: quick restarts face 0.5-0.8 fewer defenders goal-side but NO chance gain; final-third free kicks: set up properly
+- triggers: NONE of 5 pressing triggers confirmed
+- subs: Myers timing & attacking subs NOT confirmed
+## Agent wave 2
+- secondball: CONFIRMED — aim long balls where we have local superiority (retention +5 pts per +1 player; net xG +.003/player; high balls superior−outnumbered +.007); ~25% of high balls land where outnumbered
+- runners: NOT CONFIRMED (more runners at regain don't add xG once Count fixed; lead: fewer conceded)
+- corners360: NOT CONFIRMED (box numbers / 6-yd overload no effect; low power)
+- keeper: NOT CONFIRMED (quick release +.002 positive in all 3, fails Holm)
+## Confirmed rule set now: Count, Strike through (all roles), Run into space, Press the exposed, Dead balls, Play into the overload, Second-ball overload (+ third-man release, asterisk)

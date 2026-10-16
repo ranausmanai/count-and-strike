@@ -25,3 +25,10 @@ python3 src/test_predictions.py <competition_id> <season_id>
 |---|---|---|
 | O1 | **Overload:** a pass's value rises with how many more players we have than them, ahead of the ball, in its target lane (same situation and lane change) | **+0.0003 to +0.0025** net xG per extra player (now +0.0010 to +0.0013) |
 | O2 | **Overload (behaviour):** when both an overloaded and a crowded lane exist, players choose the overloaded one less than 40% of the time | **< 40%** (now 23%) |
+
+## Addendum, locked 16 October 2026
+
+| ID | Rule | Predicted on new data |
+|---|---|---|
+| SB1 | **Second ball:** chance of keeping the ball 5 s after a long ball rises with local player balance at the landing point | **+0.015 to +0.10** per extra player (now +0.023 to +0.070) |
+| ST2 | **Strike (all roles):** near the box, defenders and holding midfielders also gain by shooting rather than recycling | **+0.03 to +0.15** xG per decision (now +0.074 to +0.078) |
