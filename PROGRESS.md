@@ -142,3 +142,16 @@
   - Underdogs aim long balls where outnumbered 29% vs favourites 18%.
 - **Season value of the survivors** (Overload + Dead balls + match management): ≈ +5.5 pts (was +8). See results/clubs_playbook_v3.json.
 - **New headline:** "The overload gap". Players know overloads but don't use them; that is the one decision rule that survives every test. The selection lesson (Strike) is the big methodological finding.
+## Round 23: build a new tactic on the survivors (3 agents; summaries in results/agents/)
+- **avail: overload gap NOT CONFIRMED** once the overload pass is genuinely on (free receiver 5–35 yds, clear line, visible).
+  - Players then choose the crowded lane only 44–46%, not 66%. The 66% came mostly from moments where the overload wasn't on.
+  - Net xG: +.002 / .000 / +.001 → null. Only a completion edge survives: +2–4 pts.
+- **bait: MIXED.**
+  - Working the ball on one side DOES raise the far-lane overload: +.105 / +.079 / +.052 (confirmed).
+  - But switching after a bait shows no xG gain (H2–H4 fail; AIPW null).
+- **chain: NOT CONFIRMED.**
+  - Long ball → second ball → overload lane: no xG gain.
+  - Second-ball retention is 74% at a level balance and 89% at +1 superiority; +2 adds nothing.
+  - No rest-defence cost.
+  - Underdogs land in superiority less often (36/34/27% vs 42/44/34%).
+- **Conclusion:** public event + 360 data supports RETENTION edges (overload completion, +1 at the landing zone) and a real bait mechanism. It does not support any chance-creating new tactic. The v3 headline ("66% crowded lane = gap") is wrong and must be corrected.
