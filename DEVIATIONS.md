@@ -20,3 +20,7 @@ Every change after commit d94684e is logged here with a timestamp and whether ou
    - the 20 s pre-decision placebo.
    
    This was not pre-registered for those rules and is labelled post-hoc. The pass rule is the registered S2/S4 rule.
+
+8. **2026-10-17, round 24 (post-hoc, after a 200-match smoke test showed the Slingshot scoring 4.5 goals a match: an obvious exploit).** The simulator's defenders never mark a lone far-side player. We added `engine3.py` with an opponent knob, `far_cover`: when defending, the far-side full-back marks the widest far-side attacker. All registered arms are re-run against opponents with `far_cover = 1`, using the same physics variants, opponent styles and success rule. Results from the registered run (no far cover) are still reported, with the exploit flag.
+
+9. **2026-10-17, round 26 (calibration only, before any grid search).** The first effect-calibration hit a degenerate optimum: goals 0.04 a match, which makes every anchor zero trivially. The loss now makes goals, shots, completion and tackles hard requirements (within ±20%); the null anchors count only once those are met. The counter-ratio weight was lowered to 0.25 because it is near zero and noisy at this sample size.

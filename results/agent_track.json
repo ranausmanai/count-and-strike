@@ -1,0 +1,2170 @@
+{
+ "note": "EXPLORATORY: descriptive statistics from few public matches; 95% CIs are match-level bootstraps. Coordinates 105x68 m; team-normalised x toward the opponent goal.",
+ "datasets": {
+  "metrica": {
+   "n_matches": 3,
+   "fps": 25,
+   "matches": [
+    {
+     "match": "metrica_1",
+     "home": "Home",
+     "away": "Away",
+     "score": null,
+     "competition": null
+    },
+    {
+     "match": "metrica_2",
+     "home": "Home",
+     "away": "Away",
+     "score": null,
+     "competition": null
+    },
+    {
+     "match": "metrica_3",
+     "home": "Home",
+     "away": "Away",
+     "score": null,
+     "competition": null
+    }
+   ]
+  },
+  "skillcorner": {
+   "n_matches": 20,
+   "fps": 10,
+   "matches": [
+    {
+     "match": "skillcorner_1874553",
+     "home": "Brisbane Roar FC",
+     "away": "Adelaide United Football Club",
+     "score": "2-3",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1886347",
+     "home": "Auckland FC",
+     "away": "Newcastle United Jets FC",
+     "score": "2-0",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1899585",
+     "home": "Auckland FC",
+     "away": "Wellington Phoenix FC",
+     "score": "2-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1925299",
+     "home": "Brisbane Roar FC",
+     "away": "Perth Glory Football Club",
+     "score": "0-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1927964",
+     "home": "Western Sydney Wanderers FC",
+     "away": "Wellington Phoenix FC",
+     "score": "4-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1953632",
+     "home": "Central Coast Mariners Football Club",
+     "away": "Melbourne City FC",
+     "score": "1-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1959846",
+     "home": "Melbourne Victory Football Club",
+     "away": "Western United",
+     "score": "3-4",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1986691",
+     "home": "Western Sydney Wanderers FC",
+     "away": "Auckland FC",
+     "score": "0-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1996435",
+     "home": "Sydney Football Club",
+     "away": "Adelaide United Football Club",
+     "score": "4-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_1996436",
+     "home": "Auckland FC",
+     "away": "Macarthur FC",
+     "score": "2-1",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2006229",
+     "home": "Melbourne City FC",
+     "away": "Macarthur FC",
+     "score": "2-0",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2006363",
+     "home": "Melbourne Victory Football Club",
+     "away": "Central Coast Mariners Football Club",
+     "score": "3-0",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2007448",
+     "home": "Perth Glory Football Club",
+     "away": "Brisbane Roar FC",
+     "score": "1-3",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2007721",
+     "home": "Auckland FC",
+     "away": "Central Coast Mariners Football Club",
+     "score": "2-2",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2010085",
+     "home": "Melbourne City FC",
+     "away": "Central Coast Mariners Football Club",
+     "score": "1-0",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2011166",
+     "home": "Wellington Phoenix FC",
+     "away": "Melbourne Victory Football Club",
+     "score": "2-3",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2013725",
+     "home": "Western United",
+     "away": "Sydney Football Club",
+     "score": "1-0",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2015213",
+     "home": "Western United",
+     "away": "Auckland FC",
+     "score": "4-2",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2016236",
+     "home": "Western United",
+     "away": "Adelaide United Football Club",
+     "score": "3-2",
+     "competition": "AUS - A-League - 2024/2025"
+    },
+    {
+     "match": "skillcorner_2017461",
+     "home": "Melbourne Victory Football Club",
+     "away": "Auckland FC",
+     "score": "0-1",
+     "competition": "AUS - A-League - 2024/2025"
+    }
+   ]
+  },
+  "dfl": {
+   "n_matches": 7,
+   "fps": 25,
+   "matches": [
+    {
+     "match": "dfl_DFL-MAT-J03WMX",
+     "home": "1. FC K\u00f6ln",
+     "away": "FC Bayern M\u00fcnchen",
+     "score": "1:2",
+     "competition": "Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WN1",
+     "home": "VfL Bochum 1848",
+     "away": "Bayer 04 Leverkusen",
+     "score": "3:0",
+     "competition": "Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WOH",
+     "home": "Fortuna D\u00fcsseldorf",
+     "away": "SSV Jahn Regensburg",
+     "score": "4:0",
+     "competition": "2. Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WOY",
+     "home": "Fortuna D\u00fcsseldorf",
+     "away": "F.C. Hansa Rostock",
+     "score": "3:1",
+     "competition": "2. Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WPY",
+     "home": "Fortuna D\u00fcsseldorf",
+     "away": "1. FC N\u00fcrnberg",
+     "score": "0:1",
+     "competition": "2. Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WQQ",
+     "home": "Fortuna D\u00fcsseldorf",
+     "away": "FC St. Pauli",
+     "score": "1:0",
+     "competition": "2. Bundesliga"
+    },
+    {
+     "match": "dfl_DFL-MAT-J03WR9",
+     "home": "Fortuna D\u00fcsseldorf",
+     "away": "1. FC Kaiserslautern",
+     "score": "1:2",
+     "competition": "2. Bundesliga"
+    }
+   ]
+  }
+ },
+ "realism": {
+  "speed_outfield_per_player": {
+   "metrica": {
+    "n_players": 70,
+    "median_of_player_median": 1.53,
+    "median_of_player_p90": 3.91,
+    "median_of_player_max1s": 8.08,
+    "p90_of_player_max1s": 8.82,
+    "top_player_max1s": 9.19,
+    "frac_time_over_5p5": 0.0219,
+    "frac_time_over_7": 0.0033,
+    "all_frames_quantiles": {
+     "p50": 1.55,
+     "p75": 2.77,
+     "p90": 3.89,
+     "p99": 6.2
+    },
+    "artefact_frac_over_12": 0.00017,
+    "gk_median_of_median": 0.51
+   },
+   "skillcorner": {
+    "n_players": 351,
+    "median_of_player_median": 2.23,
+    "median_of_player_p90": 4.59,
+    "median_of_player_max1s": 8.46,
+    "p90_of_player_max1s": 9.69,
+    "top_player_max1s": 11.1,
+    "frac_time_over_5p5": 0.0442,
+    "frac_time_over_7": 0.007,
+    "all_frames_quantiles": {
+     "p50": 2.29,
+     "p75": 3.49,
+     "p90": 4.66,
+     "p99": 6.87
+    },
+    "artefact_frac_over_12": 4e-05,
+    "gk_median_of_median": null
+   },
+   "dfl": {
+    "n_players": 141,
+    "median_of_player_median": 2.21,
+    "median_of_player_p90": 4.52,
+    "median_of_player_max1s": 8.38,
+    "p90_of_player_max1s": 9.06,
+    "top_player_max1s": 9.89,
+    "frac_time_over_5p5": 0.0396,
+    "frac_time_over_7": 0.0066,
+    "all_frames_quantiles": {
+     "p50": 2.25,
+     "p75": 3.42,
+     "p90": 4.54,
+     "p99": 6.81
+    },
+    "artefact_frac_over_12": 6e-05,
+    "gk_median_of_median": 1.11
+   }
+  },
+  "team_shape_outfield_median_m": {
+   "width_in": {
+    "metrica": {
+     "est": 45.8204,
+     "lo": 43.6439,
+     "hi": 48.2491,
+     "n": 6,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 44.1615,
+     "lo": 42.8503,
+     "hi": 45.5786,
+     "n": 40,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 46.0093,
+     "lo": 42.7627,
+     "hi": 48.5536,
+     "n": 14,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 44.7585,
+     "lo": 43.5832,
+     "hi": 45.9554,
+     "n": 60,
+     "n_matches": 30
+    }
+   },
+   "width_out": {
+    "metrica": {
+     "est": 37.019,
+     "lo": 35.7604,
+     "hi": 37.785,
+     "n": 6,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 35.5101,
+     "lo": 34.8661,
+     "hi": 36.1275,
+     "n": 40,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 37.0607,
+     "lo": 35.4686,
+     "hi": 38.4886,
+     "n": 14,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 36.0228,
+     "lo": 35.474,
+     "hi": 36.5989,
+     "n": 60,
+     "n_matches": 30
+    }
+   },
+   "length_in": {
+    "metrica": {
+     "est": 34.0434,
+     "lo": 33.0225,
+     "hi": 35.8677,
+     "n": 6,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 33.9872,
+     "lo": 33.7377,
+     "hi": 34.2647,
+     "n": 40,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 35.3346,
+     "lo": 34.365,
+     "hi": 36.2818,
+     "n": 14,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 34.3072,
+     "lo": 33.9885,
+     "hi": 34.6253,
+     "n": 60,
+     "n_matches": 30
+    }
+   },
+   "length_out": {
+    "metrica": {
+     "est": 30.1661,
+     "lo": 28.1573,
+     "hi": 32.1757,
+     "n": 6,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 29.5422,
+     "lo": 29.1454,
+     "hi": 29.9531,
+     "n": 40,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 32.4246,
+     "lo": 31.7919,
+     "hi": 33.1983,
+     "n": 14,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 30.2771,
+     "lo": 29.9252,
+     "hi": 30.6443,
+     "n": 60,
+     "n_matches": 30
+    }
+   }
+  },
+  "block_shift": {
+   "definition": "OLS of defending outfield centroid y on ball y (centred at 34) during opponent possession spells >=10 s; lag = argmax cross-correlation of demeaned levels (lag_level) or of 0.2 s velocities (lag_vel), 0-4 s, 0.2 s steps",
+   "slope": {
+    "metrica": {
+     "est": 0.3389,
+     "lo": 0.3179,
+     "hi": 0.3649,
+     "n": 3,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 0.397,
+     "lo": 0.3837,
+     "hi": 0.4118,
+     "n": 20,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 0.3503,
+     "lo": 0.333,
+     "hi": 0.3661,
+     "n": 7,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 0.3803,
+     "lo": 0.3699,
+     "hi": 0.3912,
+     "n": 30,
+     "n_matches": 30
+    }
+   },
+   "slope_at_best_lag": {
+    "metrica": {
+     "est": 0.3686,
+     "lo": 0.354,
+     "hi": 0.3973,
+     "n": 3,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 0.4294,
+     "lo": 0.4158,
+     "hi": 0.4435,
+     "n": 20,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 0.3869,
+     "lo": 0.3683,
+     "hi": 0.4025,
+     "n": 7,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 0.4134,
+     "lo": 0.4032,
+     "hi": 0.4239,
+     "n": 30,
+     "n_matches": 30
+    }
+   },
+   "lag_level_s": {
+    "metrica": {
+     "est": 1.6667,
+     "lo": 1.4,
+     "hi": 1.8,
+     "n": 3,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 1.7,
+     "lo": 1.66,
+     "hi": 1.74,
+     "n": 20,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 1.7429,
+     "lo": 1.6857,
+     "hi": 1.8,
+     "n": 7,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 1.7067,
+     "lo": 1.6667,
+     "hi": 1.7467,
+     "n": 30,
+     "n_matches": 30
+    }
+   },
+   "lag_vel_s": {
+    "metrica": {
+     "est": 1.4,
+     "lo": 1.2,
+     "hi": 1.4,
+     "n": 3,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 1.4,
+     "lo": 1.2,
+     "hi": 1.4,
+     "n": 20,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 1.4,
+     "lo": 1.4,
+     "hi": 1.4,
+     "n": 7,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 1.4,
+     "lo": 1.3,
+     "hi": 1.4,
+     "n": 30,
+     "n_matches": 30
+    }
+   },
+   "mean_corr_curves": {
+    "metrica": {
+     "dt": 0.2,
+     "level": [
+      0.815,
+      0.835,
+      0.853,
+      0.868,
+      0.881,
+      0.891,
+      0.899,
+      0.904,
+      0.906,
+      0.906,
+      0.903,
+      0.898,
+      0.89,
+      0.879,
+      0.866,
+      0.85,
+      0.832,
+      0.812,
+      0.79,
+      0.766,
+      0.74
+     ],
+     "velocity": [
+      0.524,
+      0.562,
+      0.595,
+      0.621,
+      0.641,
+      0.655,
+      0.662,
+      0.663,
+      0.657,
+      0.647,
+      0.633,
+      0.617,
+      0.599,
+      0.58,
+      0.559,
+      0.536,
+      0.513,
+      0.49,
+      0.466,
+      0.442,
+      0.418
+     ]
+    },
+    "skillcorner": {
+     "dt": 0.2,
+     "level": [
+      0.804,
+      0.824,
+      0.842,
+      0.858,
+      0.872,
+      0.883,
+      0.891,
+      0.897,
+      0.9,
+      0.9,
+      0.897,
+      0.891,
+      0.883,
+      0.871,
+      0.857,
+      0.841,
+      0.822,
+      0.801,
+      0.778,
+      0.753,
+      0.726
+     ],
+     "velocity": [
+      0.541,
+      0.54,
+      0.577,
+      0.607,
+      0.629,
+      0.644,
+      0.651,
+      0.652,
+      0.648,
+      0.641,
+      0.628,
+      0.612,
+      0.594,
+      0.573,
+      0.55,
+      0.527,
+      0.501,
+      0.475,
+      0.448,
+      0.422,
+      0.395
+     ]
+    },
+    "dfl": {
+     "dt": 0.2,
+     "level": [
+      0.78,
+      0.804,
+      0.826,
+      0.845,
+      0.862,
+      0.875,
+      0.885,
+      0.893,
+      0.896,
+      0.897,
+      0.894,
+      0.888,
+      0.879,
+      0.866,
+      0.851,
+      0.832,
+      0.811,
+      0.787,
+      0.761,
+      0.732,
+      0.701
+     ],
+     "velocity": [
+      0.5,
+      0.55,
+      0.595,
+      0.632,
+      0.659,
+      0.678,
+      0.688,
+      0.69,
+      0.686,
+      0.676,
+      0.662,
+      0.645,
+      0.624,
+      0.6,
+      0.574,
+      0.546,
+      0.517,
+      0.487,
+      0.457,
+      0.426,
+      0.396
+     ]
+    }
+   }
+  },
+  "passes": {
+   "metrica": {
+    "n_passes": 3469,
+    "completion": 0.831,
+    "by_length": {
+     "<15": {
+      "n": 1869,
+      "completion": 0.851,
+      "flight_s_median": 0.96,
+      "ball_speed_ms_median": 10.13
+     },
+     "15-30": {
+      "n": 1229,
+      "completion": 0.867,
+      "flight_s_median": 1.6,
+      "ball_speed_ms_median": 13.13
+     },
+     ">=30": {
+      "n": 371,
+      "completion": 0.617,
+      "flight_s_median": 2.72,
+      "ball_speed_ms_median": 15.51
+     }
+    },
+    "flight_s_median": 1.28,
+    "ball_speed_ms_median": 11.55
+   },
+   "skillcorner": {
+    "n_passes": 16072,
+    "completion": 0.837,
+    "by_length": {
+     "<15": {
+      "n": 8991,
+      "completion": 0.891,
+      "flight_s_median": 1.1,
+      "ball_speed_ms_median": 8.13
+     },
+     "15-30": {
+      "n": 5478,
+      "completion": 0.846,
+      "flight_s_median": 1.75,
+      "ball_speed_ms_median": 11.44
+     },
+     ">=30": {
+      "n": 1595,
+      "completion": 0.504,
+      "flight_s_median": 3.0,
+      "ball_speed_ms_median": 13.13
+     }
+    },
+    "flight_s_median": 1.4,
+    "ball_speed_ms_median": 9.53
+   },
+   "dfl": {
+    "n_passes": 6062,
+    "completion": 0.784,
+    "by_length": {
+     "<15": {
+      "n": 3893,
+      "completion": 0.793,
+      "flight_s_median": 0.8,
+      "ball_speed_ms_median": 7.65
+     },
+     "15-30": {
+      "n": 1604,
+      "completion": 0.85,
+      "flight_s_median": 1.96,
+      "ball_speed_ms_median": 10.26
+     },
+     ">=30": {
+      "n": 561,
+      "completion": 0.54,
+      "flight_s_median": 2.92,
+      "ball_speed_ms_median": 14.6
+     }
+    },
+    "flight_s_median": 1.24,
+    "ball_speed_ms_median": 9.12
+   }
+  },
+  "long_balls_local_counts": {
+   "definition": "passes >=30 m (open play), arrival = reception/next touch frame (DFL: tracking-detected first touch); counts of players within 10 m of the arrival point at the kick frame and at the arrival frame",
+   "n": 1890,
+   "defenders_at_kick": {
+    "metrica": {
+     "est": 0.5033,
+     "lo": 0.4574,
+     "hi": 0.5679,
+     "n": 306,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 0.577,
+     "lo": 0.5131,
+     "hi": 0.6422,
+     "n": 1104,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 0.6042,
+     "lo": 0.518,
+     "hi": 0.7089,
+     "n": 480,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 0.572,
+     "lo": 0.5262,
+     "hi": 0.6177,
+     "n": 1890,
+     "n_matches": 30
+    }
+   },
+   "defenders_at_arrival": {
+    "metrica": {
+     "est": 1.2908,
+     "lo": 1.186,
+     "hi": 1.4815,
+     "n": 306,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 1.6694,
+     "lo": 1.5767,
+     "hi": 1.7675,
+     "n": 1104,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 1.575,
+     "lo": 1.3816,
+     "hi": 1.7945,
+     "n": 480,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 1.5841,
+     "lo": 1.5035,
+     "hi": 1.6691,
+     "n": 1890,
+     "n_matches": 30
+    }
+   },
+   "attackers_at_kick": {
+    "metrica": {
+     "est": 0.6928,
+     "lo": 0.6562,
+     "hi": 0.7407,
+     "n": 306,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 0.5725,
+     "lo": 0.5379,
+     "hi": 0.6084,
+     "n": 1104,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 0.7312,
+     "lo": 0.6956,
+     "hi": 0.7726,
+     "n": 480,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 0.6323,
+     "lo": 0.6098,
+     "hi": 0.6554,
+     "n": 1890,
+     "n_matches": 30
+    }
+   },
+   "attackers_at_arrival": {
+    "metrica": {
+     "est": 1.2582,
+     "lo": 1.1667,
+     "hi": 1.358,
+     "n": 306,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 1.3569,
+     "lo": 1.2992,
+     "hi": 1.4182,
+     "n": 1104,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 1.4479,
+     "lo": 1.3453,
+     "hi": 1.5936,
+     "n": 480,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 1.364,
+     "lo": 1.3162,
+     "hi": 1.4185,
+     "n": 1890,
+     "n_matches": 30
+    }
+   },
+   "flight_s_median": {
+    "metrica": 2.6,
+    "skillcorner": 3.0,
+    "dfl": 3.04
+   },
+   "nearest_defender_at_arrival_m": {
+    "metrica": {
+     "est": 4.7086,
+     "lo": 3.7285,
+     "hi": 6.315,
+     "n": 306,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 3.2688,
+     "lo": 2.9283,
+     "hi": 3.6945,
+     "n": 1104,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 3.3188,
+     "lo": 1.7293,
+     "hi": 4.3335,
+     "n": 480,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 3.5458,
+     "lo": 3.1192,
+     "hi": 3.9194,
+     "n": 1890,
+     "n_matches": 30
+    }
+   }
+  }
+ },
+ "E1": {
+  "definition": "Flank spell = ball |y-34|>12 m on the same side, same team in possession, ball alive, >=3 s. Far-side space = distance from the widest far-side outfield attacker to the nearest opponent. Control = central-ball spells (|y-34|<=12) >=3 s, far side = side opposite the ball.",
+  "n_flank_spells": 7904,
+  "n_central_spells": 3263,
+  "far_space_at_0s": {
+   "metrica": {
+    "est": 11.2851,
+    "lo": 10.2806,
+    "hi": 12.2663,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 10.4598,
+    "lo": 10.1688,
+    "hi": 10.7682,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 10.2556,
+    "lo": 9.3156,
+    "hi": 10.8775,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 10.4999,
+    "lo": 10.2151,
+    "hi": 10.7695,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "far_space_at_1s": {
+   "metrica": {
+    "est": 11.7134,
+    "lo": 10.7222,
+    "hi": 12.8821,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 10.8015,
+    "lo": 10.4803,
+    "hi": 11.1396,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 10.7018,
+    "lo": 9.758,
+    "hi": 11.4109,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 10.8738,
+    "lo": 10.5624,
+    "hi": 11.1669,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "far_space_at_2s": {
+   "metrica": {
+    "est": 12.1843,
+    "lo": 11.0909,
+    "hi": 13.5105,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 11.097,
+    "lo": 10.762,
+    "hi": 11.4681,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 11.1641,
+    "lo": 10.211,
+    "hi": 11.9334,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 11.224,
+    "lo": 10.8941,
+    "hi": 11.5592,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "far_space_at_3s": {
+   "metrica": {
+    "est": 12.5552,
+    "lo": 11.1779,
+    "hi": 14.1867,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 11.3518,
+    "lo": 10.995,
+    "hi": 11.7491,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 11.6004,
+    "lo": 10.6367,
+    "hi": 12.3883,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 11.5308,
+    "lo": 11.1458,
+    "hi": 11.9024,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "growth_0_to_3s_flank": {
+   "metrica": {
+    "est": 1.2793,
+    "lo": 0.8386,
+    "hi": 1.9449,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 0.8937,
+    "lo": 0.7615,
+    "hi": 1.03,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 1.3203,
+    "lo": 1.1078,
+    "hi": 1.5271,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 1.0279,
+    "lo": 0.9117,
+    "hi": 1.149,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "growth_0_to_3s_central_control": {
+   "metrica": {
+    "est": -0.4385,
+    "lo": -0.6341,
+    "hi": -0.2451,
+    "n": 396,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": -0.1818,
+    "lo": -0.4066,
+    "hi": 0.0494,
+    "n": 2325,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": -0.6731,
+    "lo": -1.2282,
+    "hi": -0.0863,
+    "n": 615,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": -0.3032,
+    "lo": -0.4931,
+    "hi": -0.1083,
+    "n": 3336,
+    "n_matches": 30
+   }
+  },
+  "growth_diff_flank_minus_control": {
+   "metrica": {
+    "est": 1.7178,
+    "lo": 1.1424,
+    "hi": 2.579,
+    "n": 1220,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 1.0754,
+    "lo": 0.7528,
+    "hi": 1.4034,
+    "n": 8031,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 1.9935,
+    "lo": 1.3156,
+    "hi": 2.6239,
+    "n": 2432,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 1.331,
+    "lo": 1.0615,
+    "hi": 1.5891,
+    "n": 11683,
+    "n_matches": 30
+   }
+  },
+  "defending_centroid_shift_toward_ball_0_to_3s_flank": {
+   "metrica": {
+    "est": 3.7642,
+    "lo": 3.5001,
+    "hi": 4.0695,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 3.5588,
+    "lo": 3.4287,
+    "hi": 3.6895,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 3.7711,
+    "lo": 3.4354,
+    "hi": 4.0249,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 3.627,
+    "lo": 3.5138,
+    "hi": 3.7364,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "defending_centroid_offset_toward_ball_at_3s": {
+   "metrica": {
+    "est": 7.6958,
+    "lo": 6.8029,
+    "hi": 8.5901,
+    "n": 824,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 8.5661,
+    "lo": 8.2851,
+    "hi": 8.852,
+    "n": 5706,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 8.3326,
+    "lo": 7.9143,
+    "hi": 8.8091,
+    "n": 1817,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 8.4249,
+    "lo": 8.1974,
+    "hi": 8.6517,
+    "n": 8347,
+    "n_matches": 30
+   }
+  },
+  "switches": {
+   "definition": "open-play pass, |dy|>=30 m crossing the middle, start x<70 (team-normalised); bait = ball held on the starting flank >=3 s before the kick by the same team; outcomes within 10 s of the kick (final third = ball x>=70 in possession before any opponent possession)",
+   "n_total": 465,
+   "n_bait": 206,
+   "final_third10": {
+    "bait": {
+     "metrica": {
+      "est": 0.5111,
+      "lo": 0.4545,
+      "hi": 0.5556,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.4917,
+      "lo": 0.422,
+      "hi": 0.5536,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.439,
+      "lo": 0.2941,
+      "hi": 0.5833,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.4854,
+      "lo": 0.4363,
+      "hi": 0.5314,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "other": {
+     "metrica": {
+      "est": 0.381,
+      "lo": 0.1429,
+      "hi": 0.7,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.5301,
+      "lo": 0.4682,
+      "hi": 0.6023,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.4314,
+      "lo": 0.3256,
+      "hi": 0.549,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.4865,
+      "lo": 0.4152,
+      "hi": 0.5618,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "diff": {
+     "metrica": {
+      "est": 0.1302,
+      "lo": -0.2,
+      "hi": 0.4127,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": -0.0385,
+      "lo": -0.1243,
+      "hi": 0.0407,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.0077,
+      "lo": -0.1973,
+      "hi": 0.181,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": -0.001,
+      "lo": -0.0886,
+      "hi": 0.0918,
+      "n": 465,
+      "n_matches": 30
+     }
+    }
+   },
+   "shot10": {
+    "bait": {
+     "metrica": {
+      "est": 0.1111,
+      "lo": 0.0625,
+      "hi": 0.1818,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.025,
+      "lo": 0.0,
+      "hi": 0.0642,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.0388,
+      "lo": 0.0196,
+      "hi": 0.0684,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "other": {
+     "metrica": {
+      "est": 0.0238,
+      "lo": 0.0,
+      "hi": 0.0909,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.0301,
+      "lo": 0.0112,
+      "hi": 0.053,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.0232,
+      "lo": 0.008,
+      "hi": 0.0389,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "diff": {
+     "metrica": {
+      "est": 0.0873,
+      "lo": 0.0608,
+      "hi": 0.1111,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": -0.0051,
+      "lo": -0.0447,
+      "hi": 0.0451,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.0157,
+      "lo": -0.0107,
+      "hi": 0.0485,
+      "n": 465,
+      "n_matches": 30
+     }
+    }
+   },
+   "success": {
+    "bait": {
+     "metrica": {
+      "est": 0.8889,
+      "lo": 0.8182,
+      "hi": 0.9375,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.7417,
+      "lo": 0.6642,
+      "hi": 0.8189,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.878,
+      "lo": 0.6923,
+      "hi": 0.9808,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.801,
+      "lo": 0.7409,
+      "hi": 0.8571,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "other": {
+     "metrica": {
+      "est": 0.9524,
+      "lo": 0.9091,
+      "hi": 1.0,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.7048,
+      "lo": 0.6338,
+      "hi": 0.7661,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.7255,
+      "lo": 0.6667,
+      "hi": 0.7759,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.749,
+      "lo": 0.7034,
+      "hi": 0.7901,
+      "n": 465,
+      "n_matches": 30
+     }
+    },
+    "diff": {
+     "metrica": {
+      "est": -0.0635,
+      "lo": -0.0909,
+      "hi": -0.0556,
+      "n": 87,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.0368,
+      "lo": -0.0567,
+      "hi": 0.1387,
+      "n": 286,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.1526,
+      "lo": -0.0638,
+      "hi": 0.2889,
+      "n": 92,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.0519,
+      "lo": -0.0235,
+      "hi": 0.1274,
+      "n": 465,
+      "n_matches": 30
+     }
+    }
+   },
+   "space_at_arrival_bait_minus_other": {
+    "metrica": {
+     "est": 1.2462,
+     "lo": -0.6576,
+     "hi": 2.7586,
+     "n": 87,
+     "n_matches": 3
+    },
+    "skillcorner": {
+     "est": 1.7511,
+     "lo": 0.7244,
+     "hi": 2.8058,
+     "n": 286,
+     "n_matches": 20
+    },
+    "dfl": {
+     "est": 2.5916,
+     "lo": 1.3872,
+     "hi": 4.1368,
+     "n": 92,
+     "n_matches": 7
+    },
+    "pooled": {
+     "est": 1.9261,
+     "lo": 1.1638,
+     "hi": 2.7333,
+     "n": 465,
+     "n_matches": 30
+    }
+   }
+  }
+ },
+ "E2": {
+  "definition": "open-play balls >=30 m; balance = attackers minus defenders within 10 m of the arrival point; retained = passing team in possession at the first known possession frame 5-8 s after arrival",
+  "n": 1721,
+  "retention_overall": {
+   "metrica": {
+    "est": 0.6357,
+    "lo": 0.5862,
+    "hi": 0.6772,
+    "n": 291,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 0.5979,
+    "lo": 0.567,
+    "hi": 0.6251,
+    "n": 1042,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 0.5593,
+    "lo": 0.4932,
+    "hi": 0.6193,
+    "n": 388,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 0.5956,
+    "lo": 0.5712,
+    "hi": 0.6193,
+    "n": 1721,
+    "n_matches": 30
+   }
+  },
+  "retention_by_balance_at_arrival": {
+   "<=-2": {
+    "n": 186,
+    "share": 0.108,
+    "retention": {
+     "est": 0.3548,
+     "lo": 0.2907,
+     "hi": 0.427,
+     "n": 186,
+     "n_matches": 30
+    },
+    "by_ds": {
+     "metrica": {
+      "n": 26,
+      "ret": 0.423
+     },
+     "skillcorner": {
+      "n": 130,
+      "ret": 0.362
+     },
+     "dfl": {
+      "n": 30,
+      "ret": 0.267
+     }
+    }
+   },
+   "-1": {
+    "n": 419,
+    "share": 0.243,
+    "retention": {
+     "est": 0.3747,
+     "lo": 0.3226,
+     "hi": 0.4261,
+     "n": 419,
+     "n_matches": 30
+    },
+    "by_ds": {
+     "metrica": {
+      "n": 58,
+      "ret": 0.397
+     },
+     "skillcorner": {
+      "n": 276,
+      "ret": 0.37
+     },
+     "dfl": {
+      "n": 85,
+      "ret": 0.376
+     }
+    }
+   },
+   "0": {
+    "n": 648,
+    "share": 0.377,
+    "retention": {
+     "est": 0.6281,
+     "lo": 0.5817,
+     "hi": 0.674,
+     "n": 648,
+     "n_matches": 30
+    },
+    "by_ds": {
+     "metrica": {
+      "n": 104,
+      "ret": 0.625
+     },
+     "skillcorner": {
+      "n": 393,
+      "ret": 0.656
+     },
+     "dfl": {
+      "n": 151,
+      "ret": 0.556
+     }
+    }
+   },
+   "+1": {
+    "n": 438,
+    "share": 0.255,
+    "retention": {
+     "est": 0.8425,
+     "lo": 0.8109,
+     "hi": 0.8753,
+     "n": 438,
+     "n_matches": 30
+    },
+    "by_ds": {
+     "metrica": {
+      "n": 99,
+      "ret": 0.828
+     },
+     "skillcorner": {
+      "n": 221,
+      "ret": 0.887
+     },
+     "dfl": {
+      "n": 118,
+      "ret": 0.771
+     }
+    }
+   },
+   ">=+2": {
+    "n": 30,
+    "share": 0.017,
+    "retention": {
+     "est": 0.8667,
+     "lo": 0.7273,
+     "hi": 0.9688,
+     "n": 30,
+     "n_matches": 17
+    },
+    "by_ds": {
+     "metrica": {
+      "n": 4,
+      "ret": 1.0
+     },
+     "skillcorner": {
+      "n": 22,
+      "ret": 0.909
+     },
+     "dfl": {
+      "n": 4,
+      "ret": 0.5
+     }
+    }
+   }
+  },
+  "retention_by_balance_at_kick": {
+   "<=-2": {
+    "n": 73,
+    "retention": 0.411
+   },
+   "-1": {
+    "n": 311,
+    "retention": 0.392
+   },
+   "0": {
+    "n": 768,
+    "retention": 0.518
+   },
+   "+1": {
+    "n": 543,
+    "retention": 0.842
+   },
+   ">=+2": {
+    "n": 26,
+    "retention": 0.692
+   }
+  },
+  "retention_per_unit_balance_arrival": {
+   "metrica": {
+    "est": 0.1565,
+    "lo": 0.1309,
+    "hi": 0.1948,
+    "n": 291,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 0.1847,
+    "lo": 0.1597,
+    "hi": 0.2099,
+    "n": 1042,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 0.1656,
+    "lo": 0.1021,
+    "hi": 0.2385,
+    "n": 388,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 0.1737,
+    "lo": 0.1528,
+    "hi": 0.1952,
+    "n": 1721,
+    "n_matches": 30
+   }
+  },
+  "retention_per_unit_balance_kick": {
+   "metrica": {
+    "est": 0.2203,
+    "lo": 0.1913,
+    "hi": 0.249,
+    "n": 291,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 0.1711,
+    "lo": 0.1333,
+    "hi": 0.2033,
+    "n": 1042,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 0.1734,
+    "lo": 0.1455,
+    "hi": 0.1985,
+    "n": 388,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 0.1791,
+    "lo": 0.1545,
+    "hi": 0.2006,
+    "n": 1721,
+    "n_matches": 30
+   }
+  },
+  "balance_change_kick_to_arrival": {
+   "metrica": {
+    "est": -0.2131,
+    "lo": -0.2987,
+    "hi": -0.1496,
+    "n": 291,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": -0.2975,
+    "lo": -0.3457,
+    "hi": -0.2435,
+    "n": 1042,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": -0.2062,
+    "lo": -0.2946,
+    "hi": -0.1114,
+    "n": 388,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": -0.2626,
+    "lo": -0.3028,
+    "hi": -0.2229,
+    "n": 1721,
+    "n_matches": 30
+   }
+  },
+  "first_touch_share_attacker": {
+   "metrica": {
+    "est": 0.7079,
+    "lo": 0.6623,
+    "hi": 0.7638,
+    "n": 291,
+    "n_matches": 3
+   },
+   "skillcorner": {
+    "est": 0.5557,
+    "lo": 0.5228,
+    "hi": 0.5873,
+    "n": 1042,
+    "n_matches": 20
+   },
+   "dfl": {
+    "est": 0.6211,
+    "lo": 0.5842,
+    "hi": 0.6613,
+    "n": 388,
+    "n_matches": 7
+   },
+   "pooled": {
+    "est": 0.5962,
+    "lo": 0.5698,
+    "hi": 0.622,
+    "n": 1721,
+    "n_matches": 30
+   }
+  },
+  "retention_by_support_balance": {
+   "attacker_first_touch": {
+    "n": 1026,
+    "retention": {
+     "est": 0.7622,
+     "lo": 0.7393,
+     "hi": 0.783,
+     "n": 1026,
+     "n_matches": 30
+    },
+    "by_support_balance": {
+     "<=-2": {
+      "n": 187,
+      "retention": {
+       "est": 0.5348,
+       "lo": 0.4509,
+       "hi": 0.6133,
+       "n": 187,
+       "n_matches": 30
+      }
+     },
+     "-1": {
+      "n": 419,
+      "retention": {
+       "est": 0.7327,
+       "lo": 0.6886,
+       "hi": 0.7753,
+       "n": 419,
+       "n_matches": 30
+      }
+     },
+     "0": {
+      "n": 393,
+      "retention": {
+       "est": 0.8906,
+       "lo": 0.8616,
+       "hi": 0.9178,
+       "n": 393,
+       "n_matches": 30
+      }
+     },
+     "+1": {
+      "n": 26,
+      "retention": {
+       "est": 0.9615,
+       "lo": 0.8696,
+       "hi": 1.0,
+       "n": 26,
+       "n_matches": 15
+      }
+     },
+     ">=+2": {
+      "n": 1,
+      "retention": null
+     }
+    },
+    "per_unit_support": {
+     "metrica": {
+      "est": 0.1529,
+      "lo": 0.1185,
+      "hi": 0.1986,
+      "n": 206,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.1369,
+      "lo": 0.1057,
+      "hi": 0.176,
+      "n": 579,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.1704,
+      "lo": 0.0609,
+      "hi": 0.2823,
+      "n": 241,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.1419,
+      "lo": 0.1101,
+      "hi": 0.1771,
+      "n": 1026,
+      "n_matches": 30
+     }
+    }
+   },
+   "defender_first_touch": {
+    "n": 695,
+    "retention": {
+     "est": 0.3496,
+     "lo": 0.3138,
+     "hi": 0.3872,
+     "n": 695,
+     "n_matches": 30
+    },
+    "by_support_balance": {
+     "<=-2": {
+      "n": 21,
+      "retention": {
+       "est": 0.2381,
+       "lo": 0.05,
+       "hi": 0.4286,
+       "n": 21,
+       "n_matches": 16
+      }
+     },
+     "-1": {
+      "n": 114,
+      "retention": {
+       "est": 0.307,
+       "lo": 0.2281,
+       "hi": 0.3913,
+       "n": 114,
+       "n_matches": 29
+      }
+     },
+     "0": {
+      "n": 283,
+      "retention": {
+       "est": 0.2933,
+       "lo": 0.2407,
+       "hi": 0.3456,
+       "n": 283,
+       "n_matches": 30
+      }
+     },
+     "+1": {
+      "n": 229,
+      "retention": {
+       "est": 0.4367,
+       "lo": 0.3682,
+       "hi": 0.5041,
+       "n": 229,
+       "n_matches": 30
+      }
+     },
+     ">=+2": {
+      "n": 48,
+      "retention": {
+       "est": 0.4167,
+       "lo": 0.2745,
+       "hi": 0.54,
+       "n": 48,
+       "n_matches": 24
+      }
+     }
+    },
+    "per_unit_support": {
+     "metrica": {
+      "est": -0.0462,
+      "lo": -0.112,
+      "hi": 0.0102,
+      "n": 85,
+      "n_matches": 3
+     },
+     "skillcorner": {
+      "est": 0.086,
+      "lo": 0.0366,
+      "hi": 0.1278,
+      "n": 463,
+      "n_matches": 20
+     },
+     "dfl": {
+      "est": 0.0338,
+      "lo": -0.0095,
+      "hi": 0.0807,
+      "n": 147,
+      "n_matches": 7
+     },
+     "pooled": {
+      "est": 0.0575,
+      "lo": 0.0214,
+      "hi": 0.0926,
+      "n": 695,
+      "n_matches": 30
+     }
+    }
+   }
+  }
+ },
+ "E3": {
+  "switch_ball_speed_vs_space": {
+   "definition": "switches (as E1) split into terciles of ball speed (distance/flight time); far-side space at arrival = nearest opponent to the widest far-side attacker",
+   "tercile_cuts_ms": [
+    12.72,
+    15.56
+   ],
+   "space_at_arrival": {
+    "slow": {
+     "est": 10.708,
+     "lo": 9.744,
+     "hi": 11.6209,
+     "n": 133,
+     "n_matches": 28
+    },
+    "mid": {
+     "est": 10.4635,
+     "lo": 9.6553,
+     "hi": 11.2327,
+     "n": 132,
+     "n_matches": 30
+    },
+    "fast": {
+     "est": 11.0596,
+     "lo": 10.1349,
+     "hi": 12.0125,
+     "n": 133,
+     "n_matches": 29
+    }
+   },
+   "space_change_kick_to_arrival": {
+    "slow": {
+     "est": -4.0154,
+     "lo": -4.793,
+     "hi": -3.2857,
+     "n": 132,
+     "n_matches": 28
+    },
+    "mid": {
+     "est": -5.6077,
+     "lo": -6.2736,
+     "hi": -4.8216,
+     "n": 131,
+     "n_matches": 30
+    },
+    "fast": {
+     "est": -4.6197,
+     "lo": -5.1047,
+     "hi": -4.0972,
+     "n": 132,
+     "n_matches": 28
+    }
+   },
+   "final_third10": {
+    "slow": {
+     "est": 0.391,
+     "lo": 0.3205,
+     "hi": 0.4628,
+     "n": 133,
+     "n_matches": 28
+    },
+    "mid": {
+     "est": 0.4697,
+     "lo": 0.3791,
+     "hi": 0.5704,
+     "n": 132,
+     "n_matches": 30
+    },
+    "fast": {
+     "est": 0.594,
+     "lo": 0.5133,
+     "hi": 0.6667,
+     "n": 133,
+     "n_matches": 29
+    }
+   },
+   "fast_minus_slow_space": {
+    "est": 0.3516,
+    "lo": -0.7878,
+    "hi": 1.5256,
+    "n": 398,
+    "n_matches": 30
+   }
+  },
+  "long_ball_flight_vs_convergence": {
+   "definition": "open-play long balls; change in defenders (and attackers) within 10 m of the arrival point between kick and arrival, by flight time",
+   "<1.5s": {
+    "n": 10,
+    "d_def": {
+     "est": 0.7,
+     "lo": 0.4444,
+     "hi": 0.9091,
+     "n": 10,
+     "n_matches": 6
+    },
+    "d_att": {
+     "est": 0.2,
+     "lo": -0.1111,
+     "hi": 0.5,
+     "n": 10,
+     "n_matches": 6
+    },
+    "retained5": 0.5
+   },
+   "1.5-2.5s": {
+    "n": 596,
+    "d_def": {
+     "est": 0.8507,
+     "lo": 0.7718,
+     "hi": 0.9303,
+     "n": 596,
+     "n_matches": 30
+    },
+    "d_att": {
+     "est": 0.5,
+     "lo": 0.4373,
+     "hi": 0.5635,
+     "n": 596,
+     "n_matches": 30
+    },
+    "retained5": 0.654
+   },
+   ">2.5s": {
+    "n": 1284,
+    "d_def": {
+     "est": 1.0896,
+     "lo": 1.0258,
+     "hi": 1.1566,
+     "n": 1284,
+     "n_matches": 30
+    },
+    "d_att": {
+     "est": 0.8435,
+     "lo": 0.7876,
+     "hi": 0.9078,
+     "n": 1284,
+     "n_matches": 30
+    },
+    "retained5": 0.569
+   }
+  },
+  "long_ball_retention_by_landing_zone": {
+   "own half": {
+    "n": 576,
+    "retained5": {
+     "est": 0.7448,
+     "lo": 0.7086,
+     "hi": 0.7791,
+     "n": 576,
+     "n_matches": 30
+    },
+    "mean_balance": 0.34
+   },
+   "mid-third (opp half)": {
+    "n": 450,
+    "retained5": {
+     "est": 0.5533,
+     "lo": 0.5136,
+     "hi": 0.5955,
+     "n": 450,
+     "n_matches": 30
+    },
+    "mean_balance": -0.3
+   },
+   "final third": {
+    "n": 695,
+    "retained5": {
+     "est": 0.4993,
+     "lo": 0.4614,
+     "hi": 0.5381,
+     "n": 695,
+     "n_matches": 30
+    },
+    "mean_balance": -0.55
+   }
+  }
+ }
+}

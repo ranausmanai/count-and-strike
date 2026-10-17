@@ -155,3 +155,25 @@
   - No rest-defence cost.
   - Underdogs land in superiority less often (36/34/27% vs 42/44/34%).
 - **Conclusion:** public event + 360 data supports RETENTION edges (overload completion, +1 at the landing zone) and a real bait mechanism. It does not support any chance-creating new tactic. The v3 headline ("66% crowded lane = gap") is wrong and must be corrected.
+## Round 24: The Slingshot (an invented tactic: pull to one side, release to an isolated far winger, escape long only to +1), tested in the simulator
+- **Registered run (engine2): every arm except Escape is an EXPLOIT.**
+  - Slingshot: 6.3 goals a match, 83% wins.
+  - The simulator's defenders never mark a lone far player.
+- **Escape alone:** +0.11 pts/match, 8/8 physics variants, 3/5 opponents, no exploit flag.
+- **24b (DEVIATIONS #8, opponents mark the far side, engine3):** the marking rule broke the defence (baseline underdog wins 62%) → the simulator is not trustworthy for tactics until calibrated.
+- **Verdict:** Slingshot NOT supported (exploit). Next: round 25 realism calibration (engine4 + calibrate4), tracking-data targets (agent track), then a grid search with exploit guards.
+- **Viewer:** site/sim_replay.html (make_replay.py).
+## Tracking data (agent track): 30 public matches (Metrica 3, SkillCorner A-League 20, DFL Bundesliga 7)
+- **Realism targets:**
+  - block slide 0.38 m per m of ball movement, lag 1.4–1.7 s;
+  - width 45 m in possession / 36 m out of possession;
+  - completion 0.78–0.84.
+- **Escape REPLICATED with movement data** (balance measured when the ball ARRIVES): retention 0.37 outnumbered / 0.63 level / 0.84 at +1. +2 adds nothing (0.87, n=30).
+- **Bait:** far-side space +1.3 m, but no progression gain (as in 360).
+- **Defenders close in during the flight;** long hang times are kept less (exploratory).
+## Rounds 25–26: simulator grid search
+- **Round 25 (calibrated engine4):** all top-10 tactics are exploits (+1.8–2.1 pts; dominated by no-press and no-far-cover). Escape alone +0.51 (too large).
+- **Round 26 (effect calibration, engine5):** realistic averages and the real-data NULL anchors cannot both be met. With realistic scoring, press-2 vs press-0 = +1.9 pts and bait = +1.3 pts.
+- **Conclusion:** agent-based sims are 10–50× too sensitive to tactics, so sim-based discovery is stopped.
+## Round 27: fast long balls
+- Cell-matched +6–11 pts retention, but AIPW fails (disc −0.005; pooled +0.015, p = .07) → NOT confirmed. Fast balls are shorter and better placed.
