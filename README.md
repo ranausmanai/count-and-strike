@@ -2,7 +2,7 @@
 
 **We tested about 9,400 football ideas on 3.6 million real decisions and 30 tracked matches. Most failed. A few held up.**
 
-📄 **Read the paper:** [`paper/Football_Beliefs_Tested.pdf`](paper/Football_Beliefs_Tested.pdf) (8 pages)
+📄 **White paper (16 pages):** [`paper/Football_Beliefs_Tested_White_Paper.pdf`](paper/Football_Beliefs_Tested_White_Paper.pdf) · short version (8 pages): [`paper/Football_Beliefs_Tested.pdf`](paper/Football_Beliefs_Tested.pdf)
 
 > **Correction (October 2026).** Version 1 of this project ("Count & Strike") overclaimed. Its headline rule, *Strike through* (shoot rather than recycle near the box), plus *Run into space*, *Press the exposed* and the "+4–8 points a season" estimate, did **not** survive stricter tests added in round 22. Those tests check whether the moment *before* a decision was already better. Shots, for example, happen when the moment is already good. The current findings are below, and the full history is kept in this repository.
 
